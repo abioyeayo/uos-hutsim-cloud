@@ -9,6 +9,9 @@
     </style>
   </head>
   <body>
+  <?php
+        echo 'Time: '. time();
+      ?>
     <div style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; padding-bottom: 20px;">
       <h2>HutSim Cloud Login</h2>
       <p>Welcome to the University of Southampton human swarm team simulator research platform. Please login to continue.</p>
@@ -21,6 +24,9 @@
         <input type="submit" value="Login">
       </form>
       <br>
+      <?php
+        echo 'Time: '. time();
+      ?>
     </div>
   </body>
 </html>
