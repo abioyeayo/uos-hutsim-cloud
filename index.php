@@ -10,7 +10,7 @@
   </head>
   <body>
   <?php
-        echo 'Time: '. time();
+        echo 'Time: '. microtime(true);
       ?>
     <div style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; padding-bottom: 20px;">
       <h2>HutSim Cloud Login</h2>
@@ -25,7 +25,7 @@
       </form>
       <br>
       <?php
-        echo 'Time: '. time();
+        echo 'Time: '. microtime(true);
       ?>
     </div>
   </body>
