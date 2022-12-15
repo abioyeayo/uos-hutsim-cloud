@@ -1,7 +1,10 @@
 <?php
 
-  // raise admin page to view all java processes
-  // option to kill all java processes
+  require_once 'DB_Connect.php';
+
+  // connecting to database
+  $con = new DB_Connect();
+  $con1=$con->connect();
 
 ?>
 <!DOCTYPE html>
@@ -21,6 +24,14 @@
                       echo exec('kill '.$_POST['stopped_pid']);
                       echo "Stopped HutSim PID: ".$_POST['stopped_pid']."<br><br>";
                 }
+
+                $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE process_id = '".$_POST['stopped_pid']."' and port_status = 'active'";
+                if(mysqli_query($con1, $sql)){
+                    // echo "Records updated successfully.";
+                } else{
+                    echo "Error updating record: " . $con->error;
+                    exit();
+                }
               ?> 
             </div>
             <form action="hs_start.php" method="post">
@@ -29,3 +40,9 @@
         </div>
     </body>
 </html>
+
+<?php
+
+	// close db connect
+	$con1->close();
+?>
