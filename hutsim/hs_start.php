@@ -8,16 +8,17 @@
          <?php
             echo exec('java --version');
             echo "<br><br>";
-            exec('java -jar hut.jar > /dev/null 2>&1 & echo $!', $output);
+            $port = rand(1024, 65535);
+            exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
       
             // var_dump($output);
-            echo "Process ID: ".$output[0];
+            echo "Process ID: ".$output[0]." | Port: ".$port;
          ?> 
          <br>
          <h2>HutSim simulator started</h2>
          <br>
          <br>
-         <a href='http://uos-hutsim.cloud:44101/' target='_blank'>
+         <a href='http://uos-hutsim.cloud:<?php echo $port; ?>/' target='_blank'>
              <button>View Simulator</button>
          </a>
          <form action="index.php" method="post" style="float: right;">
