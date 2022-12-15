@@ -18,7 +18,7 @@
         <div style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; padding-bottom: 20px;">
           <h4 id="contributions">Active HutSim Connections</h4>
           <div class="table-responsive">
-            <table id="member_contributions_table" class="cell-border compact stripe" style="width:100%">
+            <table class="table table-bordered table-sm">
               <thead>
                 <tr>
                   <th scope="col">Date</th>
@@ -32,9 +32,6 @@
 
                 <?php
 
-                   // connecting to database
-                  $con = new DB_Connect();
-                  $con1=$con->connect();
 
                   $sql = "SELECT * FROM port_table WHERE port_status ='active'";
                   $result = mysqli_query($con1, $sql);
@@ -49,9 +46,6 @@
                             </tr>";
                     }
                   }
-
-                  // close db connect
-                  $con1->close();
 
                 ?>
 
