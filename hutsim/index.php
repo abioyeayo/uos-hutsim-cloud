@@ -23,15 +23,17 @@
                 if ($_POST['stopped_pid'] != ""){
                       echo exec('kill '.$_POST['stopped_pid']);
                       echo "Stopped HutSim PID: ".$_POST['stopped_pid']."<br><br>";
+
+                      $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE process_id = '".$_POST['stopped_pid']."' and port_status = 'active'";
+                      if(mysqli_query($con1, $sql)){
+                          // echo "Records updated successfully.";
+                      } else{
+                          echo "Error updating record: " . $con->error;
+                          exit();
+                      }
                 }
 
-                $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE process_id = '".$_POST['stopped_pid']."' and port_status = 'active'";
-                if(mysqli_query($con1, $sql)){
-                    // echo "Records updated successfully.";
-                } else{
-                    echo "Error updating record: " . $con->error;
-                    exit();
-                }
+                
               ?> 
             </div>
             <form action="hs_start.php" method="post">
