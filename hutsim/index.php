@@ -1,6 +1,6 @@
 <?php
 
-  require_once 'DB_Connect.php';
+  require_once '../DB_Connect.php';
 
   // connecting to database
   $con = new DB_Connect();
