@@ -16,10 +16,9 @@
     </head>
     <body>
         <div style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; margin-top:20px; padding-bottom: 20px;">
-          <br><br>
-          <h4 id="contributions">Active HutSim Connections</h4>
           <br>
-          <div class="table-responsive p-5">
+          <h4 id="contributions">Active HutSim Connections</h4>
+          <div class="table-responsive p-3">
             <table class="table table-bordered table-sm">
               <thead>
                 <tr>
