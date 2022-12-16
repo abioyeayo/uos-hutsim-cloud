@@ -42,7 +42,7 @@
                               <td>".$row["date_created"]."</td>
                               <td>".$row["process_id"]."</td>
                               <td>".$row["port_number"]."</td>
-                              <td><a href='http://uos-hutsim.cloud:".$row["port_number"]."/' target='_blank'><button>View Simulation</button></a></td>
+                              <td><a href='http://uos-hutsim.cloud:".$row["port_number"]."/' target='_blank'><button type='button' class='btn btn-outline-secondary btn-sm'>View Simulation</button></a></td>
                               <td></td>
                             </tr>";
                     }
