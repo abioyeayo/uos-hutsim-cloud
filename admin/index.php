@@ -22,6 +22,7 @@
             <table class="table table-bordered table-sm">
               <thead>
                 <tr>
+                  <th scope="col">S/No</th>
                   <th scope="col">Date</th>
                   <th scope="col">Process ID</th>
                   <th scope="col">Port Number</th>
@@ -33,12 +34,13 @@
 
                 <?php
 
-
+                  $s_no = 1;
                   $sql = "SELECT * FROM port_table WHERE port_status ='active'";
                   $result = mysqli_query($con1, $sql);
                   if ( mysqli_num_rows( $result ) > 0 ) {
                     while($row = mysqli_fetch_array($result)) {
                       echo "<tr>
+                              <td>".$s_no++."</td>
                               <td>".$row["date_created"]."</td>
                               <td>".$row["process_id"]."</td>
                               <td>".$row["port_number"]."</td>
