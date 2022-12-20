@@ -15,9 +15,9 @@
       <br>
       <form action="hutsim/" method="post">
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="demo@uos-hutsim.cloud">
+        <input type="text" id="email" name="email" placeholder="demo" required>
         <label for="password">Password:</label>
-        <input type="text" id="password" name="password" placeholder="******">
+        <input type="text" id="password" name="password" placeholder="demo" required>
         <input type="submit" value="Login">
       </form>
       <br>

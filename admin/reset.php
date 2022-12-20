@@ -18,7 +18,7 @@
             <div style="font-weight: bold;"> 
               <?php
                   // kill all java process
-                  echo exec("pkill -f 'java -jar'");
+                  echo exec("pkill -f 'java -jar hut.jar'");
                   echo "All java processes have been terminated.<br><br>";
 
                   $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE port_status = 'active'";
@@ -30,9 +30,14 @@
                   }
               ?> 
             </div>
-            <form action="hs_start.php" method="post">
-                <input type="submit" value="Start HutSim">
-            </form>
+            <div>
+                <a href='/hutsim/' style="padding-right: 5px; text-decoration: none;">
+                    <button>HutSim Dashboard</button>
+                </a>
+                <a href='/admin/' style="padding-left: 5px; text-decoration: none;">
+                    <button>Admin Dashboard</button>
+                </a>
+            </div>
         </div>
     </body>
 </html>
