@@ -18,7 +18,8 @@
             <div style="font-weight: bold;"> 
               <?php
                   // kill all java process
-                  echo exec("pkill -f 'java -jar hut.jar'");
+                //   echo exec("pkill -f 'java -jar hut.jar'");
+                  echo exec("pkill -f 'java -jar'");
                   echo "All java processes have been terminated.<br><br>";
 
                   $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE port_status = 'active'";
