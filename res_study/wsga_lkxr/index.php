@@ -15,6 +15,7 @@
 
         // $name = $_POST['fname'];
 
+        // redirect back to prolific website to confirm study completion
         header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
         exit();
 
@@ -152,7 +153,7 @@
   </head>
   <body>
     <!-- Custom step form starts here -->
-    <div class="container">
+    <div class="container" style="min-width: 1000px;">
       
       <div class="p-3 mt-3 mb-1 text-center shadow bg-light" style="max-width: 960px; margin-right: auto; margin-left: auto;">
         <h1 class="text-center fs-3 fw-bold p-1 mb-3">The speed vs accuracy trade-off in human-swarm interaction (SGP1AB)</h1>
