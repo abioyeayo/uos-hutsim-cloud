@@ -7,18 +7,8 @@
    $con1=$con->connect();
 
    // comment or select based on published online hosting or developer localhosting
-   $base_url = "http://uos-hutsim.cloud:";
-  //  $base_url = "http://localhost:";
-
-
-   if ($_SERVER["REQUEST_METHOD"] == "POST"){
-
-        // $name = $_POST['fname'];
-
-        header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
-        exit();
-
-   }
+  //  $base_url = "http://uos-hutsim.cloud:";
+   $base_url = "http://localhost:";
 
 ?>
 
@@ -163,21 +153,15 @@
         ?> 
         <br>
       </div>
-      <form id="stepForm" method="post" action="">
-          <?php
-              echo '<input type="hidden" name="prolific_pid" value="'.$_GET['PROLIFIC_PID'].'">';
-              echo '<input type="hidden" name="study_id" value="'.$_GET['STUDY_ID'].'">';
-              echo '<input type="hidden" name="session_id" value="'.$_GET['SESSION_ID'].'">';
-              echo '<input type="hidden" name="study_start_time" value="'.date("Y-m-d h:i:s").'">';
-          ?>
+      <form id="stepForm" action="">
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
               <span class="stepIndicator">Briefing <br>(5 min)</span>
               <span class="stepIndicator">Tutorial <br>(10 min)</span>
               <span class="stepIndicator">Scenario WSGA <br>(12 min)</span>
-              <span class="stepIndicator">Questionnaire WSGA (6 min)</span>
+              <span class="stepIndicator">Questionnaire WSGA (10 min)</span>
               <span class="stepIndicator">Scenario LKXR <br>(12 min)</span>
-              <span class="stepIndicator">Questionnaire LKXR (6 min)</span>
+              <span class="stepIndicator">Questionnaire LKXR (10 min)</span>
               <span class="stepIndicator">Finish <br>(1 min)</span>
           </div>
           <!-- end step indicators -->
@@ -317,110 +301,89 @@
 
                         // nasa task load index questionnaire
                         $nasa_tlx = array(
-                            "md" => array(
-                                  "abbr" => "md",
-                                  "title" => "Mental Demand",
-                                  "question" => "How mentally demanding was the task?"),
+                            "How mentally demanding was the task?", 
+                            "How physically demanding was the task?",
+                            "How hurried or rushed was the pace of the task?",
+                            "How successful were you in accomplishing what you were asked to do?",
+                            "How hard did you have to work to accomplish your level of performance?",
+                            "How insecure, discouraged, irritated, stressed, and annoyed were you?");
 
-                            "pd" => array(
-                                  "abbr" => "pd",
-                                  "title" => "Physical Demand",
-                                  "question" => "How physically demanding was the task?"),
-
-                            "td" => array(
-                                  "abbr" => "td",
-                                  "title" => "Temporal Demand",
-                                  "question" => "How hurried or rushed was the pace of the task?"),
-
-                            "pf" => array(
-                                  "abbr" => "pf",
-                                  "title" => "Performance",
-                                  "question" => "How successful were you in accomplishing what you were asked to do?"),
-
-                            "ef" => array(
-                                  "abbr" => "ef",
-                                  "title" => "Effort",
-                                  "question" => "How hard did you have to work to accomplish your level of performance?"),
-
-                            "fr" => array(
-                                  "abbr" => "fr",
-                                  "title" => "Frustration",
-                                  "question" => "How insecure, discouraged, irritated, stressed, and annoyed were you?"));
+                        
 
                         foreach ($nasa_tlx as $component) {
 
                             $nasa_tlx_component_lower_label = "Very Low";
                             $nasa_tlx_component_upper_label = "Very High";
-                            if ($component['title'] == "Performance"){
+                            if ($component == "How successful were you in accomplishing what you were asked to do?"){
                                   $nasa_tlx_component_lower_label = "Perfect";
                                   $nasa_tlx_component_upper_label = "Failure";
                             }
                           
                             echo '<div style="font-size: 0.95rem;">
-                                    <p id="radio_wsga_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
+                                    <p id="radio_wsga_pd_question" class="my-3 fw-bold">'.$component.'</p>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="1" id="radio_wsga_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_1">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="1" id="radio_wsga_pd_1" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_1">
                                         1 ('.$nasa_tlx_component_lower_label.')
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="2" id="radio_wsga_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="2" id="radio_wsga_pd_2" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_2">
                                         2
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="3" id="radio_wsga_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_3">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="3" id="radio_wsga_pd_3" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_3">
                                         3
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="4" id="radio_wsga_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_4">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="4" id="radio_wsga_pd_4" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_4">
                                         4
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="5" id="radio_wsga_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_5">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="5" id="radio_wsga_pd_5" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_5">
                                         5
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="6" id="radio_wsga_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_6">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="6" id="radio_wsga_pd_6" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_6">
                                         6
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="7" id="radio_wsga_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_7">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="7" id="radio_wsga_pd_7" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_7">
                                         7
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="8" id="radio_wsga_'.$component['abbr'].'_8" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_8">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="8" id="radio_wsga_pd_8" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_8">
                                         8
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="9" id="radio_wsga_'.$component['abbr'].'_9" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_9">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="9" id="radio_wsga_pd_9" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_9">
                                         9
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="10" id="radio_wsga_'.$component['abbr'].'_10" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_10">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="10" id="radio_wsga_pd_10" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_10">
                                         10
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="11" id="radio_wsga_'.$component['abbr'].'_11" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_11">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="11" id="radio_wsga_pd_11" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_11">
                                         11 ('.$nasa_tlx_component_upper_label.')
                                       </label>
                                     </div>
@@ -451,103 +414,66 @@
 
                         // Jian trust index questionnaire
                         $jian_trust_index = array(
-                          "j1" => array(
-                                "abbr" => "j1",
-                                "question" => "The system is deceptive."),
+                            "The system is deceptive.", 
+                            "The system behaves in an underhanded manner.",
+                            "I am suspicious of the system's intent, action, or outputs.",
+                            "I am wary of the system.",
+                            "The system's actions will have a harmful or injurious outcome.",
+                            "I am confident in the system.",
+                            "The system provides security.",
+                            "The system has integrity.",
+                            "The system is dependable.",
+                            "The system is reliable.",
+                            "I can trust the system.",
+                            "I am familiar with the system.");
 
-                          "j2" => array(
-                                "abbr" => "j2",
-                                "question" => "The system behaves in an underhanded manner."),
-
-                          "j3" => array(
-                                "abbr" => "j3",
-                                "question" => "I am suspicious of the system's intent, action, or outputs."),
-
-                          "j4" => array(
-                                "abbr" => "j4",
-                                "question" => "I am wary of the system."),
-
-                          "j5" => array(
-                                "abbr" => "j5",
-                                "question" => "The system's actions will have a harmful or injurious outcome."),
-
-                          "j6" => array(
-                                "abbr" => "j6",
-                                "question" => "I am confident in the system."),
-
-                          "j7" => array(
-                                "abbr" => "j7",
-                                "question" => "The system provides security."),
-
-                          "j8" => array(
-                                "abbr" => "j8",
-                                "question" => "The system has integrity."),
-
-                          "j9" => array(
-                                "abbr" => "j9",
-                                "question" => "The system is dependable."),
-
-                          "j10" => array(
-                                "abbr" => "j10",
-                                "question" => "The system is reliable."),
-
-                          "j11" => array(
-                                "abbr" => "j11",
-                                "question" => "I can trust the system."),
-
-                          "j12" => array(
-                                "abbr" => "j12",
-                                "question" => "I am familiar with the system."));
-
-                      
-                      foreach ($jian_trust_index as $component) {
-                        
-                          echo '<div style="font-size: 0.95rem;">
-                                  <p id="radio_wsga_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="1" id="radio_wsga_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_1">
-                                      1 (Strongly Disagree)
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="2" id="radio_wsga_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_2">
-                                      2
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="3" id="radio_wsga_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_3">
-                                      3
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="4" id="radio_wsga_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_4">
-                                      4
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="5" id="radio_wsga_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_5">
-                                      5
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="6" id="radio_wsga_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_6">
-                                      6
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="7" id="radio_wsga_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_7">
-                                      7 (Strongly Agree)
-                                    </label>
-                                  </div>
-                                </div>';
-                          } 
+                        foreach ($jian_trust_index as $component) {
+                            echo '<div style="font-size: 0.95rem;">
+                                    <p id="radio_wsga_pd_question" class="my-3 fw-bold">'.$component.'</p>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="1" id="radio_wsga_pd_1" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_1">
+                                        1 (Strongly Disagree)
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="2" id="radio_wsga_pd_2" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_2">
+                                        2
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="3" id="radio_wsga_pd_3" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_3">
+                                        3
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="4" id="radio_wsga_pd_4" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_4">
+                                        4
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="5" id="radio_wsga_pd_5" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_5">
+                                        5
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="6" id="radio_wsga_pd_6" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_6">
+                                        6
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="11" id="radio_wsga_pd_11" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_11">
+                                        7 (Strongly Agree)
+                                      </label>
+                                    </div>
+                                  </div>';
+                            } 
                       ?>
 
                     </div>
@@ -631,237 +557,84 @@
 
                         // nasa task load index questionnaire
                         $nasa_tlx = array(
-                            "md" => array(
-                                  "abbr" => "md",
-                                  "title" => "Mental Demand",
-                                  "question" => "How mentally demanding was the task?"),
-
-                            "pd" => array(
-                                  "abbr" => "pd",
-                                  "title" => "Physical Demand",
-                                  "question" => "How physically demanding was the task?"),
-
-                            "td" => array(
-                                  "abbr" => "td",
-                                  "title" => "Temporal Demand",
-                                  "question" => "How hurried or rushed was the pace of the task?"),
-
-                            "pf" => array(
-                                  "abbr" => "pf",
-                                  "title" => "Performance",
-                                  "question" => "How successful were you in accomplishing what you were asked to do?"),
-
-                            "ef" => array(
-                                  "abbr" => "ef",
-                                  "title" => "Effort",
-                                  "question" => "How hard did you have to work to accomplish your level of performance?"),
-
-                            "fr" => array(
-                                  "abbr" => "fr",
-                                  "title" => "Frustration",
-                                  "question" => "How insecure, discouraged, irritated, stressed, and annoyed were you?"));
+                            "How mentally demanding was the task?", 
+                            "How physically demanding was the task?",
+                            "How hurried or rushed was the pace of the task?",
+                            "How successful were you in accomplishing what you were asked to do?",
+                            "How hard did you have to work to accomplish your level of performance?",
+                            "How insecure, discouraged, irritated, stressed, and annoyed were you?");
 
                         foreach ($nasa_tlx as $component) {
-
-                            $nasa_tlx_component_lower_label = "Very Low";
-                            $nasa_tlx_component_upper_label = "Very High";
-                            if ($component['title'] == "Performance"){
-                                  $nasa_tlx_component_lower_label = "Perfect";
-                                  $nasa_tlx_component_upper_label = "Failure";
-                            }
-                          
                             echo '<div style="font-size: 0.95rem;">
-                                    <p id="radio_lkxr_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
+                                    <p id="radio_wsga_pd_question" class="my-3 fw-bold">'.$component.'</p>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="1" id="radio_lkxr_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_1">
-                                        1 ('.$nasa_tlx_component_lower_label.')
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="1" id="radio_wsga_pd_1" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_1">
+                                        1 (Very Low)
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="2" id="radio_lkxr_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="2" id="radio_wsga_pd_2" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_2">
                                         2
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="3" id="radio_lkxr_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_3">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="3" id="radio_wsga_pd_3" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_3">
                                         3
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="4" id="radio_lkxr_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_4">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="4" id="radio_wsga_pd_4" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_4">
                                         4
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="5" id="radio_lkxr_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_5">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="5" id="radio_wsga_pd_5" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_5">
                                         5
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="6" id="radio_lkxr_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_6">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="6" id="radio_wsga_pd_6" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_6">
                                         6
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="7" id="radio_lkxr_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_7">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="7" id="radio_wsga_pd_7" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_7">
                                         7
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="8" id="radio_lkxr_'.$component['abbr'].'_8" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_8">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="8" id="radio_wsga_pd_8" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_8">
                                         8
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="9" id="radio_lkxr_'.$component['abbr'].'_9" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_9">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="9" id="radio_wsga_pd_9" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_9">
                                         9
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="10" id="radio_lkxr_'.$component['abbr'].'_10" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_10">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="10" id="radio_wsga_pd_10" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_10">
                                         10
                                       </label>
                                     </div>
                                     <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="11" id="radio_lkxr_'.$component['abbr'].'_11" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_11">
-                                        11 ('.$nasa_tlx_component_upper_label.')
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="11" id="radio_wsga_pd_11" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_11">
+                                        11 (Very High)
                                       </label>
                                     </div>
                                   </div>';
                             } 
-                      ?>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mx-0 mx-sm-auto mb-5">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-center">
-                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                      <i class="fa fa-android fa-2x mb-3 text-primary"></i>
-                      <p>
-                        <strong>Trust Index</strong>
-                      </p>
-                    </div>
-
-                    <hr />
-
-                    <div class="px-4">
-                      <?php 
-
-                        // Jian trust index questionnaire
-                        $jian_trust_index = array(
-                          "j1" => array(
-                                "abbr" => "j1",
-                                "question" => "The system is deceptive."),
-
-                          "j2" => array(
-                                "abbr" => "j2",
-                                "question" => "The system behaves in an underhanded manner."),
-
-                          "j3" => array(
-                                "abbr" => "j3",
-                                "question" => "I am suspicious of the system's intent, action, or outputs."),
-
-                          "j4" => array(
-                                "abbr" => "j4",
-                                "question" => "I am wary of the system."),
-
-                          "j5" => array(
-                                "abbr" => "j5",
-                                "question" => "The system's actions will have a harmful or injurious outcome."),
-
-                          "j6" => array(
-                                "abbr" => "j6",
-                                "question" => "I am confident in the system."),
-
-                          "j7" => array(
-                                "abbr" => "j7",
-                                "question" => "The system provides security."),
-
-                          "j8" => array(
-                                "abbr" => "j8",
-                                "question" => "The system has integrity."),
-
-                          "j9" => array(
-                                "abbr" => "j9",
-                                "question" => "The system is dependable."),
-
-                          "j10" => array(
-                                "abbr" => "j10",
-                                "question" => "The system is reliable."),
-
-                          "j11" => array(
-                                "abbr" => "j11",
-                                "question" => "I can trust the system."),
-
-                          "j12" => array(
-                                "abbr" => "j12",
-                                "question" => "I am familiar with the system."));
-
-                      
-                      foreach ($jian_trust_index as $component) {
-                        
-                          echo '<div style="font-size: 0.95rem;">
-                                  <p id="radio_lkxr_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="1" id="radio_lkxr_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_1">
-                                      1 (Strongly Disagree)
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="2" id="radio_lkxr_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_2">
-                                      2
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="3" id="radio_lkxr_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_3">
-                                      3
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="4" id="radio_lkxr_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_4">
-                                      4
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="5" id="radio_lkxr_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_5">
-                                      5
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="6" id="radio_lkxr_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_6">
-                                      6
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="7" id="radio_lkxr_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_7">
-                                      7 (Strongly Agree)
-                                    </label>
-                                  </div>
-                                </div>';
-                          } 
                       ?>
 
                     </div>
@@ -930,7 +703,7 @@
         
         function validateForm() {
 
-          // check if the tutorial scenario is completed and add value to allow validation
+          // check if the tutorial step is completed and add value to allow validation
           var check_tutorial = document.getElementById("check_tutorial");
           if (check_tutorial.checked == true){
             check_tutorial.value = "Completed Tutorial";
@@ -939,7 +712,7 @@
             check_tutorial.value = "";
           }
 
-          // check if the WSGA scenario is completed and add value to allow validation
+          // check if the WSGA step is completed and add value to allow validation
           var check_WSGA = document.getElementById("check_WSGA");
           if (check_WSGA.checked == true){
             check_WSGA.value = "Completed WSGA";
@@ -948,32 +721,7 @@
             check_WSGA.value = "";
           }
 
-          // check if a wsga radio row element has been selected
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12"];
-          for(j=0;j<radio_wsga_lkxr_form.length;j++){
-              var radio_row = document.querySelector('input[name="radio_wsga_'+radio_wsga_lkxr_form[j]+'"]:checked');
-              var radio_row_elements = [];
-              for (i=1; i < (document.getElementsByName("radio_wsga_"+radio_wsga_lkxr_form[j]).length + 1); i++){
-                radio_row_elements[i-1] = document.getElementById("radio_wsga_"+radio_wsga_lkxr_form[j]+"_" + i);
-              }
-              var radio_row_question = document.getElementById("radio_wsga_"+radio_wsga_lkxr_form[j]+"_question");
-              if(radio_row != null) {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = i+1;
-                  radio_row_elements[i].classList.remove("is-invalid");
-                }
-                radio_row_question.classList.remove("text-danger");
-              }
-              else {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = "";
-                }
-                radio_row_question.classList.add("text-danger");
-              }
-
-          }
-
-          // check if the LKXR scenario is completed and add value to allow validation
+          // check if the LKXR step is completed and add value to allow validation
           var check_LKXR = document.getElementById("check_LKXR");
           if (check_LKXR.checked == true){
             check_LKXR.value = "Completed LKXR";
@@ -982,30 +730,28 @@
             check_LKXR.value = "";
           }
 
-          // check if a lkxr radio row element has been selected
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12"];
-          for(j=0;j<radio_wsga_lkxr_form.length;j++){
-              var radio_row = document.querySelector('input[name="radio_lkxr_'+radio_wsga_lkxr_form[j]+'"]:checked');
-              var radio_row_elements = [];
-              for (i=1; i < (document.getElementsByName("radio_lkxr_"+radio_wsga_lkxr_form[j]).length + 1); i++){
-                radio_row_elements[i-1] = document.getElementById("radio_lkxr_"+radio_wsga_lkxr_form[j]+"_" + i);
-              }
-              var radio_row_question = document.getElementById("radio_lkxr_"+radio_wsga_lkxr_form[j]+"_question");
-              if(radio_row != null) {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = i+1;
-                  radio_row_elements[i].classList.remove("is-invalid");
-                }
-                radio_row_question.classList.remove("text-danger");
-              }
-              else {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = "";
-                }
-                radio_row_question.classList.add("text-danger");
-              }
-
-          }
+          // // check if wsga nasa tlx pd is selected
+          // var radio_wsga_pd = document.querySelector('input[name="radio_wsga_pd"]:checked');
+          // var radio_wsga_pd_11 = document.getElementById("radio_wsga_pd_11");
+          // var radio_wsga_pd_elements = [];
+          // for (i=1; i < (document.getElementsByName("radio_wsga_pd").length + 1); i++){
+          //   radio_wsga_pd_elements[i-1] = document.getElementById("radio_wsga_pd_" + i);
+          // }
+          // var radio_wsga_pd_question = document.getElementById("radio_wsga_pd_question");
+          // if(radio_wsga_pd != null) {
+          //   radio_wsga_pd_11.classList.remove("is-invalid");
+          //   for (i=0; i<radio_wsga_pd_elements.length;i++){
+          //     radio_wsga_pd_elements[i].value = i+1;
+          //     radio_wsga_pd_elements[i].classList.remove("is-invalid");
+          //   }
+          //   radio_wsga_pd_question.classList.remove("text-danger");
+          // }
+          // else {
+          //   for (i=0; i<radio_wsga_pd_elements.length;i++){
+          //     radio_wsga_pd_elements[i].value = "";
+          //   }
+          //   radio_wsga_pd_question.classList.add("text-danger");
+          // }
           
 
           // This function deals with validation of the form fields
