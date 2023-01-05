@@ -153,7 +153,7 @@
         ?> 
         <br>
       </div>
-      <form id="stepForm" action="#!">
+      <form id="stepForm" action="">
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
               <span class="stepIndicator">Briefing <br>(5 min)</span>
@@ -281,10 +281,7 @@
           <!-- step four -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">WSGA Study Scenario Questionnaire</h4>
-              <p class="text-center mb-5">This is the WSGA study scenario. Here you would classify whether images have a human present or not. 
-                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. You 
-                do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will only see the basic scans that are added 
-                to the view window automatically.</p>
+              <p class="text-center mb-5">This is the WSGA study scenario questionnaire. Please complete the form below and click next to continue.</p>
               
               <div class="mx-0 mx-sm-auto mb-5">
                 <div class="card">
@@ -299,180 +296,90 @@
 
                     <hr />
 
-                    <div class="px-4 text-center">
+                    <div class="px-4">
+                      <?php 
 
-                      <!-- Mental Demand -->
-                      <p class="text-center"><strong>How mentally demanding was the task?</strong></p>
+                        // nasa task load index questionnaire
+                        $nasa_tlx = array(
+                            "How mentally demanding was the task?", 
+                            "How physically demanding was the task?",
+                            "How hurried or rushed was the pace of the task?",
+                            "How successful were you in accomplishing what you were asked to do?",
+                            "How hard did you have to work to accomplish your level of performance?",
+                            "How insecure, discouraged, irritated, stressed, and annoyed were you?");
 
-                      <!-- <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example1" />
-                        <label class="form-check-label" for="radio2Example1">
-                          Very Low
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example2" />
-                        <label class="form-check-label" for="radio2Example2">
-                          Low
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example3" />
-                        <label class="form-check-label" for="radio2Example3">
-                          Average
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example4" />
-                        <label class="form-check-label" for="radio2Example4">
-                          High
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="exampleForm" id="radio2Example5" />
-                        <label class="form-check-label" for="radio2Example5">
-                          Very High
-                        </label>
-                      </div> -->
-
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="1" id="radio_wsga_md_label_1" />
-                        <label class="form-check-label" for="radio_wsga_md_label_1">
-                          1 (Very Low)
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="2" id="radio_wsga_md_label_2" />
-                        <label class="form-check-label" for="radio_wsga_md_label_2">
-                          2
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="3" id="radio_wsga_md_label_3" />
-                        <label class="form-check-label" for="radio_wsga_md_label_3">
-                          3
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="4" id="radio_wsga_md_label_4" />
-                        <label class="form-check-label" for="radio_wsga_md_label_4">
-                          4
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="5" id="radio_wsga_md_label_5" />
-                        <label class="form-check-label" for="radio_wsga_md_label_5">
-                          5
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="6" id="radio_wsga_md_label_6" />
-                        <label class="form-check-label" for="radio_wsga_md_label_6">
-                          6
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="7" id="radio_wsga_md_label_7" />
-                        <label class="form-check-label" for="radio_wsga_md_label_7">
-                          7
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="8" id="radio_wsga_md_label_8" />
-                        <label class="form-check-label" for="radio_wsga_md_label_8">
-                          8
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="9" id="radio_wsga_md_label_9" />
-                        <label class="form-check-label" for="radio_wsga_md_label_9">
-                          9
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="10" id="radio_wsga_md_label_10" />
-                        <label class="form-check-label" for="radio_wsga_md_label_10">
-                          10
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_md" value="11" id="radio_wsga_md_label_11" />
-                        <label class="form-check-label" for="radio_wsga_md_label_11">
-                          11 (Very High)
-                        </label>
-                      </div>
-
-                      <!-- Physical Demand -->
-                      <p class="text-center"><strong>How physically demanding was the task?</strong></p>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="1" id="radio_wsga_pd_label_1" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_1">
-                          1 (Very Low)
-                        </label>
-                      </div>
-                      <!-- <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="2" id="radio_wsga_pd_label_2" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_2">
-                          2
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="3" id="radio_wsga_pd_label_3" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_3">
-                          3
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="4" id="radio_wsga_pd_label_4" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_4">
-                          4
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="5" id="radio_wsga_pd_label_5" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_5">
-                          5
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="6" id="radio_wsga_pd_label_6" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_6">
-                          6
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="7" id="radio_wsga_pd_label_7" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_7">
-                          7
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="8" id="radio_wsga_pd_label_8" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_8">
-                          8
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="9" id="radio_wsga_pd_label_9" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_9">
-                          9
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" name="radio_wsga_pd" value="10" id="radio_wsga_pd_label_10" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_10">
-                          10
-                        </label>
-                      </div> -->
-                      <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input is-invalid" type="radio" name="radio_wsga_pd" value="11" id="radio_wsga_pd_label_11" />
-                        <label class="form-check-label" for="radio_wsga_pd_label_11">
-                          11 (Very High)
-                        </label>
-                        <div class="invalid-feedback">More example invalid feedback text</div>
-                      </div>
-
-                      
+                        foreach ($nasa_tlx as $component) {
+                            echo '<div style="font-size: 0.95rem;">
+                                    <p id="radio_wsga_pd_question" class="my-3 fw-bold">'.$component.'</p>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="1" id="radio_wsga_pd_1" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_1">
+                                        1 (Very Low)
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="2" id="radio_wsga_pd_2" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_2">
+                                        2
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="3" id="radio_wsga_pd_3" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_3">
+                                        3
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="4" id="radio_wsga_pd_4" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_4">
+                                        4
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="5" id="radio_wsga_pd_5" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_5">
+                                        5
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="6" id="radio_wsga_pd_6" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_6">
+                                        6
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="7" id="radio_wsga_pd_7" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_7">
+                                        7
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="8" id="radio_wsga_pd_8" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_8">
+                                        8
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="9" id="radio_wsga_pd_9" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_9">
+                                        9
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="10" id="radio_wsga_pd_10" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_10">
+                                        10
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="11" id="radio_wsga_pd_11" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_11">
+                                        11 (Very High)
+                                      </label>
+                                    </div>
+                                  </div>';
+                            } 
+                      ?>
 
                     </div>
                   </div>
@@ -483,44 +390,168 @@
 
           <!-- step five -->
           <div class="step">
-              <p class="text-center mb-4">We will never sell it</p>
-              <div class="mb-3">
-                  <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
-              </div>
-              <div class="mb-3">
-                  <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
-              </div>
-              <div class="mb-3">
-                  <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
+              <h4 class="text-center fw-bold mb-5 mt-5">LKXR Study Scenario</h4>
+              <p class="text-center mb-5">This is the LKXR study scenario. Here you would classify whether images have a human present or not. 
+                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. You 
+                do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will only see the basic scans that are added 
+                to the view window automatically.</p>
+              <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the LKXR study scenario. When finished, tick the "I have completed the LKXR scenario" checkbox and click Next to continue.</p>
+              <div class="mb-5">
+                <?php
+                    // echo exec('java --version');
+                    // echo "<br><br>";
+                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
+                    $port = rand(4096, 65535);
+                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
+              
+                    // var_dump($output);
+                    // echo "Process ID: ".$output[0]." | Port: ".$port;
+
+                    $process_id = $output[0];
+                    $port_number = $port;
+                    $port_status = "active";
+                    $created_by = "uos-web-user";
+
+                    // update port table
+                    $sql = "INSERT INTO port_table (process_id, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
+                    if(mysqli_query($con1, $sql)){
+                      // echo "Records inserted successfully.";
+                    } else{
+                      echo "Error inserting record: " . $con->error;
+                      exit();
+                    }
+
+                    $href_url = $base_url . $port . "/preset/scenario?file-name=LKXR.json";
+                ?>
+                <div class="d-flex flex-column justify-content-center align-content-center mx-auto" style="max-width: 480px;">
+                  <a href='<?php echo $href_url; ?>/' target='_blank' class="btn btn-sm btn-primary">Start LKXR Scenario</a>
+                  <br>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check_LKXR" aria-describedby="check_LKXR_invalid_feedback" onclick="validateForm();">
+                    <label class="form-check-label" for="check_LKXR">
+                        I have completed the LKXR scenario
+                    </label>
+                    <div id="check_LKXR_invalid_feedback" class="invalid-feedback">
+                      Please confirm you have completed scenario to proceed.
+                    </div>
+                  </div>
+                </div>
               </div>
           </div>
 
           <!-- step six -->
           <div class="step">
-              <p class="text-center mb-4">We will never sell it</p>
-              <div class="mb-3">
-                  <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
-              </div>
-              <div class="mb-3">
-                  <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
-              </div>
-              <div class="mb-3">
-                  <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
+              <h4 class="text-center fw-bold mb-5 mt-5">LKXR Study Scenario Questionnaire</h4>
+              <p class="text-center mb-5">This is the LKXR study scenario questionnaire. Please complete the form below and click next to continue.</p>
+              
+              <div class="mx-0 mx-sm-auto mb-5">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
+                      <i class="fa fa-gears fa-2x mb-3 text-primary"></i>
+                      <p>
+                        <strong>Task Workload Index</strong>
+                      </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="px-4">
+                      <?php 
+
+                        // nasa task load index questionnaire
+                        $nasa_tlx = array(
+                            "How mentally demanding was the task?", 
+                            "How physically demanding was the task?",
+                            "How hurried or rushed was the pace of the task?",
+                            "How successful were you in accomplishing what you were asked to do?",
+                            "How hard did you have to work to accomplish your level of performance?",
+                            "How insecure, discouraged, irritated, stressed, and annoyed were you?");
+
+                        foreach ($nasa_tlx as $component) {
+                            echo '<div style="font-size: 0.95rem;">
+                                    <p id="radio_wsga_pd_question" class="my-3 fw-bold">'.$component.'</p>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="1" id="radio_wsga_pd_1" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_1">
+                                        1 (Very Low)
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="2" id="radio_wsga_pd_2" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_2">
+                                        2
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="3" id="radio_wsga_pd_3" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_3">
+                                        3
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="4" id="radio_wsga_pd_4" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_4">
+                                        4
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="5" id="radio_wsga_pd_5" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_5">
+                                        5
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="6" id="radio_wsga_pd_6" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_6">
+                                        6
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="7" id="radio_wsga_pd_7" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_7">
+                                        7
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="8" id="radio_wsga_pd_8" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_8">
+                                        8
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="9" id="radio_wsga_pd_9" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_9">
+                                        9
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="10" id="radio_wsga_pd_10" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_10">
+                                        10
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_wsga_pd" value="11" id="radio_wsga_pd_11" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_wsga_pd_11">
+                                        11 (Very High)
+                                      </label>
+                                    </div>
+                                  </div>';
+                            } 
+                      ?>
+
+                    </div>
+                  </div>
+                </div>
               </div>
           </div>
 
           <!-- step seven -->
           <div class="step">
-              <p class="text-center mb-4">Submit to finish study</p>
-              <div class="mb-3">
-                  <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
-              </div>
-              <div class="mb-3">
-                  <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
-              </div>
-              <div class="mb-3">
-                  <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
-              </div>
+              <h4 class="text-center fw-bold mb-5 mt-5">Submit to Finish</h4>
+              <p class="text-center mb-5">Thank you for participating in our study. Please submit to finish and be automatically redirected back to prolific to confirm study completion.</p>
           </div>
       
           <!-- start previous / next buttons -->
@@ -594,6 +625,39 @@
           } else {
             check_WSGA.value = "";
           }
+
+          // check if the LKXR step is completed and add value to allow validation
+          var check_LKXR = document.getElementById("check_LKXR");
+          if (check_LKXR.checked == true){
+            check_LKXR.value = "Completed LKXR";
+            check_LKXR.classList.remove("is-invalid");
+          } else {
+            check_LKXR.value = "";
+          }
+
+          // // check if wsga nasa tlx pd is selected
+          // var radio_wsga_pd = document.querySelector('input[name="radio_wsga_pd"]:checked');
+          // var radio_wsga_pd_11 = document.getElementById("radio_wsga_pd_11");
+          // var radio_wsga_pd_elements = [];
+          // for (i=1; i < (document.getElementsByName("radio_wsga_pd").length + 1); i++){
+          //   radio_wsga_pd_elements[i-1] = document.getElementById("radio_wsga_pd_" + i);
+          // }
+          // var radio_wsga_pd_question = document.getElementById("radio_wsga_pd_question");
+          // if(radio_wsga_pd != null) {
+          //   radio_wsga_pd_11.classList.remove("is-invalid");
+          //   for (i=0; i<radio_wsga_pd_elements.length;i++){
+          //     radio_wsga_pd_elements[i].value = i+1;
+          //     radio_wsga_pd_elements[i].classList.remove("is-invalid");
+          //   }
+          //   radio_wsga_pd_question.classList.remove("text-danger");
+          // }
+          // else {
+          //   for (i=0; i<radio_wsga_pd_elements.length;i++){
+          //     radio_wsga_pd_elements[i].value = "";
+          //   }
+          //   radio_wsga_pd_question.classList.add("text-danger");
+          // }
+          
 
           // This function deals with validation of the form fields
           var x, y, i, valid = true;
