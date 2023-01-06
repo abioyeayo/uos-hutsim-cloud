@@ -8,7 +8,7 @@
 
    // comment or select based on published online hosting or developer localhosting
    $base_url = "http://uos-hutsim.cloud:";
-  //  $base_url = "http://localhost:";
+  //  $base_url = "http://localhost:"; 
 
 
    if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -71,7 +71,7 @@
             echo "Error inserting record: " . $con->error;
             exit();
         }
-        
+
         // redirect back to prolific website to confirm study completion
         header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
         exit();
