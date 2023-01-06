@@ -7,17 +7,74 @@
    $con1=$con->connect();
 
    // comment or select based on published online hosting or developer localhosting
-   $base_url = "http://uos-hutsim.cloud:";
-  //  $base_url = "http://localhost:";
+  //  $base_url = "http://uos-hutsim.cloud:";
+   $base_url = "http://localhost:";
 
 
    if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
-        // $name = $_POST['fname'];
+        // study activity identifier
+        $prolific_pid = $_POST['prolific_pid'];
+        $study_id = $_POST['study_id'];
+        $session_id = $_POST['session_id'];
+        $study_start_time = $_POST['study_start_time'];
+        $study_end_time = date("Y-m-d h:i:s");
+        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP1AB)";
+        $study_alias = "wsga_lkxr";
 
-        // redirect back to prolific website to confirm study completion
-        header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
-        exit();
+
+        // study wsga questionnaires
+        $radio_wsga_md = $_POST['radio_wsga_md'];
+        $radio_wsga_pd = $_POST['radio_wsga_pd'];
+        $radio_wsga_td = $_POST['radio_wsga_td'];
+        $radio_wsga_pf = $_POST['radio_wsga_pf'];
+        $radio_wsga_ef = $_POST['radio_wsga_ef'];
+        $radio_wsga_fr = $_POST['radio_wsga_fr'];
+        $radio_wsga_j1 = $_POST['radio_wsga_j1'];
+        $radio_wsga_j2 = $_POST['radio_wsga_j2'];
+        $radio_wsga_j3 = $_POST['radio_wsga_j3'];
+        $radio_wsga_j4 = $_POST['radio_wsga_j4'];
+        $radio_wsga_j5 = $_POST['radio_wsga_j5'];
+        $radio_wsga_j6 = $_POST['radio_wsga_j6'];
+        $radio_wsga_j7 = $_POST['radio_wsga_j7'];
+        $radio_wsga_j8 = $_POST['radio_wsga_j8'];
+        $radio_wsga_j9 = $_POST['radio_wsga_j9'];
+        $radio_wsga_j10 = $_POST['radio_wsga_j10'];
+        $radio_wsga_j11 = $_POST['radio_wsga_j11'];
+
+        // study lkxr questionnaires
+        $radio_lkxr_md = $_POST['radio_lkxr_md'];
+        $radio_lkxr_pd = $_POST['radio_lkxr_pd'];
+        $radio_lkxr_td = $_POST['radio_lkxr_td'];
+        $radio_lkxr_pf = $_POST['radio_lkxr_pf'];
+        $radio_lkxr_ef = $_POST['radio_lkxr_ef'];
+        $radio_lkxr_fr = $_POST['radio_lkxr_fr'];
+        $radio_lkxr_j1 = $_POST['radio_lkxr_j1'];
+        $radio_lkxr_j2 = $_POST['radio_lkxr_j2'];
+        $radio_lkxr_j3 = $_POST['radio_lkxr_j3'];
+        $radio_lkxr_j4 = $_POST['radio_lkxr_j4'];
+        $radio_lkxr_j5 = $_POST['radio_lkxr_j5'];
+        $radio_lkxr_j6 = $_POST['radio_lkxr_j6'];
+        $radio_lkxr_j7 = $_POST['radio_lkxr_j7'];
+        $radio_lkxr_j8 = $_POST['radio_lkxr_j8'];
+        $radio_lkxr_j9 = $_POST['radio_lkxr_j9'];
+        $radio_lkxr_j10 = $_POST['radio_lkxr_j10'];
+        $radio_lkxr_j11 = $_POST['radio_lkxr_j11'];
+        $radio_lkxr_j12 = $_POST['radio_lkxr_j12'];
+        
+
+        // update port table
+        $sql = "INSERT INTO wsga_lkxr_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_start_time, study_end_time, radio_wsga_md, radio_wsga_pd, radio_wsga_td, radio_wsga_pf, radio_wsga_ef, radio_wsga_fr, radio_wsga_j1, radio_wsga_j2, radio_wsga_j3, radio_wsga_j4, radio_wsga_j5, radio_wsga_j6, radio_wsga_j7, radio_wsga_j8, radio_wsga_j9, radio_wsga_j10, radio_wsga_j11, radio_lkxr_md, radio_lkxr_pd, radio_lkxr_td, radio_lkxr_pf, radio_lkxr_ef, radio_lkxr_fr, radio_lkxr_j1, radio_lkxr_j2, radio_lkxr_j3, radio_lkxr_j4, radio_lkxr_j5, radio_lkxr_j6, radio_lkxr_j7, radio_lkxr_j8, radio_lkxr_j9, radio_lkxr_j10, radio_lkxr_j11, radio_lkxr_j12) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $radio_wsga_md . "', '" . $radio_wsga_pd . "', '" . $radio_wsga_td . "', '" . $radio_wsga_pf . "', '" . $radio_wsga_ef . "', '" . $radio_wsga_fr . "', '" . $radio_wsga_j1 . "', '" . $radio_wsga_j2 . "', '" . $radio_wsga_j3 . "', '" . $radio_wsga_j4 . "', '" . $radio_wsga_j5 . "', '" . $radio_wsga_j6 . "', '" . $radio_wsga_j7 . "', '" . $radio_wsga_j8 . "', '" . $radio_wsga_j9 . "', '" . $radio_wsga_j10 . "', '" . $radio_wsga_j11 . "', '" . $radio_lkxr_md . "', '" . $radio_lkxr_pd . "', '" . $radio_lkxr_td . "', '" . $radio_lkxr_pf . "', '" . $radio_lkxr_ef . "', '" . $radio_lkxr_fr . "', '" . $radio_lkxr_j1 . "', '" . $radio_lkxr_j2 . "', '" . $radio_lkxr_j3 . "', '" . $radio_lkxr_j4 . "', '" . $radio_lkxr_j5 . "', '" . $radio_lkxr_j6 . "', '" . $radio_lkxr_j7 . "', '" . $radio_lkxr_j8 . "', '" . $radio_lkxr_j9 . "', '" . $radio_lkxr_j10 . "', '" . $radio_lkxr_j11 . "', '" . $radio_lkxr_j12 . "')";
+        if(mysqli_query($con1, $sql)){
+            // echo "Records inserted successfully.";
+        } else{
+            echo "Error inserting record: " . $con->error;
+            exit();
+        }
+
+        // // redirect back to prolific website to confirm study completion
+        // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
+        // exit();
 
    }
 
@@ -188,8 +245,8 @@
               <h4 class="text-center fw-bold mb-5 mt-5">Study Briefing</h4>
               <p class="text-center mb-5">In this study, you would be asked to assign UAVs to search grids in our custom-developed online HutSim simulator. 
                 You would then be asked to identify if a human is present in the images returned by the UAV swarms. After this, you would be required to 
-                complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer. The following 
-                Youtube video demonstrates what is expected of you in this experiment.</p>
+                complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated 
+                version of the Google Chrome web browser. The following Youtube video demonstrates what is expected of you in this experiment.</p>
               <div class="text-center mb-5">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3XeCSd61pfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
