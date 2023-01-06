@@ -72,6 +72,9 @@
             exit();
         }
 
+        echo $sql;
+        exit();
+
         // redirect back to prolific website to confirm study completion
         header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
         exit();
