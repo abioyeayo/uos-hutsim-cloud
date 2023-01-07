@@ -232,10 +232,10 @@
           <div class="form-header d-flex mb-4">
               <span class="stepIndicator">Briefing <br>(12 min)</span>
               <span class="stepIndicator">Tutorial <br>(10 min)</span>
-              <span class="stepIndicator">Scenario I <br>(12 min)</span>
-              <span class="stepIndicator">Questionnaire I <br>(6 min)</span>
-              <span class="stepIndicator">Scenario II <br>(12 min)</span>
-              <span class="stepIndicator">Questionnaire II <br>(6 min)</span>
+              <span class="stepIndicator">Scenario WSGA <br>(12 min)</span>
+              <span class="stepIndicator">Questionnaire WSGA (6 min)</span>
+              <span class="stepIndicator">Scenario LKXR <br>(12 min)</span>
+              <span class="stepIndicator">Questionnaire LKXR (6 min)</span>
               <span class="stepIndicator">Finish <br>(1 min)</span>
           </div>
           <!-- end step indicators -->
@@ -247,7 +247,7 @@
                 You would then be asked to identify if a human is present in the images returned by the UAV swarms. After this, you would be required to 
                 complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated 
                 version of the Google Chrome web browser.</p>
-              <p class="text-center mb-5">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should 
+              <p class="text-center mb-5">Please watch the following Youtube video which demonstrates what is expected of you in this experiment. This should 
                 take about 10 minutes to complete. When finished, click Next to continue.</p>
               <div class="text-center mb-5">
                 <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -305,7 +305,7 @@
       
           <!-- step three -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario I</h4>
+              <h4 class="text-center fw-bold mb-5 mt-5">WSGA Study Scenario</h4>
               <p class="text-center mb-5">This is the WSGA study scenario. Here you would classify whether images have a human present or not. 
                 Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. You 
                 do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will only see the basic scans that are added 
@@ -356,7 +356,7 @@
 
           <!-- step four -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario I Questionnaire</h4>
+              <h4 class="text-center fw-bold mb-5 mt-5">WSGA Study Scenario Questionnaire</h4>
               <p class="text-center mb-5">This is the WSGA study scenario questionnaire. Please complete the form below and click next to continue.</p>
               
               <div class="mx-0 mx-sm-auto mb-5">
@@ -619,7 +619,7 @@
 
           <!-- step five -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario II</h4>
+              <h4 class="text-center fw-bold mb-5 mt-5">LKXR Study Scenario</h4>
               <p class="text-center mb-5">This is the LKXR study scenario. Here you would classify whether images have a human present or not. 
                 Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. You 
                 do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will only see the basic scans that are added 
@@ -670,7 +670,7 @@
 
           <!-- step six -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario II Questionnaire</h4>
+              <h4 class="text-center fw-bold mb-5 mt-5">LKXR Study Scenario Questionnaire</h4>
               <p class="text-center mb-5">This is the LKXR study scenario questionnaire. Please complete the form below and click next to continue.</p>
               
               <div class="mx-0 mx-sm-auto mb-5">
