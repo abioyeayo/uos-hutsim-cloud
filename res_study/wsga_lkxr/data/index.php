@@ -10,16 +10,19 @@
         if(isset($_POST["Export"])){
         
             header('Content-Type: text/csv; charset=utf-8');  
-            header('Content-Disposition: attachment; filename=data.csv');  
+            header('Content-Disposition: attachment; filename=wsga_lkxr_data.csv');  
             $output = fopen("php://output", "w");  
-            fputcsv($output, array('ID', 'First Name', 'Last Name', 'Email', 'Joining Date'));  
+            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_start_time', 'study_end_time', 'w_md', 'w_pd', 'w_td', 'w_pf', 'w_ef', 'w_fr', 'w_j1', 'w_j2', 'w_j3', 'w_j4', 'w_j5', 'w_j6', 'w_j7', 'w_j8', 'w_j9', 'w_j10', 'w_j11', 'w_j12', 'l_md', 'l_pd', 'l_td', 'l_pf', 'l_ef', 'l_fr', 'l_j1', 'l_j2', 'l_j3', 'l_j4', 'l_j5', 'l_j6', 'l_j7', 'l_j8', 'l_j9', 'l_j10', 'l_j11', 'l_j12', 'date_added'));  
             $query = "SELECT * from employeeinfo ORDER BY emp_id DESC";  
             $result = mysqli_query($con, $query);  
-            while($row = mysqli_fetch_assoc($result))  
-            {  
+            $sql = "SELECT * FROM wsga_lkxr_data_table";
+            $result = mysqli_query($con1, $sql);
+            // while($row = mysqli_fetch_array($result)) {
+            while($row = mysqli_fetch_assoc($result)){  
                 fputcsv($output, $row);  
             }  
-            fclose($output);  
+            fclose($output);
+            exit();
         }  
     }
 
@@ -37,19 +40,15 @@
         </style>
     </head>
     <body>
-        <div>
-            <p>WSGA_LKXR Res Study Data</p>
+        <div style="margin-left:5px;">
+            <h2>WSGA_LKXR Res Study Data</h2>
             <br>
             <div> 
-            
-              <?php
-                  echo "Download Table";
-              ?> 
-
+                <form action="" method="post">
+                    <input type="submit" name="Export" value="Download Table"/>
+                </form>
+                <br>
                 <hr>
-                <!-- <h4 id="contributions">Member Contributions</h4> -->
-                <!-- <div class="table-responsive"> -->
-                <!-- <table id="member_contributions_table" class="cell-border compact stripe" style="width:100%"> -->
                 <table>
                     <thead>
                         <tr>
@@ -159,7 +158,6 @@
 
                     </tbody>
                 </table>
-                <!-- </div> -->
             </div>
         </div>
     </body>
