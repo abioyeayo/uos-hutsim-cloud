@@ -1,0 +1,27 @@
+2023-01-08 19:05:40; 0.0; LGSTRT; Reset log (scenario, username); Tutorial; 639c81275bd768dce603c9c5 
+2023-01-08 19:05:52; 50.20000000000017; CHVW; Changing view to mode; 2 
+2023-01-08 19:05:56; 73.2000000000005; CRRG; Created new region task with corners (id, nwlat, nwlng, nelat, nelng, selat, selng, swlat, swlng,); Task-1; 50.934140520619366;-1.4117484052079576;50.934140520619366;-1.4067273099320787;50.93113833773352;-1.4067273099320787;50.93113833773352;-1.4117484052079576;
+2023-01-08 19:06:00; 95.20000000000081; CRRG; Created new region task with corners (id, nwlat, nwlng, nelat, nelng, selat, selng, swlat, swlng,); Task-2; 50.930408047728825;-1.414859767665233;50.930408047728825;-1.4107184369462389;50.927757269149275;-1.4107184369462389;50.927757269149275;-1.414859767665233;
+2023-01-08 19:06:18; 203.199999999997; CHVW; Changing view to mode; 1 
+2023-01-08 19:06:40; 338.59999999998934; CHVW; Changing view to mode; 2 
+2023-01-08 19:06:54; 422.3999999999846; TKIMG; Taking image for target of deep/shallow type with actual classification (id, filename, isDeep, isReal); Target-Unknown-2; images/Complex/Complex - Low Res/ComplexLowT3.png ; false; true
+2023-01-08 19:06:58; 446.7999999999832; CHVW; Changing view to mode; 3 
+2023-01-08 19:07:05; 485.399999999981; DYNRS; Dynamically reassigning agents to work scans;
+2023-01-08 19:07:05; 485.399999999981; DYNRS; Dynamically reassigning agents to work scans;
+2023-01-08 19:07:05; 485.399999999981; DPSCN; Creating a deep scan task of id and for target (id, targetId); Task-3; Target-Unknown-2
+2023-01-08 19:07:07; 501.79999999998006; CHVW; Changing view to mode; 1 
+2023-01-08 19:07:16; 554.199999999989; TKIMG; Taking image for target of deep/shallow type with actual classification (id, filename, isDeep, isReal); Target-Unknown-1; images/Complex/Complex - Low Res/ComplexLowT6.png; false; true
+2023-01-08 19:07:30; 641.6000000000089; TKIMG; Taking image for target of deep/shallow type with actual classification (id, filename, isDeep, isReal); Target-Unknown-3; images/Complex/Complex - Low Res/ComplexLowNT3.png ; false; false
+2023-01-08 19:07:33; 657.2000000000124; TKIMG; Taking image for target of deep/shallow type with actual classification (id, filename, isDeep, isReal); Target-Unknown-2; images/Complex/Complex - High Res/ComplexHighT3.png ; true; true
+2023-01-08 19:07:33; 657.2000000000124; DELTSK; Removed task (id, lat, lng); Task-3; 50.929702492100894; -1.4135756911808706
+2023-01-08 19:07:33; 657.2000000000124; DYNRS; Dynamically reassigning agents to work scans;
+2023-01-08 19:07:33; 657.2000000000124; DYNRS; Dynamically reassigning agents to work scans;
+2023-01-08 19:07:45; 727.0000000000283; CHVW; Changing view to mode; 3 
+2023-01-08 19:07:51; 766.0000000000372; DELTRG; Deleted target (id, lat, lng); Target-Unknown-2; 50.929702492100894; -1.4135756911808706
+2023-01-08 19:07:51; 766.0000000000372; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-2; true; true; true;
+2023-01-08 19:07:54; 783.8000000000412; DELTRG; Deleted target (id, lat, lng); Target-Unknown-3; 50.9333140821332; -1.4087086804349669
+2023-01-08 19:07:54; 783.8000000000412; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-3; false; false; false;
+2023-01-08 19:07:57; 805.000000000046; DELTRG; Deleted target (id, lat, lng); Target-Unknown-1; 50.929093899106334; -1.411966365771935
+2023-01-08 19:07:57; 805.000000000046; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-1; false; true; true;
+2023-01-08 19:08:00; 819.0000000000492; CHVW; Changing view to mode; 1 
+2023-01-08 19:08:22; 0.0; SVRST; Server reset 
