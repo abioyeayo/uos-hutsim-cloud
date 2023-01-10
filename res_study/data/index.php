@@ -10,9 +10,9 @@
         if(isset($_POST["Export"])){
         
             header('Content-Type: text/csv; charset=utf-8');  
-            header('Content-Disposition: attachment; filename=wsga_lkxr_data.csv');  
+            header('Content-Disposition: attachment; filename=res_study_data.csv');  
             $output = fopen("php://output", "w");  
-            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_start_time', 'study_end_time', 'w_md', 'w_pd', 'w_td', 'w_pf', 'w_ef', 'w_fr', 'w_j1', 'w_j2', 'w_j3', 'w_j4', 'w_j5', 'w_j6', 'w_j7', 'w_j8', 'w_j9', 'w_j10', 'w_j11', 'w_j12', 'l_md', 'l_pd', 'l_td', 'l_pf', 'l_ef', 'l_fr', 'l_j1', 'l_j2', 'l_j3', 'l_j4', 'l_j5', 'l_j6', 'l_j7', 'l_j8', 'l_j9', 'l_j10', 'l_j11', 'l_j12', 'date_added'));  
+            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_start_time', 'study_end_time', '1md', '1pd', '1td', '1pf', '1ef', '1fr', '1j1', '1j2', '1j3', '1j4', '1j5', '1j6', '1j7', '1j8', '1j9', '1j10', '1j11', '1j12', '2md', '2pd', '2td', '2pf', '2ef', '2fr', '2j1', '2j2', '2j3', '2j4', '2j5', '2j6', '2j7', '2j8', '2j9', '2j10', '2j11', '2j12', 'date_added'));  
             $query = "SELECT * from employeeinfo ORDER BY emp_id DESC";  
             $result = mysqli_query($con, $query);  
             $sql = "SELECT * FROM wsga_lkxr_data_table";
@@ -60,42 +60,42 @@
                             <th scope="col">study_alias</th>
                             <th scope="col">study_start_time</th>
                             <th scope="col">study_end_time</th>
-                            <th scope="col">w_md</th>
-                            <th scope="col">w_pd</th>
-                            <th scope="col">w_td</th>
-                            <th scope="col">w_pf</th>
-                            <th scope="col">w_ef</th>
-                            <th scope="col">w_fr</th>
-                            <th scope="col">w_j1</th>
-                            <th scope="col">w_j2</th>
-                            <th scope="col">w_j3</th>
-                            <th scope="col">w_j4</th>
-                            <th scope="col">w_j5</th>
-                            <th scope="col">w_j6</th>
-                            <th scope="col">w_j7</th>
-                            <th scope="col">w_j8</th>
-                            <th scope="col">w_j9</th>
-                            <th scope="col">w_j10</th>
-                            <th scope="col">w_j11</th>
-                            <th scope="col">w_j12</th>
-                            <th scope="col">l_md</th>
-                            <th scope="col">l_pd</th>
-                            <th scope="col">l_td</th>
-                            <th scope="col">l_pf</th>
-                            <th scope="col">l_ef</th>
-                            <th scope="col">l_fr</th>
-                            <th scope="col">l_j1</th>
-                            <th scope="col">l_j2</th>
-                            <th scope="col">l_j3</th>
-                            <th scope="col">l_j4</th>
-                            <th scope="col">l_j5</th>
-                            <th scope="col">l_j6</th>
-                            <th scope="col">l_j7</th>
-                            <th scope="col">l_j8</th>
-                            <th scope="col">l_j9</th>
-                            <th scope="col">l_j10</th>
-                            <th scope="col">l_j11</th>
-                            <th scope="col">l_j12</th>
+                            <th scope="col">1md</th>
+                            <th scope="col">1pd</th>
+                            <th scope="col">1td</th>
+                            <th scope="col">1pf</th>
+                            <th scope="col">1ef</th>
+                            <th scope="col">1fr</th>
+                            <th scope="col">1j1</th>
+                            <th scope="col">1j2</th>
+                            <th scope="col">1j3</th>
+                            <th scope="col">1j4</th>
+                            <th scope="col">1j5</th>
+                            <th scope="col">1j6</th>
+                            <th scope="col">1j7</th>
+                            <th scope="col">1j8</th>
+                            <th scope="col">1j9</th>
+                            <th scope="col">1j10</th>
+                            <th scope="col">1j11</th>
+                            <th scope="col">1j12</th>
+                            <th scope="col">2md</th>
+                            <th scope="col">2pd</th>
+                            <th scope="col">2td</th>
+                            <th scope="col">2pf</th>
+                            <th scope="col">2ef</th>
+                            <th scope="col">2fr</th>
+                            <th scope="col">2j1</th>
+                            <th scope="col">2j2</th>
+                            <th scope="col">2j3</th>
+                            <th scope="col">2j4</th>
+                            <th scope="col">2j5</th>
+                            <th scope="col">2j6</th>
+                            <th scope="col">2j7</th>
+                            <th scope="col">2j8</th>
+                            <th scope="col">2j9</th>
+                            <th scope="col">2j10</th>
+                            <th scope="col">2j11</th>
+                            <th scope="col">2j12</th>
                         </tr>
                     </thead>
                     <tbody>
