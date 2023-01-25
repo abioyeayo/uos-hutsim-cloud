@@ -76,11 +76,17 @@
         $radio_wsga_j5 = $_POST['radio_wsga_j5'];
         $radio_wsga_j6 = $_POST['radio_wsga_j6'];
         $radio_wsga_j7 = $_POST['radio_wsga_j7'];
-        $radio_wsga_j8 = $_POST['radio_wsga_j8'];
-        $radio_wsga_j9 = $_POST['radio_wsga_j9'];
-        $radio_wsga_j10 = $_POST['radio_wsga_j10'];
-        $radio_wsga_j11 = $_POST['radio_wsga_j11'];
-        $radio_wsga_j12 = $_POST['radio_wsga_j12'];
+        $radio_wsga_p1 = $_POST['radio_wsga_p1'];
+        $radio_wsga_p2 = $_POST['radio_wsga_p2'];
+        $radio_wsga_p3 = $_POST['radio_wsga_p3'];
+        $radio_wsga_p4 = $_POST['radio_wsga_p4'];
+        $radio_wsga_p5 = $_POST['radio_wsga_p5'];
+        $radio_wsga_p6 = $_POST['radio_wsga_p6'];
+        $radio_wsga_p7 = $_POST['radio_wsga_p7'];
+        $radio_wsga_p8 = $_POST['radio_wsga_p8'];
+        $radio_wsga_p9 = $_POST['radio_wsga_p9'];
+        $radio_wsga_p10 = $_POST['radio_wsga_p10'];
+        $radio_wsga_p11 = $_POST['radio_wsga_p11'];
 
         // study lkxr questionnaires
         $radio_lkxr_md = $_POST['radio_lkxr_md'];
@@ -96,11 +102,17 @@
         $radio_lkxr_j5 = $_POST['radio_lkxr_j5'];
         $radio_lkxr_j6 = $_POST['radio_lkxr_j6'];
         $radio_lkxr_j7 = $_POST['radio_lkxr_j7'];
-        $radio_lkxr_j8 = $_POST['radio_lkxr_j8'];
-        $radio_lkxr_j9 = $_POST['radio_lkxr_j9'];
-        $radio_lkxr_j10 = $_POST['radio_lkxr_j10'];
-        $radio_lkxr_j11 = $_POST['radio_lkxr_j11'];
-        $radio_lkxr_j12 = $_POST['radio_lkxr_j12'];
+        $radio_lkxr_p1 = $_POST['radio_lkxr_p1'];
+        $radio_lkxr_p2 = $_POST['radio_lkxr_p2'];
+        $radio_lkxr_p3 = $_POST['radio_lkxr_p3'];
+        $radio_lkxr_p4 = $_POST['radio_lkxr_p4'];
+        $radio_lkxr_p5 = $_POST['radio_lkxr_p5'];
+        $radio_lkxr_p6 = $_POST['radio_lkxr_p6'];
+        $radio_lkxr_p7 = $_POST['radio_lkxr_p7'];
+        $radio_lkxr_p8 = $_POST['radio_lkxr_p8'];
+        $radio_lkxr_p9 = $_POST['radio_lkxr_p9'];
+        $radio_lkxr_p10 = $_POST['radio_lkxr_p10'];
+        $radio_lkxr_p11 = $_POST['radio_lkxr_p11'];
         
 
         // update port table
@@ -273,10 +285,11 @@
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
               <span class="stepIndicator">Briefing <br>(12 min)</span>
+              <span class="stepIndicator">Consent <br>(5 min)</span>
               <span class="stepIndicator">Tutorial <br>(10 min)</span>
-              <span class="stepIndicator">Scenario I <br>(12 min)</span>
+              <span class="stepIndicator">Scenario I <br>(10 min)</span>
               <span class="stepIndicator">Questionnaire I <br>(6 min)</span>
-              <span class="stepIndicator">Scenario II <br>(12 min)</span>
+              <span class="stepIndicator">Scenario II <br>(10 min)</span>
               <span class="stepIndicator">Questionnaire II <br>(6 min)</span>
               <span class="stepIndicator">Finish <br>(1 min)</span>
           </div>
@@ -290,17 +303,255 @@
                 complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated 
                 version of the Google Chrome web browser.</p>
               <p class="text-center mb-5">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should 
-                take about 10 minutes to complete. When finished, click Next to continue.</p>
+                take about 10 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
               <div class="text-center mb-5">
                 <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
+
+              <div class="mx-0 mx-sm-auto mb-5">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="text-center">
+                          <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
+                          <i class="fa fa-users fa-2x mb-3 text-primary"></i>
+                          <p>
+                          <strong>Validation Check</strong>
+                          </p>
+                          <p>Please answer the following questions based on the youtube video above.</p>                          
+                      </div>
+                      <div class="alert alert-danger p-1 text-center d-none" id="youtube_attn_check_alert" role="alert" style="font-size: 0.95rem;">
+                        <i class="fa fa-warning me-2"></i> Validation check failed! Please watch the video and try again.
+                      </div>
+                      <hr />
+                      <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                          <p id="txt_youtube_attn_question1" class="my-3 fw-bold">How many targets where found by the UAV swarm in the tutorial scenario?</p>
+                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
+                          <div class="mb-3" style="max-width: 350px;">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check1" id="txt_youtube_attn_check1" style="margin-right: 0px;" onchange="validateForm();">
+                              <div class="invalid-feedback">
+                                Please complete validation check to proceed.
+                              </div>
+                          </div>
+                        </div>
+                        <div style="font-size: 0.95rem;">
+                          <p id="txt_youtube_attn_question2" class="my-3 fw-bold">How many search regions were created in the first scenario?</p>
+                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
+                          <div class="mb-3" style="max-width: 350px;">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check2" id="txt_youtube_attn_check2" style="margin-right: 0px;" onchange="validateForm();">
+                          </div>
+                        </div>
+                        <div style="font-size: 0.95rem;">
+                          <p id="txt_youtube_attn_question3" class="my-3 fw-bold">How many minutes were given to complete the second scenario?</p>
+                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
+                          <div class="mb-3" style="max-width: 350px;">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check3" id="txt_youtube_attn_check3" style="margin-right: 0px;" onchange="validateForm();">
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                </div>
+              </div>
+
+          </div>
+
+          <!-- step two -->
+          <div class="step">
+              <h4 class="text-center fw-bold mb-5 mt-5">Participant Consent and Information</h4>
+              <p class="text-center mb-5">Thank you for choosing to take part in this study. Please read the following participant information sheet.<br><br>
+              <a href="ERGO-FPSE-69418-Participant-Information-Sheet.pdf" target="_blank">ERGO-FPSE-69418 - Participant Information Sheet</a><br><br>
+              Please complete this consent form before taking part in the study. It is required for your participation. This study has been approved by
+              the University of Southampton ethics committee (ERGO number: 69418).</p>
+              <div class="mx-0 mx-sm-auto mb-5">
+              <div class="card">
+                  <div class="card-body">
+                  <div class="text-center">
+                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
+                      <i class="fa fa-user fa-2x mb-3 text-primary"></i>
+                      <p>
+                      <strong>Participant Consent</strong>
+                      </p>
+                  </div>
+                  <div class="alert alert-warning p-1 text-center d-none" id="consent_check_alert" role="alert" style="font-size: 0.95rem;">
+                    <i class="fa fa-warning me-2"></i> Consent is <strong>required</strong> to continue as a participant in this study.
+                  </div>
+                  <hr />
+                  <div class="px-4">
+                      <?php 
+
+                      // participant consent questionnaire
+                      $pcpt_consent = array(
+                          "c1" => array(
+                                  "abbr" => "c1",
+                                  "question" => "I have read and understood the participant information sheet."),
+
+                          "c2" => array(
+                                  "abbr" => "c2",
+                                  "question" => "I agree to take part in this research project and agree for my data to be used for the purpose of this study."),
+
+                          "c3" => array(
+                                  "abbr" => "c3",
+                                  "question" => "I understand that my participation is voluntary and I may withdraw (at any time) for any reason without my participation rights being affected."));
+
+                      foreach ($pcpt_consent as $component) {
+                          
+                          echo '<div style="font-size: 0.95rem;">
+                                  <p id="radio_pcpt_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
+                                  <div class="form-check mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_pcpt_'.$component['abbr'].'" value="Yes" id="radio_pcpt_'.$component['abbr'].'_1" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_pcpt_'.$component['abbr'].'_1">Yes</label>
+                                  </div>
+                                  <div class="form-check mb-2">
+                                      <input class="form-check-input" type="radio" name="radio_pcpt_'.$component['abbr'].'" value="No" id="radio_pcpt_'.$component['abbr'].'_2" onchange="validateForm();" />
+                                      <label class="form-check-label" for="radio_pcpt_'.$component['abbr'].'_2">No</label>
+                                  </div>
+                                </div>';
+                          } 
+                      ?>
+
+                  </div>
+                  </div>
+              </div>
+              </div>
+
+              <div class="mx-0 mx-sm-auto mb-5">
+              <div class="card">
+                  <div class="card-body">
+                    <div class="text-center">
+                        <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
+                        <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                        <p>
+                        <strong>Demographic Information</strong>
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                          <p id="radio_pcpt_f1_question" class="my-3 fw-bold">What is your gender?</p>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Male" id="radio_pcpt_f1_1" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f1_1">Male</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Female" id="radio_pcpt_f1_2" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f1_2">Female</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Non-binary" id="radio_pcpt_f1_3" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f1_3">Non-binary</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Prefer not to say" id="radio_pcpt_f1_4" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f1_4">Prefer not to say</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Other" id="radio_pcpt_f1_5" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f1_5">Other</label>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                          <p id="radio_pcpt_f2_question" class="my-3 fw-bold">What level of education do you hold?</p>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="No formal education" id="radio_pcpt_f2_1" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_1">No formal education</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="GCSE or equivalent" id="radio_pcpt_f2_2" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_2">GCSE or equivalent</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="A-level or equivalent" id="radio_pcpt_f2_3" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_3">A-level or equivalent</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Bachelor's degree or equivalent" id="radio_pcpt_f2_4" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_4">Bachelor's degree or equivalent</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Master's degree or equivalent" id="radio_pcpt_f2_5" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_5">Master's degree or equivalent</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Doctoral degree or equivalent" id="radio_pcpt_f2_6" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_6">Doctoral degree or equivalent</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Other" id="radio_pcpt_f2_7" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f2_7">Other</label>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                          <p id="radio_pcpt_f3_question" class="my-3 fw-bold">What is your level of computer expertise?</p>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Hardly ever use the computer and do not feel very competent" id="radio_pcpt_f3_1" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f3_1">Hardly ever use the computer and do not feel very competent</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Slightly below average computer user, infrequently using the computer, using few applications" id="radio_pcpt_f3_2" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f3_2">Slightly below average computer user, infrequently using the computer, using few applications</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Average computer user, using the internet, standard applications etc." id="radio_pcpt_f3_3" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f3_3">Average computer user, using the internet, standard applications etc.</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="User of specialist applications but not an IT specialist" id="radio_pcpt_f3_4" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f3_4">User of specialist applications but not an IT specialist</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Considerable IT expertise short of full professional qualifications" id="radio_pcpt_f3_5" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f3_5">Considerable IT expertise short of full professional qualifications</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Professionally qualified computer scientist or IT specialist" id="radio_pcpt_f3_6" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f3_6">Professionally qualified computer scientist or IT specialist</label>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                          <p id="radio_pcpt_f4_question" class="my-3 fw-bold">How familiar are you with Unmanned Aerial Vehicles (UAVs) and/or Swarm robotics?</p>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="Not at all" id="radio_pcpt_f4_1" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f4_1">Not at all</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="I know a bit about the technology but have never used it" id="radio_pcpt_f4_2" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f4_2">I know a bit about the technology but have never used it</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="I have some experience with operating UAVs as a hobby" id="radio_pcpt_f4_3" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f4_3">I have some experience with operating UAVs as a hobby</label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="I professionally work with UAVs" id="radio_pcpt_f4_4" onchange="validateForm();" />
+                              <label class="form-check-label" for="radio_pcpt_f4_4">I professionally work with UAVs</label>
+                          </div>
+                        </div>
+                    </div>
+
+                  </div>
+              </div>
+              </div>
+              
           </div>
       
-          <!-- step two -->
+          <!-- step three -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">HutSim Simulator Tutorial</h4>
               <p class="text-center mb-5">Tutorial Scenario - try to find the 3 targets in the circled areas and 
-                classify them into human casualty or random objects.</p>
+                classify them into human casualty or random objects before the countdown timer runs out. We are interested in how quickly you can 
+                find the targets and how accurately you can classifiy them.</p>
               <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the tutorial. When finished, tick the "I have completed the tutorial scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
@@ -345,11 +596,12 @@
               </div>
           </div>
       
-          <!-- step three -->
+          <!-- step four -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario I</h4>
               <p class="text-center mb-5">This is the <?php echo $scenario_1; ?> study scenario. Here you would classify whether images have a human present or not. 
-                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. <?php echo $low_res_warning; ?></p>
+                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. We are interested in how 
+                quickly you can find the targets and how accurately you can classifiy them before the countdown timer runs down. <?php echo $low_res_warning; ?></p>
               <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the <?php echo $scenario_1; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_1; ?> scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
@@ -394,274 +646,24 @@
               </div>
           </div>
 
-          <!-- step four -->
+          <!-- step five -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario I Questionnaire</h4>
               <p class="text-center mb-5">This is the <?php echo $scenario_1; ?> study scenario questionnaire. Please complete the form below and click next to continue.</p>
               
-              <div class="mx-0 mx-sm-auto mb-5">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-center">
-                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                      <i class="fa fa-gears fa-2x mb-3 text-primary"></i>
-                      <p>
-                        <strong>Task Workload Index</strong>
-                      </p>
-                    </div>
-
-                    <hr />
-
-                    <div class="px-4">
-                      <?php 
-
-                        // nasa task load index questionnaire
-                        $nasa_tlx = array(
-                            "md" => array(
-                                  "abbr" => "md",
-                                  "title" => "Mental Demand",
-                                  "question" => "How mentally demanding was the task?"),
-
-                            "pd" => array(
-                                  "abbr" => "pd",
-                                  "title" => "Physical Demand",
-                                  "question" => "How physically demanding was the task?"),
-
-                            "td" => array(
-                                  "abbr" => "td",
-                                  "title" => "Temporal Demand",
-                                  "question" => "How hurried or rushed was the pace of the task?"),
-
-                            "pf" => array(
-                                  "abbr" => "pf",
-                                  "title" => "Performance",
-                                  "question" => "How successful were you in accomplishing what you were asked to do?"),
-
-                            "ef" => array(
-                                  "abbr" => "ef",
-                                  "title" => "Effort",
-                                  "question" => "How hard did you have to work to accomplish your level of performance?"),
-
-                            "fr" => array(
-                                  "abbr" => "fr",
-                                  "title" => "Frustration",
-                                  "question" => "How insecure, discouraged, irritated, stressed, and annoyed were you?"));
-
-                        foreach ($nasa_tlx as $component) {
-
-                            $nasa_tlx_component_lower_label = "Very Low";
-                            $nasa_tlx_component_upper_label = "Very High";
-                            if ($component['title'] == "Performance"){
-                                  $nasa_tlx_component_lower_label = "Perfect";
-                                  $nasa_tlx_component_upper_label = "Failure";
-                            }
-                          
-                            echo '<div style="font-size: 0.95rem;">
-                                    <p id="radio_wsga_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="1" id="radio_wsga_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_1">
-                                        1 ('.$nasa_tlx_component_lower_label.')
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="2" id="radio_wsga_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_2">
-                                        2
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="3" id="radio_wsga_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_3">
-                                        3
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="4" id="radio_wsga_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_4">
-                                        4
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="5" id="radio_wsga_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_5">
-                                        5
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="6" id="radio_wsga_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_6">
-                                        6
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="7" id="radio_wsga_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_7">
-                                        7
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="8" id="radio_wsga_'.$component['abbr'].'_8" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_8">
-                                        8
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="9" id="radio_wsga_'.$component['abbr'].'_9" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_9">
-                                        9
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="10" id="radio_wsga_'.$component['abbr'].'_10" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_10">
-                                        10
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="11" id="radio_wsga_'.$component['abbr'].'_11" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_11">
-                                        11 ('.$nasa_tlx_component_upper_label.')
-                                      </label>
-                                    </div>
-                                  </div>';
-                            } 
-                      ?>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mx-0 mx-sm-auto mb-5">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-center">
-                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                      <i class="fa fa-android fa-2x mb-3 text-primary"></i>
-                      <p>
-                        <strong>Trust Index</strong>
-                      </p>
-                    </div>
-
-                    <hr />
-
-                    <div class="px-4">
-                      <?php 
-
-                        // Jian trust index questionnaire
-                        $jian_trust_index = array(
-                          "j1" => array(
-                                "abbr" => "j1",
-                                "question" => "The system is deceptive."),
-
-                          "j2" => array(
-                                "abbr" => "j2",
-                                "question" => "The system behaves in an underhanded manner."),
-
-                          "j3" => array(
-                                "abbr" => "j3",
-                                "question" => "I am suspicious of the system's intent, action, or outputs."),
-
-                          "j4" => array(
-                                "abbr" => "j4",
-                                "question" => "I am wary of the system."),
-
-                          "j5" => array(
-                                "abbr" => "j5",
-                                "question" => "The system's actions will have a harmful or injurious outcome."),
-
-                          "j6" => array(
-                                "abbr" => "j6",
-                                "question" => "I am confident in the system."),
-
-                          "j7" => array(
-                                "abbr" => "j7",
-                                "question" => "The system provides security."),
-
-                          "j8" => array(
-                                "abbr" => "j8",
-                                "question" => "The system has integrity."),
-
-                          "j9" => array(
-                                "abbr" => "j9",
-                                "question" => "The system is dependable."),
-
-                          "j10" => array(
-                                "abbr" => "j10",
-                                "question" => "The system is reliable."),
-
-                          "j11" => array(
-                                "abbr" => "j11",
-                                "question" => "I can trust the system."),
-
-                          "j12" => array(
-                                "abbr" => "j12",
-                                "question" => "I am familiar with the system."));
-
-                      
-                      foreach ($jian_trust_index as $component) {
-                        
-                          echo '<div style="font-size: 0.95rem;">
-                                  <p id="radio_wsga_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="1" id="radio_wsga_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_1">
-                                      1 (Strongly Disagree)
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="2" id="radio_wsga_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_2">
-                                      2
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="3" id="radio_wsga_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_3">
-                                      3
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="4" id="radio_wsga_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_4">
-                                      4
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="5" id="radio_wsga_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_5">
-                                      5
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="6" id="radio_wsga_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_6">
-                                      6
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_wsga_'.$component['abbr'].'" value="7" id="radio_wsga_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_wsga_'.$component['abbr'].'_7">
-                                      7 (Strongly Agree)
-                                    </label>
-                                  </div>
-                                </div>';
-                          } 
-                      ?>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <?php 
+                $scenario_abbr = "wsga";
+                include 'questionnaire.php'; 
+              ?>
               
           </div>
 
-          <!-- step five -->
+          <!-- step six -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario II</h4>
               <p class="text-center mb-5">This is the <?php echo $scenario_2; ?> study scenario. Here you would classify whether images have a human present or not. 
-                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. <?php echo $low_res_warning; ?></p>
+                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. We are interested in how 
+                quickly you can find the targets and how accurately you can classifiy them before the countdown timer runs down. <?php echo $low_res_warning; ?></p>
               <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the <?php echo $scenario_2; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_2; ?> scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
@@ -706,269 +708,19 @@
               </div>
           </div>
 
-          <!-- step six -->
+          <!-- step seven -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario II Questionnaire</h4>
               <p class="text-center mb-5">This is the <?php echo $scenario_2; ?> study scenario questionnaire. Please complete the form below and click next to continue.</p>
               
-              <div class="mx-0 mx-sm-auto mb-5">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-center">
-                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                      <i class="fa fa-gears fa-2x mb-3 text-primary"></i>
-                      <p>
-                        <strong>Task Workload Index</strong>
-                      </p>
-                    </div>
+              <?php 
+                $scenario_abbr = "lkxr";
+                include 'questionnaire.php'; 
+              ?>
 
-                    <hr />
-
-                    <div class="px-4">
-                      <?php 
-
-                        // nasa task load index questionnaire
-                        $nasa_tlx = array(
-                            "md" => array(
-                                  "abbr" => "md",
-                                  "title" => "Mental Demand",
-                                  "question" => "How mentally demanding was the task?"),
-
-                            "pd" => array(
-                                  "abbr" => "pd",
-                                  "title" => "Physical Demand",
-                                  "question" => "How physically demanding was the task?"),
-
-                            "td" => array(
-                                  "abbr" => "td",
-                                  "title" => "Temporal Demand",
-                                  "question" => "How hurried or rushed was the pace of the task?"),
-
-                            "pf" => array(
-                                  "abbr" => "pf",
-                                  "title" => "Performance",
-                                  "question" => "How successful were you in accomplishing what you were asked to do?"),
-
-                            "ef" => array(
-                                  "abbr" => "ef",
-                                  "title" => "Effort",
-                                  "question" => "How hard did you have to work to accomplish your level of performance?"),
-
-                            "fr" => array(
-                                  "abbr" => "fr",
-                                  "title" => "Frustration",
-                                  "question" => "How insecure, discouraged, irritated, stressed, and annoyed were you?"));
-
-                        foreach ($nasa_tlx as $component) {
-
-                            $nasa_tlx_component_lower_label = "Very Low";
-                            $nasa_tlx_component_upper_label = "Very High";
-                            if ($component['title'] == "Performance"){
-                                  $nasa_tlx_component_lower_label = "Perfect";
-                                  $nasa_tlx_component_upper_label = "Failure";
-                            }
-                          
-                            echo '<div style="font-size: 0.95rem;">
-                                    <p id="radio_lkxr_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="1" id="radio_lkxr_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_1">
-                                        1 ('.$nasa_tlx_component_lower_label.')
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="2" id="radio_lkxr_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_2">
-                                        2
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="3" id="radio_lkxr_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_3">
-                                        3
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="4" id="radio_lkxr_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_4">
-                                        4
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="5" id="radio_lkxr_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_5">
-                                        5
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="6" id="radio_lkxr_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_6">
-                                        6
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="7" id="radio_lkxr_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_7">
-                                        7
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="8" id="radio_lkxr_'.$component['abbr'].'_8" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_8">
-                                        8
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="9" id="radio_lkxr_'.$component['abbr'].'_9" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_9">
-                                        9
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="10" id="radio_lkxr_'.$component['abbr'].'_10" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_10">
-                                        10
-                                      </label>
-                                    </div>
-                                    <div class="form-check form-check-inline mb-2">
-                                      <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="11" id="radio_lkxr_'.$component['abbr'].'_11" onchange="validateForm();" />
-                                      <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_11">
-                                        11 ('.$nasa_tlx_component_upper_label.')
-                                      </label>
-                                    </div>
-                                  </div>';
-                            } 
-                      ?>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mx-0 mx-sm-auto mb-5">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="text-center">
-                      <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                      <i class="fa fa-android fa-2x mb-3 text-primary"></i>
-                      <p>
-                        <strong>Trust Index</strong>
-                      </p>
-                    </div>
-
-                    <hr />
-
-                    <div class="px-4">
-                      <?php 
-
-                        // Jian trust index questionnaire
-                        $jian_trust_index = array(
-                          "j1" => array(
-                                "abbr" => "j1",
-                                "question" => "The system is deceptive."),
-
-                          "j2" => array(
-                                "abbr" => "j2",
-                                "question" => "The system behaves in an underhanded manner."),
-
-                          "j3" => array(
-                                "abbr" => "j3",
-                                "question" => "I am suspicious of the system's intent, action, or outputs."),
-
-                          "j4" => array(
-                                "abbr" => "j4",
-                                "question" => "I am wary of the system."),
-
-                          "j5" => array(
-                                "abbr" => "j5",
-                                "question" => "The system's actions will have a harmful or injurious outcome."),
-
-                          "j6" => array(
-                                "abbr" => "j6",
-                                "question" => "I am confident in the system."),
-
-                          "j7" => array(
-                                "abbr" => "j7",
-                                "question" => "The system provides security."),
-
-                          "j8" => array(
-                                "abbr" => "j8",
-                                "question" => "The system has integrity."),
-
-                          "j9" => array(
-                                "abbr" => "j9",
-                                "question" => "The system is dependable."),
-
-                          "j10" => array(
-                                "abbr" => "j10",
-                                "question" => "The system is reliable."),
-
-                          "j11" => array(
-                                "abbr" => "j11",
-                                "question" => "I can trust the system."),
-
-                          "j12" => array(
-                                "abbr" => "j12",
-                                "question" => "I am familiar with the system."));
-
-                      
-                      foreach ($jian_trust_index as $component) {
-                        
-                          echo '<div style="font-size: 0.95rem;">
-                                  <p id="radio_lkxr_'.$component['abbr'].'_question" class="my-3 fw-bold">'.$component['question'].'</p>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="1" id="radio_lkxr_'.$component['abbr'].'_1" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_1">
-                                      1 (Strongly Disagree)
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="2" id="radio_lkxr_'.$component['abbr'].'_2" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_2">
-                                      2
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="3" id="radio_lkxr_'.$component['abbr'].'_3" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_3">
-                                      3
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="4" id="radio_lkxr_'.$component['abbr'].'_4" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_4">
-                                      4
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="5" id="radio_lkxr_'.$component['abbr'].'_5" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_5">
-                                      5
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="6" id="radio_lkxr_'.$component['abbr'].'_6" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_6">
-                                      6
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline mb-2">
-                                    <input class="form-check-input" type="radio" name="radio_lkxr_'.$component['abbr'].'" value="7" id="radio_lkxr_'.$component['abbr'].'_7" onchange="validateForm();" />
-                                    <label class="form-check-label" for="radio_lkxr_'.$component['abbr'].'_7">
-                                      7 (Strongly Agree)
-                                    </label>
-                                  </div>
-                                </div>';
-                          } 
-                      ?>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
           </div>
 
-          <!-- step seven -->
+          <!-- step eight -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Submit to Finish</h4>
               <p class="text-center mb-5">Thank you for participating in our study. Please submit to finish and be automatically redirected back to prolific to confirm study completion.</p>
@@ -1028,6 +780,36 @@
         
         function validateForm() {
 
+          // validate that participant has watched youtube briefing video
+          var youtube_attn_check1 = document.getElementById("txt_youtube_attn_check1");
+          if (youtube_attn_check1.value != ""){
+            youtube_attn_check1.classList.remove("is-invalid");
+          }
+          var youtube_attn_check2 = document.getElementById("txt_youtube_attn_check2");
+          if (youtube_attn_check2.value != ""){
+            youtube_attn_check2.classList.remove("is-invalid");
+          }
+          var youtube_attn_check3 = document.getElementById("txt_youtube_attn_check3");
+          if (youtube_attn_check3.value != ""){
+            youtube_attn_check3.classList.remove("is-invalid");
+          }
+          var youtube_validation = true;
+          if ((youtube_attn_check1.value != "") && (youtube_attn_check2.value != "") && (youtube_attn_check3.value != "")){
+            document.getElementById("youtube_attn_check_alert").classList.add("d-none");
+            if ((youtube_attn_check1.value != "3") && (youtube_attn_check2.value != "4") && (youtube_attn_check3.value != "8")){
+                document.getElementById("youtube_attn_check_alert").classList.remove("d-none");
+                youtube_validation = false;
+            }
+          }
+
+          // confirm participant consent to participate in study
+          validateConsent("c1");
+          validateConsent("c2");
+          validateConsent("c3");
+
+          
+          
+
           // check if the tutorial scenario is completed and add value to allow validation
           var check_tutorial = document.getElementById("check_tutorial");
           if (check_tutorial.checked == true){
@@ -1047,29 +829,7 @@
           }
 
           // check if a wsga radio row element has been selected
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12"];
-          for(j=0;j<radio_wsga_lkxr_form.length;j++){
-              var radio_row = document.querySelector('input[name="radio_wsga_'+radio_wsga_lkxr_form[j]+'"]:checked');
-              var radio_row_elements = [];
-              for (i=1; i < (document.getElementsByName("radio_wsga_"+radio_wsga_lkxr_form[j]).length + 1); i++){
-                radio_row_elements[i-1] = document.getElementById("radio_wsga_"+radio_wsga_lkxr_form[j]+"_" + i);
-              }
-              var radio_row_question = document.getElementById("radio_wsga_"+radio_wsga_lkxr_form[j]+"_question");
-              if(radio_row != null) {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = i+1;
-                  radio_row_elements[i].classList.remove("is-invalid");
-                }
-                radio_row_question.classList.remove("text-danger");
-              }
-              else {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = "";
-                }
-                radio_row_question.classList.add("text-danger");
-              }
-
-          }
+          checkFormElement("wsga");
 
           // check if the LKXR scenario is completed and add value to allow validation
           var check_LKXR = document.getElementById("check_LKXR");
@@ -1081,29 +841,7 @@
           }
 
           // check if a lkxr radio row element has been selected
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12"];
-          for(j=0;j<radio_wsga_lkxr_form.length;j++){
-              var radio_row = document.querySelector('input[name="radio_lkxr_'+radio_wsga_lkxr_form[j]+'"]:checked');
-              var radio_row_elements = [];
-              for (i=1; i < (document.getElementsByName("radio_lkxr_"+radio_wsga_lkxr_form[j]).length + 1); i++){
-                radio_row_elements[i-1] = document.getElementById("radio_lkxr_"+radio_wsga_lkxr_form[j]+"_" + i);
-              }
-              var radio_row_question = document.getElementById("radio_lkxr_"+radio_wsga_lkxr_form[j]+"_question");
-              if(radio_row != null) {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = i+1;
-                  radio_row_elements[i].classList.remove("is-invalid");
-                }
-                radio_row_question.classList.remove("text-danger");
-              }
-              else {
-                for (i=0; i<radio_row_elements.length;i++){
-                  radio_row_elements[i].value = "";
-                }
-                radio_row_question.classList.add("text-danger");
-              }
-
-          }
+          checkFormElement("lkxr");
           
 
           // This function deals with validation of the form fields
@@ -1121,12 +859,79 @@
               valid = false;
             }
           }
+          
+          // confirm youtube validation
+          if (!youtube_validation){
+              valid = false;
+          }
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
             document.getElementsByClassName("stepIndicator")[currentTab].className += " finish";
           }
           return valid; // return the valid status
+        }
+
+        function checkFormElement(element_id_abbr){
+          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
+          for(j=0;j<radio_wsga_lkxr_form.length;j++){
+            if (radio_wsga_lkxr_form[j] == "p9") {
+                if (document.getElementById("txt_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]).value == ""){
+                    document.getElementById("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]+"_question").classList.add("text-danger");
+                } else {
+                    document.getElementById("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]+"_question").classList.remove("text-danger");
+                    document.getElementById("txt_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]).classList.remove("is-invalid");
+                }
+            } else {
+                var radio_row = document.querySelector('input[name="radio_'+element_id_abbr+'_'+radio_wsga_lkxr_form[j]+'"]:checked');
+                var radio_row_elements = [];
+                for (i=1; i < (document.getElementsByName("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]).length + 1); i++){
+                  radio_row_elements[i-1] = document.getElementById("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]+"_" + i);
+                }
+                var radio_row_question = document.getElementById("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]+"_question");
+                if(radio_row != null) {
+                  for (i=0; i<radio_row_elements.length;i++){
+                    radio_row_elements[i].value = i+1;
+                    radio_row_elements[i].classList.remove("is-invalid");
+                  }
+                  radio_row_question.classList.remove("text-danger");
+                }
+                else {
+                  for (i=0; i<radio_row_elements.length;i++){
+                    radio_row_elements[i].value = "";
+                  }
+                  radio_row_question.classList.add("text-danger");
+                }
+            }
+          }
+        }
+
+        function validateConsent(cx) {
+          // confirm participant consent to participate in study
+          // var consent_validation = true;
+          document.getElementById("radio_pcpt_"+cx+"_1").value = "Yes";
+          document.getElementById("radio_pcpt_"+cx+"_2").value = "No";
+          var pcpt_cx = document.querySelector('input[name="radio_pcpt_'+cx+'"]:checked');
+          if (pcpt_cx == null){
+            document.getElementById("radio_pcpt_"+cx+"_question").classList.add("text-danger");
+            document.getElementById("radio_pcpt_"+cx+"_1").value = "";
+            document.getElementById("radio_pcpt_"+cx+"_2").value = "";
+          }
+          else if (pcpt_cx.value != "Yes"){
+            document.getElementById("radio_pcpt_"+cx+"_question").classList.add("text-danger");
+            document.getElementById("consent_check_alert").classList.remove("d-none");
+            // consent_validation = false;
+            document.getElementById("radio_pcpt_"+cx+"_1").value = "";
+            document.getElementById("radio_pcpt_"+cx+"_2").value = "";
+          }
+          else {
+            document.getElementById("radio_pcpt_"+cx+"_question").classList.remove("text-danger");
+            document.getElementById("consent_check_alert").classList.add("d-none");
+            document.getElementById("radio_pcpt_"+cx+"_1").classList.remove("is-invalid");
+            document.getElementById("radio_pcpt_"+cx+"_2").classList.remove("is-invalid");
+          }
+
+          // return consent_validation;
         }
         
         function fixStepIndicator(n) {
