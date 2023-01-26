@@ -61,6 +61,19 @@
         $study_title = $_POST['study_title'];
         $study_alias = $_POST['study_alias'];
 
+        // watched youtube video validation check
+        $txt_youtube_attn_check1 = $_POST['txt_youtube_attn_check1'];
+        $txt_youtube_attn_check2 = $_POST['txt_youtube_attn_check2'];
+        $txt_youtube_attn_check3 = $_POST['txt_youtube_attn_check3'];
+
+        // participant consent and demographic questions
+        $radio_pcpt_c1 = $_POST['radio_pcpt_c1'];
+        $radio_pcpt_c2 = $_POST['radio_pcpt_c2'];
+        $radio_pcpt_c3 = $_POST['radio_pcpt_c3'];
+        $radio_pcpt_f1 = $_POST['radio_pcpt_f1'];
+        $radio_pcpt_f2 = $_POST['radio_pcpt_f2'];
+        $radio_pcpt_f3 = $_POST['radio_pcpt_f3'];
+        $radio_pcpt_f4 = $_POST['radio_pcpt_f4'];
 
         // study wsga questionnaires
         $radio_wsga_md = $_POST['radio_wsga_md'];
@@ -803,11 +816,16 @@
           }
 
           // confirm participant consent to participate in study
-          validateConsent("c1");
-          validateConsent("c2");
-          validateConsent("c3");
+          var bool_c1 = validateConsent("c1");
+          var bool_c2 = validateConsent("c2");
+          var bool_c3 = validateConsent("c3");
+          if (bool_c1 || bool_c2 || bool_c3){
+              document.getElementById("consent_check_alert").classList.remove("d-none");
+          }
 
-          
+          // check if a demographic information radio row question element has been selected
+          var radio_pcpt_form = ["f1", "f2", "f3", "f4"];
+          checkFormElement("pcpt",radio_pcpt_form);
           
 
           // check if the tutorial scenario is completed and add value to allow validation
@@ -829,7 +847,8 @@
           }
 
           // check if a wsga radio row element has been selected
-          checkFormElement("wsga");
+          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
+          checkFormElement("wsga",radio_wsga_lkxr_form);
 
           // check if the LKXR scenario is completed and add value to allow validation
           var check_LKXR = document.getElementById("check_LKXR");
@@ -841,7 +860,7 @@
           }
 
           // check if a lkxr radio row element has been selected
-          checkFormElement("lkxr");
+          checkFormElement("lkxr",radio_wsga_lkxr_form);
           
 
           // This function deals with validation of the form fields
@@ -872,8 +891,8 @@
           return valid; // return the valid status
         }
 
-        function checkFormElement(element_id_abbr){
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
+        function checkFormElement(element_id_abbr,radio_wsga_lkxr_form){
+          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
           for(j=0;j<radio_wsga_lkxr_form.length;j++){
             if (radio_wsga_lkxr_form[j] == "p9") {
                 if (document.getElementById("txt_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]).value == ""){
@@ -908,7 +927,7 @@
 
         function validateConsent(cx) {
           // confirm participant consent to participate in study
-          // var consent_validation = true;
+          var display_consent_warning = false;
           document.getElementById("radio_pcpt_"+cx+"_1").value = "Yes";
           document.getElementById("radio_pcpt_"+cx+"_2").value = "No";
           var pcpt_cx = document.querySelector('input[name="radio_pcpt_'+cx+'"]:checked');
@@ -917,10 +936,10 @@
             document.getElementById("radio_pcpt_"+cx+"_1").value = "";
             document.getElementById("radio_pcpt_"+cx+"_2").value = "";
           }
-          else if (pcpt_cx.value != "Yes"){
+          else if (pcpt_cx.value == "No"){
             document.getElementById("radio_pcpt_"+cx+"_question").classList.add("text-danger");
-            document.getElementById("consent_check_alert").classList.remove("d-none");
-            // consent_validation = false;
+            // document.getElementById("consent_check_alert").classList.remove("d-none");
+            display_consent_warning = true;
             document.getElementById("radio_pcpt_"+cx+"_1").value = "";
             document.getElementById("radio_pcpt_"+cx+"_2").value = "";
           }
@@ -931,7 +950,7 @@
             document.getElementById("radio_pcpt_"+cx+"_2").classList.remove("is-invalid");
           }
 
-          // return consent_validation;
+          return display_consent_warning;
         }
         
         function fixStepIndicator(n) {
