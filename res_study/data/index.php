@@ -66,10 +66,10 @@
                             <th scope="col">pcpt_c1</th>
                             <th scope="col">pcpt_c2</th>
                             <th scope="col">pcpt_c3</th>
-                            <th scope="col">pcpt_f1</th>
-                            <th scope="col">pcpt_f2</th>
-                            <th scope="col">pcpt_f3</th>
-                            <th scope="col">pcpt_f4</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_f1</th>
+                            <th scope="col" style="min-width: 220px;">pcpt_f2</th>
+                            <th scope="col" style="min-width: 350px;">pcpt_f3</th>
+                            <th scope="col" style="min-width: 220px;">pcpt_f4</th>
                             <th scope="col">1md</th>
                             <th scope="col">1pd</th>
                             <th scope="col">1td</th>

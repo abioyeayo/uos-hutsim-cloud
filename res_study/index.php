@@ -126,6 +126,98 @@
         $txt_lkxr_p9 = $_POST['txt_lkxr_p9'];
         $radio_lkxr_p10 = $_POST['radio_lkxr_p10'];
         $radio_lkxr_p11 = $_POST['radio_lkxr_p11'];
+
+        // convert numbers to text demographic information
+        switch ($radio_pcpt_f1) {
+          case "1":
+            $radio_pcpt_f1 = "Male";
+            break;
+          case "2":
+            $radio_pcpt_f1 = "Female";
+            break;
+          case "3":
+            $radio_pcpt_f1 = "Non-binary";
+            break;
+          case "4":
+            $radio_pcpt_f1 = "Prefer not to say";
+            break;
+          case "5":
+            $radio_pcpt_f1 = "Other";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_f2) {
+          case "1":
+            $radio_pcpt_f2 = "No formal education";
+            break;
+          case "2":
+            $radio_pcpt_f2 = "GCSE or equivalent";
+            break;
+          case "3":
+            $radio_pcpt_f2 = "A-level or equivalent";
+            break;
+          case "4":
+            $radio_pcpt_f2 = "Bachelor's degree or equivalent";
+            break;
+          case "5":
+            $radio_pcpt_f2 = "Master's degree or equivalent";
+            break;
+          case "6":
+            $radio_pcpt_f2 = "Doctoral degree or equivalent";
+            break;
+          case "7":
+            $radio_pcpt_f2 = "Other";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_f3) {
+          case "1":
+            $radio_pcpt_f3 = "Hardly ever use the computer and do not feel very competent";
+            break;
+          case "2":
+            $radio_pcpt_f3 = "Slightly below average computer user, infrequently using the computer, using few applications";
+            break;
+          case "3":
+            $radio_pcpt_f3 = "Average computer user, using the internet, standard applications etc.";
+            break;
+          case "4":
+            $radio_pcpt_f3 = "User of specialist applications but not an IT specialist";
+            break;
+          case "5":
+            $radio_pcpt_f3 = "Considerable IT expertise short of full professional qualifications";
+            break;
+          case "6":
+            $radio_pcpt_f3 = "Professionally qualified computer scientist or IT specialist";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_f4) {
+          case "1":
+            $radio_pcpt_f4 = "Not at all";
+            break;
+          case "2":
+            $radio_pcpt_f4 = "I know a bit about the technology but have never used it";
+            break;
+          case "3":
+            $radio_pcpt_f4 = "I have some experience with operating UAVs as a hobby";
+            break;
+          case "4":
+            $radio_pcpt_f4 = "I professionally work with UAVs";
+            break;
+          default:
+            // do nothing
+        }
+
+        $radio_pcpt_f1 = mysqli_real_escape_string($con1, $radio_pcpt_f1);
+        $radio_pcpt_f2 = mysqli_real_escape_string($con1, $radio_pcpt_f2);
+        $radio_pcpt_f3 = mysqli_real_escape_string($con1, $radio_pcpt_f3);
+        $radio_pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
         
 
         // update port table
