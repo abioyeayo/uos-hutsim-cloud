@@ -230,7 +230,8 @@
         }
 
         // redirect back to prolific website to confirm study completion
-        header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9");
+        // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
+        header("Location: https://app.prolific.co/submissions/complete?cc=C1HYHPCW"); // Paurav's prolific redirect via Mohammad's account
         exit();
 
    }
