@@ -671,12 +671,13 @@
                     // echo "Process ID: ".$output[0]." | Port: ".$port;
 
                     $process_id = $output[0];
+                    $process_info = $_GET['PROLIFIC_PID'];
                     $port_number = $port;
                     $port_status = "active";
                     $created_by = "uos-web-user";
 
                     // update port table
-                    $sql = "INSERT INTO port_table (process_id, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
+                    $sql = "INSERT INTO port_table (process_id, process_info, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $process_info . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
                     if(mysqli_query($con1, $sql)){
                       // echo "Records inserted successfully.";
                     } else{
@@ -720,13 +721,14 @@
                     // var_dump($output);
                     // echo "Process ID: ".$output[0]." | Port: ".$port;
 
-                    $process_id = $output[0];
+                    $process_id = $output[1];
+                    $process_info = $_GET['PROLIFIC_PID'];
                     $port_number = $port;
                     $port_status = "active";
                     $created_by = "uos-web-user";
 
                     // update port table
-                    $sql = "INSERT INTO port_table (process_id, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
+                    $sql = "INSERT INTO port_table (process_id, process_info, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $process_info . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
                     if(mysqli_query($con1, $sql)){
                       // echo "Records inserted successfully.";
                     } else{
@@ -782,13 +784,14 @@
                     // var_dump($output);
                     // echo "Process ID: ".$output[0]." | Port: ".$port;
 
-                    $process_id = $output[0];
+                    $process_id = $output[2];
+                    $process_info = $_GET['PROLIFIC_PID'];
                     $port_number = $port;
                     $port_status = "active";
                     $created_by = "uos-web-user";
 
                     // update port table
-                    $sql = "INSERT INTO port_table (process_id, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
+                    $sql = "INSERT INTO port_table (process_id, process_info, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $process_info . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
                     if(mysqli_query($con1, $sql)){
                       // echo "Records inserted successfully.";
                     } else{
