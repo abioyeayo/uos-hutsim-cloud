@@ -26,7 +26,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Time (Seconds)</th>
                     <th scope="col">Target</th>
-                    <th scope="col">Speed (Targets/Minute)</th>
+                    <!-- <th scope="col">Speed (Targets/Minute)</th> -->
                     <th scope="col">Accuracy</th>
                     <th scope="col">Total Points</th>
                   </tr>
@@ -44,10 +44,12 @@
                                     <td>".$row["fname"]."</td>
                                     <td>".$row["completion_time"]."</td>
                                     <td>".$row["task_target"]."</td>
-                                    <td>".$row["speed"]."</td>
                                     <td>".$row["accuracy"]."</td>
                                     <td>".$row["total_points"]."</td>
                                 </tr>";
+
+                                // removed speed between target and accuracy
+                                // <td>".$row["speed"]."</td>
                         }
                     }
 
