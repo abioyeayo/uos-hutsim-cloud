@@ -26,7 +26,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Time (Seconds)</th>
                     <th scope="col">Target</th>
-                    <!-- <th scope="col">Speed (Targets/Minute)</th> -->
+                    <th scope="col">Speed (Targets/Minute)</th>
                     <th scope="col">Accuracy</th>
                     <th scope="col">Total Points</th>
                   </tr>
@@ -35,7 +35,7 @@
                     <?php
 
                     $s_no = 1;
-                    $sql = "SELECT * FROM aamas2023_leaderboard ORDER BY total_points DESC";
+                    $sql = "SELECT * FROM aamas2023_leaderboard ORDER BY total_points DESC Limit 3";
                     $result = mysqli_query($con1, $sql);
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {
@@ -44,12 +44,11 @@
                                     <td>".$row["fname"]."</td>
                                     <td>".$row["completion_time"]."</td>
                                     <td>".$row["task_target"]."</td>
+                                    <td>".$row["speed"]."</td>
                                     <td>".$row["accuracy"]."</td>
                                     <td>".$row["total_points"]."</td>
                                 </tr>";
 
-                                // removed speed between target and accuracy
-                                // <td>".$row["speed"]."</td>
                         }
                     }
 
