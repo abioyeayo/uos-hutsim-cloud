@@ -48,7 +48,7 @@
                         <p>The Human Teaming Simulator (HuTSim) is unique in its simulation of drone swarms completing tasks, from package delivery to search and rescue, with varying levels of human control. In this demonstration, the University of Southampton’s Agents, Interaction, and Complexity Group showcases the performance gain offered by maintaining a “human-in-the-loop” over a fully autonomous system. This is illustrated in the context of search and rescue, with autonomous allocation of resources to those in need. Where a fully autonomous system will make wasted journeys through misclassification of scenes, a human-in-the-loop can overrule swarm assumptions based on broader scene context, improving both speed and accuracy.
                         To facilitate the live demonstration, attendees can get hands-on experience by analysing incoming images to inform the swarm’s movements and decision-making, as part of the human-swarm team. The performance gain is then quantified and compared to the fully autonomous system.</p>
                     </div>
-                    <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3">
+                    <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3 pb-5">
                         <video width="640" height="360" controls style="border: solid 2px black;">
                             <source src="uos-hutsim-aamas-2023-demo-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
