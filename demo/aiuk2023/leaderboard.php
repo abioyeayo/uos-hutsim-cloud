@@ -14,106 +14,45 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
-    <body>
-        <div style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; margin-top:20px; padding-bottom: 20px;">
+    <body class="px-4">
+        <div class="shadow p-4 mb-5 bg-body-tertiary rounded" style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; margin-top:20px; padding-bottom: 20px;">
           <br>
           <h4 id="contributions">AI UK 2023 Demo Leaderboard</h4>
           <div class="table-responsive p-3">
-            <div class="text-success mb-3">
-              <?php echo $stop_pid_alert ?>
-            </div>
               <table class="table table-bordered table-sm">
                 <thead>
                   <tr>
                     <th scope="col">Position</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Speed (Targest/Minutes)</th>
-                    <th scope="col">Time (Minutes)</th>
+                    <th scope="col">Time (Seconds)</th>
+                    <th scope="col">Target</th>
+                    <th scope="col">Speed (Targets/Minute)</th>
                     <th scope="col">Accuracy</th>
                     <th scope="col">Total Points</th>
                   </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>James Flenn</td>
-                        <td>12.5</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Micheal Higgins</td>
-                        <td>11.9</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Holly Martinez</td>
-                        <td>11.6</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Marin Adkins</td>
-                        <td>11.2</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Cherish Hardy</td>
-                        <td>10.8</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Saul Dillon</td>
-                        <td>10.5</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Karissa Anthony</td>
-                        <td>9.1</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Erick Little</td>
-                        <td>7.0</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Easton Hickman</td>
-                        <td>6.8</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Anabelle Schmidt</td>
-                        <td>6.3</td>
-                        <td>10</td>
-                        <td>0.89</td>
-                        <td>1381</td>
-                    </tr>
+                    <?php
+
+                    $s_no = 1;
+                    $sql = "SELECT * FROM aamas2023_leaderboard ORDER BY total_points DESC";
+                    $result = mysqli_query($con1, $sql);
+                    if ( mysqli_num_rows( $result ) > 0 ) {
+                        while($row = mysqli_fetch_array($result)) {
+                            echo "<tr>
+                                    <td>".$s_no++."</td>
+                                    <td>".$row["fname"]."</td>
+                                    <td>".$row["completion_time"]."</td>
+                                    <td>".$row["task_target"]."</td>
+                                    <td>".$row["speed"]."</td>
+                                    <td>".$row["accuracy"]."</td>
+                                    <td>".$row["total_points"]."</td>
+                                </tr>";
+
+                        }
+                    }
+
+                    ?>
                 </tbody>
               </table>
           </div>
