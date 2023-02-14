@@ -357,14 +357,14 @@
                             </div>
 
                             <div class="form-check form-check-inline mb-2">
-                                <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="7" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_8" onchange="validateForm();" />
+                                <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="8" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_8" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_'.$scenario_abbr.'_'.$component['abbr'].'_8">
                                 8
                                 </label>
                             </div>
 
                             <div class="form-check form-check-inline mb-2">
-                                <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="7" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_9" onchange="validateForm();" />
+                                <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="9" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_9" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_'.$scenario_abbr.'_'.$component['abbr'].'_9">
                                 9 ('.$subjective_performance_index_upper_label.')
                                 </label>
