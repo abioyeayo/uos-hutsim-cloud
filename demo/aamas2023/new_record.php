@@ -92,8 +92,6 @@
   header("Location: hutsim/");
   exit();
 
-  // area of code not in use
-
 
   $success_msg = "";
 
