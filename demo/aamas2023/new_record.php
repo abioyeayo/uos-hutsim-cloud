@@ -93,6 +93,9 @@
   exit();
 
 
+// codes beyond this point are ignored
+
+
   $success_msg = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST"){
