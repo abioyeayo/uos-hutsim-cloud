@@ -1,0 +1,21 @@
+2023-03-10 17:23:16; 0.0; LGSTRT; Reset log (scenario, username); Demo; Ayo 
+2023-03-10 17:23:35; 17.19999999999997; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-11; N/A; true; true;
+2023-03-10 17:23:35; 17.19999999999997; DELTSK; Removed task (id, lat, lng); Task-11; 50.9298992149016; -1.4095890823823258
+2023-03-10 17:23:43; 24.399999999999945; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-1; N/A; true; true;
+2023-03-10 17:23:43; 24.399999999999945; DELTSK; Removed task (id, lat, lng); Task-1; 50.929082575328884; -1.4122195030671403
+2023-03-10 17:24:02; 43.80000000000008; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-5; N/A; true; true;
+2023-03-10 17:24:02; 43.80000000000008; DELTSK; Removed task (id, lat, lng); Task-5; 50.93166566028517; -1.4099449898225114
+2023-03-10 17:24:09; 50.400000000000176; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-12; N/A; false; false;
+2023-03-10 17:24:09; 50.400000000000176; DELTSK; Removed task (id, lat, lng); Task-12; 50.93263936324419; -1.4068650667178773
+2023-03-10 17:24:19; 59.0000000000003; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-7; N/A; false; false;
+2023-03-10 17:24:19; 59.0000000000003; DELTSK; Removed task (id, lat, lng); Task-7; 50.92613416693238; -1.4120907570344254
+2023-03-10 17:24:29; 69.80000000000045; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-6; N/A; true; true;
+2023-03-10 17:24:29; 69.80000000000045; DELTSK; Removed task (id, lat, lng); Task-6; 50.9337617756191; -1.4113397385102555
+2023-03-10 17:24:31; 71.60000000000048; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-3; N/A; false; false;
+2023-03-10 17:24:31; 71.60000000000048; DELTSK; Removed task (id, lat, lng); Task-3; 50.93443792170355; -1.4063186432343766
+2023-03-10 17:24:43; 81.60000000000062; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-2; N/A; true; true;
+2023-03-10 17:24:43; 81.60000000000062; DELTSK; Removed task (id, lat, lng); Task-2; 50.932706968098096; -1.4157600189667985
+2023-03-10 17:24:48; 87.2000000000007; DEMOSCORE; Recording (name, found/available, tgt/min, accuracy, pts); Ayo; 8/12; 0.09; 1; 9 
+2023-03-10 17:24:48; 0.0; SVRST; Server reset 
+2023-03-10 17:24:48; 0.0; DEMOSCORE; Recording (name, found/available, tgt/min, accuracy, pts); ; 0/12; NaN; NaN; NaN 
+2023-03-10 17:24:48; 0.0; SVRST; Server reset 

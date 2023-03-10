@@ -6,6 +6,42 @@
   $con = new DB_Connect();
   $con1=$con->connect();
 
+  // $log_array = array();
+
+  $path = "hutsim/";
+  $log_files = opendir($path);
+  while (($log_file = readdir($log_files)) !== false)
+  {
+      if( substr($log_file, -4) === ".log" )
+      {
+          echo $log_file . "<br>";
+          $filename = $path . $log_file;
+          $myfile = fopen($filename, "r") or die("Unable to open file!");
+          // echo fread($myfile,filesize($filename)) . "<br><br>";
+          // $log_array[] = fread($myfile,filesize($filename));
+          $log_string = fread($myfile,filesize($filename));
+
+          // remove unnecessary strings before and after string of interests
+          $pos = strpos($log_string,"DEMOSCORE");
+          $log_string = substr($log_string, $pos-50);
+          $pos = strpos($log_string,"SVRST");
+          $log_string = substr($log_string, 0, $pos);
+          echo $log_string . "<br><br>";
+
+          fclose($myfile);
+        //   $filePath = $path.$book;
+        //   $readFile = fopen($filePath, "r") or die("Permission error");
+        //   echo fread($readFile, filesize($filePath));
+        //   fclose($readFile);
+      }
+
+  }
+  closedir();
+
+  // print_r($log_array);
+
+  exit("End");
+
   $success_msg = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST"){
