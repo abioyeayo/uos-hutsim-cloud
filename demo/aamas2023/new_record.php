@@ -36,6 +36,11 @@
           $myfile = fopen($filename, "r") or die("Unable to open file!");
           $log_string = fread($myfile,filesize($filename));
 
+          // count total number of classifications = human + agents
+          $pos = strpos($log_string,"DEMOSCORE");
+          $classification_str = substr($log_string, 0, $pos);
+          $total_target_found = substr_count($log_string,"CLIMG") + substr_count($log_string,"AGCLA");
+
           // remove unnecessary strings before and after string of interests
           $pos = strpos($log_string,"DEMOSCORE");
           $log_string = substr($log_string, $pos-50);
@@ -47,15 +52,16 @@
 
           $txt_fname = $str_arr[4];
           $txt_completion_time = $str_arr[1];
-          $txt_task_target = $str_arr[5];
+          $txt_task_target_temp = $str_arr[5];
           $txt_accuracy = $str_arr[7];
-          $task_target_found = explode ("/", $txt_task_target); 
+          $task_target_found = explode ("/", $txt_task_target_temp); 
+          $txt_task_target = $task_target_found[0] . "/" . $total_target_found . "/" . $task_target_found[1]; 
           $demo_event = "AAMAS 2023";
 
           if ($txt_completion_time == 0){
               // exit("Error: time cannot be zero.");
           } else {
-              $speed = $task_target_found[0] * 60 / $txt_completion_time; // in minutes
+              $speed = $total_target_found * 60 / $txt_completion_time; // in minutes
               $total_points = ($txt_accuracy * 1000) + ($speed * 100); // reasonably random weight selected as balance between speed vs accuracy
 
               // update port table

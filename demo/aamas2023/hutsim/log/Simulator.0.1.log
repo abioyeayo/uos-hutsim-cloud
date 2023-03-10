@@ -1,4 +1,22 @@
-2023-03-10 21:22:22; 0.0; QMST; QueueManager Fully Started; false
-2023-03-10 21:22:23; Server port: 13401
-2023-03-10 21:22:23; Server home: web
-2023-03-10 21:22:32; 0.0; SVRST; Server reset 
+2023-03-10 21:58:25; 0.0; LGSTRT; Reset log (scenario, username); Demo; Ayo 12 
+2023-03-10 21:58:36; 9.2; DELTRG; Deleted target (id, lat, lng); Target-Unknown-12; 50.93263936324419; -1.4068650667178773
+2023-03-10 21:58:36; 9.2; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-12; false; true; false;
+2023-03-10 21:58:36; 9.2; DELTSK; Removed task (id, lat, lng); Task-12; 50.93263936324419; -1.4068650667178773
+2023-03-10 21:58:36; 9.2; TSKCMP; Task completed (id); Task-12
+2023-03-10 21:58:40; 13.199999999999985; DELTRG; Deleted target (id, lat, lng); Target-Unknown-3; 50.93443792170355; -1.4063186432343766
+2023-03-10 21:58:40; 13.199999999999985; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-3; false; false; false;
+2023-03-10 21:58:40; 13.199999999999985; DELTSK; Removed task (id, lat, lng); Task-3; 50.93443792170355; -1.4063186432343766
+2023-03-10 21:58:40; 13.199999999999985; TSKCMP; Task completed (id); Task-3
+2023-03-10 21:58:43; 16.399999999999974; DELTRG; Deleted target (id, lat, lng); Target-Unknown-4; 50.93528985177357; -1.4016837860566422
+2023-03-10 21:58:43; 16.399999999999974; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-4; false; true; true;
+2023-03-10 21:58:43; 16.399999999999974; DELTSK; Removed task (id, lat, lng); Task-4; 50.93528985177357; -1.4016837860566422
+2023-03-10 21:58:43; 16.399999999999974; TSKCMP; Task completed (id); Task-4
+2023-03-10 21:58:47; 19.99999999999996; DELTRG; Deleted target (id, lat, lng); Target-Unknown-6; 50.9337617756191; -1.4113397385102555
+2023-03-10 21:58:47; 19.99999999999996; CLIMG; Classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Target-Unknown-6; false; true; true;
+2023-03-10 21:58:47; 19.99999999999996; DELTSK; Removed task (id, lat, lng); Task-6; 50.9337617756191; -1.4113397385102555
+2023-03-10 21:58:47; 19.99999999999996; TSKCMP; Task completed (id); Task-6
+2023-03-10 21:58:51; 24.399999999999945; AGCLA; Agent default classifying target from deep/shallow scan as this, it is actually (id, isDeep, classifiedStatus, ActualStatus); Task-1; N/A; true; true;
+2023-03-10 21:58:51; 24.399999999999945; DELTSK; Removed task (id, lat, lng); Task-1; 50.929082575328884; -1.4122195030671403
+2023-03-10 21:58:51; 24.399999999999945; TSKCMP; Task completed (id); Task-1
+2023-03-10 21:58:58; 0.0; SVRST; Server reset 
+2023-03-10 21:59:23; 0.0; SVRST; Server reset 
