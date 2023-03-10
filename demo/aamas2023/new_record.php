@@ -91,6 +91,7 @@
   
   header("Location: hutsim/");
   exit();
+  
 
   $success_msg = "";
 
