@@ -6,7 +6,19 @@
   $con = new DB_Connect();
   $con1=$con->connect();
 
-  // $log_array = array();
+  // kill related java pid instance
+  if ($_POST['stopped_pid'] != ""){
+      echo exec('kill '.$_POST['stopped_pid']);
+      echo "Stopped HutSim PID: ".$_POST['stopped_pid']."<br><br>";
+
+      $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE process_id = '".$_POST['stopped_pid']."' and port_status = 'active'";
+      if(mysqli_query($con1, $sql)){
+          // echo "Records updated successfully.";
+      } else{
+          echo "Error updating record: " . $con->error;
+          exit();
+      }
+  }
 
   $path = "hutsim/";
   $log_files = opendir($path);
@@ -14,11 +26,14 @@
   {
       if( substr($log_file, -4) === ".log" )
       {
-          echo $log_file . "<br>";
           $filename = $path . $log_file;
+          
+          // check if file is open and skip loop
+          if(file_exists($filename.".lck")){
+            continue;
+          }
+
           $myfile = fopen($filename, "r") or die("Unable to open file!");
-          // echo fread($myfile,filesize($filename)) . "<br><br>";
-          // $log_array[] = fread($myfile,filesize($filename));
           $log_string = fread($myfile,filesize($filename));
 
           // remove unnecessary strings before and after string of interests
@@ -26,21 +41,50 @@
           $log_string = substr($log_string, $pos-50);
           $pos = strpos($log_string,"SVRST");
           $log_string = substr($log_string, 0, $pos);
-          echo $log_string . "<br><br>";
+
+          // use string explode to separate components
+          $str_arr = explode (";", $log_string); 
+
+          $txt_fname = $str_arr[4];
+          $txt_completion_time = $str_arr[1];
+          $txt_task_target = $str_arr[5];
+          $txt_accuracy = $str_arr[7];
+          $task_target_found = explode ("/", $txt_task_target); 
+          $demo_event = "AAMAS 2023";
+
+          if ($txt_completion_time == 0){
+              // exit("Error: time cannot be zero.");
+          } else {
+              $speed = $task_target_found[0] * 60 / $txt_completion_time; // in minutes
+              $total_points = ($txt_accuracy * 1000) + ($speed * 100); // reasonably random weight selected as balance between speed vs accuracy
+
+              // update port table
+              $sql = "INSERT INTO demo_leaderboard (fname, completion_time, task_target, accuracy, speed, total_points, demo_event) VALUES ('" . $txt_fname . "', '" . $txt_completion_time . "', '" . $txt_task_target . "', '" . $txt_accuracy . "', '" . $speed . "', '" . $total_points . "', '" . $demo_event . "')";
+              echo $sql . "<br>";
+              if(mysqli_query($con1, $sql)){
+                  // echo "Records inserted successfully.";
+              } else{
+                  echo "Error inserting record: " . $con->error;
+                  exit();
+              }
+          }
+
+          // delete file
+          if(file_exists($filename)){
+              $status  = unlink($filename) ? 'The file '.$filename.' has been deleted' : 'Error deleting '.$filename;
+              echo $status;
+          } else{
+              echo 'The file '.$filename.' doesnot exist';
+          }
 
           fclose($myfile);
-        //   $filePath = $path.$book;
-        //   $readFile = fopen($filePath, "r") or die("Permission error");
-        //   echo fread($readFile, filesize($filePath));
-        //   fclose($readFile);
       }
 
   }
   closedir();
-
-  // print_r($log_array);
-
-  exit("End");
+  
+  header("Location: hutsim/");
+  exit();
 
   $success_msg = "";
 

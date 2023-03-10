@@ -35,7 +35,7 @@
                     <?php
 
                     $s_no = 1;
-                    $sql = "SELECT * FROM aamas2023_leaderboard ORDER BY total_points DESC";
+                    $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AAMAS 2023' ORDER BY total_points DESC";
                     $result = mysqli_query($con1, $sql);
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {

@@ -47,7 +47,7 @@
          <a href='http://uos-hutsim.cloud:<?php echo $port; ?>/' target='_blank'>
              <button>View Simulator</button>
          </a>
-         <form action="index.php" method="post" style="float: right;">
+         <form action="../new_record.php" method="post" style="float: right;">
             <input type="hidden" name="stopped_pid" value="<?php echo $output[0]; ?>">
             <input type="submit" value="Stop HutSim" style="background-color: yellow;">
          </form>
