@@ -60,7 +60,7 @@
             <input type="hidden" name="stopped_pid" value="<?php echo $output[0]; ?>">
             <div class="buttons">
                <div class="action_btn">
-                  <button class="action_btn" type="button"><a href='http://uos-hutsim.cloud:<?php echo $port; ?>/' target='_blank' style='text-decoration:none; color: inherit;'>View Simulator</a></button>
+                  <button class="action_btn" type="button"><a href='http://uos-hutsim.cloud:<?php echo $port; ?>/preset/scenario?file-name=Demo.json' target='_blank' style='text-decoration:none; color: inherit;'>View Simulator</a></button>
                   <button class="action_btn" type="submit" value="Stop HutSim">Stop HutSim</button>
                </div>
             </div>

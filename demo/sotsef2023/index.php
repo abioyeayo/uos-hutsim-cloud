@@ -54,11 +54,11 @@
                         <br><br>You can get hands-on experience by analysing incoming images to inform the swarm's movements and decision-making, as part of the human-swarm team. The performance gain is then quantified and compared to the fully autonomous system.</p>
                     </div>
                     <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3">
-                        <img src="res_study_tutorial.png" alt="Human Swarm Teaming simulation screenshot" width="640" style="border: solid 1px black;">
+                        <img src="img/sotsef2023_demo_screenshot_resized.jpg" class="shadow-lg p-1 mb-5 bg-body rounded" alt="Human Swarm Teaming simulation screenshot" width="640" style="border:solid 1px black;">
                     </div>
                 </div>
                 <div class="text-center mb-3">
-                    <img src="sotsef_footer.png" alt="SOTSEF Banner" class="img-fluid">
+                    <img src="img/sotsef_footer.png" alt="SOTSEF Banner" class="img-fluid">
                 </div>
                 <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 border-top">
                     <div class="col-md-4 d-flex align-items-center">

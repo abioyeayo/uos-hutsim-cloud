@@ -55,7 +55,7 @@
           $txt_task_target_temp = $str_arr[5];
           $txt_accuracy = $str_arr[7];
           $task_target_found = explode ("/", $txt_task_target_temp); 
-          $txt_task_target = $task_target_found[0] . "/" . $total_target_found . "/" . $task_target_found[1]; 
+          $txt_task_target = $task_target_found[0] . "/" . $total_target_found . "/" . $task_target_found[1];
           $demo_event = "SOTSEF 2023";
 
           if ($txt_completion_time == 0){

@@ -15,6 +15,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
     <body class="px-4">
+        <div style="text-align: right; max-width: 960px; margin-right: auto; margin-left: auto; padding-top: 10px; font-size: 0.9em;">
+            <a href="/demo/sotsef2023/" class="me-3">Home</a> 
+            <a href="/demo/sotsef2023/hutsim/">Simulator</a>
+        </div>
         <div class="shadow p-4 mb-5 bg-body-tertiary rounded" style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; margin-top:20px; padding-bottom: 20px;">
           <br>
           <h4 id="contributions">SOTSEF 2023 Demo Leaderboard</h4>
@@ -25,7 +29,7 @@
                     <th scope="col">Position</th>
                     <th scope="col">Name</th>
                     <th scope="col">Time (Seconds)</th>
-                    <th scope="col">Target</th>
+                    <!-- <th scope="col">Targets</th> -->
                     <th scope="col">Speed (Targets/Minute)</th>
                     <th scope="col">Accuracy</th>
                     <th scope="col">Total Points</th>
@@ -43,7 +47,7 @@
                                     <td>".$s_no++."</td>
                                     <td>".$row["fname"]."</td>
                                     <td>".$row["completion_time"]."</td>
-                                    <td>".$row["task_target"]."</td>
+                                    <!-- <td>".$row["task_target"]."</td> -->
                                     <td>".$row["speed"]."</td>
                                     <td>".$row["accuracy"]."</td>
                                     <td>".$row["total_points"]."</td>
