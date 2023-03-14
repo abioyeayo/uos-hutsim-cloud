@@ -10,6 +10,7 @@
     $commands = array(
         'echo $PWD',
         'whoami',
+        'git stash',
         'git pull',
         'git status',
         'git submodule sync',
