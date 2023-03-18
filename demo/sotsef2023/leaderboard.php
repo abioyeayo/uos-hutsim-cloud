@@ -43,6 +43,7 @@
                     $result = mysqli_query($con1, $sql);
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {
+                            $total_point = $row["total_points"] - 1533.33; // subtracting fully autonomous mode performance
                             echo "<tr>
                                     <td>".$s_no++."</td>
                                     <td>".$row["fname"]."</td>
@@ -50,7 +51,7 @@
                                     <!-- <td>".$row["task_target"]."</td> -->
                                     <td>".$row["speed"]."</td>
                                     <td>".$row["accuracy"]."</td>
-                                    <td>".$row["total_points"]."</td>
+                                    <td>".$total_point."</td>
                                 </tr>";
 
                         }
