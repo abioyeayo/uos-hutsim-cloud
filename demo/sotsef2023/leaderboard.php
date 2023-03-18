@@ -32,7 +32,7 @@
                     <!-- <th scope="col">Targets</th> -->
                     <th scope="col">Speed (Targets/Minute)</th>
                     <th scope="col">Accuracy</th>
-                    <th scope="col">Total Points</th>
+                    <th scope="col">Score</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -43,7 +43,7 @@
                     $result = mysqli_query($con1, $sql);
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {
-                            $total_point = $row["total_points"] - 1533.33; // subtracting fully autonomous mode performance
+                            $total_point = ($row["total_points"] - 1533.33)*100/1533.33; // subtracting fully autonomous mode performance
                             echo "<tr>
                                     <td>".$s_no++."</td>
                                     <td>".$row["fname"]."</td>
