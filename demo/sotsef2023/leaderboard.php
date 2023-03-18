@@ -39,7 +39,7 @@
                     <?php
 
                     $s_no = 1;
-                    $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'SOTSEF 2023' ORDER BY total_points DESC";
+                    $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'SOTSEF 2023' AND date_added >= 2023-03-18  ORDER BY total_points DESC";
                     $result = mysqli_query($con1, $sql);
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {
