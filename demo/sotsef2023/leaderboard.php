@@ -9,7 +9,7 @@
   // mean user performance 
   $no_of_users = 0;
   $sum_of_point = 0;
-  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'SOTSEF 2023' AND date_added >= '2023-03-18 10:00:00' AND fname != '---FULLY AUTONOMOUS---'  ORDER BY total_points DESC";
+  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'SOTSEF 2023' AND date_added >= '2023-03-18 10:00:00' ORDER BY total_points DESC";
   $result = mysqli_query($con1, $sql);
   if ( mysqli_num_rows( $result ) > 0 ) {
       while($row = mysqli_fetch_array($result)) {
@@ -35,8 +35,8 @@
         <div class="shadow p-4 mb-5 bg-body-tertiary rounded" style="max-width: 960px; text-align: center; border: solid 1px black; margin-right: auto; margin-left: auto; margin-top:20px; padding-bottom: 20px;">
           <br>
           <div style="text-align: right;">
-            Benchmark score: 100
-            Mean user performance: <?php echo $sum_of_point. " " . $no_of_users ; ?> 
+            Benchmark score: 100 <br>
+            Mean performance: <?php echo number_format(($sum_of_point/$no_of_users),2); ?> 
           </div>
           <h4 id="contributions">SOTSEF 2023 Demo Leaderboard</h4>
           <div class="table-responsive p-3">
