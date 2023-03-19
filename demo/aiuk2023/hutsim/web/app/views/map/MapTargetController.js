@@ -28,6 +28,7 @@ var MapTargetController = {
         this.checkIcon = _.bind(this.checkIcon, context);
     },
     bindEvents: function () {
+        var self = this;
         this.state.targets.on("add", function (target) {
             MapTargetController.onTargetAdd(target);
         });
@@ -38,6 +39,16 @@ var MapTargetController = {
 
         this.state.targets.on("change:type", function (target) {
             MapTargetController.onTargetTypeChange(target);
+        });
+
+        this.state.targets.on("change:highResFileName", function (target) {
+            if (self.currentImageName === target.getId() && self.currentImageRef !== target.getHighResFileName()) {
+               // alert("received update: " + self.currentImageName + " =?= " + target.getId() + " && " + self.currentImageRef + " =?= " + target.getHighResFileName())
+                //var property =  document.getElementById("rev_div");
+                //alert(self.property)
+                MapTargetController.clearImage(self.property)
+                MapTargetController.displayImage(target.getId(), target.getHighResFileName(), self.property)
+            }
         });
     },
     onTargetAdd: function (target) {
@@ -76,19 +87,18 @@ var MapTargetController = {
         //  that indicates we can create multiple windows (iw) so they can coexist. Probably an array of them, or making
         //  new ones that are hidden but id referenced to the target
         this.$el.gmap("openInfoWindow", {minWidth: 300}, null, function (iw) {
-            var property =  document.getElementById("rev_div");
-            if (!property) {
-                var property = document.createElement("rev_div");
-                property.innerHTML = _.template($("#target_scan_edit").html(), {});
+            self.property =  document.getElementById("rev_div");
+            if (!self.property) {
+                self.property = document.createElement("rev_div");
+                self.property.innerHTML = _.template($("#target_scan_edit").html(), {});
             } else {
                 //google.maps.event.clearInstanceListeners(iw);
             }
-
             self.popupListener = google.maps.event.addListener(iw, 'domready', function () {
                 google.maps.event.clearListeners(this,'domready');
                 //Update task if values changed
                 // TODO should really just make a new function for these as only change is boolean status passed
-                $(property).on("click", "#decide_casualty", function () {
+                $(self.property).on("click", "#decide_casualty", function () {
                     var thisId = "(" + target.getId() + ")";
 
                     // TODO get the current image setting (might be easier in backend)
@@ -111,7 +121,7 @@ var MapTargetController = {
 
                 });
 
-                $(property).on("click", "#decide_no_casualty", function () {
+                $(self.property).on("click", "#decide_no_casualty", function () {
                     var thisId = "(" + target.getId() + ")";
 
                     // TODO get the current image setting (might be easier in backend)
@@ -133,68 +143,80 @@ var MapTargetController = {
                     self.$el.gmap("closeInfoWindow");
 
                 });
-                MapTargetController.clearImage(property)
-                MapTargetController.displayImage(target.getId(), "adjustedImages/"+thisImg, property)
+                MapTargetController.clearImage(self.property)
+                MapTargetController.displayImage(target.getId(), thisImg, self.property)
+
             });
 
-            iw.setContent(property);
+            iw.setContent(self.property);
             iw.setPosition(target.getPosition());
 
             self.views.clickedTarget = target;
 
         });
+
     },
     clearImage: function (property) {
-        this.canvas = $("#image_review_canvas").get(0)
-        this.ctx = $("#image_review_canvas").get(0).getContext("2d")
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        try {
+            this.canvas = $("#image_review_canvas").get(0)
+            this.ctx = $("#image_review_canvas").get(0).getContext("2d")
+            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        } catch (e) {
+            
+        }
     },
     displayImage: function (id, iRef, property) {
-        console.log("updating image id=" + id + ", iref=" + iRef)
-        var self = this;
-        //property.innerHTML += '<canvas id="new_canv"></canvas>'; // the += means we add this to the inner HTML of body
-        //document.getElementById('image_review').innerHTML = '<canvas id="new_canv"></canvas>';
-        //document.getElementById('rev_div').innerHTML = '<canvas id="new_canv"></canvas>';
-        var totalWidth = 640;
-        var totalHeight = 360;
-        self.canvas = $("#image_review_canvas").get(0)
-        self.ctx = $("#image_review_canvas").get(0).getContext("2d")
+        try {
+            console.log("updating image id=" + id + ", iref=" + iRef)
+            var self = this;
+
+            this.currentImageName = id
+            this.currentImageRef = iRef
+
+            //property.innerHTML += '<canvas id="new_canv"></canvas>'; // the += means we add this to the inner HTML of body
+            //document.getElementById('image_review').innerHTML = '<canvas id="new_canv"></canvas>';
+            //document.getElementById('rev_div').innerHTML = '<canvas id="new_canv"></canvas>';
+            var totalWidth = 640;
+            var totalHeight = 360;
+            self.canvas = $("#image_review_canvas").get(0)
+            self.ctx = $("#image_review_canvas").get(0).getContext("2d")
 
             //================================
 
-        // We need to determine what type of data this is
-        self.scale = 1;
-        if (self.originalHeight !== 0) {
-            //$("#image_review_canvas").width(self.originalWidth);
-            //$("#image_review_canvas").height(self.originalHeight);
+            // We need to determine what type of data this is
+            self.scale = 1;
+            self.originalWidth = $("#image_review_canvas").width();
+            self.originalHeight = $("#image_review_canvas").height();
+            console.log("w (rev vs canv): " + $("#image_review").width() + " vs " + $("#image_review_canvas").width())
+            console.log("h (rev vs canv): " + $("#image_review_canvas").height() + " vs " + $("#image_review_canvas").height())
+
+            /*
+            while ($("#image_review_canvas").width() > $("#image_review").width() || $("#image_review_canvas").height() > $("#image_review").height()) {
+                self.scale -= 0.2;
+                console.log("rescaling: w = " + $("#image_review_canvas").width() + "; h = " + $("#image_review_canvas").height() + "; (scale = " + self.scale + ")")
+                $("#image_review_canvas").width(self.originalWidth * self.scale);
+                $("#image_review_canvas").height(self.originalHeight * self.scale);
+            }
+
+             */
+
+            // TODO maybe just imrev
+            self.canvas.width = totalWidth;
+            self.canvas.height = totalHeight;
+            $("#image_review_canvas").css({top: 0, left: 0, position: 'relative'});
+
+            var img = new Image();
+            img.onload = function () {
+                self.ctx.lineWidth = 3;
+                self.ctx.drawImage(img, 0, 0, self.canvas.width, self.canvas.height);
+                self.ctx.strokeRect(0, 0, self.canvas.width, self.canvas.height);
+            };
+            img.src = "adjustedImages/" + iRef;  // Use the argument, so it works regardless of update flag
+
+            //============================
+        } catch (e) {
+
         }
-        self.originalWidth = $("#image_review_canvas").width();
-        self.originalHeight = $("#image_review_canvas").height();
-        console.log("w (rev vs canv): " + $("#image_review").width() + " vs " + $("#image_review_canvas").width())
-        console.log("h (rev vs canv): " + $("#image_review_canvas").height() + " vs " + $("#image_review_canvas").height())
-
-        while ($("#image_review_canvas").width() > $("#image_review").width() || $("#image_review_canvas").height() > $("#image_review").height()) {
-            self.scale -= 0.2;
-            console.log("rescaling: w = " + $("#image_review_canvas").width() + "; h = " + $("#image_review_canvas").height() + "; (scale = " + self.scale + ")")
-            $("#image_review_canvas").width(self.originalWidth * self.scale);
-            $("#image_review_canvas").height(self.originalHeight * self.scale);
-        }
-
-        // TODO maybe just imrev
-        self.canvas.width = totalWidth;
-        self.canvas.height = totalHeight;
-        $("#image_review_canvas").css({top: 0, left: 0, position: 'relative'});
-
-        var img = new Image();
-        img.onload = function () {
-            self.ctx.lineWidth = 3;
-            self.ctx.drawImage(img, 0, 0, self.canvas.width, self.canvas.height);
-            self.ctx.strokeRect(0, 0, self.canvas.width, self.canvas.height);
-        };
-        img.src = iRef;  // Use the argument, so it works regardless of update flag
-
-        //============================
-
 
     },
     checkIcon : function (targetId) {
