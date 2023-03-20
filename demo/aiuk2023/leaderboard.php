@@ -9,16 +9,22 @@
   //performance variables
   $weight_speed = 0.2;
   $weight_accuracy = 0.8;
+  $benchmark_score = 70;
+  $date_time_filter = "2023-03-18 10:00:00";
 
   // computing fully autonomous benchmark score
   $fully_autonomous_score = 0;
-  $benchmark_score = 70;
-  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '2023-03-18 10:00:00' AND fname = '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
+  $no_of_autonomous_runs = 0;
+  $sum_of_autonomous_point = 0;
+  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '".$date_time_filter."' AND fname = '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
   $result = mysqli_query($con1, $sql);
-  if ( mysqli_num_rows( $result ) > 0 ) {
+  if (mysqli_num_rows( $result ) > 0 ) {
       while($row = mysqli_fetch_array($result)) {
-          $fully_autonomous_score = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)));
+          $autonomous_score = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)));
+          $sum_of_autonomous_score += $autonomous_score;
+          $no_of_autonomous_runs++; 
       }
+      $fully_autonomous_score = $sum_of_autonomous_score / $no_of_autonomous_runs;
   }
   if ($fully_autonomous_score <= 0){
     $fully_autonomous_score = 1;
@@ -27,9 +33,9 @@
   // mean user performance 
   $no_of_users = 0;
   $sum_of_point = 0;
-  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '2023-03-18 10:00:00' AND fname != '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
+  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '".$date_time_filter."' AND fname != '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
   $result = mysqli_query($con1, $sql);
-  if ( mysqli_num_rows( $result ) > 0 ) {
+  if (mysqli_num_rows( $result ) > 0 ) {
       while($row = mysqli_fetch_array($result)) {
           $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
           $sum_of_point += $total_point;
@@ -73,7 +79,7 @@
                     <?php
 
                     $s_no = 1;
-                    $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '2023-03-18 10:00:00'  ORDER BY total_points DESC";
+                    $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '".$date_time_filter."'  ORDER BY total_points DESC";
                     $result = mysqli_query($con1, $sql);
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {
