@@ -255,7 +255,8 @@ var simulator = {
                         // Return to menu
                         scenario_end_panel.innerHTML = _.template($("#scenario_end_panel").html(), {
                             title: "Scenario Ended",
-                            description: "This scenario has ended, please close your browser tab and continue with the MS form"
+                            description: "This scenario has ended, please close your browser tab and proceed to the leaderboard to see your performance."
+                            // description: "This scenario has ended, please close your browser tab and continue with the MS form"
                         });
                         $.blockWithContent(scenario_end_panel);
                         $('#end_scenario').on('click', function () {

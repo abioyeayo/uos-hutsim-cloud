@@ -38,7 +38,7 @@ App.Views.Map = Backbone.View.extend({
         MapImageController.bind(this);
 
         this.mapOptions = {
-            zoom: 18,
+            zoom: 16,
             center: new google.maps.LatLng(50.939025, -1.461583),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             overviewMapControl: false,
@@ -60,7 +60,7 @@ App.Views.Map = Backbone.View.extend({
             MarkerMonitor: $.loadIcon("icons/used/marker_monitor.png", "icons/msmarker.shadow.png", 10, 34),
             TargetHuman: $.loadIcon("icons/used/man.png", "icons/man.shadow.png", 30, 30),
 
-            TargetUnknown: $.loadIcon("icons/question.png", "icons/man.shadow.png", 30, 30),
+            TargetUnknown: $.loadIcon("icons/question.png", "icons/man.shadow.png", 14, 20),
             TargetDeepScan: $.loadIcon("icons/rectangle_red.png", "icons/man.shadow.png", 30, 30),
             TargetShallowScan: $.loadIcon("icons/rectangle_green.png", "icons/man.shadow.png", 30, 30),
             TargetDismissed: $.loadIcon("icons/truck.png", "icons/man.shadow.png", 30, 30),

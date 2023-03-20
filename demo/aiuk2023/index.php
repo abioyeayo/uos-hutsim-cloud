@@ -41,11 +41,11 @@
         <!-- page content -->
         <div class="container" style="min-width: 768px;">
             <div class="p-4 mt-3 mb-1 shadow bg-light">
-                <h1 class="text-center fs-3 fw-bold p-1 mb-3">HuTSim: Demonstrating Performance Benefits of Human-Swarm Teaming</h1>
+                <h1 class="text-center fs-3 fw-bold p-1 mb-3">HutSim: Demonstrating Performance Benefits of Human-Swarm Teaming</h1>
                 <div class="row mb-5 mt-4">
                     <div class="col-xxl-5 p-4">
                         <h4>Abstract</h4>
-                        <p>The Human Teaming Simulator (HuTSim) is unique in its simulation of drone swarms completing tasks, from package delivery to search and rescue, with varying levels of human control. In this demonstration, the University of Southampton’s Agents, Interaction, and Complexity Group showcases the performance gain offered by maintaining a “human-in-the-loop” over a fully autonomous system. This is illustrated in the context of search and rescue, with autonomous allocation of resources to those in need. Where a fully autonomous system will make wasted journeys through misclassification of scenes, a human-in-the-loop can overrule swarm assumptions based on broader scene context, improving both speed and accuracy.
+                        <p>The Human Teaming Simulator (HutSim) is unique in its simulation of drone swarms completing tasks, from package delivery to search and rescue, with varying levels of human control. In this demonstration, the University of Southampton’s Agents, Interaction, and Complexity Group showcases the performance gain offered by maintaining a “human-in-the-loop” over a fully autonomous system. This is illustrated in the context of search and rescue, with autonomous allocation of resources to those in need. Where a fully autonomous system will make wasted journeys through misclassification of scenes, a human-in-the-loop can overrule swarm assumptions based on broader scene context, improving both speed and accuracy.
                         To facilitate the live demonstration, attendees can get hands-on experience by analysing incoming images to inform the swarm’s movements and decision-making, as part of the human-swarm team. The performance gain is then quantified and compared to the fully autonomous system.</p>
                     </div>
                     <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3 pb-5">
