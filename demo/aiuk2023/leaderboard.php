@@ -85,8 +85,13 @@
                         while($row = mysqli_fetch_array($result)) {
                             // $total_point = $row["total_points"]*100/1153.33; // subtracting fully autonomous mode performance
                             $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
-                            echo "<tr>
-                                    <td>".$s_no++."</td>
+                            if ($row["fname"] == "---FULLY AUTONOMOUS---"){
+                                echo "<tr style='background-color: #CC6B00'>";
+                            } else {
+                                echo "<tr>";
+                            }
+
+                            echo "  <td>".$s_no++."</td>
                                     <td>".$row["fname"]."</td>
                                     <td>".$row["completion_time"]."</td>
                                     <!-- <td>".$row["task_target"]."</td> -->
