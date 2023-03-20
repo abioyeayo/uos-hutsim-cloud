@@ -49,7 +49,7 @@
                         To facilitate the live demonstration, attendees can get hands-on experience by analysing incoming images to inform the swarm’s movements and decision-making, as part of the human-swarm team. The performance gain is then quantified and compared to the fully autonomous system.</p>
                     </div>
                     <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3 pb-5">
-                        <video width="640" height="360" controls style="border: solid 2px black;">
+                        <video class="shadow bg-body rounded" width="640" height="360" controls>
                             <source src="aiuk2023_demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
