@@ -14,6 +14,8 @@
 
   // computing fully autonomous benchmark score
   $fully_autonomous_score = 0.8;
+  $fully_autonomous_speed = 5.33;
+  $fully_autonomous_accuracy = 0.8;
   // $no_of_autonomous_runs = 0;
   // $sum_of_autonomous_point = 0;
   // $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '".$date_time_filter."' AND fname = '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
@@ -38,7 +40,8 @@
   if (mysqli_num_rows( $result ) > 0 ) {
       while($row = mysqli_fetch_array($result)) {
           // $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
-          $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+          // $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+          $total_point = ((($row["completion_time"] * $weight_speed / $fully_autonomous_speed) + ($row["accuracy"] * $weight_accuracy / $fully_autonomous_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
           $sum_of_point += $total_point;
           $no_of_users++;
       }
@@ -93,7 +96,8 @@
                         while($row = mysqli_fetch_array($result)) {
                             // $total_point = $row["total_points"]*100/1153.33; // subtracting fully autonomous mode performance
                             // $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
-                            $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+                            // $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+                            $total_point = ((($row["completion_time"] * $weight_speed / $fully_autonomous_speed) + ($row["accuracy"] * $weight_accuracy / $fully_autonomous_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
                             if ($row["fname"] == "---FULLY AUTONOMOUS---"){
                                 echo "<tr style='background-color: #CC6B00'>";
                             } else {
