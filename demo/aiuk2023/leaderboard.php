@@ -13,22 +13,22 @@
   $date_time_filter = "2023-03-18 10:00:00";
 
   // computing fully autonomous benchmark score
-  $fully_autonomous_score = 0;
-  $no_of_autonomous_runs = 0;
-  $sum_of_autonomous_point = 0;
-  $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '".$date_time_filter."' AND fname = '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
-  $result = mysqli_query($con1, $sql);
-  if (mysqli_num_rows( $result ) > 0 ) {
-      while($row = mysqli_fetch_array($result)) {
-          $autonomous_score = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)));
-          $sum_of_autonomous_score += $autonomous_score;
-          $no_of_autonomous_runs++; 
-      }
-      $fully_autonomous_score = $sum_of_autonomous_score / $no_of_autonomous_runs;
-  }
-  if ($fully_autonomous_score <= 0){
-    $fully_autonomous_score = 1;
-  }
+  $fully_autonomous_score = 0.8;
+  // $no_of_autonomous_runs = 0;
+  // $sum_of_autonomous_point = 0;
+  // $sql = "SELECT * FROM demo_leaderboard WHERE demo_event = 'AIUK 2023' AND date_added >= '".$date_time_filter."' AND fname = '---FULLY AUTONOMOUS---' ORDER BY total_points DESC";
+  // $result = mysqli_query($con1, $sql);
+  // if (mysqli_num_rows( $result ) > 0 ) {
+  //     while($row = mysqli_fetch_array($result)) {
+  //         $autonomous_score = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)));
+  //         $sum_of_autonomous_score += $autonomous_score;
+  //         $no_of_autonomous_runs++; 
+  //     }
+  //     $fully_autonomous_score = $sum_of_autonomous_score / $no_of_autonomous_runs;
+  // }
+  // if ($fully_autonomous_score <= 0){
+  //   $fully_autonomous_score = 1;
+  // }
 
   // mean user performance 
   $no_of_users = 0;
@@ -37,7 +37,8 @@
   $result = mysqli_query($con1, $sql);
   if (mysqli_num_rows( $result ) > 0 ) {
       while($row = mysqli_fetch_array($result)) {
-          $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+          // $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+          $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
           $sum_of_point += $total_point;
           $no_of_users++;
       }
@@ -84,8 +85,8 @@
                     if ( mysqli_num_rows( $result ) > 0 ) {
                         while($row = mysqli_fetch_array($result)) {
                             // $total_point = $row["total_points"]*100/1153.33; // subtracting fully autonomous mode performance
-                            $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
-                            // $total_point = ((($row["completion_time"] * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+                            // $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+                            $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
                             if ($row["fname"] == "---FULLY AUTONOMOUS---"){
                                 echo "<tr style='background-color: #CC6B00'>";
                             } else {
