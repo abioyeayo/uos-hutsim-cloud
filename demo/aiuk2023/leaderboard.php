@@ -41,7 +41,7 @@
       while($row = mysqli_fetch_array($result)) {
           // $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
           // $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
-          $total_point = ((($row["accuracy"] * $weight_speed / $fully_autonomous_speed) + ($row["accuracy"] * $weight_accuracy / $fully_autonomous_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+          $total_point = ((($row["speed"] * $weight_speed / $fully_autonomous_speed) + ($row["accuracy"] * $weight_accuracy / $fully_autonomous_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
           $sum_of_point += $total_point;
           $no_of_users++;
       }
@@ -97,7 +97,7 @@
                             // $total_point = $row["total_points"]*100/1153.33; // subtracting fully autonomous mode performance
                             // $total_point = ((($row["speed"] * $weight_speed) + ($row["accuracy"] * $weight_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
                             // $total_point = ((((90-$row["completion_time"]) * $weight_speed / 90) + ($row["accuracy"] * $weight_accuracy / 0.8)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
-                            $total_point = ((($row["accuracy"] * $weight_speed / $fully_autonomous_speed) + ($row["accuracy"] * $weight_accuracy / $fully_autonomous_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
+                            $total_point = ((($row["speed"] * $weight_speed / $fully_autonomous_speed) + ($row["accuracy"] * $weight_accuracy / $fully_autonomous_accuracy)) * $benchmark_score) / $fully_autonomous_score; // weighting speed and accuracy
                             if ($row["fname"] == "---FULLY AUTONOMOUS---"){
                                 echo "<tr style='background-color: #CC6B00'>";
                             } else {
