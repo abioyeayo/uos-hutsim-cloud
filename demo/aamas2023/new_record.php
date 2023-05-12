@@ -43,19 +43,23 @@
 
           // remove unnecessary strings before and after string of interests
           $pos = strpos($log_string,"DEMOSCORE");
-          $log_string = substr($log_string, $pos-50);
+          $log_string = substr($log_string, $pos-40);
           $pos = strpos($log_string,"SVRST");
           $log_string = substr($log_string, 0, $pos);
+
+        //   // replace new line character with semicolon
+        //   $log_string=str_replace("\n", ";", $log_string);
+        //   echo $log_string . "<br><br>";
 
           // use string explode to separate components
           $str_arr = explode (";", $log_string); 
 
-          $txt_fname = $str_arr[4];
+          $txt_fname = trim($str_arr[4]);
           $txt_completion_time = $str_arr[1];
           $txt_task_target_temp = $str_arr[5];
           $txt_accuracy = $str_arr[7];
           $task_target_found = explode ("/", $txt_task_target_temp); 
-          $txt_task_target = $task_target_found[0] . "/" . $total_target_found . "/" . $task_target_found[1]; 
+          $txt_task_target = $task_target_found[0] . "/" . $total_target_found . "/" . $task_target_found[1];
           $demo_event = "AAMAS 2023";
 
           if ($txt_completion_time == 0){

@@ -31,10 +31,6 @@
                     <h4>AAMAS 2023 Demo</h4>
                 </div>
 
-                <!-- <div class="col-md-3 text-end border">
-                    <a href="/demo/aamas2023/hutsim/" class="nav-link px-2 link-primary">Simulator</a>
-                    <a href="/demo/aamas2023/leaderboard.php" class="nav-link px-2 link-primary">Leaderboard</a>
-                </div> -->
                 <div class="col-md-3 text-end">
                     <button type="button" class="btn btn-sm btn-link me-2"><a href="/demo/aamas2023/hutsim/">Simulator</a></button>
                     <button type="button" class="btn btn-sm btn-link"><a href="/demo/aamas2023/leaderboard.php">Leaderboard</a></button>
@@ -49,13 +45,29 @@
                 <div class="row mb-5 mt-4">
                     <div class="col-xxl-5 p-4">
                         <h4>Abstract</h4>
-                        <p>Autonomous swarms of robots can bring robustness, scalability and adaptability to safety-critical tasks such as search and rescue but their application is still very limited. Using semi-autonomous swarms with human control can bring robot swarms to real-world applications. Human operators can define goals for the swarm, monitor their performance and interfere with or overrule the decisions and behaviour. We designed a human swarm teaming simulator (HutSim) that allows multi-user interaction with a swarm and facilitates qualitative and quantitative user studies with a simulation of aerial swarms completing tasks, from package delivery to search and rescue, with varying levels of human control. In this demonstration, we study performance gain offered by maintaining a "human-in-the-loop" over a fully autonomous system as an example. This is illustrated in the context of search and rescue, with an autonomous allocation of resources to those in need.</p>
+                        <p>Autonomous swarms of robots can bring robustness, scalability and adaptability to safety-critical tasks such as search and rescue
+                            but their application is still very limited. Using semi-autonomous swarms with human control can bring robot swarms to real-world
+                            applications. Human operators can define goals for the swarm, monitor their performance and interfere with, or overrule, the decisions 
+                            and behaviour. We present the “Human And Robot Interactive Swarm” simulator (HARIS) that allows multi-user interaction with a
+                            robot swarm and facilitates qualitative and quantitative user studies through simulation of robot swarms completing tasks, from package 
+                            delivery to search and rescue, with varying levels of human control. In this demonstration, we showcase the simulator by using
+                            it to study the performance gain offered by maintaining a “human-in-the-loop” over a fully autonomous system as an example. This is
+                            illustrated in the context of search and rescue, with an autonomous allocation of resources to those in need.</p>
                     </div>
-                    <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3">
-                        <video width="640" height="360" controls style="border: solid 2px black;">
+                    <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3 pb-5">
+                        <video class="shadow bg-body rounded" width="640" height="360" controls>
                             <source src="uos-hutsim-aamas-2023-demo-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                    </div>
+
+                    <div class="col-12 ps-4 pe-4">
+                        <p>
+                            <b>Keywords</b>: Human-Swarm Teaming; Swarm Robotics; Human-robot Interaction; Simulation Environments; HARIS. <br><br>
+                            <b>ACM Reference Format:</b> William Hunt , Jack Ryan , Ayodeji O. Abioye , Sarvapali D. Ramchurn, and Mohammad D. Soorati . 
+                            2023. Demonstrating Performance Benefits of Human-Swarm Teaming: Demonstration Track. In <em>Proc. of the 22nd International 
+                            Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), London, United Kingdom, May 29 – June 2, 2023</em>, IFAAMAS, 3 pages.
+                        </p>
                     </div>
                 </div>
                 <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 border-top">
