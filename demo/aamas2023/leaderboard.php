@@ -10,7 +10,7 @@
   $weight_speed = 0.2;
   $weight_accuracy = 0.8;
   $benchmark_score = 100;
-  $date_time_filter = "2023-03-21 10:00:00";
+  $date_time_filter = "2023-05-12 11:23:00";
 
   // computing fully autonomous benchmark score
   $fully_autonomous_score = 0.8;
