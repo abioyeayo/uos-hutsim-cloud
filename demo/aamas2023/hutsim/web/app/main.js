@@ -218,7 +218,8 @@ var simulator = {
                     if (self.state.getUserName() === "") {
                         var name = null;
                         while (name == null || name === "") {
-                            name = prompt("Please enter your prolific ID", "");
+                            // name = prompt("Please enter your prolific ID", "");
+                            name = prompt("Please enter your name", "");
                         }
                         $.post("/mode/scenario/registerUser", {
                             userName: name
