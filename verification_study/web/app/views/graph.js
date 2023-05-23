@@ -93,7 +93,7 @@ App.Views.Graph = Backbone.View.extend({
         };
 
         //Only update step width in edit mode to keep step consistent when monitoring.
-        if(this.state.getEditMode() === 2) {
+        if(this.state.isEdit()) {
             this.stepWidth = 10;
             if (maxTime !== 0)
                 this.stepWidth = 10 * Math.ceil(maxTime / 80);

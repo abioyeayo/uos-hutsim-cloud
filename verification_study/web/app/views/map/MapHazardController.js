@@ -64,16 +64,12 @@ var MapHazardController = {
         }
     },
     updateHeatmap: function (hazardType) {
-        try {
-            var data = this.state.getHazardHits(hazardType).map(function (hit) {
-                var hitObj = {};
-                $.extend(hitObj, hit.location, {'weight': hit.weight});
-                return hitObj;
-            });
-            MapHazardController.heatmap[hazardType].setData({data: data, max: 1, min: 0});
-        } catch (e) {
-            console.log("Caught hazard heatmap exception");
-        }
+        var data = this.state.getHazardHits(hazardType).map(function(hit) {
+            var hitObj = {};
+            $.extend(hitObj, hit.location, {'weight': hit.weight});
+            return hitObj;
+        });
+        MapHazardController.heatmap[hazardType].setData({data: data, max:1, min:0});
     },
     setHeatmapVisibility: function (hazardType, visible) {
         MapHazardController.heatmap[hazardType].container.style.display = visible ? "block" : "none";

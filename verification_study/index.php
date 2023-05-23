@@ -45,8 +45,8 @@
   } else {
         $study_alias = "wsga_lkxr";
         $study_title = "The impact of formal verification at runtime in human-swarm interaction";
-        $scenario_1 = "WSGA";
-        $scenario_2 = "LKXR";
+        $scenario_1 = "C1Parallel";
+        $scenario_2 = "C1Series";
         $low_res_warning = "You do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will 
                             only see the basic scans that are added to the view window automatically.";
 
@@ -691,7 +691,7 @@
                       exit();
                     }
 
-                    $href_url = $base_url . $port . "/preset/scenario?file-name=Tutorial.json";
+                    $href_url = $base_url . $port . "/preset/scenario?file-name=C1JustON.json";
                 ?>
                 <div class="d-flex flex-column justify-content-center align-content-center mx-auto" style="max-width: 480px;">
                   <a href='<?php echo $href_url; ?>/' target='_blank' class="btn btn-sm btn-primary">Start Tutorial</a>
