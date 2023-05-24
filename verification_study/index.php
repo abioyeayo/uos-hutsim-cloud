@@ -949,8 +949,8 @@
           }
 
           // check if a wsga radio row element has been selected
-          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr"];
+          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
+          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr"];
           checkFormElement("wsga",radio_wsga_lkxr_form);
 
           // check if the LKXR scenario is completed and add value to allow validation
