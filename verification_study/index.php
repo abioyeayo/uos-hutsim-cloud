@@ -767,7 +767,7 @@
               
               <?php 
                 $scenario_abbr = "wsga";
-                include 'questionnaire.php'; 
+                include 'questionnaire-verification.php'; 
               ?>
               
           </div>
@@ -830,7 +830,7 @@
               
               <?php 
                 $scenario_abbr = "lkxr";
-                include 'questionnaire.php'; 
+                include 'questionnaire-verification.php'; 
               ?>
 
           </div>
@@ -949,8 +949,9 @@
           }
 
           // check if a wsga radio row element has been selected
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
+          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
           // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr"];
+          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8", "u9", "u10", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10"];
           checkFormElement("wsga",radio_wsga_lkxr_form);
 
           // check if the LKXR scenario is completed and add value to allow validation
