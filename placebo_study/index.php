@@ -402,9 +402,9 @@
               <span class="stepIndicator">Consent <br>(2 min)</span>
               <!-- <span class="stepIndicator">Tutorial <br>(5 min)</span> -->
               <span class="stepIndicator">Scenario I <br>(5 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(1 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(2 min)</span>
               <span class="stepIndicator">Scenario II <br>(5 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(1 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(2 min)</span>
               <span class="stepIndicator">Finish <br>(1 min)</span>
           </div>
           <!-- end step indicators -->
@@ -720,7 +720,6 @@
         
         function validateForm() {
 
-          /* TO UNDO **************************
           // confirm participant consent to participate in study
           var bool_c1 = validateConsent("c1");
           var bool_c2 = validateConsent("c2");
@@ -732,7 +731,6 @@
           // check if a demographic information radio row question element has been selected
           var radio_pcpt_form = ["f1", "f2", "f3", "f4"];
           checkFormElement("pcpt",radio_pcpt_form);
-          */
 
 
           // check if a wsga radio row element has been selected
