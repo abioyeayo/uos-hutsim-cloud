@@ -45,8 +45,10 @@
   } else {
         $study_alias = "wsga_lkxr";
         $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction";
-        $scenario_1 = "C1Parallel";
-        $scenario_2 = "C1Series";
+        $scenario_1 = "Fully Autonomous";
+        $scenario_1q = "questionnaire_fully_autonomous.php";
+        $scenario_2 = "Human Operated";
+        $scenario_2q = "questionnaire_human_operated.php";
         $low_res_warning = "You do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will 
                             only see the basic scans that are added to the view window automatically.";
 
@@ -223,7 +225,7 @@
         $radio_pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
 
         // halt study submission
-        exit("<h2>Error Submitting Data - This Study has Not Started!</h2>");
+        exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
         
 
         // // update port table
@@ -397,8 +399,8 @@
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
               <span class="stepIndicator">Briefing <br>(3 min)</span>
-              <span class="stepIndicator">Consent <br>(3 min)</span>
-              <span class="stepIndicator">Tutorial <br>(5 min)</span>
+              <span class="stepIndicator">Consent <br>(2 min)</span>
+              <!-- <span class="stepIndicator">Tutorial <br>(5 min)</span> -->
               <span class="stepIndicator">Scenario I <br>(5 min)</span>
               <span class="stepIndicator">Questionnaire <br>(1 min)</span>
               <span class="stepIndicator">Scenario II <br>(5 min)</span>
@@ -410,98 +412,15 @@
           <!-- step one -->
           <div class="step">
               <h4 class="text-center fw-bold mb-4 mt-5">Participant Information Sheet</h4>
-              <!-- <p class="text-center mb-3">In this study, you would play the role of a Unmanned Aerial Vehicle (UAV) swarm operator in a drone delivery mission. You would be able 
-                to add UAVs or remove UAVs from the mission. Your aim is to maximise performance and minimise cost. After this, you would be required to 
-                complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated 
-                version of the Google Chrome web browser.</p>
-              <p class="text-center mb-5">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should 
-                take about 10 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
-              <div class="text-center mb-5">
-                <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div> -->
-
-              <div class="px-4" style="font-size: 0.95rem;">
-                  <p>
-                      <b>Study Title:</b> The Placebo Effect of Autonomy Level on Trust in Human-swarm interaction<br>
-                      <b>Researcher(s):</b> Hemangi Kakirde<br>
-                      <b>University email:</b> <a href="mailto:hjk1n22@soton.ac.uk">hjk1n22@soton.ac.uk</a><br>
-                      <b>Ethics/ERGO no:</b> ERGO/FEPS/81410<br>
-                      <b>Version and date:</b> Version 2, 24/07/2023 <br>
-                  </p>
-
-                  <p>
-                    <b>What is the research about?</b><br>
-                    My name is Hemangi Kakirde and I am a Masters in Artificial Intelligence student at the University of Southampton in the United Kingdom.<br><br>
-                    I am inviting you to participate in a study regarding the placebo effect of autonomy level on trust in human-swarm interaction. The project aims to identify casualties using the human and robot interactive swarm (HARIS) simulator, survey with different scenarios and evaluate if the participants will trust the swarm (group of UAVs – unmanned aerial vehicles/drones) in different scenarios or not. The results will indicate if the participants trust the autonomous swarm or the human-controlled swarm.<br><br>
-                    This study was approved by the Faculty Research Ethics Committee (FREC) at the University of Southampton (Ethics/ERGO Number: ERGO/FEPS/81410).<br>
-                  </p>
-
-                  <p>
-                    <b>What will happen to me if I take part?</b><br>
-                    This study involves completing an anonymous questionnaire which should take approximately 30 minutes of your time. You will need a device with Internet access to be able to access the task, for which a link will be sent to you. If you are happy to complete this survey, you will need to tick (check) the box below to show your consent. Participation is voluntary and relies on you watching the video and answering the questionnaire based on the video.<br><br>
-                    As this survey is anonymous, the researcher will not be able to know whether you have participated, or what answers you provided.<br><br>
-                    An attention check question will also be included in the questionnaire.<br>
-                  </p>
-
-                  <p>
-                    <b>Why have I been asked to participate?</b><br>
-                    You have been asked to take part because we are interested in collecting data from a wide range of individuals. You have responded to an advert for the study, or accessed the study through Prolific, and have showed willingness to take part.<br><br>
-                    I am aiming to recruit around 80 participants for this study.<br>
-                  </p>
-
-                  <p>
-                    <b>What information will be collected?</b><br>
-                    The questions in this survey ask for information in relation to the video that you will see before the questionnaire starts. Your prolific id, gender and age group will be collected for analysis purposes. We will also collect your answers to the questionnaires given to you. Your data will only be used by the researcher mentioned above to analyze and summarize the outcomes of the study.<br><br>
-                    You must answer all the questions in the questionnaire.<br>
-                  </p>
-
-                  <p>
-                    <b>What are the possible benefits of taking part?</b><br>
-                    If you decide to take part in this study, you will not receive any direct benefits; however, your participation will contribute to knowledge in this area of research.<br><br>
-                    Your participation will help me understand the way humans react to scenarios where the swarms are controlled autonomously or by humans. It will help me analyse the approaches needed for a trustworthy human-robot interaction system. You will also get a reward for the time that you have dedicated to the study. But you will only get the reward on the successful completion of the study. The payment will be in the form of prolific credits.<br>
-                  </p>
-
-                  <p>
-                    <b>Are there any risks involved?</b><br>
-                    No risks are expected, and you are free to leave the questionnaire at any time during the study. You should also ensure that previous NDAs, conflicts of interests and time budget have been addressed prior to participation.<br><br>
-                    It is expected that taking part in this study will not cause you any psychological discomfort and/or distress, however, should you feel uncomfortable you can leave the survey at any time.<br>
-                  </p>
-
-                  <p>
-                    <b>What will happen to the information collected?</b><br>
-                    If you decide to take part in this study, you will not receive any direct benefits; however, your participation will contribute to knowledge in this area of research.<br><br>
-                    Your participation will help me understand the way humans react to scenarios where the swarms are controlled autonomously or by humans. It will help me analyse the approaches needed for a trustworthy human-robot interaction system. You will also get a reward for the time that you have dedicated to the study. But you will only get the reward on the successful completion of the study. The payment will be in the form of prolific credits.<br>
-                  </p>
-
-                  <p>
-                    <b>What are the possible benefits of taking part?</b><br>
-                    All information collected for this study will be stored securely on a password-protected computer and backed up on a secure server. In addition, all data will be pooled and only compiled into data summaries or summary reports.<br><br>
-                    The information collected will be analyzed and written up as part of the researcher’s dissertation.<br><br>
-                    The University of Southampton conducts research to the highest standards of ethics and research integrity. In accordance with our Data Management Policy, data will be securely destroyed after the conferment of the researcher’s degree in November 2023.<br>
-                  </p>
-
-                  <p>
-                    <b>What happens if there is a problem?</b><br>
-                    If you are unhappy about any aspect of this study and would like to make a formal complaint, you can contact the Head of Research Integrity and Governance, University of Southampton, on the following contact details: <br> 
-                    Email: <a href="mailto:rgoinfo@soton.ac.uk">rgoinfo@soton.ac.uk</a><br> 
-                    Phone: <a href="tel:+442380595058">+44 2380 595058</a><br><br>
-                    Please quote the Ethics/ERGO number above. Please note that by making a complaint you might be no longer anonymous.<br>
-                  </p>
-
-                  <p>
-                    <b>More information on your rights as a study participant is available via this link:</b><br>
-                    <a href="https://www.southampton.ac.uk/about/governance/participant-information.page">https://www.southampton.ac.uk/about/governance/participant-information.page</a><br><br>
-                      Thank you for reading this information sheet and considering taking part in this research.<br>
-                  </p>
-              </div>
-
-
+              <?php
+                include 'participant-information-sheet.php'; 
+              ?>
           </div>
 
           <!-- step two -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Participant Consent and Information</h4>
-              <p class="text-center mb-5">Thank you for choosing to take part in this study. Please complete this consent form before taking part in the study. It is required for your participation. This study has been approved by the University of Southampton ethics committee (ERGO number: 69418).</p>
+              <p class="text-center mb-5">Thank you for choosing to take part in this study. Please complete this consent form before taking part in the study. It is required for your participation. This study has been approved by the Faculty Research Ethics Committee (FREC) at the University of Southampton (Ethics/ERGO Number: ERGO/FEPS/81410).</p>
               <div class="mx-0 mx-sm-auto mb-5">
               <div class="card">
                   <div class="card-body">
@@ -523,11 +442,11 @@
                       $pcpt_consent = array(
                           "c1" => array(
                                   "abbr" => "c1",
-                                  "question" => "I have read and understood the participant information sheet. I am aged 18 or over and agree to take part in this study."),
+                                  "question" => "I have read and understood the participant information sheet."),
 
                           "c2" => array(
                                   "abbr" => "c2",
-                                  "question" => "I agree to take part in this research project and agree for my data to be used for the purpose of this study."),
+                                  "question" => "I am aged 18 or over and agree to take part in this study."),
 
                           "c3" => array(
                                   "abbr" => "c3",
@@ -686,105 +605,21 @@
           </div>
       
           <!-- step three -->
-          <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">HutSim Simulator Tutorial</h4>
-              <p class="text-center mb-5">Tutorial Scenario - try to find the 3 targets in the circled areas and 
-                classify them into human casualty or random objects before the countdown timer runs out. We are interested in how quickly you can 
-                find the targets and how accurately you can classifiy them.</p>
-              <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the tutorial. When finished, tick the "I have completed the tutorial scenario" checkbox and click Next to continue.</p>
-              <div class="mb-5">
-                <?php
-                    // echo exec('java --version');
-                    // echo "<br><br>";
-                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
-                    $port = rand(4096, 65535);
-                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
-              
-                    // var_dump($output);
-                    // echo "Process ID: ".$output[0]." | Port: ".$port;
-
-                    $process_id = $output[0];
-                    $process_info = $_GET['PROLIFIC_PID'];
-                    $port_number = $port;
-                    $port_status = "active";
-                    $created_by = "uos-web-user";
-
-                    // update port table
-                    $sql = "INSERT INTO port_table (process_id, process_info, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $process_info . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
-                    if(mysqli_query($con1, $sql)){
-                      // echo "Records inserted successfully.";
-                    } else{
-                      echo "Error inserting record: " . $con->error;
-                      exit();
-                    }
-
-                    $href_url = $base_url . $port . "/preset/scenario?file-name=C1JustON.json";
-                ?>
-                <div class="d-flex flex-column justify-content-center align-content-center mx-auto" style="max-width: 480px;">
-                  <a href='<?php echo $href_url; ?>/' target='_blank' class="btn btn-sm btn-primary">Start Tutorial</a>
-                  <br>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check_tutorial" aria-describedby="check_tutorial_invalid_feedback" onclick="validateForm();">
-                    <label class="form-check-label" for="check_tutorial">
-                        I have completed the tutorial scenario
-                    </label>
-                    <div id="check_tutorial_invalid_feedback" class="invalid-feedback">
-                      Please confirm you have completed scenario to proceed.
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
+          <!-- <div class="step">
+          </div> -->
       
           <!-- step four -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario I</h4>
-              <p class="text-center mb-5">This is the <?php echo $scenario_1; ?> study scenario. Here you would classify whether images have a human present or not. 
-                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. We are interested in how 
-                quickly you can find the targets and how accurately you can classifiy them before the countdown timer runs down. <?php echo $low_res_warning; ?></p>
-              <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the <?php echo $scenario_1; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_1; ?> scenario" checkbox and click Next to continue.</p>
-              <div class="mb-5">
-                <?php
-                    // echo exec('java --version');
-                    // echo "<br><br>";
-                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
-                    $port = rand(4096, 65535);
-                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
-              
-                    // var_dump($output);
-                    // echo "Process ID: ".$output[0]." | Port: ".$port;
-
-                    $process_id = $output[1];
-                    $process_info = $_GET['PROLIFIC_PID'];
-                    $port_number = $port;
-                    $port_status = "active";
-                    $created_by = "uos-web-user";
-
-                    // update port table
-                    $sql = "INSERT INTO port_table (process_id, process_info, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $process_info . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
-                    if(mysqli_query($con1, $sql)){
-                      // echo "Records inserted successfully.";
-                    } else{
-                      echo "Error inserting record: " . $con->error;
-                      exit();
-                    }
-
-                    $href_url = $base_url . $port . "/preset/scenario?file-name=".$scenario_1.".json";
-                ?>
-                <div class="d-flex flex-column justify-content-center align-content-center mx-auto" style="max-width: 480px;">
-                  <a href='<?php echo $href_url; ?>/' target='_blank' class="btn btn-sm btn-primary">Start <?php echo $scenario_1; ?> Scenario</a>
-                  <br>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check_WSGA" aria-describedby="check_WSGA_invalid_feedback" onclick="validateForm();">
-                    <label class="form-check-label" for="check_WSGA">
-                        I have completed the <?php echo $scenario_1; ?> scenario
-                    </label>
-                    <div id="check_WSGA_invalid_feedback" class="invalid-feedback">
-                      Please confirm you have completed scenario to proceed.
-                    </div>
-                  </div>
-                </div>
+              <h4 class="text-center fw-bold mb-3 mt-5">Study Scenario I: <?php echo $scenario_1; ?></h4>
+              <p class="text-center mb-3">This is the <?php echo $scenario_1; ?> study scenario. Do you trust the operation of the swarm in the video below?<br>
+                Please click play to watch the video.</p>
+              <div class="mb-3 text-center">
+                <video class="shadow bg-body rounded" width="640" height="360" controls>
+                    <source src="video/aiuk2023_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
               </div>
+              <p class="text-center mb-5">Click Next to continue to the questionnaire.</p>
           </div>
 
           <!-- step five -->
@@ -792,62 +627,25 @@
               <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario I Questionnaire</h4>
               <p class="text-center mb-5">This is the <?php echo $scenario_1; ?> study scenario questionnaire. Please complete the form below and click next to continue.</p>
               
-              <?php 
+              <?php
                 $scenario_abbr = "wsga";
-                include 'questionnaire-verification.php'; 
+                include "".$scenario_1q;
               ?>
               
           </div>
 
           <!-- step six -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario II</h4>
-              <p class="text-center mb-5">This is the <?php echo $scenario_2; ?> study scenario. Here you would classify whether images have a human present or not. 
-                Try to find and identify as many of the targets as you can. They are all inside the green area of Southampton Common. We are interested in how 
-                quickly you can find the targets and how accurately you can classifiy them before the countdown timer runs down. <?php echo $low_res_warning; ?></p>
-              <p class="text-center mb-5">Click the Blue "Start Tutorial" button to start the <?php echo $scenario_2; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_2; ?> scenario" checkbox and click Next to continue.</p>
-              <div class="mb-5">
-                <?php
-                    // echo exec('java --version');
-                    // echo "<br><br>";
-                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
-                    $port = rand(4096, 65535);
-                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
-              
-                    // var_dump($output);
-                    // echo "Process ID: ".$output[0]." | Port: ".$port;
-
-                    $process_id = $output[2];
-                    $process_info = $_GET['PROLIFIC_PID'];
-                    $port_number = $port;
-                    $port_status = "active";
-                    $created_by = "uos-web-user";
-
-                    // update port table
-                    $sql = "INSERT INTO port_table (process_id, process_info, port_number, port_status, created_by) VALUES ('" . $process_id . "', '" . $process_info . "', '" . $port_number . "', '" . $port_status . "', '" . $created_by . "')";
-                    if(mysqli_query($con1, $sql)){
-                      // echo "Records inserted successfully.";
-                    } else{
-                      echo "Error inserting record: " . $con->error;
-                      exit();
-                    }
-
-                    $href_url = $base_url . $port . "/preset/scenario?file-name=".$scenario_2.".json";
-                ?>
-                <div class="d-flex flex-column justify-content-center align-content-center mx-auto" style="max-width: 480px;">
-                  <a href='<?php echo $href_url; ?>/' target='_blank' class="btn btn-sm btn-primary">Start <?php echo $scenario_2; ?> Scenario</a>
-                  <br>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check_LKXR" aria-describedby="check_LKXR_invalid_feedback" onclick="validateForm();">
-                    <label class="form-check-label" for="check_LKXR">
-                        I have completed the <?php echo $scenario_2; ?> scenario
-                    </label>
-                    <div id="check_LKXR_invalid_feedback" class="invalid-feedback">
-                      Please confirm you have completed scenario to proceed.
-                    </div>
-                  </div>
-                </div>
+              <h4 class="text-center fw-bold mb-3 mt-5">Study Scenario II: <?php echo $scenario_2; ?></h4>
+              <p class="text-center mb-3">This is the <?php echo $scenario_2; ?> study scenario. Do you trust the operation of the swarm in the video below?<br>
+                Please click play to watch the video.</p>
+              <div class="mb-3 text-center">
+                <video class="shadow bg-body rounded" width="640" height="360" controls>
+                    <source src="video/aiuk2023_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
               </div>
+              <p class="text-center mb-5">Click Next to continue to the questionnaire.</p>
           </div>
 
           <!-- step seven -->
@@ -857,7 +655,7 @@
               
               <?php 
                 $scenario_abbr = "lkxr";
-                include 'questionnaire-verification.php'; 
+                include "".$scenario_2q;
               ?>
 
           </div>
@@ -922,29 +720,7 @@
         
         function validateForm() {
 
-          // // validate that participant has watched youtube briefing video
-          // var youtube_attn_check1 = document.getElementById("txt_youtube_attn_check1");
-          // if (youtube_attn_check1.value != ""){
-          //   youtube_attn_check1.classList.remove("is-invalid");
-          // }
-          // var youtube_attn_check2 = document.getElementById("txt_youtube_attn_check2");
-          // if (youtube_attn_check2.value != ""){
-          //   youtube_attn_check2.classList.remove("is-invalid");
-          // }
-          // var youtube_attn_check3 = document.getElementById("txt_youtube_attn_check3");
-          // if (youtube_attn_check3.value != ""){
-          //   youtube_attn_check3.classList.remove("is-invalid");
-          // }
-          // var youtube_validation = true;
-          // if ((youtube_attn_check1.value != "") && (youtube_attn_check2.value != "") && (youtube_attn_check3.value != "")){
-          //   document.getElementById("youtube_attn_check_alert").classList.add("d-none");
-          //   if ((youtube_attn_check1.value != "3") && (youtube_attn_check2.value != "4") && (youtube_attn_check3.value != "8")){
-          //       document.getElementById("youtube_attn_check_alert").classList.remove("d-none");
-          //       youtube_validation = false;
-          //   }
-          // }
-          youtube_validation = true;
-
+          /* TO UNDO **************************
           // confirm participant consent to participate in study
           var bool_c1 = validateConsent("c1");
           var bool_c2 = validateConsent("c2");
@@ -956,40 +732,12 @@
           // check if a demographic information radio row question element has been selected
           var radio_pcpt_form = ["f1", "f2", "f3", "f4"];
           checkFormElement("pcpt",radio_pcpt_form);
-          
+          */
 
-          // check if the tutorial scenario is completed and add value to allow validation
-          var check_tutorial = document.getElementById("check_tutorial");
-          if (check_tutorial.checked == true){
-            check_tutorial.value = "Completed Tutorial";
-            check_tutorial.classList.remove("is-invalid");
-          } else {
-            check_tutorial.value = "";
-          }
-
-          // check if the WSGA scenario is completed and add value to allow validation
-          var check_WSGA = document.getElementById("check_WSGA");
-          if (check_WSGA.checked == true){
-            check_WSGA.value = "Completed WSGA";
-            check_WSGA.classList.remove("is-invalid");
-          } else {
-            check_WSGA.value = "";
-          }
 
           // check if a wsga radio row element has been selected
-          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
-          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr"];
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8", "u9", "u10", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10"];
+          var radio_wsga_lkxr_form = ["j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12", "j13", "j14", "j15"];
           checkFormElement("wsga",radio_wsga_lkxr_form);
-
-          // check if the LKXR scenario is completed and add value to allow validation
-          var check_LKXR = document.getElementById("check_LKXR");
-          if (check_LKXR.checked == true){
-            check_LKXR.value = "Completed LKXR";
-            check_LKXR.classList.remove("is-invalid");
-          } else {
-            check_LKXR.value = "";
-          }
 
           // check if a lkxr radio row element has been selected
           checkFormElement("lkxr",radio_wsga_lkxr_form);
@@ -1009,11 +757,6 @@
               // and set the current valid status to false
               valid = false;
             }
-          }
-          
-          // confirm youtube validation
-          if (!youtube_validation){
-              valid = false;
           }
 
           // If the valid status is true, mark the step as finished and valid:
