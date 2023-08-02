@@ -223,7 +223,7 @@
         $radio_pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
 
         // halt study submission
-        exit("<h2>Error Submitting Data - This Study has Not Started!</h2>");
+        exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
         
 
         // // update port table
@@ -987,6 +987,9 @@
           if (!youtube_validation){
               valid = false;
           }
+
+          // comment the following line for deployment
+          valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
