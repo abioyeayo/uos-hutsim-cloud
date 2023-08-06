@@ -101,7 +101,7 @@ for i in range(1, NumofDrones):
                        + ']' + '\n' \
                        + 'endmodule' + '\n' + '\n'
 
-ModelTemplate = open(PrismModelDir + '/model_template.txt', 'r')
+ModelTemplate = open(PrismModelDir + '/template_curr.txt', 'r')
 lines = ModelTemplate.readlines()
 ModelTemplate.close()
 
@@ -133,7 +133,7 @@ for j in range(0, NumofRegions):
     cmd2 += 'initTaskP' + str(j + 1) + '=' + str(TaskConfiguration[j])
     cmd2 += ','
 
-cmd2 += 'T=300:300:18000'
+cmd2 += 'T=300:300:30000'
 os.system(cmd2)
 
 # Remove first line in results_bounded.txt
