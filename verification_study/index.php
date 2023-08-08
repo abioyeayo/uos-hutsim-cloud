@@ -396,86 +396,31 @@
           ?>
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
-              <span class="stepIndicator">Briefing <br>(3 min)</span>
+              <span class="stepIndicator">Information <br>(3 min)</span>
               <span class="stepIndicator">Consent <br>(3 min)</span>
+              <span class="stepIndicator">Briefing <br>(5 min)</span>
               <span class="stepIndicator">Tutorial <br>(5 min)</span>
-              <span class="stepIndicator">Scenario I <br>(5 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(1 min)</span>
-              <span class="stepIndicator">Scenario II <br>(5 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(1 min)</span>
-              <span class="stepIndicator">Finish <br>(1 min)</span>
+              <span class="stepIndicator">Scenario I <br>(8 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(5 min)</span>
+              <span class="stepIndicator">Scenario II <br>(8 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(5 min)</span>
+              <span class="stepIndicator">Finish <br>(3 min)</span>
           </div>
           <!-- end step indicators -->
-      
+
           <!-- step one -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Briefing</h4>
-              <p class="text-center mb-3">In this study, you would play the role of a Unmanned Aerial Vehicle (UAV) swarm operator in a drone delivery mission. You would be able 
-                to add UAVs or remove UAVs from the mission. Your aim is to maximise performance and minimise cost. After this, you would be required to 
-                complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated 
-                version of the Google Chrome web browser.</p>
-              <p class="text-center mb-5">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should 
-                take about 10 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
-              <div class="text-center mb-5">
-                <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-
-              <div class="mx-0 mx-sm-auto mb-5">
-                <div class="card">
-                    <div class="card-body">
-                      <div class="text-center">
-                          <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                          <i class="fa fa-users fa-2x mb-3 text-primary"></i>
-                          <p>
-                          <strong>Validation Check</strong>
-                          </p>
-                          <p>Please answer the following questions based on the youtube video above.</p>                          
-                      </div>
-                      <div class="alert alert-danger p-1 text-center d-none" id="youtube_attn_check_alert" role="alert" style="font-size: 0.95rem;">
-                        <i class="fa fa-warning me-2"></i> Validation check failed! Please watch the video and try again.
-                      </div>
-                      <hr />
-                      <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                          <p id="txt_youtube_attn_question1" class="my-3 fw-bold">How many targets where found by the UAV swarm in the tutorial scenario?</p>
-                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
-                          <div class="mb-3" style="max-width: 350px;">
-                              <input type="number" class="form-control" name="txt_youtube_attn_check1" value="3" id="txt_youtube_attn_check1" style="margin-right: 0px;" onchange="validateForm();">
-                              <div class="invalid-feedback">
-                                Please complete validation check to proceed.
-                              </div>
-                          </div>
-                        </div>
-                        <div style="font-size: 0.95rem;">
-                          <p id="txt_youtube_attn_question2" class="my-3 fw-bold">How many search regions were created in the first scenario?</p>
-                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
-                          <div class="mb-3" style="max-width: 350px;">
-                              <input type="number" class="form-control" name="txt_youtube_attn_check2" value="4" id="txt_youtube_attn_check2" style="margin-right: 0px;" onchange="validateForm();">
-                          </div>
-                        </div>
-                        <div style="font-size: 0.95rem;">
-                          <p id="txt_youtube_attn_question3" class="my-3 fw-bold">How many minutes were given to complete the second scenario?</p>
-                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
-                          <div class="mb-3" style="max-width: 350px;">
-                              <input type="number" class="form-control" name="txt_youtube_attn_check3" value="8" id="txt_youtube_attn_check3" style="margin-right: 0px;" onchange="validateForm();">
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                </div>
-              </div>
-
+              <h4 class="text-center fw-bold mb-4 mt-5">Participant Information Sheet</h4>
+              <?php
+                include 'participant-information-sheet.php'; 
+              ?>
           </div>
-
+      
           <!-- step two -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Participant Consent and Information</h4>
-              <p class="text-center mb-5">Thank you for choosing to take part in this study. Please read the following participant information sheet.<br><br>
-              <a href="ERGO-FPSE-69418-Participant-Information-Sheet.pdf" target="_blank">ERGO-FPSE-69418 - Participant Information Sheet</a><br><br>
-              Please complete this consent form before taking part in the study. It is required for your participation. This study has been approved by
-              the University of Southampton ethics committee (ERGO number: 69418).</p>
-              <div class="mx-0 mx-sm-auto mb-5">
+              <h4 class="text-center fw-bold mb-3 mt-5">Participant Consent and Information</h4>
+              <p class="text-center mb-3" style="font-size: 0.95rem;">Thank you for choosing to take part in this study. Please complete this consent form before taking part in the study. It is required for your participation. This study has been approved by the Faculty Research Ethics Committee (FREC) at the University of Southampton (Ethics/ERGO Number: ERGO/FEPS/85523).</p>
+              <div class="mx-0 mx-sm-auto mb-4">
               <div class="card">
                   <div class="card-body">
                   <div class="text-center">
@@ -500,7 +445,7 @@
 
                           "c2" => array(
                                   "abbr" => "c2",
-                                  "question" => "I agree to take part in this research project and agree for my data to be used for the purpose of this study."),
+                                  "question" => "I am aged 18 or over and agree to take part in this study."),
 
                           "c3" => array(
                                   "abbr" => "c3",
@@ -527,7 +472,7 @@
               </div>
               </div>
 
-              <div class="mx-0 mx-sm-auto mb-5">
+              <div class="mx-0 mx-sm-auto mb-4">
               <div class="card">
                   <div class="card-body">
                     <div class="text-center">
@@ -657,8 +602,72 @@
               </div>
               
           </div>
+
+          <!-- step three-one -->
+          <div class="step">
+              <h4 class="text-center fw-bold mb-3 mt-5">Study Briefing</h4>
+              <p class="mb-3" style="font-size: 0.95rem;">In this study, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission.</p>
+                <ol style="font-size: 0.95rem;">
+                  <li><b>You would be able to add UAVs or remove UAVs from the mission.</b></li>
+                  <li><b>The more UAVs you have, the faster you complete the delivery mission. However, adding UAVs increases the mission cost while removing UAVs reduces the mission cost.</b></li>
+                  <li><b>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</b></li>
+                </ol>
+              <p class="mb-3" style="font-size: 0.95rem;">After this, you would be required to complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated version of the Google Chrome web browser.
+              </p>
+              <p class="mb-3" style="font-size: 0.95rem;">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should take about 5 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
+              <div class="text-center mb-4">
+                <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+
+              <div class="mx-0 mx-sm-auto mb-4">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="text-center">
+                          <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
+                          <i class="fa fa-users fa-2x mb-3 text-primary"></i>
+                          <p>
+                          <strong>Validation Check</strong>
+                          </p>
+                          <p>Please answer the following questions based on the youtube video above.</p>                          
+                      </div>
+                      <div class="alert alert-danger p-1 text-center d-none" id="youtube_attn_check_alert" role="alert" style="font-size: 0.95rem;">
+                        <i class="fa fa-warning me-2"></i> Validation check failed! Please watch the video and try again.
+                      </div>
+                      <hr />
+                      <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                          <p id="txt_youtube_attn_question1" class="my-3 fw-bold">How many targets where found by the UAV swarm in the tutorial scenario?</p>
+                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
+                          <div class="mb-3" style="max-width: 350px;">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check1" value="3" id="txt_youtube_attn_check1" style="margin-right: 0px;" onchange="validateForm();">
+                              <div class="invalid-feedback">
+                                Please complete validation check to proceed.
+                              </div>
+                          </div>
+                        </div>
+                        <div style="font-size: 0.95rem;">
+                          <p id="txt_youtube_attn_question2" class="my-3 fw-bold">How many search regions were created in the first scenario?</p>
+                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
+                          <div class="mb-3" style="max-width: 350px;">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check2" value="4" id="txt_youtube_attn_check2" style="margin-right: 0px;" onchange="validateForm();">
+                          </div>
+                        </div>
+                        <div style="font-size: 0.95rem;">
+                          <p id="txt_youtube_attn_question3" class="my-3 fw-bold">How many minutes were given to complete the second scenario?</p>
+                          <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
+                          <div class="mb-3" style="max-width: 350px;">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check3" value="8" id="txt_youtube_attn_check3" style="margin-right: 0px;" onchange="validateForm();">
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                </div>
+              </div>
+
+          </div>
       
-          <!-- step three -->
+          <!-- step three-two -->
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">HutSim Simulator Tutorial</h4>
               <p class="text-center mb-5">Tutorial Scenario - try to find the 3 targets in the circled areas and 
@@ -767,7 +776,7 @@
               
               <?php 
                 $scenario_abbr = "wsga";
-                include 'questionnaire-verification.php'; 
+                include 'questionnaire.php'; 
               ?>
               
           </div>
@@ -830,7 +839,7 @@
               
               <?php 
                 $scenario_abbr = "lkxr";
-                include 'questionnaire-verification.php'; 
+                include 'questionnaire.php'; 
               ?>
 
           </div>
@@ -891,6 +900,9 @@
           }
           // Otherwise, display the correct tab:
           showTab(currentTab);
+          // Scroll to top of page for after pressing next/prev button
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
         
         function validateForm() {
