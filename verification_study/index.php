@@ -607,16 +607,22 @@
           <div class="step">
               <h4 class="text-center fw-bold mb-3 mt-5">Study Briefing</h4>
               <p class="mb-3" style="font-size: 0.95rem;">In this study, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission.</p>
-                <ol style="font-size: 0.95rem;">
-                  <li><b>You would be able to add UAVs or remove UAVs from the mission.</b></li>
-                  <li><b>The more UAVs you have, the faster you complete the delivery mission. However, adding UAVs increases the mission cost while removing UAVs reduces the mission cost.</b></li>
-                  <li><b>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</b></li>
+                <ol type="a" style="font-size: 0.95rem; font-weight:bold;">
+                  <li>You would be able to add UAVs or remove UAVs from the mission.</li>
+                  <li>The more UAVs you have, the faster you complete the delivery mission. However, adding UAVs increases the mission cost while removing UAVs reduces the mission cost.</li>
+                  <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
                 </ol>
               <p class="mb-3" style="font-size: 0.95rem;">After this, you would be required to complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated version of the Google Chrome web browser.
               </p>
-              <p class="mb-3" style="font-size: 0.95rem;">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should take about 5 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
-              <div class="text-center mb-4">
+              <p class="mb-4" style="font-size: 0.95rem;">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should take about 5 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
+              <!-- <div class="text-center mb-4">
                 <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div> -->
+              <div class="mb-4 text-center">
+                <video class="shadow bg-body rounded" width="800" height="450" controls>
+                    <source src="video/aiuk2023_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
               </div>
 
               <div class="mx-0 mx-sm-auto mb-4">
@@ -669,7 +675,7 @@
       
           <!-- step three-two -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">HutSim Simulator Tutorial</h4>
+              <h4 class="text-center fw-bold mb-5 mt-5">HARIS Simulator Tutorial</h4>
               <p class="text-center mb-5">Tutorial Scenario - try to find the 3 targets in the circled areas and 
                 classify them into human casualty or random objects before the countdown timer runs out. We are interested in how quickly you can 
                 find the targets and how accurately you can classifiy them.</p>
