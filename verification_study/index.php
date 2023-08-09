@@ -44,7 +44,7 @@
     
   } else {
         $study_alias = "wsga_lkxr";
-        $study_title = "The impact of formal verification at runtime in human-swarm interaction";
+        $study_title = "The effect of runtime verification on task completion efficiency in human swarm interaction";
         $scenario_1 = "C1Parallel";
         $scenario_2 = "C2Parallel";
         $low_res_warning = "You do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will 
@@ -60,75 +60,55 @@
         $study_id = $_POST['study_id'];
         $session_id = $_POST['session_id'];
         $study_start_time = $_POST['study_start_time'];
-        $study_end_time = date("Y-m-d h:i:s");
+        $study_end_time = date("Y-m-d H:i:s");
         $study_title = $_POST['study_title'];
         $study_alias = $_POST['study_alias'];
 
         // watched youtube video validation check
-        $txt_youtube_attn_check1 = $_POST['txt_youtube_attn_check1'];
-        $txt_youtube_attn_check2 = $_POST['txt_youtube_attn_check2'];
-        $txt_youtube_attn_check3 = $_POST['txt_youtube_attn_check3'];
+        $briefing_attn_chk1 = $_POST['txt_youtube_attn_check1'];
+        $briefing_attn_chk2 = $_POST['txt_youtube_attn_check2'];
+        $briefing_attn_chk3 = $_POST['txt_youtube_attn_check3'];
 
         // participant consent and demographic questions
-        $radio_pcpt_c1 = $_POST['radio_pcpt_c1'];
-        $radio_pcpt_c2 = $_POST['radio_pcpt_c2'];
-        $radio_pcpt_c3 = $_POST['radio_pcpt_c3'];
+        $pcpt_c1 = $_POST['radio_pcpt_c1'];
+        $pcpt_c2 = $_POST['radio_pcpt_c2'];
+        $pcpt_c3 = $_POST['radio_pcpt_c3'];
         $radio_pcpt_f1 = $_POST['radio_pcpt_f1'];
         $radio_pcpt_f2 = $_POST['radio_pcpt_f2'];
         $radio_pcpt_f3 = $_POST['radio_pcpt_f3'];
         $radio_pcpt_f4 = $_POST['radio_pcpt_f4'];
+        $radio_pcpt_p1 = $_POST['radio_pcpt_p1'];
+        $radio_pcpt_p2 = $_POST['radio_pcpt_p2'];
+        $radio_pcpt_p3 = $_POST['radio_pcpt_p3'];
+        $radio_pcpt_p4 = $_POST['radio_pcpt_p4'];
 
         // study wsga questionnaires
-        $radio_wsga_md = $_POST['radio_wsga_md'];
-        $radio_wsga_pd = $_POST['radio_wsga_pd'];
-        $radio_wsga_td = $_POST['radio_wsga_td'];
-        $radio_wsga_pf = $_POST['radio_wsga_pf'];
-        $radio_wsga_ef = $_POST['radio_wsga_ef'];
-        $radio_wsga_fr = $_POST['radio_wsga_fr'];
-        $radio_wsga_j1 = $_POST['radio_wsga_j1'];
-        $radio_wsga_j2 = $_POST['radio_wsga_j2'];
-        $radio_wsga_j3 = $_POST['radio_wsga_j3'];
-        $radio_wsga_j4 = $_POST['radio_wsga_j4'];
-        $radio_wsga_j5 = $_POST['radio_wsga_j5'];
-        $radio_wsga_j6 = $_POST['radio_wsga_j6'];
-        $radio_wsga_j7 = $_POST['radio_wsga_j7'];
-        $radio_wsga_p1 = $_POST['radio_wsga_p1'];
-        $radio_wsga_p2 = $_POST['radio_wsga_p2'];
-        $radio_wsga_p3 = $_POST['radio_wsga_p3'];
-        $radio_wsga_p4 = $_POST['radio_wsga_p4'];
-        $radio_wsga_p5 = $_POST['radio_wsga_p5'];
-        $radio_wsga_p6 = $_POST['radio_wsga_p6'];
-        $radio_wsga_p7 = $_POST['radio_wsga_p7'];
-        $radio_wsga_p8 = $_POST['radio_wsga_p8'];
-        $txt_wsga_p9 = $_POST['txt_wsga_p9'];
-        $radio_wsga_p10 = $_POST['radio_wsga_p10'];
-        $radio_wsga_p11 = $_POST['radio_wsga_p11'];
-
-        // study lkxr questionnaires
-        $radio_lkxr_md = $_POST['radio_lkxr_md'];
-        $radio_lkxr_pd = $_POST['radio_lkxr_pd'];
-        $radio_lkxr_td = $_POST['radio_lkxr_td'];
-        $radio_lkxr_pf = $_POST['radio_lkxr_pf'];
-        $radio_lkxr_ef = $_POST['radio_lkxr_ef'];
-        $radio_lkxr_fr = $_POST['radio_lkxr_fr'];
-        $radio_lkxr_j1 = $_POST['radio_lkxr_j1'];
-        $radio_lkxr_j2 = $_POST['radio_lkxr_j2'];
-        $radio_lkxr_j3 = $_POST['radio_lkxr_j3'];
-        $radio_lkxr_j4 = $_POST['radio_lkxr_j4'];
-        $radio_lkxr_j5 = $_POST['radio_lkxr_j5'];
-        $radio_lkxr_j6 = $_POST['radio_lkxr_j6'];
-        $radio_lkxr_j7 = $_POST['radio_lkxr_j7'];
-        $radio_lkxr_p1 = $_POST['radio_lkxr_p1'];
-        $radio_lkxr_p2 = $_POST['radio_lkxr_p2'];
-        $radio_lkxr_p3 = $_POST['radio_lkxr_p3'];
-        $radio_lkxr_p4 = $_POST['radio_lkxr_p4'];
-        $radio_lkxr_p5 = $_POST['radio_lkxr_p5'];
-        $radio_lkxr_p6 = $_POST['radio_lkxr_p6'];
-        $radio_lkxr_p7 = $_POST['radio_lkxr_p7'];
-        $radio_lkxr_p8 = $_POST['radio_lkxr_p8'];
-        $txt_lkxr_p9 = $_POST['txt_lkxr_p9'];
-        $radio_lkxr_p10 = $_POST['radio_lkxr_p10'];
-        $radio_lkxr_p11 = $_POST['radio_lkxr_p11'];
+        $md = $_POST['radio_wsga_md'];
+        $pd = $_POST['radio_wsga_pd'];
+        $td = $_POST['radio_wsga_td'];
+        $pf = $_POST['radio_wsga_pf'];
+        $ef = $_POST['radio_wsga_ef'];
+        $fr = $_POST['radio_wsga_fr'];
+        $u1 = $_POST['radio_wsga_u1'];
+        $u2 = $_POST['radio_wsga_u2'];
+        $u3 = $_POST['radio_wsga_u3'];
+        $u4 = $_POST['radio_wsga_u4'];
+        $u5 = $_POST['radio_wsga_u5'];
+        $u6 = $_POST['radio_wsga_u6'];
+        $u7 = $_POST['radio_wsga_u7'];
+        $u8 = $_POST['radio_wsga_u8'];
+        $u9 = $_POST['radio_wsga_u9'];
+        $u10 = $_POST['radio_wsga_u10'];
+        $a1 = $_POST['radio_wsga_a1'];
+        $a2 = $_POST['radio_wsga_a2'];
+        $a3 = $_POST['radio_wsga_a3'];
+        $a4 = $_POST['radio_wsga_a4'];
+        $a5 = $_POST['radio_wsga_a5'];
+        $a6 = $_POST['radio_wsga_a6'];
+        $a7 = $_POST['radio_wsga_a7'];
+        $a8 = $_POST['radio_wsga_a8'];
+        $a9 = $_POST['radio_wsga_a9'];
+        $a10 = $_POST['radio_wsga_a10'];
 
         // convert numbers to text demographic information
         switch ($radio_pcpt_f1) {
@@ -217,23 +197,145 @@
             // do nothing
         }
 
-        $radio_pcpt_f1 = mysqli_real_escape_string($con1, $radio_pcpt_f1);
-        $radio_pcpt_f2 = mysqli_real_escape_string($con1, $radio_pcpt_f2);
-        $radio_pcpt_f3 = mysqli_real_escape_string($con1, $radio_pcpt_f3);
-        $radio_pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
+        $pcpt_f1 = mysqli_real_escape_string($con1, $radio_pcpt_f1);
+        $pcpt_f2 = mysqli_real_escape_string($con1, $radio_pcpt_f2);
+        $pcpt_f3 = mysqli_real_escape_string($con1, $radio_pcpt_f3);
+        $pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
+
+
+        // convert numbers to text custom questionnaire data
+        switch ($radio_pcpt_p1) {
+          case "1":
+            $radio_pcpt_p1 = "Scenario 1";
+            break;
+          case "2":
+            $radio_pcpt_p1 = "Scenario 2";
+            break;
+          case "3":
+            $radio_pcpt_p1 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p2) {
+          case "1":
+            $radio_pcpt_p2 = "Random luck";
+            break;
+          case "2":
+            $radio_pcpt_p2 = "The presence of the verification feature";
+            break;
+          case "3":
+            $radio_pcpt_p2 = "The absence of the verification feature";
+            break;
+          case "4":
+            $radio_pcpt_p2 = "The simplicity of the interface";
+            break;
+          case "5":
+            $radio_pcpt_p2 = "Other reasons not listed";
+            break;
+          case "6":
+            $radio_pcpt_p2 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p3) {
+          case "1":
+            $radio_pcpt_p3 = "The simulation interface";
+            break;
+          case "2":
+            $radio_pcpt_p3 = "The verification feature implementation";
+            break;
+          case "3":
+            $radio_pcpt_p3 = "The study questionnaire";
+            break;
+          case "4":
+            $radio_pcpt_p3 = "The tutorial scenario";
+            break;
+          case "5":
+            $radio_pcpt_p3 = "The briefing video";
+            break;
+          case "6":
+            $radio_pcpt_p3 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p4) {
+          case "1":
+            $radio_pcpt_p4 = "Yes";
+            break;
+          case "2":
+            $radio_pcpt_p4 = "No";
+            break;
+          case "3":
+            $radio_pcpt_p4 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        $pcpt_p1 = mysqli_real_escape_string($con1, $radio_pcpt_p1);
+        $pcpt_p2 = mysqli_real_escape_string($con1, $radio_pcpt_p2);
+        $pcpt_p3 = mysqli_real_escape_string($con1, $radio_pcpt_p3);
+        $pcpt_p4 = mysqli_real_escape_string($con1, $radio_pcpt_p4);
+
+
+        // update data table for scenario 1
+        $study_scenario = substr($study_alias,0,4);
+        $sql = "INSERT INTO verification_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, briefing_attn_chk1, briefing_attn_chk2, briefing_attn_chk3, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, md, pd, td, pf, ef, fr, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $briefing_attn_chk1 . "', '" . $briefing_attn_chk2 . "', '" . $briefing_attn_chk3 . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $md . "', '" . $pd . "', '" . $td . "', '" . $pf . "', '" . $ef . "', '" . $fr . "', '" . $u1 . "', '" . $u2 . "', '" . $u3 . "', '" . $u4 . "', '" . $u5 . "', '" . $u6 . "', '" . $u7 . "', '" . $u8 . "', '" . $u9 . "', '" . $u10 . "', '" . $a1 . "', '" . $a2 . "', '" . $a3 . "', '" . $a4 . "', '" . $a5 . "', '" . $a6 . "', '" . $a7 . "', '" . $a8 . "', '" . $a9 . "', '" . $a10 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
+        if(mysqli_query($con1, $sql)){
+            // echo "Records inserted successfully.";
+        } else{
+            echo "Error inserting record: " . $con->error;
+            exit();
+        }
+
+
+        // study lkxr questionnaires
+        $md = $_POST['radio_lkxr_md'];
+        $pd = $_POST['radio_lkxr_pd'];
+        $td = $_POST['radio_lkxr_td'];
+        $pf = $_POST['radio_lkxr_pf'];
+        $ef = $_POST['radio_lkxr_ef'];
+        $fr = $_POST['radio_lkxr_fr'];
+        $u1 = $_POST['radio_lkxr_u1'];
+        $u2 = $_POST['radio_lkxr_u2'];
+        $u3 = $_POST['radio_lkxr_u3'];
+        $u4 = $_POST['radio_lkxr_u4'];
+        $u5 = $_POST['radio_lkxr_u5'];
+        $u6 = $_POST['radio_lkxr_u6'];
+        $u7 = $_POST['radio_lkxr_u7'];
+        $u8 = $_POST['radio_lkxr_u8'];
+        $u9 = $_POST['radio_lkxr_u9'];
+        $u10 = $_POST['radio_lkxr_u10'];
+        $a1 = $_POST['radio_lkxr_a1'];
+        $a2 = $_POST['radio_lkxr_a2'];
+        $a3 = $_POST['radio_lkxr_a3'];
+        $a4 = $_POST['radio_lkxr_a4'];
+        $a5 = $_POST['radio_lkxr_a5'];
+        $a6 = $_POST['radio_lkxr_a6'];
+        $a7 = $_POST['radio_lkxr_a7'];
+        $a8 = $_POST['radio_lkxr_a8'];
+        $a9 = $_POST['radio_lkxr_a9'];
+        $a10 = $_POST['radio_lkxr_a10'];
+
+        // update data table for scenario 2
+        $study_scenario = substr($study_alias,-4);
+        $sql = "INSERT INTO verification_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, briefing_attn_chk1, briefing_attn_chk2, briefing_attn_chk3, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, md, pd, td, pf, ef, fr, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $briefing_attn_chk1 . "', '" . $briefing_attn_chk2 . "', '" . $briefing_attn_chk3 . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $md . "', '" . $pd . "', '" . $td . "', '" . $pf . "', '" . $ef . "', '" . $fr . "', '" . $u1 . "', '" . $u2 . "', '" . $u3 . "', '" . $u4 . "', '" . $u5 . "', '" . $u6 . "', '" . $u7 . "', '" . $u8 . "', '" . $u9 . "', '" . $u10 . "', '" . $a1 . "', '" . $a2 . "', '" . $a3 . "', '" . $a4 . "', '" . $a5 . "', '" . $a6 . "', '" . $a7 . "', '" . $a8 . "', '" . $a9 . "', '" . $a10 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
+        if(mysqli_query($con1, $sql)){
+            // echo "Records inserted successfully.";
+        } else{
+            echo "Error inserting record: " . $con->error;
+            exit();
+        }
+
 
         // halt study submission
         exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
-        
-
-        // // update port table
-        // $sql = "INSERT INTO res_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_start_time, study_end_time, txt_youtube_attn_check1, txt_youtube_attn_check2, txt_youtube_attn_check3, radio_pcpt_c1, radio_pcpt_c2, radio_pcpt_c3, radio_pcpt_f1, radio_pcpt_f2, radio_pcpt_f3, radio_pcpt_f4, radio_wsga_md, radio_wsga_pd, radio_wsga_td, radio_wsga_pf, radio_wsga_ef, radio_wsga_fr, radio_wsga_j1, radio_wsga_j2, radio_wsga_j3, radio_wsga_j4, radio_wsga_j5, radio_wsga_j6, radio_wsga_j7, radio_wsga_p1, radio_wsga_p2, radio_wsga_p3, radio_wsga_p4, radio_wsga_p5, radio_wsga_p6, radio_wsga_p7, radio_wsga_p8, txt_wsga_p9, radio_wsga_p10, radio_wsga_p11, radio_lkxr_md, radio_lkxr_pd, radio_lkxr_td, radio_lkxr_pf, radio_lkxr_ef, radio_lkxr_fr, radio_lkxr_j1, radio_lkxr_j2, radio_lkxr_j3, radio_lkxr_j4, radio_lkxr_j5, radio_lkxr_j6, radio_lkxr_j7, radio_lkxr_p1, radio_lkxr_p2, radio_lkxr_p3, radio_lkxr_p4, radio_lkxr_p5, radio_lkxr_p6, radio_lkxr_p7, radio_lkxr_p8, txt_lkxr_p9, radio_lkxr_p10, radio_lkxr_p11) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $txt_youtube_attn_check1 . "', '" . $txt_youtube_attn_check2 . "', '" . $txt_youtube_attn_check3 . "', '" . $radio_pcpt_c1 . "', '" . $radio_pcpt_c2 . "', '" . $radio_pcpt_c3 . "', '" . $radio_pcpt_f1 . "', '" . $radio_pcpt_f2 . "', '" . $radio_pcpt_f3 . "', '" . $radio_pcpt_f4 . "', '" . $radio_wsga_md . "', '" . $radio_wsga_pd . "', '" . $radio_wsga_td . "', '" . $radio_wsga_pf . "', '" . $radio_wsga_ef . "', '" . $radio_wsga_fr . "', '" . $radio_wsga_j1 . "', '" . $radio_wsga_j2 . "', '" . $radio_wsga_j3 . "', '" . $radio_wsga_j4 . "', '" . $radio_wsga_j5 . "', '" . $radio_wsga_j6 . "', '" . $radio_wsga_j7 . "', '" . $radio_wsga_p1 . "', '" . $radio_wsga_p2 . "', '" . $radio_wsga_p3 . "', '" . $radio_wsga_p4 . "', '" . $radio_wsga_p5 . "', '" . $radio_wsga_p6 . "', '" . $radio_wsga_p7 . "', '" . $radio_wsga_p8 . "', '" . $txt_wsga_p9 . "', '" . $radio_wsga_p10 . "', '" . $radio_wsga_p11 . "', '" . $radio_lkxr_md . "', '" . $radio_lkxr_pd . "', '" . $radio_lkxr_td . "', '" . $radio_lkxr_pf . "', '" . $radio_lkxr_ef . "', '" . $radio_lkxr_fr . "', '" . $radio_lkxr_j1 . "', '" . $radio_lkxr_j2 . "', '" . $radio_lkxr_j3 . "', '" . $radio_lkxr_j4 . "', '" . $radio_lkxr_j5 . "', '" . $radio_lkxr_j6 . "', '" . $radio_lkxr_j7 . "', '" . $radio_lkxr_p1 . "', '" . $radio_lkxr_p2 . "', '" . $radio_lkxr_p3 . "', '" . $radio_lkxr_p4 . "', '" . $radio_lkxr_p5 . "', '" . $radio_lkxr_p6 . "', '" . $radio_lkxr_p7 . "', '" . $radio_lkxr_p8 . "', '" . $txt_lkxr_p9 . "', '" . $radio_lkxr_p10 . "', '" . $radio_lkxr_p11 . "')";
-        // if(mysqli_query($con1, $sql)){
-        //     // echo "Records inserted successfully.";
-        // } else{
-        //     echo "Error inserting record: " . $con->error;
-        //     exit();
-        // }
 
         // redirect back to prolific website to confirm study completion
         header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
@@ -251,7 +353,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Study - The impact of formal verification at runtime in human-swarm interaction | UoS HutSim</title>
+    <title>Study - Runtime verification in human swarm interaction | UoS HutSim</title>
     <style>
       input {
         margin-right: 5px;
@@ -390,7 +492,7 @@
               echo '<input type="hidden" name="prolific_pid" value="'.$_GET['PROLIFIC_PID'].'">';
               echo '<input type="hidden" name="study_id" value="'.$_GET['STUDY_ID'].'">';
               echo '<input type="hidden" name="session_id" value="'.$_GET['SESSION_ID'].'">';
-              echo '<input type="hidden" name="study_start_time" value="'.date("Y-m-d h:i:s").'">';
+              echo '<input type="hidden" name="study_start_time" value="'.date("Y-m-d H:i:s").'">';
               echo '<input type="hidden" name="study_title" value="'.$study_title.'">';
               echo '<input type="hidden" name="study_alias" value="'.$study_alias.'">';
           ?>
@@ -412,7 +514,7 @@
           <div class="step">
               <h4 class="text-center fw-bold mb-4 mt-5">Participant Information Sheet</h4>
               <?php
-                include 'participant-information-sheet.php'; 
+                include 'contents/participant-information-sheet.php'; 
               ?>
           </div>
       
@@ -472,134 +574,9 @@
               </div>
               </div>
 
-              <div class="mx-0 mx-sm-auto mb-4">
-              <div class="card">
-                  <div class="card-body">
-                    <div class="text-center">
-                        <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
-                        <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
-                        <p>
-                        <strong>Demographic Information</strong>
-                        </p>
-                    </div>
-
-                    <hr />
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                          <p id="radio_pcpt_f1_question" class="my-3 fw-bold">What is your gender?</p>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Male" id="radio_pcpt_f1_1" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f1_1">Male</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Female" id="radio_pcpt_f1_2" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f1_2">Female</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Non-binary" id="radio_pcpt_f1_3" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f1_3">Non-binary</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Prefer not to say" id="radio_pcpt_f1_4" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f1_4">Prefer not to say</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f1" value="Other" id="radio_pcpt_f1_5" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f1_5">Other</label>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                          <p id="radio_pcpt_f2_question" class="my-3 fw-bold">What level of education do you hold?</p>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="No formal education" id="radio_pcpt_f2_1" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_1">No formal education</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="GCSE or equivalent" id="radio_pcpt_f2_2" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_2">GCSE or equivalent</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="A-level or equivalent" id="radio_pcpt_f2_3" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_3">A-level or equivalent</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Bachelor's degree or equivalent" id="radio_pcpt_f2_4" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_4">Bachelor's degree or equivalent</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Master's degree or equivalent" id="radio_pcpt_f2_5" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_5">Master's degree or equivalent</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Doctoral degree or equivalent" id="radio_pcpt_f2_6" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_6">Doctoral degree or equivalent</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f2" value="Other" id="radio_pcpt_f2_7" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f2_7">Other</label>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                          <p id="radio_pcpt_f3_question" class="my-3 fw-bold">What is your level of computer expertise?</p>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Hardly ever use the computer and do not feel very competent" id="radio_pcpt_f3_1" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f3_1">Hardly ever use the computer and do not feel very competent</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Slightly below average computer user, infrequently using the computer, using few applications" id="radio_pcpt_f3_2" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f3_2">Slightly below average computer user, infrequently using the computer, using few applications</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Average computer user, using the internet, standard applications etc." id="radio_pcpt_f3_3" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f3_3">Average computer user, using the internet, standard applications etc.</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="User of specialist applications but not an IT specialist" id="radio_pcpt_f3_4" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f3_4">User of specialist applications but not an IT specialist</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Considerable IT expertise short of full professional qualifications" id="radio_pcpt_f3_5" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f3_5">Considerable IT expertise short of full professional qualifications</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f3" value="Professionally qualified computer scientist or IT specialist" id="radio_pcpt_f3_6" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f3_6">Professionally qualified computer scientist or IT specialist</label>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                          <p id="radio_pcpt_f4_question" class="my-3 fw-bold">How familiar are you with Unmanned Aerial Vehicles (UAVs) and/or Swarm robotics?</p>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="Not at all" id="radio_pcpt_f4_1" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f4_1">Not at all</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="I know a bit about the technology but have never used it" id="radio_pcpt_f4_2" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f4_2">I know a bit about the technology but have never used it</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="I have some experience with operating UAVs as a hobby" id="radio_pcpt_f4_3" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f4_3">I have some experience with operating UAVs as a hobby</label>
-                          </div>
-                          <div class="form-check mb-2">
-                              <input class="form-check-input" type="radio" name="radio_pcpt_f4" value="I professionally work with UAVs" id="radio_pcpt_f4_4" onchange="validateForm();" />
-                              <label class="form-check-label" for="radio_pcpt_f4_4">I professionally work with UAVs</label>
-                          </div>
-                        </div>
-                    </div>
-
-                  </div>
-              </div>
-              </div>
+              <?php
+                include 'contents/demographic-information.php'; 
+              ?>
               
           </div>
 
@@ -634,7 +611,7 @@
                           <p>
                           <strong>Validation Check</strong>
                           </p>
-                          <p>Please answer the following questions based on the youtube video above.</p>                          
+                          <p>Please answer the following questions based on the briefing video above.</p>                          
                       </div>
                       <div class="alert alert-danger p-1 text-center d-none" id="youtube_attn_check_alert" role="alert" style="font-size: 0.95rem;">
                         <i class="fa fa-warning me-2"></i> Validation check failed! Please watch the video and try again.
@@ -782,7 +759,7 @@
               
               <?php 
                 $scenario_abbr = "wsga";
-                include 'questionnaire.php'; 
+                include 'contents/questionnaire.php'; 
               ?>
               
           </div>
@@ -845,15 +822,19 @@
               
               <?php 
                 $scenario_abbr = "lkxr";
-                include 'questionnaire.php'; 
+                include 'contents/questionnaire.php'; 
               ?>
 
           </div>
 
           <!-- step eight -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Submit to Finish</h4>
-              <p class="text-center mb-5">Thank you for participating in our study. Please submit to finish and be automatically redirected back to prolific to confirm study completion.</p>
+              <h4 class="text-center fw-bold mb-5 mt-5">Study Conclusion</h4>
+              <p class="text-center mb-5">Thank you for participating in our study. Please complete the final survey below and click submit to finish and confirm study completion. You would be automatically redirected back to prolific with a study completion code.</p>
+
+              <?php
+                include 'contents/custom-questionnaire.php'; 
+              ?>
           </div>
       
           <!-- start previous / next buttons -->
@@ -943,8 +924,8 @@
               document.getElementById("consent_check_alert").classList.remove("d-none");
           }
 
-          // check if a demographic information radio row question element has been selected
-          var radio_pcpt_form = ["f1", "f2", "f3", "f4"];
+          // check if a demographic information & custom questionnaire radio row question element has been selected
+          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4"];
           checkFormElement("pcpt",radio_pcpt_form);
           
 
@@ -967,8 +948,6 @@
           }
 
           // check if a wsga radio row element has been selected
-          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
-          // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr"];
           var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8", "u9", "u10", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10"];
           checkFormElement("wsga",radio_wsga_lkxr_form);
 
@@ -1006,8 +985,8 @@
               valid = false;
           }
 
-          // comment the following line for deployment
-          valid = true;
+          // // comment the following line for deployment
+          // valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
@@ -1019,7 +998,7 @@
         function checkFormElement(element_id_abbr,radio_wsga_lkxr_form){
           // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
           for(j=0;j<radio_wsga_lkxr_form.length;j++){
-            if (radio_wsga_lkxr_form[j] == "p9") {
+            if (radio_wsga_lkxr_form[j] == "p9_textbox_input") {
                 if (document.getElementById("txt_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]).value == ""){
                     document.getElementById("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]+"_question").classList.add("text-danger");
                 } else {

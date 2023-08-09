@@ -5,7 +5,7 @@
                 <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
                 <i class="fa fa-gears fa-2x mb-3 text-primary"></i>
                 <p>
-                <strong>Task Workload Index</strong>
+                <strong>Task Index</strong>
                 </p>
             </div>
 
@@ -265,7 +265,7 @@
                 $acceptance_index = array(
                     "a1" => array(
                         "abbr" => "a1",
-                        "question" => "TThe verification feature is useful."),
+                        "question" => "The verification feature is useful."),
 
                     "a2" => array(
                         "abbr" => "a2",
@@ -351,21 +351,7 @@
                         <div class="form-check form-check-inline mb-2">
                             <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="7" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_7" onchange="validateForm();" />
                             <label class="form-check-label" for="radio_'.$scenario_abbr.'_'.$component['abbr'].'_7">
-                            7
-                            </label>
-                        </div>
-
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="8" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_8" onchange="validateForm();" />
-                            <label class="form-check-label" for="radio_'.$scenario_abbr.'_'.$component['abbr'].'_8">
-                            8
-                            </label>
-                        </div>
-
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="radio" name="radio_'.$scenario_abbr.'_'.$component['abbr'].'" value="9" id="radio_'.$scenario_abbr.'_'.$component['abbr'].'_9" onchange="validateForm();" />
-                            <label class="form-check-label" for="radio_'.$scenario_abbr.'_'.$component['abbr'].'_9">
-                            9 ('.$acceptance_index_upper_label.')
+                            7 ('.$acceptance_index_upper_label.')
                             </label>
                         </div>
                         </div>';
