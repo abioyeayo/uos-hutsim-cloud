@@ -66,71 +66,35 @@
         $study_title = $_POST['study_title'];
         $study_alias = $_POST['study_alias'];
 
-        // watched youtube video validation check
-        $txt_youtube_attn_check1 = $_POST['txt_youtube_attn_check1'];
-        $txt_youtube_attn_check2 = $_POST['txt_youtube_attn_check2'];
-        $txt_youtube_attn_check3 = $_POST['txt_youtube_attn_check3'];
-
         // participant consent and demographic questions
-        $radio_pcpt_c1 = $_POST['radio_pcpt_c1'];
-        $radio_pcpt_c2 = $_POST['radio_pcpt_c2'];
-        $radio_pcpt_c3 = $_POST['radio_pcpt_c3'];
+        $pcpt_c1 = $_POST['radio_pcpt_c1'];
+        $pcpt_c2 = $_POST['radio_pcpt_c2'];
+        $pcpt_c3 = $_POST['radio_pcpt_c3'];
         $radio_pcpt_f1 = $_POST['radio_pcpt_f1'];
         $radio_pcpt_f2 = $_POST['radio_pcpt_f2'];
         $radio_pcpt_f3 = $_POST['radio_pcpt_f3'];
         $radio_pcpt_f4 = $_POST['radio_pcpt_f4'];
+        $radio_pcpt_p1 = $_POST['radio_pcpt_p1'];
+        $radio_pcpt_p2 = $_POST['radio_pcpt_p2'];
+        $radio_pcpt_p3 = $_POST['radio_pcpt_p3'];
+        $radio_pcpt_p4 = $_POST['radio_pcpt_p4'];
 
         // study wsga questionnaires
-        $radio_wsga_md = $_POST['radio_wsga_md'];
-        $radio_wsga_pd = $_POST['radio_wsga_pd'];
-        $radio_wsga_td = $_POST['radio_wsga_td'];
-        $radio_wsga_pf = $_POST['radio_wsga_pf'];
-        $radio_wsga_ef = $_POST['radio_wsga_ef'];
-        $radio_wsga_fr = $_POST['radio_wsga_fr'];
-        $radio_wsga_j1 = $_POST['radio_wsga_j1'];
-        $radio_wsga_j2 = $_POST['radio_wsga_j2'];
-        $radio_wsga_j3 = $_POST['radio_wsga_j3'];
-        $radio_wsga_j4 = $_POST['radio_wsga_j4'];
-        $radio_wsga_j5 = $_POST['radio_wsga_j5'];
-        $radio_wsga_j6 = $_POST['radio_wsga_j6'];
-        $radio_wsga_j7 = $_POST['radio_wsga_j7'];
-        $radio_wsga_p1 = $_POST['radio_wsga_p1'];
-        $radio_wsga_p2 = $_POST['radio_wsga_p2'];
-        $radio_wsga_p3 = $_POST['radio_wsga_p3'];
-        $radio_wsga_p4 = $_POST['radio_wsga_p4'];
-        $radio_wsga_p5 = $_POST['radio_wsga_p5'];
-        $radio_wsga_p6 = $_POST['radio_wsga_p6'];
-        $radio_wsga_p7 = $_POST['radio_wsga_p7'];
-        $radio_wsga_p8 = $_POST['radio_wsga_p8'];
-        $txt_wsga_p9 = $_POST['txt_wsga_p9'];
-        $radio_wsga_p10 = $_POST['radio_wsga_p10'];
-        $radio_wsga_p11 = $_POST['radio_wsga_p11'];
-
-        // study lkxr questionnaires
-        $radio_lkxr_md = $_POST['radio_lkxr_md'];
-        $radio_lkxr_pd = $_POST['radio_lkxr_pd'];
-        $radio_lkxr_td = $_POST['radio_lkxr_td'];
-        $radio_lkxr_pf = $_POST['radio_lkxr_pf'];
-        $radio_lkxr_ef = $_POST['radio_lkxr_ef'];
-        $radio_lkxr_fr = $_POST['radio_lkxr_fr'];
-        $radio_lkxr_j1 = $_POST['radio_lkxr_j1'];
-        $radio_lkxr_j2 = $_POST['radio_lkxr_j2'];
-        $radio_lkxr_j3 = $_POST['radio_lkxr_j3'];
-        $radio_lkxr_j4 = $_POST['radio_lkxr_j4'];
-        $radio_lkxr_j5 = $_POST['radio_lkxr_j5'];
-        $radio_lkxr_j6 = $_POST['radio_lkxr_j6'];
-        $radio_lkxr_j7 = $_POST['radio_lkxr_j7'];
-        $radio_lkxr_p1 = $_POST['radio_lkxr_p1'];
-        $radio_lkxr_p2 = $_POST['radio_lkxr_p2'];
-        $radio_lkxr_p3 = $_POST['radio_lkxr_p3'];
-        $radio_lkxr_p4 = $_POST['radio_lkxr_p4'];
-        $radio_lkxr_p5 = $_POST['radio_lkxr_p5'];
-        $radio_lkxr_p6 = $_POST['radio_lkxr_p6'];
-        $radio_lkxr_p7 = $_POST['radio_lkxr_p7'];
-        $radio_lkxr_p8 = $_POST['radio_lkxr_p8'];
-        $txt_lkxr_p9 = $_POST['txt_lkxr_p9'];
-        $radio_lkxr_p10 = $_POST['radio_lkxr_p10'];
-        $radio_lkxr_p11 = $_POST['radio_lkxr_p11'];
+        $j1 = $_POST['radio_wsga_j1'];
+        $j2 = $_POST['radio_wsga_j2'];
+        $j3 = $_POST['radio_wsga_j3'];
+        $j4 = $_POST['radio_wsga_j4'];
+        $j5 = $_POST['radio_wsga_j5'];
+        $j6 = $_POST['radio_wsga_j6'];
+        $j7 = $_POST['radio_wsga_j7'];
+        $j8 = $_POST['radio_wsga_j8'];
+        $j9 = $_POST['radio_wsga_j9'];
+        $j10 = $_POST['radio_wsga_j10'];
+        $j11 = $_POST['radio_wsga_j11'];
+        $j12 = $_POST['radio_wsga_j12'];
+        $j13 = $_POST['radio_wsga_j13'];
+        $j14 = $_POST['radio_wsga_j14'];
+        $j15 = $_POST['radio_wsga_j15'];
 
         // convert numbers to text demographic information
         switch ($radio_pcpt_f1) {
@@ -219,23 +183,133 @@
             // do nothing
         }
 
-        $radio_pcpt_f1 = mysqli_real_escape_string($con1, $radio_pcpt_f1);
-        $radio_pcpt_f2 = mysqli_real_escape_string($con1, $radio_pcpt_f2);
-        $radio_pcpt_f3 = mysqli_real_escape_string($con1, $radio_pcpt_f3);
-        $radio_pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
+        $pcpt_f1 = mysqli_real_escape_string($con1, $radio_pcpt_f1);
+        $pcpt_f2 = mysqli_real_escape_string($con1, $radio_pcpt_f2);
+        $pcpt_f3 = mysqli_real_escape_string($con1, $radio_pcpt_f3);
+        $pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
+
+        // convert numbers to text custom questionnaire data
+        switch ($radio_pcpt_p1) {
+          case "1":
+            $radio_pcpt_p1 = "Scenario 1";
+            break;
+          case "2":
+            $radio_pcpt_p1 = "Scenario 2";
+            break;
+          case "3":
+            $radio_pcpt_p1 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p2) {
+          case "1":
+            $radio_pcpt_p2 = "Random luck";
+            break;
+          case "2":
+            $radio_pcpt_p2 = "The presence of the verification feature";
+            break;
+          case "3":
+            $radio_pcpt_p2 = "The absence of the verification feature";
+            break;
+          case "4":
+            $radio_pcpt_p2 = "The simplicity of the interface";
+            break;
+          case "5":
+            $radio_pcpt_p2 = "Other reasons not listed";
+            break;
+          case "6":
+            $radio_pcpt_p2 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p3) {
+          case "1":
+            $radio_pcpt_p3 = "The simulation interface";
+            break;
+          case "2":
+            $radio_pcpt_p3 = "The verification feature implementation";
+            break;
+          case "3":
+            $radio_pcpt_p3 = "The study questionnaire";
+            break;
+          case "4":
+            $radio_pcpt_p3 = "The tutorial scenario";
+            break;
+          case "5":
+            $radio_pcpt_p3 = "The briefing video";
+            break;
+          case "6":
+            $radio_pcpt_p3 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p4) {
+          case "1":
+            $radio_pcpt_p4 = "Yes";
+            break;
+          case "2":
+            $radio_pcpt_p4 = "No";
+            break;
+          case "3":
+            $radio_pcpt_p4 = "I don't know";
+            break;
+          default:
+            // do nothing
+        }
+
+        $pcpt_p1 = mysqli_real_escape_string($con1, $radio_pcpt_p1);
+        $pcpt_p2 = mysqli_real_escape_string($con1, $radio_pcpt_p2);
+        $pcpt_p3 = mysqli_real_escape_string($con1, $radio_pcpt_p3);
+        $pcpt_p4 = mysqli_real_escape_string($con1, $radio_pcpt_p4);
+
+
+        // update data table for scenario 1
+        $study_scenario = substr($study_alias,0,4);
+        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
+        if(mysqli_query($con1, $sql)){
+            // echo "Records inserted successfully.";
+        } else{
+            echo "Error inserting record: " . $con->error;
+            exit();
+        }
+
+
+        // study lkxr questionnaires
+        $j1 = $_POST['radio_lkxr_j1'];
+        $j2 = $_POST['radio_lkxr_j2'];
+        $j3 = $_POST['radio_lkxr_j3'];
+        $j4 = $_POST['radio_lkxr_j4'];
+        $j5 = $_POST['radio_lkxr_j5'];
+        $j6 = $_POST['radio_lkxr_j6'];
+        $j7 = $_POST['radio_lkxr_j7'];
+        $j8 = $_POST['radio_lkxr_j8'];
+        $j9 = $_POST['radio_lkxr_j9'];
+        $j10 = $_POST['radio_lkxr_j10'];
+        $j11 = $_POST['radio_lkxr_j11'];
+        $j12 = $_POST['radio_lkxr_j12'];
+        $j13 = $_POST['radio_lkxr_j13'];
+        $j14 = $_POST['radio_lkxr_j14'];
+        $j15 = $_POST['radio_lkxr_j15'];
+
+        // update data table for scenario 2
+        $study_scenario = substr($study_alias,-4);
+        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
+        if(mysqli_query($con1, $sql)){
+            // echo "Records inserted successfully.";
+        } else{
+            echo "Error inserting record: " . $con->error;
+            exit();
+        }
 
         // halt study submission
         exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
         
-
-        // // update port table
-        // $sql = "INSERT INTO res_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_start_time, study_end_time, txt_youtube_attn_check1, txt_youtube_attn_check2, txt_youtube_attn_check3, radio_pcpt_c1, radio_pcpt_c2, radio_pcpt_c3, radio_pcpt_f1, radio_pcpt_f2, radio_pcpt_f3, radio_pcpt_f4, radio_wsga_md, radio_wsga_pd, radio_wsga_td, radio_wsga_pf, radio_wsga_ef, radio_wsga_fr, radio_wsga_j1, radio_wsga_j2, radio_wsga_j3, radio_wsga_j4, radio_wsga_j5, radio_wsga_j6, radio_wsga_j7, radio_wsga_p1, radio_wsga_p2, radio_wsga_p3, radio_wsga_p4, radio_wsga_p5, radio_wsga_p6, radio_wsga_p7, radio_wsga_p8, txt_wsga_p9, radio_wsga_p10, radio_wsga_p11, radio_lkxr_md, radio_lkxr_pd, radio_lkxr_td, radio_lkxr_pf, radio_lkxr_ef, radio_lkxr_fr, radio_lkxr_j1, radio_lkxr_j2, radio_lkxr_j3, radio_lkxr_j4, radio_lkxr_j5, radio_lkxr_j6, radio_lkxr_j7, radio_lkxr_p1, radio_lkxr_p2, radio_lkxr_p3, radio_lkxr_p4, radio_lkxr_p5, radio_lkxr_p6, radio_lkxr_p7, radio_lkxr_p8, txt_lkxr_p9, radio_lkxr_p10, radio_lkxr_p11) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $txt_youtube_attn_check1 . "', '" . $txt_youtube_attn_check2 . "', '" . $txt_youtube_attn_check3 . "', '" . $radio_pcpt_c1 . "', '" . $radio_pcpt_c2 . "', '" . $radio_pcpt_c3 . "', '" . $radio_pcpt_f1 . "', '" . $radio_pcpt_f2 . "', '" . $radio_pcpt_f3 . "', '" . $radio_pcpt_f4 . "', '" . $radio_wsga_md . "', '" . $radio_wsga_pd . "', '" . $radio_wsga_td . "', '" . $radio_wsga_pf . "', '" . $radio_wsga_ef . "', '" . $radio_wsga_fr . "', '" . $radio_wsga_j1 . "', '" . $radio_wsga_j2 . "', '" . $radio_wsga_j3 . "', '" . $radio_wsga_j4 . "', '" . $radio_wsga_j5 . "', '" . $radio_wsga_j6 . "', '" . $radio_wsga_j7 . "', '" . $radio_wsga_p1 . "', '" . $radio_wsga_p2 . "', '" . $radio_wsga_p3 . "', '" . $radio_wsga_p4 . "', '" . $radio_wsga_p5 . "', '" . $radio_wsga_p6 . "', '" . $radio_wsga_p7 . "', '" . $radio_wsga_p8 . "', '" . $txt_wsga_p9 . "', '" . $radio_wsga_p10 . "', '" . $radio_wsga_p11 . "', '" . $radio_lkxr_md . "', '" . $radio_lkxr_pd . "', '" . $radio_lkxr_td . "', '" . $radio_lkxr_pf . "', '" . $radio_lkxr_ef . "', '" . $radio_lkxr_fr . "', '" . $radio_lkxr_j1 . "', '" . $radio_lkxr_j2 . "', '" . $radio_lkxr_j3 . "', '" . $radio_lkxr_j4 . "', '" . $radio_lkxr_j5 . "', '" . $radio_lkxr_j6 . "', '" . $radio_lkxr_j7 . "', '" . $radio_lkxr_p1 . "', '" . $radio_lkxr_p2 . "', '" . $radio_lkxr_p3 . "', '" . $radio_lkxr_p4 . "', '" . $radio_lkxr_p5 . "', '" . $radio_lkxr_p6 . "', '" . $radio_lkxr_p7 . "', '" . $radio_lkxr_p8 . "', '" . $txt_lkxr_p9 . "', '" . $radio_lkxr_p10 . "', '" . $radio_lkxr_p11 . "')";
-        // if(mysqli_query($con1, $sql)){
-        //     // echo "Records inserted successfully.";
-        // } else{
-        //     echo "Error inserting record: " . $con->error;
-        //     exit();
-        // }
 
         // redirect back to prolific website to confirm study completion
         header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
@@ -664,6 +738,118 @@
           <div class="step">
               <h4 class="text-center fw-bold mb-5 mt-5">Submit to Finish</h4>
               <p class="text-center mb-5">Thank you for participating in our study. Please submit to finish and be automatically redirected back to prolific to confirm study completion.</p>
+              <div class="mx-0 mx-sm-auto mb-4">
+                <div class="card">
+                    <div class="card-body">
+                    <div class="text-center">
+                        <!-- <i class="fa fa-file-text-o fa-4x mb-3 text-primary"></i> -->
+                        <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                        <p>
+                        <strong>Relative Comparison</strong>
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">Which scenario did you think you were more successful at?</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario 1" id="radio_pcpt_p1_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_1">Scenario 1</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario 2" id="radio_pcpt_p1_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_2">Scenario 2</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="I don't know" id="radio_pcpt_p1_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_3">I don't know</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Why did you think you were more successful in the scenario choosen above?</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Random luck" id="radio_pcpt_p2_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_1">Random luck</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The presence of the verification feature" id="radio_pcpt_p2_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_2">The presence of the verification feature</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The absence of the verification feature" id="radio_pcpt_p2_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_3">The absence of the verification feature</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The simplicity of the interface" id="radio_pcpt_p2_4" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_4">The simplicity of the interface</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Other reasons not listed" id="radio_pcpt_p2_5" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_5">Other reasons not listed</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="I don't know" id="radio_pcpt_p2_6" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_6">I don't know</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                            <p id="radio_pcpt_p3_question" class="my-3 fw-bold">What do you think can be improved in this study?</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The simulation interface" id="radio_pcpt_p3_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_1">The simulation interface</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The verification feature implementation" id="radio_pcpt_p3_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_2">The verification feature implementation</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The study questionnaire" id="radio_pcpt_p3_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_3">The study questionnaire</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The tutorial scenario" id="radio_pcpt_p3_4" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_4">The tutorial scenario</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The briefing video" id="radio_pcpt_p3_5" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_5">The briefing video</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_6" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_6">I don't know</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4">
+                        <div style="font-size: 0.95rem;">
+                            <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Would you use the verification feature if it was optional?</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="Yes" id="radio_pcpt_p4_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_1">Yes</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="No" id="radio_pcpt_p4_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_2">No</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="I don't know" id="radio_pcpt_p4_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_3">I don't know</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
           </div>
       
           <!-- start previous / next buttons -->
@@ -716,6 +902,9 @@
           }
           // Otherwise, display the correct tab:
           showTab(currentTab);
+          // Scroll to top of page for after pressing next/prev button
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
         
         function validateForm() {
@@ -729,7 +918,7 @@
           }
 
           // check if a demographic information radio row question element has been selected
-          var radio_pcpt_form = ["f1", "f2", "f3", "f4"];
+          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4"];
           checkFormElement("pcpt",radio_pcpt_form);
 
 
@@ -756,6 +945,9 @@
               valid = false;
             }
           }
+
+          // comment the following line for deployment
+          valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
