@@ -14,45 +14,278 @@
   //  $base_url = "http://localhost:"; 
 
 
-  // csahadxk - SGP1BA
-  // q6knar5d - SGP2AB
-  // phjrynu5 - SGP2BA
-  // vg5est5j - SGP1AB & catchall
+  $group_id = $_GET['GROUP_ID']; 
 
-  $group_id = $_GET['GROUP_ID'];
-  if ($group_id == "csahadxk"){
-        $study_alias = "lkxr_wsga";
-        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP1BA)";
-        $scenario_1 = "LKXR";
-        $scenario_2 = "WSGA";
-        $low_res_warning = "You do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will 
-                            only see the basic scans that are added to the view window automatically.";
+  if ($group_id == "CLALM"){ 
+        $study_alias = "A1-1_M1-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 1)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A1-1.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "62"; 
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M1-1.mp4"; 
+	      $scenario_2_speed = "7.33"; 
+        $scenario_2_accuracy = "45"; 
+        $deception_warning = ""; 
 
-  } else if ($group_id == "q6knar5d"){
-        $study_alias = "qeri_trrv";
-        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP2AB)";
-        $scenario_1 = "QERI";
-        $scenario_2 = "TRRV";
-        $low_res_warning = "";
+ 
+  } else if ($group_id == "CLMLA"){ 
+        $study_alias = "M1-1_A1-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 2)";
+	      $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php"; 
+	      $scenario_1_video = "M1-1.mp4";
+	      $scenario_1_speed = "7.33"; 
+        $scenario_1_accuracy = "45";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php";  
+        $scenario_2_video = "A1-1.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "62";  
+        $deception_warning = "";  
 
-  } else if ($group_id == "phjrynu5"){
-        $study_alias = "trrv_qeri";
-        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP2BA)";
-        $scenario_1 = "TRRV";
-        $scenario_2 = "QERI";
-        $low_res_warning = "";
-    
-  } else {
-        $study_alias = "wsga_lkxr";
-        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction";
-        $scenario_1 = "Fully Autonomous";
-        $scenario_1q = "questionnaire_fully_autonomous.php";
-        $scenario_2 = "Human Operated";
-        $scenario_2q = "questionnaire_human_operated.php";
-        $low_res_warning = "You do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will 
-                            only see the basic scans that are added to the view window automatically.";
+  
 
-  }
+  } else if ($group_id == "CLAHM"){ 
+        $study_alias = "A1-1_M1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 3)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A1-1.mp4";
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "62"; 
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M1-2.mp4"; 
+	      $scenario_2_speed = "8.78"; 
+        $scenario_2_accuracy = "67"; 
+        $deception_warning = ""; 
+
+     
+
+  } else if ($group_id == "CHMLA"){ 
+        $study_alias = "M1-2_A1-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 4)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php";
+        $scenario_1_video = "M1-2.mp4"; 
+	      $scenario_1_speed = "8.78"; 
+        $scenario_1_accuracy = "67";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A1-1.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "62";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "CHALM"){ 
+        $study_alias = "A1-2_M1-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 5)";
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A1-2.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "88";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M1-1.mp4";
+	      $scenario_2_speed = "7.33"; 
+        $scenario_2_accuracy = "45";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "CLMHA"){ 
+        $study_alias = "M1-1_A1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 6)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php";
+	      $scenario_1_video = "M1-1.mp4"; 
+	      $scenario_1_speed = "7.33"; 
+        $scenario_1_accuracy = "45";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A1-2.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "88";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "CHAHM"){ 
+        $study_alias = "A1-2_M1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 7)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A1-2.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "88";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M1-2.mp4";
+	      $scenario_2_speed = "8.78"; 
+        $scenario_2_accuracy = "67";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "CHMHA"){ 
+        $study_alias = "M1-2_A1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 8)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php";
+        $scenario_1_video = "M1-2.mp4"; 
+	      $scenario_1_speed = "8.78"; 
+        $scenario_1_accuracy = "67";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php";  
+        $scenario_2_video = "A1-2.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "88";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "TLALM"){ 
+        $study_alias = "A2-1_M2-7"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 9)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A2-1.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "62";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M2-7.mp4";
+	      $scenario_2_speed = "6.00"; 
+        $scenario_2_accuracy = "56";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually human-operated and the second video (scenario 2) 
+			     was actually fully autonomous!"; 
+
+
+  } else if ($group_id == "TLMLA"){ 
+        $study_alias = "M2-7_A2-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 10)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php";
+        $scenario_1_video = "M2-7.mp4"; 
+	      $scenario_1_speed = "6.00"; 
+        $scenario_1_accuracy = "56";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A2-1.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "62";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually fully autonomous and the second video (scenario 2) 
+			     was actually human-operated!"; 
+
+
+  } else if ($group_id == "TLAHM"){ 
+        $study_alias = "A2-1_M2-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 11)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A2-1.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "62";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M2-2.mp4";
+	      $scenario_2_speed = "4.67"; 
+        $scenario_2_accuracy = "100";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually human-operated and the second video (scenario 2) 
+			     was actually fully autonomous!"; 
+
+
+  } else if ($group_id == "THMLA"){ 
+        $study_alias = "M2-2_A2-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 12)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php"; 
+        $scenario_1_video = "M2-2.mp4";
+	      $scenario_1_speed = "4.67"; 
+        $scenario_1_accuracy = "100"; 
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A2-1.mp4"; 
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "62"; 
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually fully autonomous and the second video (scenario 2) 
+			     was actually human-operated!"; 
+
+
+  } else if ($group_id == "THALM"){ 
+        $study_alias = "A2-3_M2-7"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 13)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A2-3.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "100";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M2-7.mp4";
+	      $scenario_2_speed = "6.00"; 
+        $scenario_2_accuracy = "56";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually human-operated and the second video (scenario 2) 
+			     was actually fully autonomous!"; 
+
+
+} else if ($group_id == "TLMHA"){ 
+        $study_alias = "M2-7_A2-3"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 14)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php";
+        $scenario_1_video = "M2-7.mp4"; 
+	      $scenario_1_speed = "6.00"; 
+        $scenario_1_accuracy = "56";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A2-3.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "100";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually fully autonomous and the second video (scenario 2) 
+			     was actually human-operated!"; 
+
+
+  } else if ($group_id == "THAHM"){ 
+        $study_alias = "A2-3_M2-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 15)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A2-3.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "100";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M2-2.mp4";
+	      $scenario_2_speed = "4.67"; 
+        $scenario_2_accuracy = "100";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually human-operated and the second video (scenario 2) 
+			     was actually fully autonomous!"; 
+
+
+  } else if ($group_id == "THMHA"){ 
+        $study_alias = "M2-2_A2-3"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 16)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php"; 
+        $scenario_1_video = "M2-2.mp4"; 
+	      $scenario_1_speed = "4.67"; 
+        $scenario_1_accuracy = "100";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A2-3.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "100";  
+        $deception_warning = "<b> Moment Of Truth </b>: The first video (scenario 1) was actually fully autonomous and the second video (scenario 2) 
+			     was actually human-operated!"; 
+
+  } else { 
+
+        exit("Invalid Group ID. Please contact researcher."); 
+
+  } 
 
 
    if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -191,10 +424,10 @@
         // convert numbers to text custom questionnaire data
         switch ($radio_pcpt_p1) {
           case "1":
-            $radio_pcpt_p1 = "Scenario 1";
+            $radio_pcpt_p1 = "Yes";
             break;
           case "2":
-            $radio_pcpt_p1 = "Scenario 2";
+            $radio_pcpt_p1 = "No";
             break;
           case "3":
             $radio_pcpt_p1 = "I don't know";
@@ -205,21 +438,12 @@
 
         switch ($radio_pcpt_p2) {
           case "1":
-            $radio_pcpt_p2 = "Random luck";
+            $radio_pcpt_p2 = "Yes";
             break;
           case "2":
-            $radio_pcpt_p2 = "The presence of the verification feature";
+            $radio_pcpt_p2 = "No";
             break;
           case "3":
-            $radio_pcpt_p2 = "The absence of the verification feature";
-            break;
-          case "4":
-            $radio_pcpt_p2 = "The simplicity of the interface";
-            break;
-          case "5":
-            $radio_pcpt_p2 = "Other reasons not listed";
-            break;
-          case "6":
             $radio_pcpt_p2 = "I don't know";
             break;
           default:
@@ -228,21 +452,18 @@
 
         switch ($radio_pcpt_p3) {
           case "1":
-            $radio_pcpt_p3 = "The simulation interface";
+            $radio_pcpt_p3 = "The fully autonomous scenario";
             break;
           case "2":
-            $radio_pcpt_p3 = "The verification feature implementation";
+            $radio_pcpt_p3 = "The human-operated scenario";
             break;
           case "3":
-            $radio_pcpt_p3 = "The study questionnaire";
+            $radio_pcpt_p3 = "I trust both scenarios equally";
             break;
           case "4":
-            $radio_pcpt_p3 = "The tutorial scenario";
+            $radio_pcpt_p3 = "I do not trust any of the scenarios";
             break;
           case "5":
-            $radio_pcpt_p3 = "The briefing video";
-            break;
-          case "6":
             $radio_pcpt_p3 = "I don't know";
             break;
           default:
@@ -251,12 +472,21 @@
 
         switch ($radio_pcpt_p4) {
           case "1":
-            $radio_pcpt_p4 = "Yes";
+            $radio_pcpt_p4 = "The performance of the system";
             break;
           case "2":
-            $radio_pcpt_p4 = "No";
+            $radio_pcpt_p4 = "I don't normally trust autonomous systems";
             break;
           case "3":
+            $radio_pcpt_p4 = "Humans are not perfect and therefore I don't normally trust humans";
+            break;
+          case "4":
+            $radio_pcpt_p4 = "The appearance of the system";
+            break;
+          case "5":
+            $radio_pcpt_p4 = "Other reasons not listed";
+            break;
+          case "6":
             $radio_pcpt_p4 = "I don't know";
             break;
           default:
@@ -307,13 +537,14 @@
             exit();
         }
 
-        // halt study submission
-        exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
+        // // halt study submission
+        // exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
         
 
         // redirect back to prolific website to confirm study completion
-        header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
+        // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
         // header("Location: https://app.prolific.co/submissions/complete?cc=C1HYHPCW"); // Paurav's prolific redirect via Mohammad's account
+        header("Location: https://app.prolific.co/submissions/complete?cc=CDE5EZ41"); // Hemangi's placebo effect study prolific redirect
         exit();
 
    }
@@ -475,9 +706,9 @@
               <span class="stepIndicator">Briefing <br>(3 min)</span>
               <span class="stepIndicator">Consent <br>(2 min)</span>
               <!-- <span class="stepIndicator">Tutorial <br>(5 min)</span> -->
-              <span class="stepIndicator">Scenario I <br>(5 min)</span>
+              <span class="stepIndicator">Scenario I <br>(3 min)</span>
               <span class="stepIndicator">Questionnaire <br>(2 min)</span>
-              <span class="stepIndicator">Scenario II <br>(5 min)</span>
+              <span class="stepIndicator">Scenario II <br>(2 min)</span>
               <span class="stepIndicator">Questionnaire <br>(2 min)</span>
               <span class="stepIndicator">Finish <br>(1 min)</span>
           </div>
@@ -685,11 +916,25 @@
           <!-- step four -->
           <div class="step">
               <h4 class="text-center fw-bold mb-3 mt-5">Study Scenario I: <?php echo $scenario_1; ?></h4>
-              <p class="text-center mb-3">This is the <?php echo $scenario_1; ?> study scenario. Do you trust the operation of the swarm in the video below?<br>
-                Please click play to watch the video.</p>
+              <p class="text-center mb-3">This is the <?php echo $scenario_1; ?> study scenario. The performance of the system is as shown in the table below.</p>
+
+              <div class="text-center">
+                <table class="table table-bordered table-sm">
+                  <tr>
+                    <th>Speed (target per minutes)</th>
+                    <th>Accuracy (percentage %)</th>
+                  </tr>
+                  <tr>
+                    <td><?php echo $scenario_1_speed; ?></td>
+                    <td><?php echo $scenario_1_accuracy; ?></td>
+                  </tr>
+                </table>
+              </div>
+              
+              <p class="text-center mb-3">Do you trust the operation of the swarm in the video below? Please click play to watch the video. It is recommended to watch the video in fullscreen.</p>
               <div class="mb-3 text-center">
                 <video class="shadow bg-body rounded" width="640" height="360" controls>
-                    <source src="video/aiuk2023_demo.mp4" type="video/mp4">
+                    <source src="video/<?php echo $scenario_1_video; ?>" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
               </div>
@@ -711,11 +956,25 @@
           <!-- step six -->
           <div class="step">
               <h4 class="text-center fw-bold mb-3 mt-5">Study Scenario II: <?php echo $scenario_2; ?></h4>
-              <p class="text-center mb-3">This is the <?php echo $scenario_2; ?> study scenario. Do you trust the operation of the swarm in the video below?<br>
-                Please click play to watch the video.</p>
+              <p class="text-center mb-3">This is the <?php echo $scenario_2; ?> study scenario. The performance of the system is as shown in the table below.</p>
+
+              <div class="text-center">
+                <table class="table table-bordered table-sm">
+                  <tr>
+                    <th>Speed (target per minutes)</th>
+                    <th>Accuracy (percentage %)</th>
+                  </tr>
+                  <tr>
+                    <td><?php echo $scenario_2_speed; ?></td>
+                    <td><?php echo $scenario_2_accuracy; ?></td>
+                  </tr>
+                </table>
+              </div>
+              
+              <p class="text-center mb-3">Do you trust the operation of the swarm in the video below? Please click play to watch the video.  It is recommended to watch the video in fullscreen.</p>
               <div class="mb-3 text-center">
                 <video class="shadow bg-body rounded" width="640" height="360" controls>
-                    <source src="video/aiuk2023_demo.mp4" type="video/mp4">
+                    <source src="video/<?php echo $scenario_2_video; ?>" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
               </div>
@@ -753,14 +1012,14 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">Which scenario did you think you were more successful at?</p>
+                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">If you had been told the truth at the beginning, would it have affected your decision?</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario 1" id="radio_pcpt_p1_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p1_1">Scenario 1</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Yes" id="radio_pcpt_p1_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_1">Yes</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario 2" id="radio_pcpt_p1_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p1_2">Scenario 2</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="No" id="radio_pcpt_p1_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_2">No</label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="I don't know" id="radio_pcpt_p1_3" onchange="validateForm();" />
@@ -771,78 +1030,74 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Why did you think you were more successful in the scenario choosen above?</p>
+                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">If you were being deceived about which video was autonomously operatored and which was human operated, and now you are being told the truth that the case was reversed, would this have affected your decision?</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Random luck" id="radio_pcpt_p2_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_1">Random luck</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Yes" id="radio_pcpt_p2_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_1">Yes</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The presence of the verification feature" id="radio_pcpt_p2_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_2">The presence of the verification feature</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="No" id="radio_pcpt_p2_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_2">No</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The absence of the verification feature" id="radio_pcpt_p2_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_3">The absence of the verification feature</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The simplicity of the interface" id="radio_pcpt_p2_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_4">The simplicity of the interface</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Other reasons not listed" id="radio_pcpt_p2_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_5">Other reasons not listed</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="I don't know" id="radio_pcpt_p2_6" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_6">I don't know</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="I don't know" id="radio_pcpt_p2_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_3">I don't know</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p3_question" class="my-3 fw-bold">What do you think can be improved in this study?</p>
+                            <p id="radio_pcpt_p3_question" class="my-3 fw-bold">Which scenario did you trust more?</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The simulation interface" id="radio_pcpt_p3_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p3_1">The simulation interface</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The fully autonomous scenario" id="radio_pcpt_p3_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_1">The fully autonomous scenario</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The verification feature implementation" id="radio_pcpt_p3_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p3_2">The verification feature implementation</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The human-operated scenario" id="radio_pcpt_p3_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_2">The human-operated scenario</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The study questionnaire" id="radio_pcpt_p3_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p3_3">The study questionnaire</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I trust both scenarios equally" id="radio_pcpt_p3_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_3">I trust both scenarios equally</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The tutorial scenario" id="radio_pcpt_p3_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p3_4">The tutorial scenario</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I do not trust any of the scenarios" id="radio_pcpt_p3_4" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_4">I do not trust any of the scenarios</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The briefing video" id="radio_pcpt_p3_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p3_5">The briefing video</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_6" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p3_6">I don't know</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_5" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p3_5">I don't know</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Would you use the verification feature if it was optional?</p>
+                            <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Which of these options affected your trust the most in the scenario choosen above?</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="Yes" id="radio_pcpt_p4_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p4_1">Yes</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="The performance of the system" id="radio_pcpt_p4_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_1">The performance of the system</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="No" id="radio_pcpt_p4_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p4_2">No</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="I don't normally trust autonomous systems" id="radio_pcpt_p4_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_2">I don't normally trust autonomous systems</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="I don't know" id="radio_pcpt_p4_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p4_3">I don't know</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="Humans are not perfect and therefore I don't normally trust humans" id="radio_pcpt_p4_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_3">Humans are not perfect and therefore I don't normally trust humans</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="The appearance of the system" id="radio_pcpt_p4_4" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_4">The appearance of the system</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="Other reasons not listed" id="radio_pcpt_p4_5" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_5">Other reasons not listed</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="I don't know" id="radio_pcpt_p4_6" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p4_6">I don't know</label>
                             </div>
                         </div>
                     </div>
