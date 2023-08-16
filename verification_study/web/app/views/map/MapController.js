@@ -124,7 +124,7 @@ var MapController = {
         this.state.on("change:allocationUndoAvailable change:allocationRedoAvailable", function () {
             MapController.onUndoRedoAvailableChange();
         });
-        this.state.on("change:editMode", function () {
+        this.state.on("change:editMode change:uiOptions", function () {
             MapController.swapMode(self.state.isEdit(), false);
         });
         this.state.on("change:scoreInfo", function () {
@@ -339,6 +339,8 @@ var MapController = {
                 $("#uncertainties_wrapper_div").show();
             } else if (option === "ranges") {
                 $("#ranges_wrapper_div").show();
+            } else if (option === "verification") {
+                $("#bounded_prediction_canvas").show();
             }
         });
         try {

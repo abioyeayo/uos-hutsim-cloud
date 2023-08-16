@@ -1,63 +1,76 @@
-2023-08-09 14:32:49; 29.599999999999927; LGSTRT; Reset log (scenario, username); C1Parallel; 12 
-2023-08-09 14:32:59; 77.00000000000055; DELTSK; Removed task (id, lat, lng); Task-1; 50.930406436854064; -1.4087765176194567
-2023-08-09 14:32:59; 77.00000000000055; TSKCMP; Task completed (id); Task-1
-2023-08-09 14:33:03; 96.60000000000083; DELTSK; Removed task (id, lat, lng); Task-36; 50.92885923708728; -1.4052933022735803
-2023-08-09 14:33:03; 96.60000000000083; TSKCMP; Task completed (id); Task-36
-2023-08-09 14:33:03; 97.20000000000084; DELTSK; Removed task (id, lat, lng); Task-37; 50.92953545444562; -1.4125459954498498
-2023-08-09 14:33:03; 97.20000000000084; TSKCMP; Task completed (id); Task-37
-2023-08-09 14:33:04; 102.40000000000092; DELTSK; Removed task (id, lat, lng); Task-38; 50.93111776464794; -1.4111727044342248
-2023-08-09 14:33:04; 102.40000000000092; TSKCMP; Task completed (id); Task-38
-2023-08-09 14:33:17; 169.39999999999893; DELTSK; Removed task (id, lat, lng); Task-30; 50.9313733924892; -1.4088301617997545
-2023-08-09 14:33:17; 169.39999999999893; TSKCMP; Task completed (id); Task-30
-2023-08-09 14:33:27; 216.79999999999623; DELTSK; Removed task (id, lat, lng); Task-2; 50.931672991713675; -1.4100888476949058
-2023-08-09 14:33:27; 216.79999999999623; TSKCMP; Task completed (id); Task-2
-2023-08-09 14:33:29; 225.9999999999957; DELTSK; Removed task (id, lat, lng); Task-4; 50.93075337596277; -1.4129641757588707
-2023-08-09 14:33:29; 225.9999999999957; TSKCMP; Task completed (id); Task-4
-2023-08-09 14:33:31; 239.59999999999494; DELTSK; Removed task (id, lat, lng); Task-34; 50.93157624776372; -1.40644836019453
-2023-08-09 14:33:31; 239.59999999999494; TSKCMP; Task completed (id); Task-34
-2023-08-09 14:33:43; 296.39999999999173; DELTSK; Removed task (id, lat, lng); Task-35; 50.92983298696892; -1.403877095913717
-2023-08-09 14:33:43; 296.39999999999173; TSKCMP; Task completed (id); Task-35
-2023-08-09 14:33:56; 363.5999999999879; DELTSK; Removed task (id, lat, lng); Task-29; 50.93108939361847; -1.404774661769237
-2023-08-09 14:33:56; 363.5999999999879; TSKCMP; Task completed (id); Task-29
-2023-08-09 14:33:59; 376.3999999999872; DELTSK; Removed task (id, lat, lng); Task-17; 50.93245527706298; -1.4083580930131334
-2023-08-09 14:33:59; 376.3999999999872; TSKCMP; Task completed (id); Task-17
-2023-08-09 14:34:03; 398.5999999999859; DELTSK; Removed task (id, lat, lng); Task-7; 50.929617354931835; -1.4145091281514488
-2023-08-09 14:34:03; 398.5999999999859; TSKCMP; Task completed (id); Task-7
-2023-08-09 14:34:30; 529.9999999999835; DELTSK; Removed task (id, lat, lng); Task-3; 50.93197051056372; -1.4123633609395347
-2023-08-09 14:34:30; 529.9999999999835; TSKCMP; Task completed (id); Task-3
-2023-08-09 14:34:34; 551.9999999999885; DELTSK; Removed task (id, lat, lng); Task-28; 50.93280688413088; -1.4057831723588365
-2023-08-09 14:34:34; 551.9999999999885; TSKCMP; Task completed (id); Task-28
-2023-08-09 14:34:56; 660.0000000000131; DELTSK; Removed task (id, lat, lng); Task-8; 50.92880589435095; -1.4160969958882652
-2023-08-09 14:34:56; 660.0000000000131; TSKCMP; Task completed (id); Task-8
-2023-08-09 14:35:10; 732.2000000000295; DELTSK; Removed task (id, lat, lng); Task-14; 50.93348792388018; -1.4115084512481357
-2023-08-09 14:35:10; 732.2000000000295; TSKCMP; Task completed (id); Task-14
-2023-08-09 14:35:15; 757.6000000000353; DELTSK; Removed task (id, lat, lng); Task-18; 50.93365884407936; -1.406469817866649
-2023-08-09 14:35:15; 757.6000000000353; TSKCMP; Task completed (id); Task-18
-2023-08-09 14:35:25; 804.4000000000459; DELTSK; Removed task (id, lat, lng); Task-12; 50.9328360091243; -1.4136937366109215
-2023-08-09 14:35:25; 804.4000000000459; TSKCMP; Task completed (id); Task-12
-2023-08-09 14:35:38; 869.4000000000607; DELTSK; Removed task (id, lat, lng); Task-6; 50.93086156699484; -1.416054080544027
-2023-08-09 14:35:38; 869.4000000000607; TSKCMP; Task completed (id); Task-6
-2023-08-09 14:35:57; 963.8000000000822; DELTSK; Removed task (id, lat, lng); Task-5; 50.931781180606606; -1.4152816043477379
-2023-08-09 14:35:57; 963.8000000000822; TSKCMP; Task completed (id); Task-5
-2023-08-09 14:36:12; 1038.800000000099; DELTSK; Removed task (id, lat, lng); Task-15; 50.93371781600553; -1.4116801126250889
-2023-08-09 14:36:12; 1038.800000000099; TSKCMP; Task completed (id); Task-15
-2023-08-09 14:36:15; 1054.2000000001026; DELTSK; Removed task (id, lat, lng); Task-40; 50.934011765409174; -1.4102500245331018
-2023-08-09 14:36:15; 1054.2000000001026; TSKCMP; Task completed (id); Task-40
-2023-08-09 14:36:36; 1160.6000000001268; DELTSK; Removed task (id, lat, lng); Task-27; 50.932604034223786; -1.4028434712785143
-2023-08-09 14:36:36; 1160.6000000001268; TSKCMP; Task completed (id); Task-27
-2023-08-09 14:37:03; 1296.4000000001577; DELTSK; Removed task (id, lat, lng); Task-13; 50.934485821141116; -1.4115908847432457
-2023-08-09 14:37:03; 1296.4000000001577; TSKCMP; Task completed (id); Task-13
-2023-08-09 14:37:13; 1346.200000000169; DELTSK; Removed task (id, lat, lng); Task-19; 50.93475419822368; -1.4077787358659166
-2023-08-09 14:37:13; 1346.200000000169; TSKCMP; Task completed (id); Task-19
-2023-08-09 14:37:24; 1399.000000000181; DELTSK; Removed task (id, lat, lng); Task-16; 50.93466441866604; -1.4099634988555576
-2023-08-09 14:37:24; 1399.000000000181; TSKCMP; Task completed (id); Task-16
-2023-08-09 14:37:54; 1552.0000000002158; DELTSK; Removed task (id, lat, lng); Task-9; 50.93124023362525; -1.4173844562154136
-2023-08-09 14:37:54; 1552.0000000002158; TSKCMP; Task completed (id); Task-9
-2023-08-09 14:38:03; 1596.4000000002259; DELTSK; Removed task (id, lat, lng); Task-11; 50.93394490561711; -1.4144232974629722
-2023-08-09 14:38:03; 1596.4000000002259; TSKCMP; Task completed (id); Task-11
-2023-08-09 14:38:10; 1628.6000000002332; DELTSK; Removed task (id, lat, lng); Task-21; 50.93483533454142; -1.4058046300309557
-2023-08-09 14:38:10; 1628.6000000002332; TSKCMP; Task completed (id); Task-21
-2023-08-09 14:38:32; 1738.000000000258; DELTSK; Removed task (id, lat, lng); Task-25; 50.933969873187536; -1.4029936749833483
-2023-08-09 14:38:32; 1738.000000000258; TSKCMP; Task completed (id); Task-25
-2023-08-09 14:38:44; 0.0; SVRST; Server reset 
-2023-08-09 14:38:44; 0.0; SVRST; Server reset 
+2023-08-16 11:18:41; 0.0; LGSTRT; Reset log (scenario, username); Scenario 1; 13 
+2023-08-16 11:18:44; 0.0; SIMST; Simulation started
+2023-08-16 11:18:45; 5.000000000000002; AUTRN; Autorun of model;
+2023-08-16 11:18:45; 5.000000000000002; MDSTO; Model starting on the current number of agents (#); 5
+2023-08-16 11:18:45; 5.000000000000002; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-16 11:18:45; 5.000000000000002; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-4 
+2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-1 
+2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-2 
+2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-5 
+2023-08-16 11:18:51; 34.799999999999955; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-3 
+2023-08-16 11:18:51; 34.99999999999996; MDSTO; Model starting on the current number of agents (#); 6
+2023-08-16 11:18:51; 34.99999999999996; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-16 11:18:51; 34.99999999999996; SPWN; Hub spawed an agent - now there are (numAgents); 5 
+2023-08-16 11:18:51; 34.99999999999996; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-16 11:18:51; 37.19999999999999; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-6 
+2023-08-16 11:18:51; 37.19999999999999; MDSTO; Model starting on the current number of agents (#); 7
+2023-08-16 11:18:51; 37.19999999999999; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-16 11:18:51; 37.19999999999999; SPWN; Hub spawed an agent - now there are (numAgents); 6 
+2023-08-16 11:18:51; 37.19999999999999; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-16 11:18:52; 39.000000000000014; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-7 
+2023-08-16 11:18:52; 39.20000000000002; MDSTO; Model starting on the current number of agents (#); 8
+2023-08-16 11:18:52; 39.20000000000002; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-16 11:18:52; 39.20000000000002; SPWN; Hub spawed an agent - now there are (numAgents); 7 
+2023-08-16 11:18:52; 39.20000000000002; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-16 11:18:53; 47.20000000000013; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-12 
+2023-08-16 11:18:54; 47.400000000000134; SPWN; Hub spawed an agent - now there are (numAgents); 8 
+2023-08-16 11:18:54; 47.400000000000134; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-16 11:18:54; 47.400000000000134; MDSTO; Model starting on the current number of agents (#); 9
+2023-08-16 11:18:54; 47.400000000000134; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-16 11:19:01; 86.8000000000007; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-2; UAV-3; 39 
+2023-08-16 11:19:01; 86.8000000000007; DELTSK; Removed task (id, lat, lng); Task-2; 50.9295; -1.40493
+2023-08-16 11:19:02; 91.20000000000076; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-1; UAV-2; 38 
+2023-08-16 11:19:02; 91.20000000000076; DELTSK; Removed task (id, lat, lng); Task-1; 50.92861201823444; -1.4083548992865773
+2023-08-16 11:19:03; 95.60000000000082; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-4; UAV-1; 37 
+2023-08-16 11:19:03; 95.60000000000082; DELTSK; Removed task (id, lat, lng); Task-4; 50.92920912373895; -1.4065721725970581
+2023-08-16 11:19:04; 100.60000000000089; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-5; UAV-4; 36 
+2023-08-16 11:19:04; 100.60000000000089; DELTSK; Removed task (id, lat, lng); Task-5; 50.92809666040806; -1.4093217629816241
+2023-08-16 11:19:05; 106.00000000000097; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-6; UAV-6; 35 
+2023-08-16 11:19:05; 106.00000000000097; DELTSK; Removed task (id, lat, lng); Task-6; 50.93005055983864; -1.4056972955868583
+2023-08-16 11:19:06; 106.80000000000098; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-3; UAV-5; 34 
+2023-08-16 11:19:06; 106.80000000000098; DELTSK; Removed task (id, lat, lng); Task-3; 50.92994841492357; -1.4071062570258561
+2023-08-16 11:19:07; 116.40000000000111; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-7; UAV-7; 33 
+2023-08-16 11:19:07; 116.40000000000111; DELTSK; Removed task (id, lat, lng); Task-7; 50.93000751140818; -1.4033381902024118
+2023-08-16 11:19:11; 134.8000000000009; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-9 
+2023-08-16 11:19:12; 138.80000000000067; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-12; UAV-8; 32 
+2023-08-16 11:19:12; 138.80000000000067; DELTSK; Removed task (id, lat, lng); Task-12; 50.929786740075315; -1.40918219247446
+2023-08-16 11:19:12; 140.20000000000059; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-10 
+2023-08-16 11:19:13; 142.40000000000046; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-11 
+2023-08-16 11:19:16; 159.1999999999995; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-8 
+2023-08-16 11:19:17; 165.39999999999915; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-13 
+2023-08-16 11:19:18; 169.19999999999894; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-15 
+2023-08-16 11:19:21; 182.99999999999815; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-17 
+2023-08-16 11:19:24; 196.1999999999974; MDDNU; Model done at 1 under the current number of agents in time (result, elapsed time); 1507.0; 29.995454814
+2023-08-16 11:19:27; 213.7999999999964; MDDNO; Model done on the current number of agents in time (result, elapsed time); 1367.0; 33.528846533
+2023-08-16 11:19:27; 214.19999999999638; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-18 
+2023-08-16 11:19:28; 216.19999999999627; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-9; UAV-3; 31 
+2023-08-16 11:19:28; 216.19999999999627; DELTSK; Removed task (id, lat, lng); Task-9; 50.93066909873102; -1.4039824598576496
+2023-08-16 11:19:29; 222.3999999999959; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-10; UAV-1; 30 
+2023-08-16 11:19:29; 222.3999999999959; DELTSK; Removed task (id, lat, lng); Task-10; 50.93081696774981; -1.4061380751777348
+2023-08-16 11:19:30; 227.59999999999562; MDDNV; Model done at 1 over the current number of agents in time (result, elapsed time); 1067.0; 36.263315041
+2023-08-16 11:19:30; 229.5999999999955; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-11; UAV-2; 29 
+2023-08-16 11:19:30; 229.5999999999955; DELTSK; Removed task (id, lat, lng); Task-11; 50.930798337916976; -1.407493372489891
+2023-08-16 11:19:34; 247.79999999999447; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-8; UAV-4; 28 
+2023-08-16 11:19:34; 247.79999999999447; DELTSK; Removed task (id, lat, lng); Task-8; 50.92827852277433; -1.4110170656391918
+2023-08-16 11:19:36; 259.9999999999938; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-13; UAV-6; 27 
+2023-08-16 11:19:36; 259.9999999999938; DELTSK; Removed task (id, lat, lng); Task-13; 50.931187141625635; -1.4031897830286877
+2023-08-16 11:19:38; 266.19999999999345; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-15; UAV-5; 26 
+2023-08-16 11:19:38; 266.19999999999345; DELTSK; Removed task (id, lat, lng); Task-15; 50.931408584248175; -1.4067357156266629
+2023-08-16 11:19:41; 281.1999999999926; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-17; UAV-7; 25 
+2023-08-16 11:19:41; 281.1999999999926; DELTSK; Removed task (id, lat, lng); Task-17; 50.9315432755547; -1.4047072901650142
+2023-08-16 11:19:43; 292.39999999999196; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-14 
+2023-08-16 11:19:44; 300.7999999999915; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-16 
+2023-08-16 11:19:47; 312.5999999999908; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-23 
+2023-08-16 11:19:47; 312.9999999999908; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-18; UAV-8; 24 
+2023-08-16 11:19:47; 312.9999999999908; DELTSK; Removed task (id, lat, lng); Task-18; 50.92922815350693; -1.4114083187927104

@@ -34,10 +34,14 @@ App.Views.Prediction = Backbone.View.extend({
                 self.update();
             });
             this.state.on("change:estimatedCompletionOverTime", function () {
-                self.updateOverBound();
+                if (self.state.getEstimatedCompletionTime() !== -1) {
+                    self.updateOverBound();
+                }
             });
             this.state.on("change:estimatedCompletionUnderTime", function () {
-                self.updateUnderBound();
+                if (self.state.getEstimatedCompletionTime() !== -1) {
+                    self.updateUnderBound();
+                }
             });
             // TODO over and under here
         }
@@ -69,8 +73,9 @@ App.Views.Prediction = Backbone.View.extend({
             pred = document.getElementById("bounded_prediction_text");
             background = document.getElementById("bounded_prediction_circle");
             if (this.state.getEstimatedCompletionTime() === -1) {
-                pred.innerHTML = "?%";
-                background.style.background = "rgb(255,255,255)";
+                var current = pred.innerHTML
+                pred.innerHTML = "?" + current;
+                //background.style.background = "rgb(255,255,255)";
             }  else {
                 console.log(this.state.getEstimatedCompletionTime())
                 var eta;
@@ -146,6 +151,5 @@ App.Views.Prediction = Backbone.View.extend({
         var green = p < 80 ? 255 : Math.round(256 - (p - 80) * 5.12);
         return "rgb(" + red + "," + green + ",0)";
     }
-
 
 });

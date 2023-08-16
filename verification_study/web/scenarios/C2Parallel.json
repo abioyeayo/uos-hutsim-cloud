@@ -3,23 +3,31 @@
   "gameDescription": "Scenario 2 (Parallel Model execution)",
   "extendedUIOptions": {
     "predictions": false,
-    "uncertainties": false
+    "uncertainties": false,
+    "verification": true
   },
   "flockingEnabled": false,
   "allocationMethod" : "bestfirst",
   "allocationStyle": "dynamic",
   "modelStyle": "justOn",
+  "verificationParameters": {
+    "isEnabled": true,
+    "samples": 500,
+    "isDummy": true,
+    "delayTime": 15,
+    "delayBound": 5
+  },
   "varianceParameters": {
-    "speedPerAgent": 0.5,
-    "batteryPerAgent": 0.0002
+    "speedPerAgent": 0.1,
+    "batteryPerAgent": 0.0001
   },
   "noiseParameters": {
-    "speedPerSecond": 0.25,
-    "batteryPerStep": 0.0001
+    "speedPerSecond": 0.125,
+    "batteryPerStep": 0.00005
   },
   "hub": {
-    "lat": 50.924960005573894,
-    "lng": -1.4097036668874585
+    "lat": 50.925,
+    "lng": -1.41
   },
   "timeLimitSeconds": 360,
   "uncertaintyRadius": 200.0,
@@ -29,20 +37,20 @@
   },
   "agents": [
     {
-      "lat": 50.924425463893395,
-      "lng": -1.4088101213508741
+      "lat": 50.9258,
+      "lng": -1.41
     },
     {
-      "lat": 50.92393858723503,
-      "lng": -1.4097971742683546
+      "lat": 50.925,
+      "lng": -1.4108
     },
     {
-      "lat": 50.92402649589759,
-      "lng": -1.4078767126136915
+      "lat": 50.925,
+      "lng": -1.4092
     },
     {
-      "lat": 50.92330026788851,
-      "lng": -1.409243221988048
+      "lat": 50.9242,
+      "lng": -1.41
     }
   ],
   "tasks": [
@@ -52,8 +60,8 @@
       "type": 4
     },
     {
-      "lat": 50.92710781770394,
-      "lng": -1.4084215969043046,
+      "lat": 50.93037446430563,
+      "lng": -1.404517177010554,
       "type": 4
     },
     {
@@ -117,12 +125,12 @@
       "type": 4
     },
     {
-      "lat": 50.928782506212414,
-      "lng": -1.4087478476416961,
+      "lat": 50.93141681051758,
+      "lng": -1.4104345949058872,
       "type": 4
     },
     {
-      "lat": 50.92899536300523,
+      "lat": 50.92923,
       "lng": -1.411350065119227,
       "type": 4
     },

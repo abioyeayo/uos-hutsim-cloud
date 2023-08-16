@@ -91,6 +91,10 @@ var simulator = {
             collapsible: true,
             active: false
         });
+        // 20230815_2107h - (Ayo Abioye) a.o.abioye@soton.ac.uk added mission cost
+        $("#mission_cost_canvas").accordion({
+            collapsible: true
+        });
 
         $("#accordion_score").accordion({
             collapsible: true
@@ -158,9 +162,8 @@ var simulator = {
                     self.initialisedState = true;
                     MapController.swapMode(self.state.isEdit(), false);
 
-
+                    sleep(200)
                     if (self.state.getUserName() === "") {
-                        // TODO get their name, also log it in backend
                         var name = null;
                         while (name == null || name === "") {
                             name = prompt("Please enter your prolific ID", "");
@@ -168,8 +171,8 @@ var simulator = {
                         $.post("/mode/scenario/registerUser", {
                             userName: name
                         });
-
                     }
+                    sleep(200)
 
                     if (self.state.attributes.prov_doc == null) {
                         var api = new $.provStoreApi({
