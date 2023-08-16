@@ -651,9 +651,9 @@
       
           <!-- step three-two -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">HARIS Simulator Tutorial</h4>
-              <p class="mb-3">This is the Tutorial study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
-                <ol type="a" style="font-weight:bold;">
+              <h4 class="text-center fw-bold mb-3 mt-5">HARIS Simulator Tutorial</h4>
+              <p class="mb-3" style="font-size: 0.95rem;">This is the Tutorial study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
+                <ol type="a" style="font-weight:bold; font-size: 0.95rem;">
                   <li>Your mission is to complete 8 drone deliveries in 2 minutes with a limited number of UAVs (mininum - 3, maximum - 10).</li>
                   <li>You have a budget of £ 500 for hiring and maintaining UAVs for the mission.</li>
                   <li>You would be able to add UAVs or remove UAVs from the mission at any point during the experiment.</li>
@@ -661,7 +661,7 @@
                   <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
                 </ol>
 
-              <p class="mb-3">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start Tutorial scenario" button to start the Tutorial study scenario. When finished, tick the "I have completed the Tutorial scenario" checkbox and click Next to continue.</p>
+              <p class="mb-3" style="font-size: 0.95rem;">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start Tutorial scenario" button to start the Tutorial study scenario. When finished, tick the "I have completed the Tutorial scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
                     // echo exec('java --version');
@@ -709,8 +709,8 @@
           <!-- step four -->
           <div class="step">
               <h4 class="text-center fw-bold mb-3 mt-5">Study Scenario I</h4>
-              <p class="mb-3">This is the <?php echo $scenario_1; ?> study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
-                <ol type="a" style="font-weight:bold;">
+              <p class="mb-3" style="font-size: 0.95rem;">This is the <?php echo $scenario_1; ?> study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
+                <ol type="a" style="font-weight:bold; font-size: 0.95rem;">
                   <li>Your mission is to complete 40 drone deliveries in 6 minutes with a limited number of UAVs (mininum - 3, maximum - 10).</li>
                   <li>You have a budget of £ 2,200 for hiring and maintaining UAVs for the mission.</li>
                   <li>You would be able to add UAVs or remove UAVs from the mission at any point during the experiment.</li>
@@ -718,7 +718,7 @@
                   <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
                 </ol>
 
-              <p class="mb-3">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start <?php echo $scenario_1; ?> scenario" button to start the <?php echo $scenario_1; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_1; ?> scenario" checkbox and click Next to continue.</p>
+              <p class="mb-3" style="font-size: 0.95rem;">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start <?php echo $scenario_1; ?> scenario" button to start the <?php echo $scenario_1; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_1; ?> scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
                     // echo exec('java --version');
@@ -777,9 +777,9 @@
 
           <!-- step six -->
           <div class="step">
-              <h4 class="text-center fw-bold mb-5 mt-5">Study Scenario II</h4>
-              <p class="mb-3">This is the <?php echo $scenario_2; ?> study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
-                <ol type="a" style="font-weight:bold;">
+              <h4 class="text-center fw-bold mb-3 mt-5">Study Scenario II</h4>
+              <p class="mb-3" style="font-size: 0.95rem;">This is the <?php echo $scenario_2; ?> study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
+                <ol type="a" style="font-weight:bold; font-size: 0.95rem;">
                   <li>Your mission is to complete 40 drone deliveries in 6 minutes with a limited number of UAVs (mininum - 3, maximum - 10).</li>
                   <li>You have a budget of £ 2,200 for hiring and maintaining UAVs for the mission.</li>
                   <li>You would be able to add UAVs or remove UAVs from the mission at any point during the experiment.</li>
@@ -787,7 +787,7 @@
                   <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
                 </ol>
 
-              <p class="mb-3">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start <?php echo $scenario_2; ?> scenario" button to start the <?php echo $scenario_2; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_2; ?> scenario" checkbox and click Next to continue.</p>
+              <p class="mb-3" style="font-size: 0.95rem;">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start <?php echo $scenario_2; ?> scenario" button to start the <?php echo $scenario_2; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_2; ?> scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
                     // echo exec('java --version');
