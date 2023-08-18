@@ -37,24 +37,28 @@
                     <label class="form-check-label" for="radio_pcpt_p2_1">Random luck</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The presence of the verification feature" id="radio_pcpt_p2_2" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p2_2">The presence of the verification feature</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The presence of the estimated completion time feature" id="radio_pcpt_p2_2" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p2_2">The presence of the estimated completion time feature</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The absence of the verification feature" id="radio_pcpt_p2_3" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p2_3">The absence of the verification feature</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The absence of the estimated completion time feature" id="radio_pcpt_p2_3" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p2_3">The absence of the estimated completion time feature</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The simplicity of the interface" id="radio_pcpt_p2_4" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p2_4">The simplicity of the interface</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The awareness of the mission cost" id="radio_pcpt_p2_4" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p2_4">The awareness of the mission cost</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Other reasons not listed" id="radio_pcpt_p2_5" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p2_5">Other reasons not listed</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="The simplicity of the interface" id="radio_pcpt_p2_5" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p2_5">The simplicity of the interface</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="I don't know" id="radio_pcpt_p2_6" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p2_6">I don't know</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Other reasons not listed" id="radio_pcpt_p2_6" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p2_6">Other reasons not listed</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="I don't know" id="radio_pcpt_p2_7" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p2_7">I don't know</label>
                 </div>
             </div>
         </div>
@@ -67,8 +71,8 @@
                     <label class="form-check-label" for="radio_pcpt_p3_1">The simulation interface</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The verification feature implementation" id="radio_pcpt_p3_2" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p3_2">The verification feature implementation</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The estimated completion time feature" id="radio_pcpt_p3_2" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p3_2">The estimated completion time feature</label>
                 </div>
                 <div class="form-check mb-2">
                     <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The study questionnaire" id="radio_pcpt_p3_3" onchange="validateForm();" />
@@ -83,15 +87,19 @@
                     <label class="form-check-label" for="radio_pcpt_p3_5">The briefing video</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_6" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p3_6">I don't know</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="Nothing" id="radio_pcpt_p3_6" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p3_6">Nothing</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_7" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p3_7">I don't know</label>
                 </div>
             </div>
         </div>
 
         <div class="px-4">
             <div style="font-size: 0.95rem;">
-                <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Would you use the verification feature if it was optional?</p>
+                <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Did you use the estimated completion time feature?</p>
                 <div class="form-check mb-2">
                     <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="Yes" id="radio_pcpt_p4_1" onchange="validateForm();" />
                     <label class="form-check-label" for="radio_pcpt_p4_1">Yes</label>

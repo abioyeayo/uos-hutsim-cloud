@@ -44,7 +44,8 @@
     
   } else {
         $study_alias = "wsga_lkxr";
-        $study_title = "The effect of runtime verification on task completion efficiency in human swarm interaction";
+        // $study_title = "The effect of runtime verification on task completion efficiency in human swarm interaction";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP1BA)";
         $scenario_1 = "Scenario1";
         $scenario_2 = "Scenario3";
         $low_res_warning = "";
@@ -222,18 +223,21 @@
             $radio_pcpt_p2 = "Random luck";
             break;
           case "2":
-            $radio_pcpt_p2 = "The presence of the verification feature";
+            $radio_pcpt_p2 = "The presence of the estimated completion time feature";
             break;
           case "3":
-            $radio_pcpt_p2 = "The absence of the verification feature";
+            $radio_pcpt_p2 = "The absence of the estimated completion time feature";
             break;
           case "4":
-            $radio_pcpt_p2 = "The simplicity of the interface";
+            $radio_pcpt_p2 = "The awareness of the mission cost";
             break;
           case "5":
-            $radio_pcpt_p2 = "Other reasons not listed";
+            $radio_pcpt_p2 = "The simplicity of the interface";
             break;
           case "6":
+            $radio_pcpt_p2 = "Other reasons not listed";
+            break;
+          case "7":
             $radio_pcpt_p2 = "I don't know";
             break;
           default:
@@ -257,6 +261,9 @@
             $radio_pcpt_p3 = "The briefing video";
             break;
           case "6":
+            $radio_pcpt_p3 = "Nothing";
+            break;
+          case "7":
             $radio_pcpt_p3 = "I don't know";
             break;
           default:
@@ -501,11 +508,11 @@
               <span class="stepIndicator">Consent <br>(3 min)</span>
               <span class="stepIndicator">Briefing <br>(5 min)</span>
               <span class="stepIndicator">Tutorial <br>(5 min)</span>
-              <span class="stepIndicator">Scenario I <br>(8 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(5 min)</span>
-              <span class="stepIndicator">Scenario II <br>(8 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(5 min)</span>
-              <span class="stepIndicator">Finish <br>(3 min)</span>
+              <span class="stepIndicator">Scenario I <br>(10 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(6 min)</span>
+              <span class="stepIndicator">Scenario II <br>(10 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(6 min)</span>
+              <span class="stepIndicator">Finish <br>(2 min)</span>
           </div>
           <!-- end step indicators -->
 
@@ -712,7 +719,7 @@
               <p class="mb-3" style="font-size: 0.95rem;">This is the <?php echo $scenario_1; ?> study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
                 <ol type="a" style="font-weight:bold; font-size: 0.95rem;">
                   <li>Your mission is to complete 40 drone deliveries in 6 minutes with a limited number of UAVs (mininum - 3, maximum - 10).</li>
-                  <li>You have a budget of £ 2,200 for hiring and maintaining UAVs for the mission.</li>
+                  <li>You have a budget of £ 2,000 for hiring and maintaining UAVs for the mission.</li>
                   <li>You would be able to add UAVs or remove UAVs from the mission at any point during the experiment.</li>
                   <li>The more UAVs you deploy, the faster your completion time and the higher your mission cost. The fewer UAVs you deploy, the longer your completion time and the lower your mission cost.</li>
                   <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
@@ -781,7 +788,7 @@
               <p class="mb-3" style="font-size: 0.95rem;">This is the <?php echo $scenario_2; ?> study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
                 <ol type="a" style="font-weight:bold; font-size: 0.95rem;">
                   <li>Your mission is to complete 40 drone deliveries in 6 minutes with a limited number of UAVs (mininum - 3, maximum - 10).</li>
-                  <li>You have a budget of £ 2,200 for hiring and maintaining UAVs for the mission.</li>
+                  <li>You have a budget of £ 2,000 for hiring and maintaining UAVs for the mission.</li>
                   <li>You would be able to add UAVs or remove UAVs from the mission at any point during the experiment.</li>
                   <li>The more UAVs you deploy, the faster your completion time and the higher your mission cost. The fewer UAVs you deploy, the longer your completion time and the lower your mission cost.</li>
                   <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
