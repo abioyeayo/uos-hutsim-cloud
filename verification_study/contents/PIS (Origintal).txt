@@ -1,0 +1,51 @@
+Participant Information Sheet
+Study Title: The effect of runtime verification on task completion efficiency in human swarm interaction
+Researcher(s): Ayodeji O. Abioye, William Hunt, Mohammad D. Soorati, and Sarvapali D. Ramchurn.
+University email: a.o.abioye@soton.ac.uk
+Ethics/ERGO no: ERGO/FEPS/85523
+Version and date: Version 1.2 / 19 July 2023
+What is the research about?
+My name is Ayodeji, and I am a Research Fellow at the School of Electronics and Computer Science at the University of Southampton in the United Kingdom.
+
+I am inviting you to participate in a study regarding the effect of having a formal verification feature in a human swarm interaction interface. A swarm is a collection of robots working together. Verification is the process of checking that each robot in the swarm would successfully achieve its goal. In this study, we use drones (aerial robots) to perform parcel delivery to target locations in the Human And Robot Interactive Swarm (HARIS) simulator. The HARIS simulator is an online human swarm teaming tool used to test Unmanned Aerial Vehicle (UAV) swarm control algorithms and to study the human-swarm interaction. We have added a verification feature to our HARIS simulation software to inform the operator of the likelihood of successfully completing the parcel delivery using the current number of drones within the given time. You can add a drone to the mission if the currently available number of drones would not be sufficient. But this is done at an extra cost to the mission. You are also able to remove a drone if the number of drones on the mission are sufficient in order to reduce the mission cost. We are interested in how the verification feature helps the swarm operator to minimise cost while maximising mission success.
+
+This study aims to determine if this feature improves the performance and efficiency of the human swarm team. Our objective is to determine it limitations, usability, acceptability, workload, and performance gain before deploying this in a real-world setting. Our main research question focuses on whether verification improves task completion efficiency by minimising mission cost and optimising completion time in human swarm interaction. This study was approved by the Faculty Research Ethics Committee (FREC) at the University of Southampton (Ethics/ERGO Number: ERGO/FEPS/85523).
+
+What will happen to me if I take part?
+This study involves completing multiple simulation scenarios using our HARIS simulator and completing an anonymous questionnaire for each scenario, which should take approximately 60 minutes of your time. You participation would start with a tutorial scenario to help you become familiar with the HARIS simulator, then the first scenario and its questionnaire, then the second scenario and its questionnaire, and an extra questionnaire for demographic data, after which you can submit to save your responses. If you are happy to complete this survey, you will need to tick (check) the box below to show your consent. As this survey is anonymous, the research team will not be able to know whether you have participated, or what answers you provided.
+Why have I been asked to participate?
+You have been asked to take part because you are signed up to the Prolific crowdsourcing platform for research participants. You have been randomly invited to take part in this study. You must be aged at least 18 years to participate. You would be required to watch a short study briefing/tutorial video and asked to answer three simple questions to ensure you have understood this to be included in the study. There would also be validation check questions to exclude anyone who randomly click through survey questions.
+
+I am aiming to recruit around 120 participants for this study.
+What information will be collected?
+The questions in this survey ask for information in relation to standardised questionnaires such as the NASA Task Load Index, Usability, and Acceptability survey. The HARIS simulator would collect performance data as log files which would consist of your start and finish time, when agents are added or remove, whether mission was completed successfully or not, and the mission cost.
+
+Demographic data such as gender, education level, computer expertise, and UAV or Swarm robotics familiarity would also be collected in order to determine how representative of the population and generalisable our results are. This is also used to find any correlations or patterns, as well as determine the diversity of the data set.
+
+Some of the survey questions contain textboxes where you will be asked to type in your own answers. Please note that in order for this survey to be anonymous, you should not include in your answers any information from which you, or other people, could be identified.
+
+You have to answer all the questions in the survey in order to complete this study.
+What are the possible benefits of taking part?
+If you decide to take part in this study, you will receive a monetary compensation via the Prolific platform upon successfully completing the study and your participation will contribute to knowledge in this area of research. Please note that if you failed the attention check questions, you would not be rewarded, and your submission would be discarded.
+Are there any risks involved?
+It is expected that taking part in this study will not cause you any psychological discomfort and/or distress, however, should you feel uncomfortable you can leave the survey at any time.
+What will happen to the information collected?
+If you decide to take part in this study, you will not receive any direct benefits; however, your participation will contribute to knowledge in this area of research.
+
+Your participation will help me understand the way humans react to scenarios where the swarms are controlled autonomously or by humans. It will help me analyse the approaches needed for a trustworthy human-robot interaction system. You will also get a reward for the time that you have dedicated to the study. But you will only get the reward on the successful completion of the study. The payment will be in the form of prolific credits.
+What are the possible benefits of taking part?
+All information collected for this study will be stored securely on a password protected computer and backed up on a secure server. In addition, all data will be pooled and only compiled into data summaries or summary reports. Only the research team will have access to this information.
+
+The information collected will be analysed and written up for presentation at conferences and/or publication in a journal.
+
+The University of Southampton conducts research to the highest standards of ethics and research integrity. In accordance with our Research Data Management Policy, data will be held for 10 years after the study has finished when it will be securely destroyed.
+What happens if there is a problem?
+If you are unhappy about any aspect of this study and would like to make a formal complaint, you can contact the Head of Research Integrity and Governance, University of Southampton, on the following contact details:
+Email: rgoinfo@soton.ac.uk
+Phone: +44 2380 595058
+
+Please quote the Ethics/ERGO number above. Please note that by making a complaint you might be no longer anonymous.
+More information on your rights as a study participant is available via this link:
+https://www.southampton.ac.uk/about/governance/participant-information.page
+
+Thank you for reading this information sheet and considering taking part in this research.
