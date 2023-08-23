@@ -4,6 +4,7 @@
 
    // test url: http://localhost/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=63b4a06fa62e8101c635f299&SESSION_ID=0z2rngztewk&GROUP_ID=vg5est5j
    // test url: https://uos-hutsim.cloud/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=63b4a06fa62e8101c635f299&SESSION_ID=0z2rngztewk&GROUP_ID=vg5est5j
+   // test url: https://uos-hutsim.cloud/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=64e634cd7bd7c0f0f1545fc5&SESSION_ID=0wyukhwfhh58&GROUP_ID=vg5est5j
 
    // connecting to database
    $con = new DB_Connect();
@@ -395,12 +396,13 @@
         }
 
 
-        // halt study submission
-        exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
+        // // halt study submission
+        // exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
 
         // redirect back to prolific website to confirm study completion
-        header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
+        // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
         // header("Location: https://app.prolific.co/submissions/complete?cc=C1HYHPCW"); // Paurav's prolific redirect via Mohammad's account
+        header("Location: https://app.prolific.co/submissions/complete?cc=C1EASVMC"); // Verification project redirect
         exit();
 
    }
@@ -562,10 +564,10 @@
               <span class="stepIndicator">Information <br>(3 min)</span>
               <span class="stepIndicator">Consent <br>(3 min)</span>
               <span class="stepIndicator">Briefing <br>(5 min)</span>
-              <span class="stepIndicator">Tutorial <br>(5 min)</span>
-              <span class="stepIndicator">Scenario I <br>(10 min)</span>
+              <span class="stepIndicator">Tutorial <br>(4 min)</span>
+              <span class="stepIndicator">Scenario I <br>(8 min)</span>
               <span class="stepIndicator">Questionnaire <br>(6 min)</span>
-              <span class="stepIndicator">Scenario II <br>(10 min)</span>
+              <span class="stepIndicator">Scenario II <br>(8 min)</span>
               <span class="stepIndicator">Questionnaire <br>(6 min)</span>
               <span class="stepIndicator">Finish <br>(2 min)</span>
           </div>
