@@ -43,11 +43,11 @@
         $low_res_warning = "";
     
   } else {
-        $study_alias = "wsga_lkxr";
+        $study_alias = "SNV_SFV";
         // $study_title = "The effect of runtime verification on task completion efficiency in human swarm interaction";
-        $study_title = "The evaluation of a human-swarm interaction interface (SGP1BA)";
-        $scenario_1 = "Scenario1";
-        $scenario_2 = "Scenario3";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP1AB)";
+        $scenario_1 = "SNV";
+        $scenario_2 = "SFV";
         $low_res_warning = "";
 
   }
@@ -77,6 +77,7 @@
         $radio_pcpt_f2 = $_POST['radio_pcpt_f2'];
         $radio_pcpt_f3 = $_POST['radio_pcpt_f3'];
         $radio_pcpt_f4 = $_POST['radio_pcpt_f4'];
+        $radio_pcpt_f5 = $_POST['radio_pcpt_f5'];
         $radio_pcpt_p1 = $_POST['radio_pcpt_p1'];
         $radio_pcpt_p2 = $_POST['radio_pcpt_p2'];
         $radio_pcpt_p3 = $_POST['radio_pcpt_p3'];
@@ -109,6 +110,19 @@
         $a8 = $_POST['radio_wsga_a8'];
         $a9 = $_POST['radio_wsga_a9'];
         $a10 = $_POST['radio_wsga_a10'];
+        $j1 = $_POST['radio_wsga_j1'];
+        $j2 = $_POST['radio_wsga_j2'];
+        $j3 = $_POST['radio_wsga_j3'];
+        $j4 = $_POST['radio_wsga_j4'];
+        $j5 = $_POST['radio_wsga_j5'];
+        $j6 = $_POST['radio_wsga_j6'];
+        $j7 = $_POST['radio_wsga_j7'];
+        $j8 = $_POST['radio_wsga_j8'];
+        $j9 = $_POST['radio_wsga_j9'];
+        $j10 = $_POST['radio_wsga_j10'];
+        $j11 = $_POST['radio_wsga_j11'];
+        $j12 = $_POST['radio_wsga_j12'];
+        $j13 = $_POST['radio_wsga_j13'];
 
         // convert numbers to text demographic information
         switch ($radio_pcpt_f1) {
@@ -133,25 +147,28 @@
 
         switch ($radio_pcpt_f2) {
           case "1":
-            $radio_pcpt_f2 = "No formal education";
+            $radio_pcpt_f2 = "Below 18 years";
             break;
           case "2":
-            $radio_pcpt_f2 = "GCSE or equivalent";
+            $radio_pcpt_f2 = "18 - 24 years";
             break;
           case "3":
-            $radio_pcpt_f2 = "A-level or equivalent";
+            $radio_pcpt_f2 = "25 - 34 years";
             break;
           case "4":
-            $radio_pcpt_f2 = "Bachelor's degree or equivalent";
+            $radio_pcpt_f2 = "35 - 44 years";
             break;
           case "5":
-            $radio_pcpt_f2 = "Master's degree or equivalent";
+            $radio_pcpt_f2 = "45 - 54 years";
             break;
           case "6":
-            $radio_pcpt_f2 = "Doctoral degree or equivalent";
+            $radio_pcpt_f2 = "55 - 64 years";
             break;
           case "7":
-            $radio_pcpt_f2 = "Other";
+            $radio_pcpt_f2 = "65 years and above";
+            break;
+          case "8":
+            $radio_pcpt_f2 = "Prefer not to say";
             break;
           default:
             // do nothing
@@ -159,22 +176,25 @@
 
         switch ($radio_pcpt_f3) {
           case "1":
-            $radio_pcpt_f3 = "Hardly ever use the computer and do not feel very competent";
+            $radio_pcpt_f3 = "No formal education";
             break;
           case "2":
-            $radio_pcpt_f3 = "Slightly below average computer user, infrequently using the computer, using few applications";
+            $radio_pcpt_f3 = "GCSE or equivalent";
             break;
           case "3":
-            $radio_pcpt_f3 = "Average computer user, using the internet, standard applications etc.";
+            $radio_pcpt_f3 = "A-level or equivalent";
             break;
           case "4":
-            $radio_pcpt_f3 = "User of specialist applications but not an IT specialist";
+            $radio_pcpt_f3 = "Bachelor's degree or equivalent";
             break;
           case "5":
-            $radio_pcpt_f3 = "Considerable IT expertise short of full professional qualifications";
+            $radio_pcpt_f3 = "Master's degree or equivalent";
             break;
           case "6":
-            $radio_pcpt_f3 = "Professionally qualified computer scientist or IT specialist";
+            $radio_pcpt_f3 = "Doctoral degree or equivalent";
+            break;
+          case "7":
+            $radio_pcpt_f3 = "Other";
             break;
           default:
             // do nothing
@@ -182,16 +202,39 @@
 
         switch ($radio_pcpt_f4) {
           case "1":
-            $radio_pcpt_f4 = "Not at all";
+            $radio_pcpt_f4 = "Hardly ever use the computer and do not feel very competent";
             break;
           case "2":
-            $radio_pcpt_f4 = "I know a bit about the technology but have never used it";
+            $radio_pcpt_f4 = "Slightly below average computer user, infrequently using the computer, using few applications";
             break;
           case "3":
-            $radio_pcpt_f4 = "I have some experience with operating UAVs as a hobby";
+            $radio_pcpt_f4 = "Average computer user, using the internet, standard applications etc.";
             break;
           case "4":
-            $radio_pcpt_f4 = "I professionally work with UAVs";
+            $radio_pcpt_f4 = "User of specialist applications but not an IT specialist";
+            break;
+          case "5":
+            $radio_pcpt_f4 = "Considerable IT expertise short of full professional qualifications";
+            break;
+          case "6":
+            $radio_pcpt_f4 = "Professionally qualified computer scientist or IT specialist";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_f5) {
+          case "1":
+            $radio_pcpt_f5 = "Not at all";
+            break;
+          case "2":
+            $radio_pcpt_f5 = "I know a bit about the technology but have never used it";
+            break;
+          case "3":
+            $radio_pcpt_f5 = "I have some experience with operating UAVs as a hobby";
+            break;
+          case "4":
+            $radio_pcpt_f5 = "I professionally work with UAVs";
             break;
           default:
             // do nothing
@@ -201,15 +244,16 @@
         $pcpt_f2 = mysqli_real_escape_string($con1, $radio_pcpt_f2);
         $pcpt_f3 = mysqli_real_escape_string($con1, $radio_pcpt_f3);
         $pcpt_f4 = mysqli_real_escape_string($con1, $radio_pcpt_f4);
+        $pcpt_f5 = mysqli_real_escape_string($con1, $radio_pcpt_f5);
 
 
         // convert numbers to text custom questionnaire data
         switch ($radio_pcpt_p1) {
           case "1":
-            $radio_pcpt_p1 = "Scenario 1";
+            $radio_pcpt_p1 = "Scenario I (" . $scenario_1 . ")";
             break;
           case "2":
-            $radio_pcpt_p1 = "Scenario 2";
+            $radio_pcpt_p1 = "Scenario II (" . $scenario_2 . ")";
             break;
           case "3":
             $radio_pcpt_p1 = "I don't know";
@@ -249,21 +293,18 @@
             $radio_pcpt_p3 = "The simulation interface";
             break;
           case "2":
-            $radio_pcpt_p3 = "The verification feature implementation";
+            $radio_pcpt_p3 = "The estimated completion time feature implementation";
             break;
           case "3":
             $radio_pcpt_p3 = "The study questionnaire";
             break;
           case "4":
-            $radio_pcpt_p3 = "The tutorial scenario";
+            $radio_pcpt_p3 = "The study scenario";
             break;
           case "5":
-            $radio_pcpt_p3 = "The briefing video";
-            break;
-          case "6":
             $radio_pcpt_p3 = "Nothing";
             break;
-          case "7":
+          case "6":
             $radio_pcpt_p3 = "I don't know";
             break;
           default:
@@ -291,8 +332,9 @@
 
 
         // update data table for scenario 1
-        $study_scenario = substr($study_alias,0,4);
-        $sql = "INSERT INTO verification_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, briefing_attn_chk1, briefing_attn_chk2, briefing_attn_chk3, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, md, pd, td, pf, ef, fr, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $briefing_attn_chk1 . "', '" . $briefing_attn_chk2 . "', '" . $briefing_attn_chk3 . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $md . "', '" . $pd . "', '" . $td . "', '" . $pf . "', '" . $ef . "', '" . $fr . "', '" . $u1 . "', '" . $u2 . "', '" . $u3 . "', '" . $u4 . "', '" . $u5 . "', '" . $u6 . "', '" . $u7 . "', '" . $u8 . "', '" . $u9 . "', '" . $u10 . "', '" . $a1 . "', '" . $a2 . "', '" . $a3 . "', '" . $a4 . "', '" . $a5 . "', '" . $a6 . "', '" . $a7 . "', '" . $a8 . "', '" . $a9 . "', '" . $a10 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
+        // $study_scenario = substr($study_alias,0,4);
+        $study_scenario = $scenario_1;
+        $sql = "INSERT INTO verification_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, briefing_attn_chk1, briefing_attn_chk2, briefing_attn_chk3, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, pcpt_f5, md, pd, td, pf, ef, fr, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $briefing_attn_chk1 . "', '" . $briefing_attn_chk2 . "', '" . $briefing_attn_chk3 . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $pcpt_f5 . "', '" . $md . "', '" . $pd . "', '" . $td . "', '" . $pf . "', '" . $ef . "', '" . $fr . "', '" . $u1 . "', '" . $u2 . "', '" . $u3 . "', '" . $u4 . "', '" . $u5 . "', '" . $u6 . "', '" . $u7 . "', '" . $u8 . "', '" . $u9 . "', '" . $u10 . "', '" . $a1 . "', '" . $a2 . "', '" . $a3 . "', '" . $a4 . "', '" . $a5 . "', '" . $a6 . "', '" . $a7 . "', '" . $a8 . "', '" . $a9 . "', '" . $a10 . "', '" .$j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" .  $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
         if(mysqli_query($con1, $sql)){
             // echo "Records inserted successfully.";
         } else{
@@ -328,10 +370,23 @@
         $a8 = $_POST['radio_lkxr_a8'];
         $a9 = $_POST['radio_lkxr_a9'];
         $a10 = $_POST['radio_lkxr_a10'];
+        $j1 = $_POST['radio_lkxr_j1'];
+        $j2 = $_POST['radio_lkxr_j2'];
+        $j3 = $_POST['radio_lkxr_j3'];
+        $j4 = $_POST['radio_lkxr_j4'];
+        $j5 = $_POST['radio_lkxr_j5'];
+        $j6 = $_POST['radio_lkxr_j6'];
+        $j7 = $_POST['radio_lkxr_j7'];
+        $j8 = $_POST['radio_lkxr_j8'];
+        $j9 = $_POST['radio_lkxr_j9'];
+        $j10 = $_POST['radio_lkxr_j10'];
+        $j11 = $_POST['radio_lkxr_j11'];
+        $j12 = $_POST['radio_lkxr_j12'];
+        $j13 = $_POST['radio_lkxr_j13'];
 
         // update data table for scenario 2
-        $study_scenario = substr($study_alias,-4);
-        $sql = "INSERT INTO verification_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, briefing_attn_chk1, briefing_attn_chk2, briefing_attn_chk3, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, md, pd, td, pf, ef, fr, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $briefing_attn_chk1 . "', '" . $briefing_attn_chk2 . "', '" . $briefing_attn_chk3 . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $md . "', '" . $pd . "', '" . $td . "', '" . $pf . "', '" . $ef . "', '" . $fr . "', '" . $u1 . "', '" . $u2 . "', '" . $u3 . "', '" . $u4 . "', '" . $u5 . "', '" . $u6 . "', '" . $u7 . "', '" . $u8 . "', '" . $u9 . "', '" . $u10 . "', '" . $a1 . "', '" . $a2 . "', '" . $a3 . "', '" . $a4 . "', '" . $a5 . "', '" . $a6 . "', '" . $a7 . "', '" . $a8 . "', '" . $a9 . "', '" . $a10 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
+        $study_scenario = $scenario_2;
+        $sql = "INSERT INTO verification_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, briefing_attn_chk1, briefing_attn_chk2, briefing_attn_chk3, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, pcpt_f5, md, pd, td, pf, ef, fr, u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $briefing_attn_chk1 . "', '" . $briefing_attn_chk2 . "', '" . $briefing_attn_chk3 . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $pcpt_f5 . "', '" . $md . "', '" . $pd . "', '" . $td . "', '" . $pf . "', '" . $ef . "', '" . $fr . "', '" . $u1 . "', '" . $u2 . "', '" . $u3 . "', '" . $u4 . "', '" . $u5 . "', '" . $u6 . "', '" . $u7 . "', '" . $u8 . "', '" . $u9 . "', '" . $u10 . "', '" . $a1 . "', '" . $a2 . "', '" . $a3 . "', '" . $a4 . "', '" . $a5 . "', '" . $a6 . "', '" . $a7 . "', '" . $a8 . "', '" . $a9 . "', '" . $a10 . "', '" .$j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" .  $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
         if(mysqli_query($con1, $sql)){
             // echo "Records inserted successfully.";
         } else{
@@ -662,7 +717,7 @@
               <p class="mb-3" style="font-size: 0.95rem;">This is the Tutorial study scenario. In this scenario, you would play the role of an Unmanned Aerial Vehicle (UAV) swarm operator performing a drone delivery mission:</p>
                 <ol type="a" style="font-weight:bold; font-size: 0.95rem;">
                   <li>Your mission is to complete 8 drone deliveries in 2 minutes with a limited number of UAVs (mininum - 3, maximum - 10).</li>
-                  <li>You have a budget of £ 500 for hiring and maintaining UAVs for the mission.</li>
+                  <li>You have a budget of £ 2000 for hiring and maintaining UAVs for the mission.</li>
                   <li>You would be able to add UAVs or remove UAVs from the mission at any point during the experiment.</li>
                   <li>The more UAVs you deploy, the faster your completion time and the higher your mission cost. The fewer UAVs you deploy, the longer your completion time and the lower your mission cost.</li>
                   <li>Your aim is to maximise performance (finish before time runs out) and minimise total mission cost.</li>
@@ -934,7 +989,16 @@
           var youtube_validation = true;
           if ((youtube_attn_check1.value != "") && (youtube_attn_check2.value != "") && (youtube_attn_check3.value != "")){
             document.getElementById("youtube_attn_check_alert").classList.add("d-none");
-            if ((youtube_attn_check1.value != "3") && (youtube_attn_check2.value != "4") && (youtube_attn_check3.value != "8")){
+            let attn_chk_pts = 0;
+            if (youtube_attn_check1.value == "3") 
+                  attn_chk_pts++;
+            if (youtube_attn_check2.value == "4") 
+                  attn_chk_pts++;
+            if (youtube_attn_check3.value == "8") 
+                  attn_chk_pts++;
+
+            // Must get 2 of 3 questions to proceed
+            if (attn_chk_pts < 2 ){
                 document.getElementById("youtube_attn_check_alert").classList.remove("d-none");
                 youtube_validation = false;
             }
@@ -949,7 +1013,7 @@
           }
 
           // check if a demographic information & custom questionnaire radio row question element has been selected
-          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4"];
+          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "f5", "p1", "p2", "p3", "p4"];
           checkFormElement("pcpt",radio_pcpt_form);
           
 
@@ -972,7 +1036,7 @@
           }
 
           // check if a wsga radio row element has been selected
-          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8", "u9", "u10", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10"];
+          var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8", "u9", "u10", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9", "a10", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12", "j13"];
           checkFormElement("wsga",radio_wsga_lkxr_form);
 
           // check if the LKXR scenario is completed and add value to allow validation

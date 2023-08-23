@@ -15,12 +15,12 @@
             <div style="font-size: 0.95rem;">
                 <p id="radio_pcpt_p1_question" class="my-3 fw-bold">Which scenario did you think you were more successful at?</p>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario 1" id="radio_pcpt_p1_1" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p1_1">Scenario 1</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario I (<?php echo $scenario_1; ?>)" id="radio_pcpt_p1_1" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p1_1">Scenario I (<?php echo $scenario_1; ?>)</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario 2" id="radio_pcpt_p1_2" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p1_2">Scenario 2</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Scenario II (<?php echo $scenario_2; ?>)" id="radio_pcpt_p1_2" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p1_2">Scenario II (<?php echo $scenario_2; ?>)</label>
                 </div>
                 <div class="form-check mb-2">
                     <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="I don't know" id="radio_pcpt_p1_3" onchange="validateForm();" />
@@ -79,20 +79,16 @@
                     <label class="form-check-label" for="radio_pcpt_p3_3">The study questionnaire</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The tutorial scenario" id="radio_pcpt_p3_4" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p3_4">The tutorial scenario</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The study scenario" id="radio_pcpt_p3_4" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p3_4">The study scenario</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="The briefing video" id="radio_pcpt_p3_5" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p3_5">The briefing video</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="Nothing" id="radio_pcpt_p3_5" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p3_5">Nothing</label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="Nothing" id="radio_pcpt_p3_6" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p3_6">Nothing</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_7" onchange="validateForm();" />
-                    <label class="form-check-label" for="radio_pcpt_p3_7">I don't know</label>
+                    <input class="form-check-input" type="radio" name="radio_pcpt_p3" value="I don't know" id="radio_pcpt_p3_6" onchange="validateForm();" />
+                    <label class="form-check-label" for="radio_pcpt_p3_6">I don't know</label>
                 </div>
             </div>
         </div>
