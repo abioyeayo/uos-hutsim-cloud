@@ -22,12 +22,12 @@
     // specify ports
     $port_array = array();
     $port_ptr = 0;
-    $sql = "SELECT port FROM verification_study_port_lookup WHERE `status` ='Available' ORDER BY port ASC LIMIT 3";
+    $sql = "SELECT port FROM verification_study_port_table WHERE `status` ='Available' ORDER BY port ASC LIMIT 3";
     $result = mysqli_query($con1, $sql);
     if ( mysqli_num_rows( $result ) > 2 ) {
       while($row = mysqli_fetch_array($result)) {
         $port_array[$port_ptr++] = $row["port"];
-        $sql2 = "UPDATE verification_study_port_lookup SET `status` = 'Busy' WHERE port = '".$row["port"]."'";
+        $sql2 = "UPDATE verification_study_port_table SET `status` = 'Busy' WHERE port = '".$row["port"]."'";
         if(mysqli_query($con1, $sql2)){
             // echo "Records updated successfully.";
         } else{

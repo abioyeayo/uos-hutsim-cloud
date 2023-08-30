@@ -15,7 +15,7 @@
       // check if docker deploy
       if ($docker_deploy){
         echo exec("pkill -f 'java -jar hut.jar ".$stopped_pid."'");
-        $sql = "UPDATE verification_study_port_lookup SET `status` = 'Available' WHERE port = '".$stopped_pid."'";
+        $sql = "UPDATE verification_study_port_table SET `status` = 'Available' WHERE port = '".$stopped_pid."'";
         if(mysqli_query($con1, $sql)){
             // echo "Records updated successfully.";
         } else{

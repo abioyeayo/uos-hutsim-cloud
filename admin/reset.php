@@ -33,7 +33,7 @@
                   }
 
                   if ($docker_deploy){
-                    $sql = "UPDATE verification_study_port_lookup SET `status` = 'Available' WHERE `status` = 'Busy'";
+                    $sql = "UPDATE verification_study_port_table SET `status` = 'Available' WHERE `status` = 'Busy'";
                     if(mysqli_query($con1, $sql)){
                         // echo "Records updated successfully.";
                     } else{
