@@ -3,7 +3,7 @@
 # Startup script for PRISM (Linux/Solaris)
 
 # PRISM home directory
-PRISM_DIR="/home/ayodeji/Southampton/Research Fellowship/Java works/verification project/hut-dev_verification6/server/libs/prism-4.8"
+PRISM_DIR="/var/www/html/verification_study/libs/prism-4.8"
 
 # Command to launch Java
 if [ "$PRISM_JAVA" = "" ]; then

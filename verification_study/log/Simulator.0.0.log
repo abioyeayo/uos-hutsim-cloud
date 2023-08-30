@@ -1,76 +1,415 @@
-2023-08-16 11:18:41; 0.0; LGSTRT; Reset log (scenario, username); Scenario 1; 13 
-2023-08-16 11:18:44; 0.0; SIMST; Simulation started
-2023-08-16 11:18:45; 5.000000000000002; AUTRN; Autorun of model;
-2023-08-16 11:18:45; 5.000000000000002; MDSTO; Model starting on the current number of agents (#); 5
-2023-08-16 11:18:45; 5.000000000000002; MDSTU; Model starting at 1 under the current number of agents;
-2023-08-16 11:18:45; 5.000000000000002; MDSTV; Model starting at 1 over the current number of agents;
-2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-4 
-2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-1 
-2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-2 
-2023-08-16 11:18:49; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-5 
-2023-08-16 11:18:51; 34.799999999999955; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-3 
-2023-08-16 11:18:51; 34.99999999999996; MDSTO; Model starting on the current number of agents (#); 6
-2023-08-16 11:18:51; 34.99999999999996; MDSTV; Model starting at 1 over the current number of agents;
-2023-08-16 11:18:51; 34.99999999999996; SPWN; Hub spawed an agent - now there are (numAgents); 5 
-2023-08-16 11:18:51; 34.99999999999996; MDSTU; Model starting at 1 under the current number of agents;
-2023-08-16 11:18:51; 37.19999999999999; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-6 
-2023-08-16 11:18:51; 37.19999999999999; MDSTO; Model starting on the current number of agents (#); 7
-2023-08-16 11:18:51; 37.19999999999999; MDSTV; Model starting at 1 over the current number of agents;
-2023-08-16 11:18:51; 37.19999999999999; SPWN; Hub spawed an agent - now there are (numAgents); 6 
-2023-08-16 11:18:51; 37.19999999999999; MDSTU; Model starting at 1 under the current number of agents;
-2023-08-16 11:18:52; 39.000000000000014; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-7 
-2023-08-16 11:18:52; 39.20000000000002; MDSTO; Model starting on the current number of agents (#); 8
-2023-08-16 11:18:52; 39.20000000000002; MDSTV; Model starting at 1 over the current number of agents;
-2023-08-16 11:18:52; 39.20000000000002; SPWN; Hub spawed an agent - now there are (numAgents); 7 
-2023-08-16 11:18:52; 39.20000000000002; MDSTU; Model starting at 1 under the current number of agents;
-2023-08-16 11:18:53; 47.20000000000013; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-12 
-2023-08-16 11:18:54; 47.400000000000134; SPWN; Hub spawed an agent - now there are (numAgents); 8 
-2023-08-16 11:18:54; 47.400000000000134; MDSTV; Model starting at 1 over the current number of agents;
-2023-08-16 11:18:54; 47.400000000000134; MDSTO; Model starting on the current number of agents (#); 9
-2023-08-16 11:18:54; 47.400000000000134; MDSTU; Model starting at 1 under the current number of agents;
-2023-08-16 11:19:01; 86.8000000000007; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-2; UAV-3; 39 
-2023-08-16 11:19:01; 86.8000000000007; DELTSK; Removed task (id, lat, lng); Task-2; 50.9295; -1.40493
-2023-08-16 11:19:02; 91.20000000000076; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-1; UAV-2; 38 
-2023-08-16 11:19:02; 91.20000000000076; DELTSK; Removed task (id, lat, lng); Task-1; 50.92861201823444; -1.4083548992865773
-2023-08-16 11:19:03; 95.60000000000082; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-4; UAV-1; 37 
-2023-08-16 11:19:03; 95.60000000000082; DELTSK; Removed task (id, lat, lng); Task-4; 50.92920912373895; -1.4065721725970581
-2023-08-16 11:19:04; 100.60000000000089; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-5; UAV-4; 36 
-2023-08-16 11:19:04; 100.60000000000089; DELTSK; Removed task (id, lat, lng); Task-5; 50.92809666040806; -1.4093217629816241
-2023-08-16 11:19:05; 106.00000000000097; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-6; UAV-6; 35 
-2023-08-16 11:19:05; 106.00000000000097; DELTSK; Removed task (id, lat, lng); Task-6; 50.93005055983864; -1.4056972955868583
-2023-08-16 11:19:06; 106.80000000000098; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-3; UAV-5; 34 
-2023-08-16 11:19:06; 106.80000000000098; DELTSK; Removed task (id, lat, lng); Task-3; 50.92994841492357; -1.4071062570258561
-2023-08-16 11:19:07; 116.40000000000111; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-7; UAV-7; 33 
-2023-08-16 11:19:07; 116.40000000000111; DELTSK; Removed task (id, lat, lng); Task-7; 50.93000751140818; -1.4033381902024118
-2023-08-16 11:19:11; 134.8000000000009; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-9 
-2023-08-16 11:19:12; 138.80000000000067; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-12; UAV-8; 32 
-2023-08-16 11:19:12; 138.80000000000067; DELTSK; Removed task (id, lat, lng); Task-12; 50.929786740075315; -1.40918219247446
-2023-08-16 11:19:12; 140.20000000000059; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-10 
-2023-08-16 11:19:13; 142.40000000000046; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-11 
-2023-08-16 11:19:16; 159.1999999999995; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-8 
-2023-08-16 11:19:17; 165.39999999999915; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-13 
-2023-08-16 11:19:18; 169.19999999999894; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-15 
-2023-08-16 11:19:21; 182.99999999999815; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-17 
-2023-08-16 11:19:24; 196.1999999999974; MDDNU; Model done at 1 under the current number of agents in time (result, elapsed time); 1507.0; 29.995454814
-2023-08-16 11:19:27; 213.7999999999964; MDDNO; Model done on the current number of agents in time (result, elapsed time); 1367.0; 33.528846533
-2023-08-16 11:19:27; 214.19999999999638; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-18 
-2023-08-16 11:19:28; 216.19999999999627; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-9; UAV-3; 31 
-2023-08-16 11:19:28; 216.19999999999627; DELTSK; Removed task (id, lat, lng); Task-9; 50.93066909873102; -1.4039824598576496
-2023-08-16 11:19:29; 222.3999999999959; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-10; UAV-1; 30 
-2023-08-16 11:19:29; 222.3999999999959; DELTSK; Removed task (id, lat, lng); Task-10; 50.93081696774981; -1.4061380751777348
-2023-08-16 11:19:30; 227.59999999999562; MDDNV; Model done at 1 over the current number of agents in time (result, elapsed time); 1067.0; 36.263315041
-2023-08-16 11:19:30; 229.5999999999955; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-11; UAV-2; 29 
-2023-08-16 11:19:30; 229.5999999999955; DELTSK; Removed task (id, lat, lng); Task-11; 50.930798337916976; -1.407493372489891
-2023-08-16 11:19:34; 247.79999999999447; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-8; UAV-4; 28 
-2023-08-16 11:19:34; 247.79999999999447; DELTSK; Removed task (id, lat, lng); Task-8; 50.92827852277433; -1.4110170656391918
-2023-08-16 11:19:36; 259.9999999999938; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-13; UAV-6; 27 
-2023-08-16 11:19:36; 259.9999999999938; DELTSK; Removed task (id, lat, lng); Task-13; 50.931187141625635; -1.4031897830286877
-2023-08-16 11:19:38; 266.19999999999345; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-15; UAV-5; 26 
-2023-08-16 11:19:38; 266.19999999999345; DELTSK; Removed task (id, lat, lng); Task-15; 50.931408584248175; -1.4067357156266629
-2023-08-16 11:19:41; 281.1999999999926; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-17; UAV-7; 25 
-2023-08-16 11:19:41; 281.1999999999926; DELTSK; Removed task (id, lat, lng); Task-17; 50.9315432755547; -1.4047072901650142
-2023-08-16 11:19:43; 292.39999999999196; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-14 
-2023-08-16 11:19:44; 300.7999999999915; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-16 
-2023-08-16 11:19:47; 312.5999999999908; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-23 
-2023-08-16 11:19:47; 312.9999999999908; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-18; UAV-8; 24 
-2023-08-16 11:19:47; 312.9999999999908; DELTSK; Removed task (id, lat, lng); Task-18; 50.92922815350693; -1.4114083187927104
+2023-08-23 18:00:05; 0.0; LGSTRT; Reset log (scenario, username); SFV; 123 
+2023-08-23 18:00:08; 0.0; SIMST; Simulation started
+2023-08-23 18:00:09; 5.000000000000002; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 496.2; 3.8; 0.0 
+2023-08-23 18:00:09; 5.000000000000002; AUTRN; Autorun of model;
+2023-08-23 18:00:09; 5.000000000000002; MDSTO; Model starting on the current number of agents (#); 5
+2023-08-23 18:00:09; 5.000000000000002; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:09; 5.000000000000002; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:10; 9.999999999999996; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 492.4; 7.6; 0.0 
+2023-08-23 18:00:11; 14.999999999999979; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 488.59999999999997; 11.399999999999999; 0.0 
+2023-08-23 18:00:12; 19.99999999999996; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 484.79999999999995; 15.2; 0.0 
+2023-08-23 18:00:13; 24.999999999999943; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 480.99999999999994; 19.0; 0.0 
+2023-08-23 18:00:13; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-4 
+2023-08-23 18:00:13; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-1 
+2023-08-23 18:00:13; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-2 
+2023-08-23 18:00:13; 25.199999999999942; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-5 
+2023-08-23 18:00:14; 29.999999999999925; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 477.19999999999993; 22.8; 0.0 
+2023-08-23 18:00:15; 34.99999999999996; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 473.3999999999999; 26.6; 0.0 
+2023-08-23 18:00:16; 40.00000000000003; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 469.5999999999999; 30.400000000000002; 0.0 
+2023-08-23 18:00:17; 45.0000000000001; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 465.7999999999999; 34.2; 0.0 
+2023-08-23 18:00:18; 50.00000000000017; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 461.9999999999999; 38.0; 0.0 
+2023-08-23 18:00:19; 55.00000000000024; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 458.1999999999999; 41.8; 0.0 
+2023-08-23 18:00:20; 60.00000000000031; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 454.39999999999986; 45.599999999999994; 0.0 
+2023-08-23 18:00:21; 65.00000000000038; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 450.59999999999985; 49.39999999999999; 0.0 
+2023-08-23 18:00:22; 70.00000000000045; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 446.79999999999984; 53.19999999999999; 0.0 
+2023-08-23 18:00:23; 75.00000000000053; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 442.99999999999983; 56.999999999999986; 0.0 
+2023-08-23 18:00:24; 80.0000000000006; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 439.1999999999998; 60.79999999999998; 0.0 
+2023-08-23 18:00:25; 81.40000000000062; MDDNU; Model done at 1 under the current number of agents in time (result, elapsed time); 3005.0; 15.484876553
+2023-08-23 18:00:25; 85.00000000000067; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 0; 435.3999999999998; 64.59999999999998; 0.0 
+2023-08-23 18:00:26; 87.0000000000007; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-2; UAV-3; 39 
+2023-08-23 18:00:26; 87.0000000000007; DELTSK; Removed task (id, lat, lng); Task-2; 50.9295; -1.40493
+2023-08-23 18:00:26; 90.00000000000074; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 1; 531.5999999999999; 68.39999999999998; 0.0 
+2023-08-23 18:00:27; 91.80000000000076; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-1; UAV-2; 38 
+2023-08-23 18:00:27; 91.80000000000076; DELTSK; Removed task (id, lat, lng); Task-1; 50.92861201823444; -1.4083548992865773
+2023-08-23 18:00:27; 95.00000000000081; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-4; UAV-1; 37 
+2023-08-23 18:00:27; 95.00000000000081; DELTSK; Removed task (id, lat, lng); Task-4; 50.92920912373895; -1.4065721725970581
+2023-08-23 18:00:27; 95.00000000000081; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 3; 727.8; 72.19999999999997; 0.0 
+2023-08-23 18:00:28; 99.40000000000087; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-5; UAV-4; 36 
+2023-08-23 18:00:28; 99.40000000000087; DELTSK; Removed task (id, lat, lng); Task-5; 50.92809666040806; -1.4093217629816241
+2023-08-23 18:00:28; 100.00000000000088; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 824.0; 75.99999999999997; 0.0 
+2023-08-23 18:00:29; 105.00000000000095; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 820.2; 79.79999999999997; 0.0 
+2023-08-23 18:00:30; 109.40000000000101; MDDNO; Model done on the current number of agents in time (result, elapsed time); 3005.0; 21.130297271
+2023-08-23 18:00:30; 110.00000000000102; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 816.4000000000001; 83.59999999999997; 0.0 
+2023-08-23 18:00:31; 115.0000000000011; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 812.6000000000001; 87.39999999999996; 0.0 
+2023-08-23 18:00:32; 120.00000000000117; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 808.8000000000002; 91.19999999999996; 0.0 
+2023-08-23 18:00:33; 125.00000000000124; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 805.0000000000002; 94.99999999999996; 0.0 
+2023-08-23 18:00:34; 129.00000000000122; MDDNV; Model done at 1 over the current number of agents in time (result, elapsed time); 2165.0; 25.04419761
+2023-08-23 18:00:34; 130.00000000000117; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 801.2000000000003; 98.79999999999995; 0.0 
+2023-08-23 18:00:35; 135.00000000000088; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-6 
+2023-08-23 18:00:35; 135.00000000000088; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 797.4000000000003; 102.59999999999995; 0.0 
+2023-08-23 18:00:36; 139.40000000000063; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-3 
+2023-08-23 18:00:36; 140.0000000000006; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 4; 4; 793.6000000000004; 106.39999999999995; 0.0 
+2023-08-23 18:00:37; 142.80000000000044; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-7 
+2023-08-23 18:00:37; 144.60000000000034; SPWN; Hub spawed an agent - now there are (numAgents); 5 
+2023-08-23 18:00:37; 144.60000000000034; MDSTO; Model starting on the current number of agents (#); 6
+2023-08-23 18:00:37; 144.60000000000034; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:37; 144.60000000000034; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:37; 144.80000000000032; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-8 
+2023-08-23 18:00:37; 145.0000000000003; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 5; 4; 788.7000000000004; 111.29999999999995; 0.0 
+2023-08-23 18:00:37; 145.60000000000028; SPWN; Hub spawed an agent - now there are (numAgents); 6 
+2023-08-23 18:00:37; 145.80000000000027; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-9 
+2023-08-23 18:00:38; 146.00000000000026; MDSTO; Model starting on the current number of agents (#); 7
+2023-08-23 18:00:38; 146.00000000000026; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:38; 146.00000000000026; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:38; 147.0000000000002; SPWN; Hub spawed an agent - now there are (numAgents); 7 
+2023-08-23 18:00:38; 147.2000000000002; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-12 
+2023-08-23 18:00:38; 147.80000000000015; MDSTO; Model starting on the current number of agents (#); 8
+2023-08-23 18:00:38; 147.80000000000015; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:38; 147.80000000000015; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:38; 149.40000000000006; SPWN; Hub spawed an agent - now there are (numAgents); 8 
+2023-08-23 18:00:38; 149.60000000000005; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-10 
+2023-08-23 18:00:38; 150.00000000000003; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 8; 4; 779.3000000000004; 120.69999999999996; 0.0 
+2023-08-23 18:00:38; 150.00000000000003; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:38; 150.00000000000003; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:38; 150.00000000000003; MDSTO; Model starting on the current number of agents (#); 9
+2023-08-23 18:00:38; 150.6; SPWN; Hub spawed an agent - now there are (numAgents); 9 
+2023-08-23 18:00:38; 150.79999999999998; ASGN; Agent assigned to task (agentId, taskId); UAV-9; Task-11 
+2023-08-23 18:00:39; 150.99999999999997; MDSTO; Model starting on the current number of agents (#); 10
+2023-08-23 18:00:39; 150.99999999999997; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:39; 150.99999999999997; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:39; 151.79999999999993; SPWN; Hub spawed an agent - now there are (numAgents); 10 
+2023-08-23 18:00:39; 151.99999999999991; ASGN; Agent assigned to task (agentId, taskId); UAV-10; Task-13 
+2023-08-23 18:00:39; 152.1999999999999; MDSTO; Model starting on the current number of agents (#); 11
+2023-08-23 18:00:39; 152.1999999999999; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:00:39; 152.1999999999999; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:00:39; 152.79999999999987; SPWNF; Hub FAILED to spawn an agent - there are still (numAgents); 10 
+2023-08-23 18:00:39; 153.9999999999998; SPWNF; Hub FAILED to spawn an agent - there are still (numAgents); 10 
+2023-08-23 18:00:39; 154.99999999999974; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 765.9000000000004; 134.09999999999997; 0.0 
+2023-08-23 18:00:40; 156.99999999999963; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-15 
+2023-08-23 18:00:40; 159.99999999999946; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 752.5000000000005; 147.49999999999997; 0.0 
+2023-08-23 18:00:41; 163.79999999999924; SPWNF; Hub FAILED to spawn an agent - there are still (numAgents); 10 
+2023-08-23 18:00:41; 164.5999999999992; SPWNF; Hub FAILED to spawn an agent - there are still (numAgents); 10 
+2023-08-23 18:00:41; 164.99999999999918; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 739.1000000000005; 160.89999999999998; 0.0 
+2023-08-23 18:00:42; 169.9999999999989; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 725.7000000000005; 174.29999999999998; 0.0 
+2023-08-23 18:00:43; 174.9999999999986; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 712.3000000000005; 187.7; 0.0 
+2023-08-23 18:00:44; 179.99999999999832; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 698.9000000000005; 201.1; 0.0 
+2023-08-23 18:00:45; 181.79999999999822; SPWNF; Hub FAILED to spawn an agent - there are still (numAgents); 10 
+2023-08-23 18:00:45; 184.99999999999804; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 685.5000000000006; 214.5; 0.0 
+2023-08-23 18:00:46; 189.99999999999775; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 672.1000000000006; 227.9; 0.0 
+2023-08-23 18:00:48; 194.99999999999747; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 4; 658.7000000000006; 241.3; 0.0 
+2023-08-23 18:00:48; 198.99999999999724; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-6; UAV-3; 35 
+2023-08-23 18:00:48; 198.99999999999724; DELTSK; Removed task (id, lat, lng); Task-6; 50.93005055983864; -1.4056972955868583
+2023-08-23 18:00:49; 199.9999999999972; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 5; 745.3000000000006; 254.70000000000002; 0.0 
+2023-08-23 18:00:50; 204.9999999999969; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 5; 731.9000000000007; 268.1; 0.0 
+2023-08-23 18:00:50; 206.7999999999968; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-3; UAV-1; 34 
+2023-08-23 18:00:50; 206.7999999999968; DELTSK; Removed task (id, lat, lng); Task-3; 50.92994841492357; -1.4071062570258561
+2023-08-23 18:00:51; 209.99999999999662; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 6; 818.5000000000007; 281.5; 0.0 
+2023-08-23 18:00:51; 211.9999999999965; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-7; UAV-2; 33 
+2023-08-23 18:00:51; 211.9999999999965; DELTSK; Removed task (id, lat, lng); Task-7; 50.93000751140818; -1.4033381902024118
+2023-08-23 18:00:52; 214.99999999999633; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 7; 905.1000000000007; 294.9; 0.0 
+2023-08-23 18:00:53; 219.99999999999605; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 7; 891.7000000000007; 308.29999999999995; 0.0 
+2023-08-23 18:00:54; 224.99999999999577; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 7; 878.3000000000008; 321.69999999999993; 0.0 
+2023-08-23 18:00:55; 229.99999999999548; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 7; 864.9000000000008; 335.0999999999999; 0.0 
+2023-08-23 18:00:56; 234.9999999999952; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 7; 851.5000000000008; 348.4999999999999; 0.0 
+2023-08-23 18:00:56; 236.39999999999512; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-9; UAV-6; 32 
+2023-08-23 18:00:56; 236.39999999999512; DELTSK; Removed task (id, lat, lng); Task-9; 50.93066909873102; -1.4039824598576496
+2023-08-23 18:00:56; 236.5999999999951; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-12; UAV-7; 31 
+2023-08-23 18:00:56; 236.5999999999951; DELTSK; Removed task (id, lat, lng); Task-12; 50.929786740075315; -1.40918219247446
+2023-08-23 18:00:57; 239.9999999999949; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-11; UAV-9; 30 
+2023-08-23 18:00:57; 239.9999999999949; DELTSK; Removed task (id, lat, lng); Task-11; 50.930798337916976; -1.407493372489891
+2023-08-23 18:00:57; 239.9999999999949; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 10; 1138.1000000000008; 361.89999999999986; 0.0 
+2023-08-23 18:00:58; 244.99999999999463; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 10; 1124.7000000000007; 375.29999999999984; 0.0 
+2023-08-23 18:00:58; 245.99999999999457; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-8; UAV-5; 29 
+2023-08-23 18:00:58; 245.99999999999457; DELTSK; Removed task (id, lat, lng); Task-8; 50.92827852277433; -1.4110170656391918
+2023-08-23 18:00:58; 245.99999999999457; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-13; UAV-10; 28 
+2023-08-23 18:00:58; 245.99999999999457; DELTSK; Removed task (id, lat, lng); Task-13; 50.931187141625635; -1.4031897830286877
+2023-08-23 18:00:59; 249.99999999999434; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 12; 1311.3000000000006; 388.6999999999998; 0.0 
+2023-08-23 18:00:59; 250.7999999999943; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-15; UAV-4; 27 
+2023-08-23 18:00:59; 250.7999999999943; DELTSK; Removed task (id, lat, lng); Task-15; 50.931408584248175; -1.4067357156266629
+2023-08-23 18:00:59; 253.79999999999413; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-10; UAV-8; 26 
+2023-08-23 18:00:59; 253.79999999999413; DELTSK; Removed task (id, lat, lng); Task-10; 50.93081696774981; -1.4061380751777348
+2023-08-23 18:01:00; 254.99999999999406; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1497.9000000000005; 402.0999999999998; 0.0 
+2023-08-23 18:01:00; 258.3999999999939; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-17 
+2023-08-23 18:01:01; 259.9999999999938; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1484.5000000000005; 415.4999999999998; 0.0 
+2023-08-23 18:01:02; 264.9999999999935; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1471.1000000000004; 428.89999999999975; 0.0 
+2023-08-23 18:01:02; 268.9999999999933; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-18 
+2023-08-23 18:01:03; 269.99999999999324; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1457.7000000000003; 442.2999999999997; 0.0 
+2023-08-23 18:01:04; 274.99999999999295; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1444.3000000000002; 455.6999999999997; 0.0 
+2023-08-23 18:01:05; 279.3999999999927; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-14 
+2023-08-23 18:01:05; 279.99999999999267; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1430.9; 469.0999999999997; 0.0 
+2023-08-23 18:01:06; 284.9999999999924; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1417.5; 482.49999999999966; 0.0 
+2023-08-23 18:01:07; 289.9999999999921; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1404.1; 495.89999999999964; 0.0 
+2023-08-23 18:01:08; 294.9999999999918; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1390.6999999999998; 509.2999999999996; 0.0 
+2023-08-23 18:01:09; 299.99999999999153; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1377.2999999999997; 522.6999999999996; 0.0 
+2023-08-23 18:01:10; 304.99999999999125; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1363.8999999999996; 536.0999999999996; 0.0 
+2023-08-23 18:01:11; 309.99999999999096; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1350.4999999999995; 549.4999999999995; 0.0 
+2023-08-23 18:01:11; 312.9999999999908; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-16 
+2023-08-23 18:01:12; 314.5999999999907; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-23 
+2023-08-23 18:01:12; 314.9999999999907; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1337.0999999999995; 562.8999999999995; 0.0 
+2023-08-23 18:01:13; 319.9999999999904; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1323.6999999999994; 576.2999999999995; 0.0 
+2023-08-23 18:01:13; 323.1999999999902; ASGN; Agent assigned to task (agentId, taskId); UAV-9; Task-19 
+2023-08-23 18:01:14; 324.9999999999901; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1310.2999999999993; 589.6999999999995; 0.0 
+2023-08-23 18:01:15; 329.39999999998986; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-20 
+2023-08-23 18:01:15; 329.9999999999898; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1296.8999999999992; 603.0999999999995; 0.0 
+2023-08-23 18:01:15; 332.1999999999897; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-24 
+2023-08-23 18:01:16; 334.99999999998954; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1283.499999999999; 616.4999999999994; 0.0 
+2023-08-23 18:01:16; 337.3999999999894; ASGN; Agent assigned to task (agentId, taskId); UAV-10; Task-21 
+2023-08-23 18:01:17; 339.99999999998926; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1270.099999999999; 629.8999999999994; 0.0 
+2023-08-23 18:01:17; 341.1999999999892; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-22 
+2023-08-23 18:01:18; 344.999999999989; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1256.699999999999; 643.2999999999994; 0.0 
+2023-08-23 18:01:19; 349.9999999999887; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1243.2999999999988; 656.6999999999994; 0.0 
+2023-08-23 18:01:20; 354.9999999999884; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 14; 1229.8999999999987; 670.0999999999993; 0.0 
+2023-08-23 18:01:20; 355.59999999998837; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-17; UAV-3; 25 
+2023-08-23 18:01:20; 355.59999999998837; DELTSK; Removed task (id, lat, lng); Task-17; 50.9315432755547; -1.4047072901650142
+2023-08-23 18:01:21; 359.9999999999881; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 15; 1316.4999999999986; 683.4999999999993; 0.0 
+2023-08-23 18:01:22; 364.99999999998784; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 15; 1303.0999999999985; 696.8999999999993; 0.0 
+2023-08-23 18:01:22; 367.3999999999877; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-18; UAV-1; 24 
+2023-08-23 18:01:22; 367.3999999999877; DELTSK; Removed task (id, lat, lng); Task-18; 50.92922815350693; -1.4114083187927104
+2023-08-23 18:01:23; 369.99999999998755; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 16; 1389.6999999999985; 710.2999999999993; 0.0 
+2023-08-23 18:01:24; 374.99999999998727; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 16; 1376.2999999999984; 723.6999999999992; 0.0 
+2023-08-23 18:01:25; 379.999999999987; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 16; 1362.8999999999983; 737.0999999999992; 0.0 
+2023-08-23 18:01:25; 382.59999999998684; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-14; UAV-2; 23 
+2023-08-23 18:01:25; 382.59999999998684; DELTSK; Removed task (id, lat, lng); Task-14; 50.93144777002654; -1.4081193021277674
+2023-08-23 18:01:26; 384.9999999999867; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1449.4999999999982; 750.4999999999992; 0.0 
+2023-08-23 18:01:27; 389.9999999999864; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1436.099999999998; 763.8999999999992; 0.0 
+2023-08-23 18:01:28; 394.99999999998613; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1422.699999999998; 777.2999999999992; 0.0 
+2023-08-23 18:01:29; 399.99999999998585; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1409.299999999998; 790.6999999999991; 0.0 
+2023-08-23 18:01:30; 404.99999999998556; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1395.8999999999978; 804.0999999999991; 0.0 
+2023-08-23 18:01:31; 409.9999999999853; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1382.4999999999977; 817.4999999999991; 0.0 
+2023-08-23 18:01:32; 414.999999999985; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 17; 1369.0999999999976; 830.8999999999991; 0.0 
+2023-08-23 18:01:32; 415.99999999998494; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-16; UAV-7; 22 
+2023-08-23 18:01:32; 415.99999999998494; DELTSK; Removed task (id, lat, lng); Task-16; 50.9301685930864; -1.410909668062446
+2023-08-23 18:01:33; 419.9999999999847; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 18; 1455.6999999999975; 844.299999999999; 0.0 
+2023-08-23 18:01:34; 424.9999999999844; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 18; 1442.2999999999975; 857.699999999999; 0.0 
+2023-08-23 18:01:34; 427.5999999999843; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-23; UAV-6; 21 
+2023-08-23 18:01:34; 427.5999999999843; DELTSK; Removed task (id, lat, lng); Task-23; 50.93198514411451; -1.403758756303673
+2023-08-23 18:01:35; 429.99999999998414; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 19; 1528.8999999999974; 871.099999999999; 0.0 
+2023-08-23 18:01:36; 434.99999999998386; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 19; 1515.4999999999973; 884.499999999999; 0.0 
+2023-08-23 18:01:36; 437.3999999999837; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-19; UAV-9; 20 
+2023-08-23 18:01:36; 437.3999999999837; DELTSK; Removed task (id, lat, lng); Task-19; 50.9321910615736; -1.4056755462706674
+2023-08-23 18:01:37; 439.9999999999836; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 20; 1602.0999999999972; 897.899999999999; 0.0 
+2023-08-23 18:01:38; 444.9999999999833; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 20; 1588.699999999997; 911.2999999999989; 0.0 
+2023-08-23 18:01:38; 446.9999999999832; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-20; UAV-5; 19 
+2023-08-23 18:01:38; 446.9999999999832; DELTSK; Removed task (id, lat, lng); Task-20; 50.92994684478668; -1.4121677990850634
+2023-08-23 18:01:39; 448.3999999999831; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-30 
+2023-08-23 18:01:39; 449.999999999983; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 21; 1675.299999999997; 924.6999999999989; 0.0 
+2023-08-23 18:01:40; 454.9999999999827; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 21; 1661.899999999997; 938.0999999999989; 0.0 
+2023-08-23 18:01:40; 454.9999999999827; AUTRN; Autorun of model;
+2023-08-23 18:01:40; 454.9999999999827; MDSTO; Model starting on the current number of agents (#); 11
+2023-08-23 18:01:40; 454.9999999999827; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:01:40; 455.1999999999827; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:01:41; 457.5999999999826; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-24; UAV-8; 18 
+2023-08-23 18:01:41; 457.5999999999826; DELTSK; Removed task (id, lat, lng); Task-24; 50.932289786955316; -1.4088134275466857
+2023-08-23 18:01:41; 459.99999999998244; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 22; 1748.4999999999968; 951.4999999999989; 0.0 
+2023-08-23 18:01:41; 461.9999999999823; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-29 
+2023-08-23 18:01:42; 462.7999999999823; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-21; UAV-10; 17 
+2023-08-23 18:01:42; 462.7999999999823; DELTSK; Removed task (id, lat, lng); Task-21; 50.93195070407471; -1.4102289768115934
+2023-08-23 18:01:42; 464.79999999998216; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-22; UAV-4; 16 
+2023-08-23 18:01:42; 464.79999999998216; DELTSK; Removed task (id, lat, lng); Task-22; 50.92936880047536; -1.413428711597707
+2023-08-23 18:01:42; 464.99999999998215; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1935.0999999999967; 964.8999999999988; 0.0 
+2023-08-23 18:01:43; 469.99999999998187; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1921.6999999999966; 978.2999999999988; 0.0 
+2023-08-23 18:01:44; 474.9999999999816; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1908.2999999999965; 991.6999999999988; 0.0 
+2023-08-23 18:01:45; 479.9999999999813; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1894.8999999999965; 1005.0999999999988; 0.0 
+2023-08-23 18:01:46; 482.1999999999812; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-25 
+2023-08-23 18:01:46; 484.999999999981; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1881.4999999999964; 1018.4999999999987; 0.0 
+2023-08-23 18:01:47; 489.99999999998073; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1868.0999999999963; 1031.8999999999987; 0.0 
+2023-08-23 18:01:48; 494.99999999998045; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1854.6999999999962; 1045.2999999999988; 0.0 
+2023-08-23 18:01:49; 499.99999999998016; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1841.299999999996; 1058.699999999999; 0.0 
+2023-08-23 18:01:50; 504.9999999999799; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1827.899999999996; 1072.099999999999; 0.0 
+2023-08-23 18:01:51; 509.9999999999796; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1814.499999999996; 1085.499999999999; 0.0 
+2023-08-23 18:01:52; 514.9999999999801; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1801.0999999999958; 1098.8999999999992; 0.0 
+2023-08-23 18:01:53; 516.5999999999805; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-26 
+2023-08-23 18:01:53; 519.9999999999812; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1787.6999999999957; 1112.2999999999993; 0.0 
+2023-08-23 18:01:54; 524.9999999999824; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1774.2999999999956; 1125.6999999999994; 0.0 
+2023-08-23 18:01:55; 529.9999999999835; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1760.8999999999955; 1139.0999999999995; 0.0 
+2023-08-23 18:01:56; 534.9999999999847; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1747.4999999999955; 1152.4999999999995; 0.0 
+2023-08-23 18:01:56; 535.3999999999847; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-27 
+2023-08-23 18:01:57; 539.9999999999858; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1734.0999999999954; 1165.8999999999996; 0.0 
+2023-08-23 18:01:58; 544.9999999999869; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1720.6999999999953; 1179.2999999999997; 0.0 
+2023-08-23 18:01:59; 546.5999999999873; ASGN; Agent assigned to task (agentId, taskId); UAV-9; Task-28 
+2023-08-23 18:01:59; 549.9999999999881; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1707.2999999999952; 1192.6999999999998; 0.0 
+2023-08-23 18:02:00; 554.9999999999892; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1693.899999999995; 1206.1; 0.0 
+2023-08-23 18:02:01; 559.7999999999903; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-32 
+2023-08-23 18:02:01; 559.9999999999903; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1680.499999999995; 1219.5; 0.0 
+2023-08-23 18:02:02; 564.9999999999915; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1667.099999999995; 1232.9; 0.0 
+2023-08-23 18:02:03; 569.9999999999926; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 24; 1653.6999999999948; 1246.3000000000002; 0.0 
+2023-08-23 18:02:04; 574.7999999999937; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-30; UAV-3; 15 
+2023-08-23 18:02:04; 574.7999999999937; DELTSK; Removed task (id, lat, lng); Task-30; 50.93261725334638; -1.4026919245063783
+2023-08-23 18:02:04; 574.9999999999937; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 25; 1740.2999999999947; 1259.7000000000003; 0.0 
+2023-08-23 18:02:05; 578.1999999999945; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-34 
+2023-08-23 18:02:05; 579.9999999999949; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 25; 1726.8999999999946; 1273.1000000000004; 0.0 
+2023-08-23 18:02:06; 584.799999999996; ASGN; Agent assigned to task (agentId, taskId); UAV-10; Task-35 
+2023-08-23 18:02:06; 584.999999999996; ASGN; Agent assigned to task (agentId, taskId); UAV-4; Task-31 
+2023-08-23 18:02:06; 584.999999999996; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 25; 1713.4999999999945; 1286.5000000000005; 0.0 
+2023-08-23 18:02:07; 589.9999999999972; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 25; 1700.0999999999945; 1299.9000000000005; 0.0 
+2023-08-23 18:02:08; 592.3999999999977; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-29; UAV-1; 14 
+2023-08-23 18:02:08; 592.3999999999977; DELTSK; Removed task (id, lat, lng); Task-29; 50.93162742355191; -1.4112954439243854
+2023-08-23 18:02:08; 594.9999999999983; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 26; 1786.6999999999944; 1313.3000000000006; 0.0 
+2023-08-23 18:02:09; 599.9999999999994; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 26; 1773.2999999999943; 1326.7000000000007; 0.0 
+2023-08-23 18:02:10; 605.0000000000006; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 26; 1759.8999999999942; 1340.1000000000008; 0.0 
+2023-08-23 18:02:11; 610.0000000000017; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 26; 1746.499999999994; 1353.500000000001; 0.0 
+2023-08-23 18:02:12; 614.6000000000028; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-25; UAV-2; 13 
+2023-08-23 18:02:12; 614.6000000000028; DELTSK; Removed task (id, lat, lng); Task-25; 50.93048977410414; -1.412940813043163
+2023-08-23 18:02:12; 615.0000000000028; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1833.099999999994; 1366.900000000001; 0.0 
+2023-08-23 18:02:13; 620.000000000004; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1819.699999999994; 1380.300000000001; 0.0 
+2023-08-23 18:02:14; 625.0000000000051; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1806.2999999999938; 1393.7000000000012; 0.0 
+2023-08-23 18:02:15; 630.0000000000063; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1792.8999999999937; 1407.1000000000013; 0.0 
+2023-08-23 18:02:16; 635.0000000000074; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1779.4999999999936; 1420.5000000000014; 0.0 
+2023-08-23 18:02:17; 640.0000000000085; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1766.0999999999935; 1433.9000000000015; 0.0 
+2023-08-23 18:02:18; 645.0000000000097; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1752.6999999999935; 1447.3000000000015; 0.0 
+2023-08-23 18:02:19; 647.8000000000103; BTKIL; Agent battery dead - going home (agentId); UAV-9;
+2023-08-23 18:02:19; 650.0000000000108; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 27; 1739.2999999999934; 1460.7000000000016; 0.0 
+2023-08-23 18:02:20; 651.8000000000112; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-26; UAV-7; 12 
+2023-08-23 18:02:20; 651.8000000000112; DELTSK; Removed task (id, lat, lng); Task-26; 50.933070248971674; -1.4073181314482803
+2023-08-23 18:02:20; 655.0000000000119; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 28; 1825.8999999999933; 1474.1000000000017; 0.0 
+2023-08-23 18:02:21; 660.0000000000131; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 28; 1812.4999999999932; 1487.5000000000018; 0.0 
+2023-08-23 18:02:22; 665.0000000000142; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 28; 1799.099999999993; 1500.900000000002; 0.0 
+2023-08-23 18:02:23; 670.0000000000153; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 28; 1785.699999999993; 1514.300000000002; 0.0 
+2023-08-23 18:02:24; 671.8000000000158; MDDNU; Model done at 1 under the current number of agents in time (result, elapsed time); 1074.0; 43.775431969
+2023-08-23 18:02:24; 672.6000000000159; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-27; UAV-6; 11 
+2023-08-23 18:02:24; 672.6000000000159; DELTSK; Removed task (id, lat, lng); Task-27; 50.92819675699308; -1.414667939590935
+2023-08-23 18:02:25; 675.0000000000165; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1872.299999999993; 1527.700000000002; 0.0 
+2023-08-23 18:02:26; 680.0000000000176; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1858.8999999999928; 1541.1000000000022; 0.0 
+2023-08-23 18:02:27; 685.0000000000188; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1845.4999999999927; 1554.5000000000023; 0.0 
+2023-08-23 18:02:27; 685.8000000000189; BTKIL; Agent battery dead - going home (agentId); UAV-8;
+2023-08-23 18:02:28; 690.0000000000199; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1832.0999999999926; 1567.9000000000024; 0.0 
+2023-08-23 18:02:29; 695.000000000021; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1818.6999999999925; 1581.3000000000025; 0.0 
+2023-08-23 18:02:30; 700.0000000000222; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1805.2999999999925; 1594.7000000000025; 0.0 
+2023-08-23 18:02:30; 701.8000000000226; MDDNV; Model done at 1 over the current number of agents in time (result, elapsed time); 974.0; 49.780367918
+2023-08-23 18:02:31; 705.0000000000233; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1791.8999999999924; 1608.1000000000026; 0.0 
+2023-08-23 18:02:31; 705.2000000000234; MDDNO; Model done on the current number of agents in time (result, elapsed time); 994.0; 50.483020929
+2023-08-23 18:02:32; 710.0000000000244; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 29; 1778.4999999999923; 1621.5000000000027; 0.0 
+2023-08-23 18:02:32; 713.8000000000253; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-32; UAV-5; 10 
+2023-08-23 18:02:32; 713.8000000000253; DELTSK; Removed task (id, lat, lng); Task-32; 50.92937104749675; -1.4153035358398052
+2023-08-23 18:02:33; 715.0000000000256; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 30; 1865.0999999999922; 1634.9000000000028; 0.0 
+2023-08-23 18:02:33; 718.2000000000263; ASGN; Agent assigned to task (agentId, taskId); UAV-1; Task-28 
+2023-08-23 18:02:34; 720.0000000000267; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 30; 1851.699999999992; 1648.300000000003; 0.0 
+2023-08-23 18:02:35; 725.0000000000279; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 30; 1838.299999999992; 1661.700000000003; 0.0 
+2023-08-23 18:02:36; 730.000000000029; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 30; 1824.899999999992; 1675.100000000003; 0.0 
+2023-08-23 18:02:37; 735.0000000000301; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 30; 1811.4999999999918; 1688.5000000000032; 0.0 
+2023-08-23 18:02:37; 738.800000000031; BTKIL; Agent battery dead - going home (agentId); UAV-4;
+2023-08-23 18:02:38; 740.0000000000313; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-35; UAV-10; 9 
+2023-08-23 18:02:38; 740.0000000000313; DELTSK; Removed task (id, lat, lng); Task-35; 50.92860689193666; -1.415936470818062
+2023-08-23 18:02:38; 740.0000000000313; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1898.0999999999917; 1701.9000000000033; 0.0 
+2023-08-23 18:02:39; 745.0000000000324; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1884.6999999999916; 1715.3000000000034; 0.0 
+2023-08-23 18:02:40; 750.0000000000335; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1871.2999999999915; 1728.7000000000035; 0.0 
+2023-08-23 18:02:41; 755.0000000000347; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1857.8999999999915; 1742.1000000000035; 0.0 
+2023-08-23 18:02:41; 755.0000000000347; AUTRN; Autorun of model;
+2023-08-23 18:02:41; 755.0000000000347; MDSTO; Model starting on the current number of agents (#); 11
+2023-08-23 18:02:41; 755.0000000000347; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:02:41; 755.0000000000347; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:02:42; 760.0000000000358; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1844.4999999999914; 1755.5000000000036; 0.0 
+2023-08-23 18:02:42; 762.4000000000364; ASGN; Agent assigned to task (agentId, taskId); UAV-3; Task-34 
+2023-08-23 18:02:43; 765.000000000037; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1831.0999999999913; 1768.9000000000037; 0.0 
+2023-08-23 18:02:44; 770.0000000000381; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1817.6999999999912; 1782.3000000000038; 0.0 
+2023-08-23 18:02:45; 775.0000000000392; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1804.299999999991; 1795.700000000004; 0.0 
+2023-08-23 18:02:46; 780.0000000000404; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1790.899999999991; 1809.100000000004; 0.0 
+2023-08-23 18:02:47; 785.0000000000415; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1777.499999999991; 1822.500000000004; 0.0 
+2023-08-23 18:02:48; 790.0000000000426; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1764.0999999999908; 1835.9000000000042; 0.0 
+2023-08-23 18:02:49; 795.0000000000438; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1750.6999999999907; 1849.3000000000043; 0.0 
+2023-08-23 18:02:50; 800.0000000000449; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1737.2999999999906; 1862.7000000000044; 0.0 
+2023-08-23 18:02:51; 805.000000000046; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1723.8999999999905; 1876.1000000000045; 0.0 
+2023-08-23 18:02:51; 805.8000000000462; ASGN; Agent assigned to task (agentId, taskId); UAV-2; Task-31 
+2023-08-23 18:02:52; 810.0000000000472; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1710.4999999999905; 1889.5000000000045; 0.0 
+2023-08-23 18:02:53; 815.0000000000483; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1697.0999999999904; 1902.9000000000046; 0.0 
+2023-08-23 18:02:54; 820.0000000000495; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1683.6999999999903; 1916.3000000000047; 0.0 
+2023-08-23 18:02:54; 823.6000000000503; ASGN; Agent assigned to task (agentId, taskId); UAV-9; Task-33 
+2023-08-23 18:02:55; 825.0000000000506; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1670.2999999999902; 1929.7000000000048; 0.0 
+2023-08-23 18:02:56; 830.0000000000517; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1656.89999999999; 1943.100000000005; 0.0 
+2023-08-23 18:02:57; 835.0000000000529; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1643.49999999999; 1956.500000000005; 0.0 
+2023-08-23 18:02:58; 840.000000000054; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1630.09999999999; 1969.900000000005; 0.0 
+2023-08-23 18:02:58; 843.6000000000548; ASGN; Agent assigned to task (agentId, taskId); UAV-7; Task-40 
+2023-08-23 18:02:59; 845.0000000000551; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1616.6999999999898; 1983.3000000000052; 0.0 
+2023-08-23 18:03:00; 850.0000000000563; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1603.2999999999897; 1996.7000000000053; 0.0 
+2023-08-23 18:03:01; 855.0000000000574; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 31; 1589.8999999999896; 2010.1000000000054; 0.0 
+2023-08-23 18:03:01; 856.4000000000577; MDDNU; Model done at 1 under the current number of agents in time (result, elapsed time); 1355.0; 20.512976834
+2023-08-23 18:03:02; 860.0000000000585; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-28; UAV-1; 8 
+2023-08-23 18:03:02; 860.0000000000585; DELTSK; Removed task (id, lat, lng); Task-28; 50.93353326554826; -1.4046700865313362
+2023-08-23 18:03:02; 860.0000000000585; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1676.4999999999895; 2023.5000000000055; 0.0 
+2023-08-23 18:03:02; 862.6000000000591; ASGN; Agent assigned to task (agentId, taskId); UAV-5; Task-38 
+2023-08-23 18:03:03; 864.4000000000595; ASGN; Agent assigned to task (agentId, taskId); UAV-6; Task-37 
+2023-08-23 18:03:03; 865.0000000000597; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1663.0999999999894; 2036.9000000000055; 0.0 
+2023-08-23 18:03:03; 867.8000000000603; ASGN; Agent assigned to task (agentId, taskId); UAV-8; Task-39 
+2023-08-23 18:03:04; 870.0000000000608; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1649.6999999999894; 2050.3000000000056; 0.0 
+2023-08-23 18:03:05; 875.000000000062; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1636.2999999999893; 2063.7000000000057; 0.0 
+2023-08-23 18:03:05; 876.0000000000622; MDDNV; Model done at 1 over the current number of agents in time (result, elapsed time); 1175.0; 24.440039481
+2023-08-23 18:03:05; 878.2000000000627; MDDNO; Model done on the current number of agents in time (result, elapsed time); 1375.0; 24.886900484
+2023-08-23 18:03:06; 880.0000000000631; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1622.8999999999892; 2077.100000000006; 0.0 
+2023-08-23 18:03:07; 885.0000000000642; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1609.499999999989; 2090.500000000006; 0.0 
+2023-08-23 18:03:08; 890.0000000000654; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1596.099999999989; 2103.900000000006; 0.0 
+2023-08-23 18:03:09; 895.0000000000665; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1582.699999999989; 2117.300000000006; 0.0 
+2023-08-23 18:03:10; 900.0000000000676; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1569.2999999999888; 2130.700000000006; 0.0 
+2023-08-23 18:03:11; 905.0000000000688; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1555.8999999999887; 2144.1000000000063; 0.0 
+2023-08-23 18:03:12; 910.0000000000699; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 32; 1542.4999999999886; 2157.5000000000064; 0.0 
+2023-08-23 18:03:12; 911.8000000000703; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-34; UAV-3; 7 
+2023-08-23 18:03:12; 911.8000000000703; DELTSK; Removed task (id, lat, lng); Task-34; 50.93354862296832; -1.4092781501570864
+2023-08-23 18:03:13; 915.000000000071; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1629.0999999999885; 2170.9000000000065; 0.0 
+2023-08-23 18:03:14; 920.0000000000722; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1615.6999999999884; 2184.3000000000065; 0.0 
+2023-08-23 18:03:15; 925.0000000000733; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1602.2999999999884; 2197.7000000000066; 0.0 
+2023-08-23 18:03:16; 930.0000000000745; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1588.8999999999883; 2211.1000000000067; 0.0 
+2023-08-23 18:03:17; 935.0000000000756; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1575.4999999999882; 2224.500000000007; 0.0 
+2023-08-23 18:03:18; 940.0000000000767; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1562.099999999988; 2237.900000000007; 0.0 
+2023-08-23 18:03:19; 945.0000000000779; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1548.699999999988; 2251.300000000007; 0.0 
+2023-08-23 18:03:20; 948.8000000000787; ASGN; Agent assigned to task (agentId, taskId); UAV-10; Task-36 
+2023-08-23 18:03:20; 950.000000000079; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1535.299999999988; 2264.700000000007; 0.0 
+2023-08-23 18:03:21; 955.0000000000801; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1521.8999999999878; 2278.100000000007; 0.0 
+2023-08-23 18:03:22; 960.0000000000813; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1508.4999999999877; 2291.5000000000073; 0.0 
+2023-08-23 18:03:23; 965.0000000000824; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1495.0999999999876; 2304.9000000000074; 0.0 
+2023-08-23 18:03:24; 970.0000000000836; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 33; 1481.6999999999875; 2318.3000000000075; 0.0 
+2023-08-23 18:03:24; 971.6000000000839; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-31; UAV-2; 6 
+2023-08-23 18:03:24; 971.6000000000839; DELTSK; Removed task (id, lat, lng); Task-31; 50.934423475401495; -1.4075644525461763
+2023-08-23 18:03:25; 975.0000000000847; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 34; 1568.2999999999874; 2331.7000000000075; 0.0 
+2023-08-23 18:03:26; 980.0000000000858; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 34; 1554.8999999999874; 2345.1000000000076; 0.0 
+2023-08-23 18:03:26; 982.6000000000864; BTKIL; Agent battery dead - going home (agentId); UAV-1;
+2023-08-23 18:03:27; 985.000000000087; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 34; 1541.4999999999873; 2358.5000000000077; 0.0 
+2023-08-23 18:03:28; 990.0000000000881; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 34; 1528.0999999999872; 2371.900000000008; 0.0 
+2023-08-23 18:03:28; 992.4000000000887; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-33; UAV-9; 5 
+2023-08-23 18:03:28; 992.4000000000887; DELTSK; Removed task (id, lat, lng); Task-33; 50.93176876640239; -1.414669789488423
+2023-08-23 18:03:29; 995.0000000000892; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 35; 1614.699999999987; 2385.300000000008; 0.0 
+2023-08-23 18:03:30; 1000.0000000000904; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 35; 1601.299999999987; 2398.700000000008; 0.0 
+2023-08-23 18:03:31; 1005.0000000000915; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 35; 1587.899999999987; 2412.100000000008; 0.0 
+2023-08-23 18:03:32; 1010.0000000000927; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 35; 1574.4999999999868; 2425.500000000008; 0.0 
+2023-08-23 18:03:33; 1014.8000000000937; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-40; UAV-7; 4 
+2023-08-23 18:03:33; 1014.8000000000937; DELTSK; Removed task (id, lat, lng); Task-40; 50.9344664800689; -1.4086818320074246
+2023-08-23 18:03:33; 1015.0000000000938; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 36; 1661.0999999999867; 2438.9000000000083; 0.0 
+2023-08-23 18:03:34; 1020.0000000000949; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 36; 1647.6999999999866; 2452.3000000000084; 0.0 
+2023-08-23 18:03:35; 1025.000000000096; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 36; 1634.2999999999865; 2465.7000000000085; 0.0 
+2023-08-23 18:03:36; 1030.000000000097; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 36; 1620.8999999999864; 2479.1000000000085; 0.0 
+2023-08-23 18:03:37; 1033.600000000098; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-38; UAV-4; 3 
+2023-08-23 18:03:37; 1033.600000000098; DELTSK; Removed task (id, lat, lng); Task-38; 50.93398054680238; -1.4110209116354495
+2023-08-23 18:03:37; 1035.0000000000982; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 37; 1707.4999999999864; 2492.5000000000086; 0.0 
+2023-08-23 18:03:38; 1040.0000000000994; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 37; 1694.0999999999863; 2505.9000000000087; 0.0 
+2023-08-23 18:03:38; 1042.8000000001; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-37; UAV-4; 2 
+2023-08-23 18:03:38; 1042.8000000001; DELTSK; Removed task (id, lat, lng); Task-37; 50.93329897448951; -1.413221265248387
+2023-08-23 18:03:39; 1045.0000000001005; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 38; 1780.6999999999862; 2519.300000000009; 0.0 
+2023-08-23 18:03:40; 1050.0000000001016; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 38; 1767.299999999986; 2532.700000000009; 0.0 
+2023-08-23 18:03:40; 1052.6000000001022; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-39; UAV-8; 1 
+2023-08-23 18:03:40; 1052.6000000001022; DELTSK; Removed task (id, lat, lng); Task-39; 50.935336925034896; -1.406572370029249
+2023-08-23 18:03:41; 1055.0000000001028; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1853.899999999986; 2546.100000000009; 0.0 
+2023-08-23 18:03:41; 1055.0000000001028; AUTRN; Autorun of model;
+2023-08-23 18:03:41; 1055.0000000001028; MDSTO; Model starting on the current number of agents (#); 11
+2023-08-23 18:03:41; 1055.0000000001028; MDSTV; Model starting at 1 over the current number of agents;
+2023-08-23 18:03:41; 1055.0000000001028; MDSTU; Model starting at 1 under the current number of agents;
+2023-08-23 18:03:42; 1060.000000000104; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1840.499999999986; 2559.500000000009; 0.0 
+2023-08-23 18:03:43; 1065.000000000105; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1827.0999999999858; 2572.900000000009; 0.0 
+2023-08-23 18:03:44; 1070.0000000001062; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1813.6999999999857; 2586.3000000000093; 0.0 
+2023-08-23 18:03:45; 1075.0000000001073; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1800.2999999999856; 2599.7000000000094; 0.0 
+2023-08-23 18:03:46; 1080.0000000001085; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1786.8999999999855; 2613.1000000000095; 0.0 
+2023-08-23 18:03:47; 1085.0000000001096; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1773.4999999999854; 2626.5000000000095; 0.0 
+2023-08-23 18:03:48; 1090.0000000001107; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1760.0999999999854; 2639.9000000000096; 0.0 
+2023-08-23 18:03:48; 1090.4000000001108; MDDNU; Model done at 1 under the current number of agents in time (result, elapsed time); 1155.0; 7.202918401
+2023-08-23 18:03:49; 1092.6000000001113; MDDNO; Model done on the current number of agents in time (result, elapsed time); 1155.0; 7.632468254
+2023-08-23 18:03:49; 1095.0000000001119; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1746.6999999999853; 2653.3000000000097; 0.0 
+2023-08-23 18:03:49; 1095.200000000112; MDDNV; Model done at 1 over the current number of agents in time (result, elapsed time); 1175.0; 8.181199873
+2023-08-23 18:03:50; 1100.000000000113; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1733.2999999999852; 2666.70000000001; 0.0 
+2023-08-23 18:03:51; 1105.0000000001141; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1719.899999999985; 2680.10000000001; 0.0 
+2023-08-23 18:03:52; 1110.0000000001153; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1706.499999999985; 2693.50000000001; 0.0 
+2023-08-23 18:03:53; 1115.0000000001164; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1693.099999999985; 2706.90000000001; 0.0 
+2023-08-23 18:03:54; 1120.0000000001176; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1679.6999999999848; 2720.30000000001; 0.0 
+2023-08-23 18:03:55; 1125.0000000001187; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1666.2999999999847; 2733.7000000000103; 0.0 
+2023-08-23 18:03:56; 1130.0000000001198; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); 10; 39; 1652.8999999999846; 2747.1000000000104; 0.0 
+2023-08-23 18:03:56; 1131.4000000001201; TSKCM; Task completed by agent - there are now tasks left (taskId, agentId numTasks); Task-36; UAV-1; 0 
+2023-08-23 18:03:56; 1131.4000000001201; DELTSK; Removed task (id, lat, lng); Task-36; 50.93510029408737; -1.4016415799602995
+2023-08-23 18:03:56; 1131.6000000001202; FLCMP; Full completion - scenario completed all tasks with most recent prediction in time (pred); 1155.0 
+2023-08-23 18:03:56; 0.0; SVRST; Server reset 
+2023-08-23 18:03:56; 0.0; SCORE; Score tick - (numAgents, completedTasks, score, missionCost, previous_mission_cost); -1; 0; 498.7; 1.3; 0.0 

@@ -1,7 +1,7 @@
 {
   "gameId": "SFV",
-  "gameDescription": "Scenario 1",
-  "comment": "Setup 1; Full Verification. SFV - Scenario Full Verification",
+  "gameDescription": "SFV",
+  "comment": "Setup 1.1; Scenario Full Verification",
   "extendedUIOptions": {
     "predictions": false,
     "uncertainties": false,
@@ -17,7 +17,7 @@
     "isDummy": false,
     "delayTime": 15,
     "delayBound": 5,
-    "autoRunFrequency": 60
+    "autoRunFrequency": 30
   },
   "varianceParameters": {
     "speedPerAgent": 0.1,
