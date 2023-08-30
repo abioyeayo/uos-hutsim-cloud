@@ -6,6 +6,8 @@
     $con = new DB_Connect();
     $con1=$con->connect();
 
+    $docker_deploy = false;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,6 +30,16 @@
                   } else{
                       echo "Error updating record: " . $con->error;
                       exit();
+                  }
+
+                  if ($docker_deploy){
+                    $sql = "UPDATE verification_study_port_lookup SET `status` = 'Available' WHERE `status` = 'Busy'";
+                    if(mysqli_query($con1, $sql)){
+                        // echo "Records updated successfully.";
+                    } else{
+                        echo "Error updating record: " . $con->error;
+                        exit();
+                    }
                   }
               ?> 
             </div>

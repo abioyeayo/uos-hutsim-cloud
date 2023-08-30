@@ -6,12 +6,26 @@
   $con = new DB_Connect();
   $con1=$con->connect();
 
+  $docker_deploy = false;
+
   if ($_SERVER["REQUEST_METHOD"] == "POST"){
     // kill related java pid instance
     $stopped_pid = $_POST['btn_stop_pid'];
     if ($stopped_pid != ""){
-      echo exec('kill '.$stopped_pid);
-      // echo exec("pkill -f 'java -jar hut.jar ".$stopped_pid."'");
+      // check if docker deploy
+      if ($docker_deploy){
+        echo exec("pkill -f 'java -jar hut.jar ".$stopped_pid."'");
+        $sql = "UPDATE verification_study_port_lookup SET `status` = 'Available' WHERE port = '".$stopped_pid."'";
+        if(mysqli_query($con1, $sql)){
+            // echo "Records updated successfully.";
+        } else{
+            echo "Error updating record: " . $con->error;
+            exit();
+        }
+      } else {
+        echo exec('kill '.$stopped_pid);
+      }
+
       $stop_pid_alert = "Stopped HutSim PID: ".$stopped_pid;
 
       $sql = "UPDATE port_table SET `port_status` = 'disconnected', `process_ended` = NOW() WHERE process_id = '".$stopped_pid."' and port_status = 'active'";

@@ -14,6 +14,33 @@
    $base_url = "http://uos-hutsim.cloud:";
   //  $base_url = "http://localhost:"; 
 
+  $docker_deploy = false;
+  if ($docker_deploy){
+
+    $base_url = "http://13.48.148.81/:";
+
+    // specify ports
+    $port_array = array();
+    $port_ptr = 0;
+    $sql = "SELECT port FROM verification_study_port_lookup WHERE `status` ='Available' ORDER BY port ASC LIMIT 3";
+    $result = mysqli_query($con1, $sql);
+    if ( mysqli_num_rows( $result ) > 2 ) {
+      while($row = mysqli_fetch_array($result)) {
+        $port_array[$port_ptr++] = $row["port"];
+        $sql2 = "UPDATE verification_study_port_lookup SET `status` = 'Busy' WHERE port = '".$row["port"]."'";
+        if(mysqli_query($con1, $sql2)){
+            // echo "Records updated successfully.";
+        } else{
+            echo "Error updating record: " . $con->error;
+            exit();
+        }
+      }
+    }
+    if (empty($port_array))
+        exit("No connection ports available!");
+
+  }
+
 
   // csahadxk - SGP1BA
   // q6knar5d - SGP2AB
@@ -728,16 +755,21 @@
               <p class="mb-3" style="font-size: 0.95rem;">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start Tutorial scenario" button to start the Tutorial study scenario. When finished, tick the "I have completed the Tutorial scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
-                    // echo exec('java --version');
-                    // echo "<br><br>";
-                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
-                    $port = rand(4096, 65535);
-                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
-              
-                    // var_dump($output);
-                    // echo "Process ID: ".$output[0]." | Port: ".$port;
+                    // custom settings for docker based deployment
+                    if ($docker_deploy){
+                        $port = $port_array[0];
+                        $process_id = $port_array[0];
+                    } else {
+                        // echo exec('java --version');
+                        // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
+                        $port = rand(4096, 65535);
+                        exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
+                  
+                        // var_dump($output);
+                        // echo "Process ID: ".$output[0]." | Port: ".$port;
+                        $process_id = $output[0];
+                    }
 
-                    $process_id = $output[0];
                     $process_info = $_GET['PROLIFIC_PID'];
                     $port_number = $port;
                     $port_status = "active";
@@ -785,16 +817,21 @@
               <p class="mb-3" style="font-size: 0.95rem;">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start <?php echo $scenario_1; ?> scenario" button to start the <?php echo $scenario_1; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_1; ?> scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
-                    // echo exec('java --version');
-                    // echo "<br><br>";
-                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
-                    $port = rand(4096, 65535);
-                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
-              
-                    // var_dump($output);
-                    // echo "Process ID: ".$output[0]." | Port: ".$port;
-
-                    $process_id = $output[1];
+                    // custom settings for docker based deployment
+                    if ($docker_deploy){
+                        $port = $port_array[1];
+                        $process_id = $port_array[1];
+                    } else {
+                        // echo exec('java --version');
+                        // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
+                        $port = rand(4096, 65535);
+                        exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
+                  
+                        // var_dump($output);
+                        // echo "Process ID: ".$output[1]." | Port: ".$port;
+                        $process_id = $output[1];
+                    }
+                    
                     $process_info = $_GET['PROLIFIC_PID'];
                     $port_number = $port;
                     $port_status = "active";
@@ -854,16 +891,21 @@
               <p class="mb-3" style="font-size: 0.95rem;">Can you complete this mission incuring the minimum possible cost? Click the Blue "Start <?php echo $scenario_2; ?> scenario" button to start the <?php echo $scenario_2; ?> study scenario. When finished, tick the "I have completed the <?php echo $scenario_2; ?> scenario" checkbox and click Next to continue.</p>
               <div class="mb-5">
                 <?php
-                    // echo exec('java --version');
-                    // echo "<br><br>";
-                    // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
-                    $port = rand(4096, 65535);
-                    exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
-              
-                    // var_dump($output);
-                    // echo "Process ID: ".$output[0]." | Port: ".$port;
+                    // custom settings for docker based deployment
+                    if ($docker_deploy){
+                        $port = $port_array[2];
+                        $process_id = $port_array[2];
+                    } else {
+                        // echo exec('java --version');
+                        // initially starting from port 1024, but then changed to 4096 (2^12) because mysql connects on 3308
+                        $port = rand(4096, 65535);
+                        exec('java -jar hut.jar '.$port.'> /dev/null 2>&1 & echo $!', $output);
+                  
+                        // var_dump($output);
+                        // echo "Process ID: ".$output[2]." | Port: ".$port;
+                        $process_id = $output[2];
+                    }
 
-                    $process_id = $output[2];
                     $process_info = $_GET['PROLIFIC_PID'];
                     $port_number = $port;
                     $port_status = "active";
