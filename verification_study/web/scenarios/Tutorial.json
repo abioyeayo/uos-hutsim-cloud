@@ -4,7 +4,7 @@
   "flockingEnabled": false,
   "allocationMethod": "bestfirst",
   "allocationStyle": "dynamic",
-  "modelStyle": "justOn",
+  "modelStyle": "parallel",
   "extendedUIOptions": {
     "predictions": false,
     "uncertainties": false,
