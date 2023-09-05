@@ -447,7 +447,8 @@
         // redirect back to prolific website to confirm study completion
         // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
         // header("Location: https://app.prolific.co/submissions/complete?cc=C1HYHPCW"); // Paurav's prolific redirect via Mohammad's account
-        header("Location: https://app.prolific.co/submissions/complete?cc=C1EASVMC"); // Verification project redirect
+        // header("Location: https://app.prolific.co/submissions/complete?cc=C1EASVMC"); // Verification project redirect
+        header("Location: https://app.prolific.co/submissions/complete?cc=C1CGMLE7"); // Paurav's prolific redirect for the Verification project
         exit();
 
    }
