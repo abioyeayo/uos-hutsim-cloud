@@ -5,6 +5,7 @@
    // test url: http://localhost/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=63b4a06fa62e8101c635f299&SESSION_ID=0z2rngztewk&GROUP_ID=vg5est5j
    // test url: https://uos-hutsim.cloud/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=63b4a06fa62e8101c635f299&SESSION_ID=0z2rngztewk&GROUP_ID=vg5est5j
    // test url: https://uos-hutsim.cloud/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=64e634cd7bd7c0f0f1545fc5&SESSION_ID=0wyukhwfhh58&GROUP_ID=vg5est5j
+   // pilot study url: http://localhost/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5aoa&STUDY_ID=63b4a06fa62e8101c635f299aoa&SESSION_ID=pilot_study&GROUP_ID=vg5est5j
 
    // connecting to database
    $con = new DB_Connect();
@@ -17,7 +18,7 @@
   $docker_deploy = false;
   if ($docker_deploy){
 
-    $base_url = "http://13.48.148.81/:";
+    $base_url = "http://uos-haris.online/:";
 
     // specify ports
     $port_array = array();
@@ -41,42 +42,59 @@
 
   }
 
-
+  // vg5est5j - SGP1AB
   // csahadxk - SGP1BA
   // q6knar5d - SGP2AB
   // phjrynu5 - SGP2BA
-  // vg5est5j - SGP1AB & catchall
+  // uqqxmveu - SGP3AB
+  // rwba3yub - SGP3BA
 
   $group_id = $_GET['GROUP_ID'];
-  if ($group_id == "csahadxk"){
-        $study_alias = "lkxr_wsga";
-        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP1BA)";
-        $scenario_1 = "LKXR";
-        $scenario_2 = "WSGA";
-        $low_res_warning = "You do <strong>NOT</strong> have access to high-resolution scans in this mode, so you will 
-                            only see the basic scans that are added to the view window automatically.";
-
-  } else if ($group_id == "q6knar5d"){
-        $study_alias = "qeri_trrv";
-        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP2AB)";
-        $scenario_1 = "QERI";
-        $scenario_2 = "TRRV";
-        $low_res_warning = "";
-
-  } else if ($group_id == "phjrynu5"){
-        $study_alias = "trrv_qeri";
-        $study_title = "The speed vs accuracy trade-off in human-swarm interaction (SGP2BA)";
-        $scenario_1 = "TRRV";
-        $scenario_2 = "QERI";
-        $low_res_warning = "";
-    
-  } else {
+  if ($group_id == "vg5est5j"){
         $study_alias = "SNV_SFV";
-        // $study_title = "The effect of runtime verification on task completion efficiency in human swarm interaction";
         $study_title = "The evaluation of a human-swarm interaction interface (SGP1AB)";
         $scenario_1 = "SNV";
         $scenario_2 = "SFV";
         $low_res_warning = "";
+
+  } else if ($group_id == "csahadxk"){
+        $study_alias = "SFV_SNV";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP1BA)";
+        $scenario_1 = "SFV";
+        $scenario_2 = "SNV";
+        $low_res_warning = "";
+
+  } else if ($group_id == "q6knar5d"){
+        $study_alias = "SNV_SDV";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP2AB)";
+        $scenario_1 = "SNV";
+        $scenario_2 = "SDV";
+        $low_res_warning = "";
+
+  } else if ($group_id == "phjrynu5"){
+        $study_alias = "SDV_SNV";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP2BA)";
+        $scenario_1 = "SDV";
+        $scenario_2 = "SNV";
+        $low_res_warning = "";
+
+  } else if ($group_id == "uqqxmveu"){
+        $study_alias = "SDV_SFV";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP3AB)";
+        $scenario_1 = "SDV";
+        $scenario_2 = "SFV";
+        $low_res_warning = "";
+
+  } else if ($group_id == "rwba3yub"){
+        $study_alias = "SFV_SDV";
+        $study_title = "The evaluation of a human-swarm interaction interface (SGP3BA)";
+        $scenario_1 = "SFV";
+        $scenario_2 = "SDV";
+        $low_res_warning = "";
+    
+  } else {
+        // $study_title = "The effect of runtime verification on task completion efficiency in human swarm interaction";
+        exit("Invalid Group ID. Please contact researcher.");
 
   }
 
@@ -423,8 +441,8 @@
         }
 
 
-        // // halt study submission
-        // exit("<div style='text-align: center;'><h2><br>Success!<br>Thank you for your submission.</h2></div>");
+        // halt study submission
+        exit("<div style='text-align: center; margin-top: 40px;'><h2>Your submission was successful!</h2>We have received your submission. Thank you for taking part in our pilot study.</div>");
 
         // redirect back to prolific website to confirm study completion
         // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect
@@ -589,13 +607,13 @@
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
               <span class="stepIndicator">Information <br>(3 min)</span>
-              <span class="stepIndicator">Consent <br>(3 min)</span>
-              <span class="stepIndicator">Briefing <br>(5 min)</span>
+              <span class="stepIndicator">Consent <br>(2 min)</span>
+              <span class="stepIndicator">Briefing <br>(8 min)</span>
               <span class="stepIndicator">Tutorial <br>(4 min)</span>
               <span class="stepIndicator">Scenario I <br>(8 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(6 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(5 min)</span>
               <span class="stepIndicator">Scenario II <br>(8 min)</span>
-              <span class="stepIndicator">Questionnaire <br>(6 min)</span>
+              <span class="stepIndicator">Questionnaire <br>(5 min)</span>
               <span class="stepIndicator">Finish <br>(2 min)</span>
           </div>
           <!-- end step indicators -->
@@ -681,16 +699,17 @@
                 </ol>
               <p class="mb-3" style="font-size: 0.95rem;">After this, you would be required to complete a questionnaire to document your experience. You need to perform this experiment on a laptop or desktop computer, using an updated version of the Google Chrome web browser.
               </p>
-              <p class="mb-4" style="font-size: 0.95rem;">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should take about 5 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
-              <!-- <div class="text-center mb-4">
-                <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div> -->
-              <div class="mb-4 text-center">
+              <p class="mb-4" style="font-size: 0.95rem;">Please watch the following Youtube video which demonstrates what is expected of you in this experiment (preferably in Fullscreen, 1080p HD). This should take about 7 minutes to complete. When finished, answer the validation check questions to confirm you understood the video, and click Next to continue.</p>
+              <div class="text-center mb-4">
+                <!-- <iframe width="876" height="504" src="https://www.youtube.com/embed/HhD3zU6jTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                  <iframe class="shadow bg-body rounded" width="768" height="432" src="https://www.youtube.com/embed/0LYIElj0nkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <!-- <div class="mb-4 text-center">
                 <video class="shadow bg-body rounded" width="800" height="450" controls>
                     <source src="video/aiuk2023_demo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-              </div>
+              </div> -->
 
               <div class="mx-0 mx-sm-auto mb-4">
                 <div class="card">
@@ -709,27 +728,27 @@
                       <hr />
                       <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                          <p id="txt_youtube_attn_question1" class="my-3 fw-bold">How many targets where found by the UAV swarm in the tutorial scenario?</p>
+                          <p id="txt_youtube_attn_question1" class="my-3 fw-bold">In the tutorial scenario, how many minutes were given by the timer in the top left corner?</p>
                           <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
                           <div class="mb-3" style="max-width: 350px;">
-                              <input type="number" class="form-control" name="txt_youtube_attn_check1" value="3" id="txt_youtube_attn_check1" style="margin-right: 0px;" onchange="validateForm();">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check1" value="" id="txt_youtube_attn_check1" style="margin-right: 0px;" onchange="validateForm();">
                               <div class="invalid-feedback">
                                 Please complete validation check to proceed.
                               </div>
                           </div>
                         </div>
                         <div style="font-size: 0.95rem;">
-                          <p id="txt_youtube_attn_question2" class="my-3 fw-bold">How many search regions were created in the first scenario?</p>
+                          <p id="txt_youtube_attn_question2" class="my-3 fw-bold">How many minutes were given to complete the first study scenario (the control condition)?</p>
                           <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
                           <div class="mb-3" style="max-width: 350px;">
-                              <input type="number" class="form-control" name="txt_youtube_attn_check2" value="4" id="txt_youtube_attn_check2" style="margin-right: 0px;" onchange="validateForm();">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check2" value="" id="txt_youtube_attn_check2" style="margin-right: 0px;" onchange="validateForm();">
                           </div>
                         </div>
                         <div style="font-size: 0.95rem;">
-                          <p id="txt_youtube_attn_question3" class="my-3 fw-bold">How many minutes were given to complete the second scenario?</p>
+                          <p id="txt_youtube_attn_question3" class="my-3 fw-bold">What is the maximum number of agent you can add to a mission?</p>
                           <label class="form-check-label ms-1">Enter a number between 1 and 10</label>
                           <div class="mb-3" style="max-width: 350px;">
-                              <input type="number" class="form-control" name="txt_youtube_attn_check3" value="8" id="txt_youtube_attn_check3" style="margin-right: 0px;" onchange="validateForm();">
+                              <input type="number" class="form-control" name="txt_youtube_attn_check3" value="" id="txt_youtube_attn_check3" style="margin-right: 0px;" onchange="validateForm();">
                           </div>
                         </div>
                       </div>
@@ -1034,11 +1053,11 @@
           if ((youtube_attn_check1.value != "") && (youtube_attn_check2.value != "") && (youtube_attn_check3.value != "")){
             document.getElementById("youtube_attn_check_alert").classList.add("d-none");
             let attn_chk_pts = 0;
-            if (youtube_attn_check1.value == "3") 
+            if (youtube_attn_check1.value == "2") 
                   attn_chk_pts++;
-            if (youtube_attn_check2.value == "4") 
+            if (youtube_attn_check2.value == "6") 
                   attn_chk_pts++;
-            if (youtube_attn_check3.value == "8") 
+            if (youtube_attn_check3.value == "10") 
                   attn_chk_pts++;
 
             // Must get 2 of 3 questions to proceed
@@ -1117,8 +1136,8 @@
               valid = false;
           }
 
-          // comment the following line for deployment
-          valid = true;
+          // // comment the following line for deployment
+          // valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
