@@ -18,7 +18,7 @@
   $docker_deploy = false;
   if ($docker_deploy){
 
-    $base_url = "http://uos-haris.online/:";
+    $base_url = "http://uos-haris.online:";
 
     // specify ports
     $port_array = array();

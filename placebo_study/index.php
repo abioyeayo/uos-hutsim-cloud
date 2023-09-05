@@ -1012,18 +1012,22 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">If you had been told the truth at the beginning, would it have affected your decision?</p>
+                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">In your opinion, which of the two swarm scenario had a better performance?</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Yes" id="radio_pcpt_p1_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p1_1">Yes</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="The fully autonomous swarm scenario" id="radio_pcpt_p1_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_1">The fully autonomous swarm scenario</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="No" id="radio_pcpt_p1_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p1_2">No</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="The human-operated swarm scenario" id="radio_pcpt_p1_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_2">The human-operated swarm scenario</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="I don't know" id="radio_pcpt_p1_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p1_3">I don't know</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="Both swarm scenarios performed equally" id="radio_pcpt_p1_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_3">Both swarm scenarios performed equally</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="I don't know" id="radio_pcpt_p1_4" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p1_4">I don't know</label>
                             </div>
                         </div>
                     </div>
@@ -1201,8 +1205,8 @@
             }
           }
 
-          // // comment the following line for deployment
-          // valid = true;
+          // comment the following line for deployment
+          valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
