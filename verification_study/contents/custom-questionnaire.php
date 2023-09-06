@@ -31,7 +31,41 @@
 
         <div class="px-4">
             <div style="font-size: 0.95rem;">
-                <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Why did you think you were more successful in the scenario choosen above?</p>
+                <p id="checkbox_pcpt_p2_question" class="my-3 fw-bold">Why did you think you were more successful in the scenario choosen above? (Select all that apply)</p>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="Random luck" id="checkbox_pcpt_p2_1" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_1">Random luck</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="The presence of the estimated completion time feature" id="checkbox_pcpt_p2_2" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_2">The presence of the estimated completion time feature</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="The absence of the estimated completion time feature" id="checkbox_pcpt_p2_3" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_3">The absence of the estimated completion time feature</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="The awareness of the mission cost" id="checkbox_pcpt_p2_4" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_4">The awareness of the mission cost</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="The simplicity of the interface" id="checkbox_pcpt_p2_5" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_5">The simplicity of the interface</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="Other reasons not listed" id="checkbox_pcpt_p2_6" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_6">Other reasons not listed</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="checkbox_pcpt_p2[]" value="I don't know" id="checkbox_pcpt_p2_7" />
+                    <label class="form-check-label" for="checkbox_pcpt_p2_7">I don't know</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4">
+            <div style="font-size: 0.95rem;">
+                <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Which of these reasons selected above was the most important? (Select only one)</p>
                 <div class="form-check mb-2">
                     <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Random luck" id="radio_pcpt_p2_1" onchange="validateForm();" />
                     <label class="form-check-label" for="radio_pcpt_p2_1">Random luck</label>
@@ -107,6 +141,16 @@
                 <div class="form-check mb-2">
                     <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="I don't know" id="radio_pcpt_p4_3" onchange="validateForm();" />
                     <label class="form-check-label" for="radio_pcpt_p4_3">I don't know</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4 mt-5">
+            <div style="font-size: 0.95rem;">
+                <p id="txt_pcpt_p5_comment" class="my-3 fw-bold">Please provide comments or feedback in the textbox below (optional).</p>
+                <div class="mb-2">
+                    <label for="txt_pcpt_p5" class="form-label">If you selected <em>other reasons not listed</em> in any of the questions above, could you please provide the reason or other details.</label>
+                    <textarea class="form-control" name="txt_pcpt_p5" id="txt_pcpt_p5" rows="3"></textarea>
                 </div>
             </div>
         </div>
