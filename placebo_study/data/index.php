@@ -12,7 +12,7 @@
             header('Content-Type: text/csv; charset=utf-8');  
             header('Content-Disposition: attachment; filename=placebo_study_data.csv');  
             $output = fopen("php://output", "w");  
-            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_scenario', 'study_start_time', 'study_end_time', 'pcpt_c1', 'pcpt_c2', 'pcpt_c3', 'pcpt_f1', 'pcpt_f2', 'pcpt_f3', 'pcpt_f4','j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'j7', 'j8', 'j9', 'j10', 'j11', 'j12', 'j13', 'j14', 'j15', 'pcpt_p1', 'pcpt_p2', 'pcpt_p3', 'pcpt_p4', 'date_added'));
+            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_scenario', 'study_start_time', 'study_end_time', 'pcpt_c1', 'pcpt_c2', 'pcpt_c3', 'pcpt_f1', 'pcpt_f2', 'pcpt_f3', 'pcpt_f4','j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'j7', 'j8', 'j9', 'j10', 'j11', 'j12', 'j13', 'j14', 'j15', 'pcpt_p1', 'pcpt_p2', 'pcpt_p3', 'pcpt_p4', 'pcpt_p5', 'date_added'));
             $sql = "SELECT * FROM placebo_study_data_table";
             $result = mysqli_query($con1, $sql);
             // while($row = mysqli_fetch_array($result)) {
@@ -85,6 +85,7 @@
                             <th scope="col" style="min-width: 220px;">pcpt_p2</th>
                             <th scope="col" style="min-width: 350px;">pcpt_p3</th>
                             <th scope="col" style="min-width: 220px;">pcpt_p4</th>
+                            <th scope="col" style="min-width: 220px;">pcpt_p5</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -131,6 +132,7 @@
                                             <td>".$row["pcpt_p2"]."</td>
                                             <td>".$row["pcpt_p3"]."</td>
                                             <td>".$row["pcpt_p4"]."</td>
+                                            <td>".$row["pcpt_p5"]."</td>
                                         </tr>";
                                 }
                             }

@@ -6,6 +6,7 @@
    // test url: https://uos-hutsim.cloud/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=63b4a06fa62e8101c635f299&SESSION_ID=0z2rngztewk&GROUP_ID=vg5est5j
    // test url: https://uos-hutsim.cloud/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=64e634cd7bd7c0f0f1545fc5&SESSION_ID=0wyukhwfhh58&GROUP_ID=vg5est5j
    // pilot study url: http://localhost/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5aoa&STUDY_ID=63b4a06fa62e8101c635f299aoa&SESSION_ID=pilot_study&GROUP_ID=vg5est5j
+   // prolific study url: http://uos-haris.online/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=64f77d0a2a7ace39d289a5c8&SESSION_ID=0ctybs7pe9yv&GROUP_ID=vg5est5j
 
    // connecting to database
    $con = new DB_Connect();
@@ -441,8 +442,8 @@
         }
 
 
-        // halt study submission
-        exit("<div style='text-align: center; margin-top: 40px;'><h2>Your submission was successful!</h2>We have received your submission. Thank you for taking part in our pilot study.</div>");
+        // // halt study submission
+        // exit("<div style='text-align: center; margin-top: 40px;'><h2>Your submission was successful!</h2>We have received your submission. Thank you for taking part in our pilot study.</div>");
 
         // redirect back to prolific website to confirm study completion
         // header("Location: https://app.prolific.co/submissions/complete?cc=C1FIC4D9"); // ayo's prolific redirect

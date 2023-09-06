@@ -17,13 +17,46 @@
   $group_id = $_GET['GROUP_ID']; 
 
   if ($group_id == "CLALM"){ 
-        $study_alias = "A1-6_M1-2"; 
+        $study_alias = "A1-1_M1-1"; 
         $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 1)"; 
         $scenario_1 = "Fully Autonomous"; 
         $scenario_1q = "questionnaire_fully_autonomous.php"; 
-        $scenario_1_video = "A1-6.mp4"; 
+        $scenario_1_video = "A1-1.mp4"; 
 	      $scenario_1_speed = "5.33"; 
-        $scenario_1_accuracy = "88"; 
+        $scenario_1_accuracy = "62"; 
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M1-1.mp4"; 
+	      $scenario_2_speed = "7.33"; 
+        $scenario_2_accuracy = "45"; 
+        $deception_warning = ""; 
+
+ 
+  } else if ($group_id == "CLMLA"){ 
+        $study_alias = "M1-1_A1-1"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 2)";
+	      $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php"; 
+	      $scenario_1_video = "M1-1.mp4";
+	      $scenario_1_speed = "7.33"; 
+        $scenario_1_accuracy = "45";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php";  
+        $scenario_2_video = "A1-1.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "62";  
+        $deception_warning = "";  
+
+  
+
+  } else if ($group_id == "CLAHM"){ 
+        $study_alias = "A1-1_M1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 3)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A1-1.mp4";
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "62"; 
         $scenario_2 = "Human Operated"; 
         $scenario_2q = "questionnaire_human_operated.php"; 
         $scenario_2_video = "M1-2.mp4"; 
@@ -31,65 +64,64 @@
         $scenario_2_accuracy = "67"; 
         $deception_warning = ""; 
 
- 
-  } else if ($group_id == "CLMLA"){ 
-        $study_alias = "M1-2_A1-6"; 
-        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 2)";
-	      $scenario_1 = "Human Operated"; 
-        $scenario_1q = "questionnaire_human_operated.php"; 
-	      $scenario_1_video = "M1-2.mp4";
-	      $scenario_1_speed = "8.78"; 
-        $scenario_1_accuracy = "67";
-        $scenario_2 = "Fully Autonomous"; 
-        $scenario_2q = "questionnaire_fully_autonomous.php";  
-        $scenario_2_video = "A1-6.mp4";
-	      $scenario_2_speed = "5.33"; 
-        $scenario_2_accuracy = "88";  
-        $deception_warning = "";  
-
-  
-
-  } else if ($group_id == "CLAHM"){ 
-        $study_alias = "A1-6_M1-5"; 
-        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 3)"; 
-        $scenario_1 = "Fully Autonomous"; 
-        $scenario_1q = "questionnaire_fully_autonomous.php"; 
-        $scenario_1_video = "A1-6.mp4";
-	      $scenario_1_speed = "5.33"; 
-        $scenario_1_accuracy = "88"; 
-        $scenario_2 = "Human Operated"; 
-        $scenario_2q = "questionnaire_human_operated.php"; 
-        $scenario_2_video = "M1-5.mp4"; 
-	      $scenario_2_speed = "6.00"; 
-        $scenario_2_accuracy = "78"; 
-        $deception_warning = ""; 
-
      
 
   } else if ($group_id == "CHMLA"){ 
-        $study_alias = "M1-5_A1-6"; 
+        $study_alias = "M1-2_A1-1"; 
         $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 4)"; 
         $scenario_1 = "Human Operated"; 
         $scenario_1q = "questionnaire_human_operated.php";
-        $scenario_1_video = "M1-5.mp4"; 
-	      $scenario_1_speed = "6.00"; 
-        $scenario_1_accuracy = "78";
+        $scenario_1_video = "M1-2.mp4"; 
+	      $scenario_1_speed = "8.78"; 
+        $scenario_1_accuracy = "67";
         $scenario_2 = "Fully Autonomous"; 
         $scenario_2q = "questionnaire_fully_autonomous.php"; 
-        $scenario_2_video = "A1-6.mp4";
+        $scenario_2_video = "A1-1.mp4";
 	      $scenario_2_speed = "5.33"; 
-        $scenario_2_accuracy = "88";  
+        $scenario_2_accuracy = "62";  
         $deception_warning = ""; 
 
 
   } else if ($group_id == "CHALM"){ 
-        $study_alias = "A1-5_M1-2"; 
+        $study_alias = "A1-2_M1-1"; 
         $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 5)";
         $scenario_1 = "Fully Autonomous"; 
         $scenario_1q = "questionnaire_fully_autonomous.php"; 
-        $scenario_1_video = "A1-5.mp4"; 
+        $scenario_1_video = "A1-2.mp4"; 
 	      $scenario_1_speed = "5.33"; 
-        $scenario_1_accuracy = "100";
+        $scenario_1_accuracy = "88";
+        $scenario_2 = "Human Operated"; 
+        $scenario_2q = "questionnaire_human_operated.php"; 
+        $scenario_2_video = "M1-1.mp4";
+	      $scenario_2_speed = "7.33"; 
+        $scenario_2_accuracy = "45";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "CLMHA"){ 
+        $study_alias = "M1-1_A1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 6)"; 
+        $scenario_1 = "Human Operated"; 
+        $scenario_1q = "questionnaire_human_operated.php";
+	      $scenario_1_video = "M1-1.mp4"; 
+	      $scenario_1_speed = "7.33"; 
+        $scenario_1_accuracy = "45";
+        $scenario_2 = "Fully Autonomous"; 
+        $scenario_2q = "questionnaire_fully_autonomous.php"; 
+        $scenario_2_video = "A1-2.mp4";
+	      $scenario_2_speed = "5.33"; 
+        $scenario_2_accuracy = "88";  
+        $deception_warning = ""; 
+
+
+  } else if ($group_id == "CHAHM"){ 
+        $study_alias = "A1-2_M1-2"; 
+        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 7)"; 
+        $scenario_1 = "Fully Autonomous"; 
+        $scenario_1q = "questionnaire_fully_autonomous.php"; 
+        $scenario_1_video = "A1-2.mp4"; 
+	      $scenario_1_speed = "5.33"; 
+        $scenario_1_accuracy = "88";
         $scenario_2 = "Human Operated"; 
         $scenario_2q = "questionnaire_human_operated.php"; 
         $scenario_2_video = "M1-2.mp4";
@@ -98,51 +130,19 @@
         $deception_warning = ""; 
 
 
-  } else if ($group_id == "CLMHA"){ 
-        $study_alias = "M1-2_A1-5"; 
-        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 6)"; 
-        $scenario_1 = "Human Operated"; 
-        $scenario_1q = "questionnaire_human_operated.php";
-	      $scenario_1_video = "M1-2.mp4"; 
-	      $scenario_1_speed = "8.78"; 
-        $scenario_1_accuracy = "67";
-        $scenario_2 = "Fully Autonomous"; 
-        $scenario_2q = "questionnaire_fully_autonomous.php"; 
-        $scenario_2_video = "A1-5.mp4";
-	      $scenario_2_speed = "5.33"; 
-        $scenario_2_accuracy = "100";  
-        $deception_warning = ""; 
-
-
-  } else if ($group_id == "CHAHM"){ 
-        $study_alias = "A1-5_M1-5"; 
-        $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 7)"; 
-        $scenario_1 = "Fully Autonomous"; 
-        $scenario_1q = "questionnaire_fully_autonomous.php"; 
-        $scenario_1_video = "A1-5.mp4"; 
-	      $scenario_1_speed = "5.33"; 
-        $scenario_1_accuracy = "100";
-        $scenario_2 = "Human Operated"; 
-        $scenario_2q = "questionnaire_human_operated.php"; 
-        $scenario_2_video = "M1-5.mp4";
-	      $scenario_2_speed = "6.00"; 
-        $scenario_2_accuracy = "78";  
-        $deception_warning = ""; 
-
-
   } else if ($group_id == "CHMHA"){ 
-        $study_alias = "M1-5_A1-5"; 
+        $study_alias = "M1-2_A1-2"; 
         $study_title = "The placebo effect of autonomy level on trust in human-swarm interaction (Group 8)"; 
         $scenario_1 = "Human Operated"; 
         $scenario_1q = "questionnaire_human_operated.php";
-        $scenario_1_video = "M1-5.mp4"; 
-	      $scenario_1_speed = "6.00"; 
-        $scenario_1_accuracy = "78";
+        $scenario_1_video = "M1-2.mp4"; 
+	      $scenario_1_speed = "8.78"; 
+        $scenario_1_accuracy = "67";
         $scenario_2 = "Fully Autonomous"; 
         $scenario_2q = "questionnaire_fully_autonomous.php";  
-        $scenario_2_video = "A1-5.mp4";
+        $scenario_2_video = "A1-2.mp4";
 	      $scenario_2_speed = "5.33"; 
-        $scenario_2_accuracy = "100";  
+        $scenario_2_accuracy = "88";  
         $deception_warning = ""; 
 
 
@@ -311,7 +311,6 @@
         $radio_pcpt_p2 = $_POST['radio_pcpt_p2'];
         $radio_pcpt_p3 = $_POST['radio_pcpt_p3'];
         $radio_pcpt_p4 = $_POST['radio_pcpt_p4'];
-        $radio_pcpt_p5 = $_POST['radio_pcpt_p5'];
 
         // study wsga questionnaires
         $j1 = $_POST['radio_wsga_j1'];
@@ -445,7 +444,7 @@
             $radio_pcpt_p2 = "No";
             break;
           case "3":
-            $radio_pcpt_p2 = "Maybe";
+            $radio_pcpt_p2 = "I don't know";
             break;
           default:
             // do nothing
@@ -494,30 +493,15 @@
             // do nothing
         }
 
-        switch ($radio_pcpt_p5) {
-          case "1":
-            $radio_pcpt_p5 = "Yes";
-            break;
-          case "2":
-            $radio_pcpt_p5 = "No";
-            break;
-          case "3":
-            $radio_pcpt_p5 = "Maybe";
-            break;
-          default:
-            // do nothing
-        }
-
         $pcpt_p1 = mysqli_real_escape_string($con1, $radio_pcpt_p1);
         $pcpt_p2 = mysqli_real_escape_string($con1, $radio_pcpt_p2);
         $pcpt_p3 = mysqli_real_escape_string($con1, $radio_pcpt_p3);
         $pcpt_p4 = mysqli_real_escape_string($con1, $radio_pcpt_p4);
-        $pcpt_p5 = mysqli_real_escape_string($con1, $radio_pcpt_p5);
 
 
         // update data table for scenario 1
         $study_scenario = substr($study_alias,0,4);
-        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4, pcpt_p5) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "', '" . $pcpt_p5 . "')";
+        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
         if(mysqli_query($con1, $sql)){
             // echo "Records inserted successfully.";
         } else{
@@ -545,7 +529,7 @@
 
         // update data table for scenario 2
         $study_scenario = substr($study_alias,-4);
-        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4, pcpt_p5) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "', '" . $pcpt_p5 . "')";
+        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "')";
         if(mysqli_query($con1, $sql)){
             // echo "Records inserted successfully.";
         } else{
@@ -1028,7 +1012,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">In your opinion, which of the two swarm scenarios had a better performance?</p>
+                            <p id="radio_pcpt_p1_question" class="my-3 fw-bold">In your opinion, which of the two swarm scenario had a better performance?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p1" value="The fully autonomous swarm scenario" id="radio_pcpt_p1_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p1_1">The fully autonomous swarm scenario</label>
@@ -1050,7 +1034,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Did the operations and behaviour of the swarm feel genuine? </p>
+                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">If you were being deceived about which video was autonomously operatored and which was human operated, and now you are being told the truth that the case was reversed, would this have affected your decision?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Yes" id="radio_pcpt_p2_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p2_1">Yes</label>
@@ -1060,8 +1044,8 @@
                                 <label class="form-check-label" for="radio_pcpt_p2_2">No</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Maybe" id="radio_pcpt_p2_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_3">Maybe</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="I don't know" id="radio_pcpt_p2_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_3">I don't know</label>
                             </div>
                         </div>
                     </div>
@@ -1094,7 +1078,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Which of these options affected your trust the most in the scenario chosen above?</p>
+                            <p id="radio_pcpt_p4_question" class="my-3 fw-bold">Which of these options affected your trust the most in the scenario choosen above?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="The performance of the system" id="radio_pcpt_p4_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p4_1">The performance of the system</label>
@@ -1118,24 +1102,6 @@
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p4" value="I don't know" id="radio_pcpt_p4_6" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p4_6">I don't know</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p5_question" class="my-3 fw-bold">Is it important for you to know who or what is operating the swarm?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Yes" id="radio_pcpt_p5_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_1">Yes</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="No" id="radio_pcpt_p5_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_2">No</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Maybe" id="radio_pcpt_p5_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_3">Maybe</label>
                             </div>
                         </div>
                     </div>
@@ -1211,7 +1177,7 @@
           }
 
           // check if a demographic information radio row question element has been selected
-          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4", "p5"];
+          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4"];
           checkFormElement("pcpt",radio_pcpt_form);
 
 
