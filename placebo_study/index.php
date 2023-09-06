@@ -947,7 +947,7 @@
                 </table>
               </div>
               
-              <p class="text-center mb-3">Do you trust the operation of the swarm in the video below? Please click play to watch the video. It is recommended to watch the video in fullscreen.</p>
+              <p class="text-center mb-3">Do you trust the operation of the swarm in the video below? Please click play to watch the video. It is recommended to watch the video in fullscreen. The red circle indicates the chosen classification option while the black arrow indicates where the unknown object being classified is detected.</p>
               <div class="mb-3 text-center">
                 <video class="shadow bg-body rounded" width="640" height="360" controls>
                     <source src="video/<?php echo $scenario_1_video; ?>" type="video/mp4">
@@ -987,7 +987,7 @@
                 </table>
               </div>
               
-              <p class="text-center mb-3">Do you trust the operation of the swarm in the video below? Please click play to watch the video.  It is recommended to watch the video in fullscreen.</p>
+              <p class="text-center mb-3">Do you trust the operation of the swarm in the video below? Please click play to watch the video.  It is recommended to watch the video in fullscreen. The red circle indicates the chosen classification option while the black arrow indicates where the unknown object being classified is detected.</p>
               <div class="mb-3 text-center">
                 <video class="shadow bg-body rounded" width="640" height="360" controls>
                     <source src="video/<?php echo $scenario_2_video; ?>" type="video/mp4">
@@ -1239,8 +1239,8 @@
             }
           }
 
-          // comment the following line for deployment
-          valid = true;
+          // // comment the following line for deployment
+          // valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
