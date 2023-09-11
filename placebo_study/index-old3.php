@@ -425,35 +425,27 @@
         // convert numbers to text custom questionnaire data
         switch ($radio_pcpt_p1) {
           case "1":
-            $radio_pcpt_p1 = "The fully autonomous swarm scenario";
+            $radio_pcpt_p1 = "Yes";
             break;
           case "2":
-            $radio_pcpt_p1 = "The human-operated swarm scenario";
+            $radio_pcpt_p1 = "No";
             break;
           case "3":
-            $radio_pcpt_p1 = "Both swarm scenarios performed equally";
+            $radio_pcpt_p1 = "I don't know";
             break;
-            case "4":
-              $radio_pcpt_p1 = "I don't know";
           default:
             // do nothing
         }
 
         switch ($radio_pcpt_p2) {
           case "1":
-            $radio_pcpt_p2 = "Strongly disagree";
+            $radio_pcpt_p2 = "Yes";
             break;
           case "2":
-            $radio_pcpt_p2 = "Disagree";
+            $radio_pcpt_p2 = "No";
             break;
           case "3":
-            $radio_pcpt_p2 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p2 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p2 = "Disagree agree";
+            $radio_pcpt_p2 = "Maybe";
             break;
           default:
             // do nothing
@@ -504,287 +496,13 @@
 
         switch ($radio_pcpt_p5) {
           case "1":
-            $radio_pcpt_p5 = "Strongly disagree";
+            $radio_pcpt_p5 = "Yes";
             break;
           case "2":
-            $radio_pcpt_p5 = "Disagree";
+            $radio_pcpt_p5 = "No";
             break;
           case "3":
-            $radio_pcpt_p5 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p5 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p5 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p6) {
-          case "1":
-            $radio_pcpt_p6 = "Yes";
-            break;
-          case "2":
-            $radio_pcpt_p6 = "No";
-            break;
-          case "3":
-            $radio_pcpt_p6 = "Maybe";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p7) {
-          case "1":
-            $radio_pcpt_p7 = "Yes";
-            break;
-          case "2":
-            $radio_pcpt_p7 = "No";
-            break;
-          case "3":
-            $radio_pcpt_p7 = "Maybe";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p8) {
-          case "1":
-            $radio_pcpt_p8 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p8 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p8 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p8 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p8 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p9) {
-          case "1":
-            $radio_pcpt_p9 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p9 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p9 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p9 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p9 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p10) {
-          case "1":
-            $radio_pcpt_p10 = "Strongly sagree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p11) {
-          case "1":
-            $radio_pcpt_p11 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p12) {
-          case "1":
-            $radio_pcpt_p12 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p12 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p12 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p12 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p12 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p13) {
-          case "1":
-            $radio_pcpt_p13 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p13 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p13 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p13 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p13 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p14) {
-          case "1":
-            $radio_pcpt_p14 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p14 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p14 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p14 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p14 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p15) {
-          case "1":
-            $radio_pcpt_p15 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p15 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p15 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p15 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p15 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p16) {
-          case "1":
-            $radio_pcpt_p16 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p16 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p16 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p16 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p16 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p17) {
-          case "1":
-            $radio_pcpt_p17 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p18) {
-          case "1":
-            $radio_pcpt_p18 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p19) {
-          case "1":
-            $radio_pcpt_p19 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p19 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p19 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p19 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p19 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p20) {
-          case "1":
-            $radio_pcpt_p20 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p21) {
-          case "1":
-            $radio_pcpt_p21 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p21 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p21 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p21 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p21 = "Strongly agree";
-            break;
-          default:
-            // do nothing
-        }
-
-        switch ($radio_pcpt_p22) {
-          case "1":
-            $radio_pcpt_p22 = "Strongly disagree";
-            break;
-          case "2":
-            $radio_pcpt_p22 = "Disagree";
-            break;
-          case "3":
-            $radio_pcpt_p22 = "Neutral";
-            break;
-          case "4":
-            $radio_pcpt_p22 = "Agree";
-            break;
-          case "5":
-            $radio_pcpt_p22 = "Strongly agree";
+            $radio_pcpt_p5 = "Maybe";
             break;
           default:
             // do nothing
@@ -795,28 +513,11 @@
         $pcpt_p3 = mysqli_real_escape_string($con1, $radio_pcpt_p3);
         $pcpt_p4 = mysqli_real_escape_string($con1, $radio_pcpt_p4);
         $pcpt_p5 = mysqli_real_escape_string($con1, $radio_pcpt_p5);
-        $pcpt_p6 = mysqli_real_escape_string($con1, $radio_pcpt_p6);
-        $pcpt_p7 = mysqli_real_escape_string($con1, $radio_pcpt_p7);
-        $pcpt_p8 = mysqli_real_escape_string($con1, $radio_pcpt_p8);
-        $pcpt_p9 = mysqli_real_escape_string($con1, $radio_pcpt_p9);
-        $pcpt_p10 = mysqli_real_escape_string($con1, $radio_pcpt_p10);
-        $pcpt_p11 = mysqli_real_escape_string($con1, $radio_pcpt_p11);
-        $pcpt_p12 = mysqli_real_escape_string($con1, $radio_pcpt_p12);
-        $pcpt_p13 = mysqli_real_escape_string($con1, $radio_pcpt_p13);
-        $pcpt_p14 = mysqli_real_escape_string($con1, $radio_pcpt_p14);
-        $pcpt_p15 = mysqli_real_escape_string($con1, $radio_pcpt_p15);
-        $pcpt_p16 = mysqli_real_escape_string($con1, $radio_pcpt_p16);
-        $pcpt_p17 = mysqli_real_escape_string($con1, $radio_pcpt_p17);
-        $pcpt_p18 = mysqli_real_escape_string($con1, $radio_pcpt_p18);
-        $pcpt_p19 = mysqli_real_escape_string($con1, $radio_pcpt_p19);
-        $pcpt_p20 = mysqli_real_escape_string($con1, $radio_pcpt_p20);
-        $pcpt_p21 = mysqli_real_escape_string($con1, $radio_pcpt_p21);
-        $pcpt_p22 = mysqli_real_escape_string($con1, $radio_pcpt_p22);
 
 
         // update data table for scenario 1
         $study_scenario = substr($study_alias,0,4);
-        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4, pcpt_p5, pcpt_p6, pcpt_p7, pcpt_p8, pcpt_p9, pcpt_p10, pcpt_p11, pcpt_p12, pcpt_p13, pcpt_p14, pcpt_p15, pcpt_p16, pcpt_p17, pcpt_p18, pcpt_p19, pcpt_p20, pcpt_p21, pcpt_p22) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "', '" . $pcpt_p5 . "', '" . $pcpt_p6 . "', '" . $pcpt_p7 . "', '" . $pcpt_p8 . "', '" . $pcpt_p9 . "', '" . $pcpt_p10 . "', '" . $pcpt_p11 . "', '" . $pcpt_p12 . "', '" . $pcpt_p13 . "', '" . $pcpt_p14 . "', '" . $pcpt_p15 . "', '" . $pcpt_p16 . "', '" . $pcpt_p17 . "', '" . $pcpt_p18 . "', '" . $pcpt_p19 . "', '" . $pcpt_p20 . "', '" . $pcpt_p21 . "', '" . $pcpt_p22 . "')";
+        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4, pcpt_p5) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "', '" . $pcpt_p5 . "')";
         if(mysqli_query($con1, $sql)){
             // echo "Records inserted successfully.";
         } else{
@@ -844,7 +545,7 @@
 
         // update data table for scenario 2
         $study_scenario = substr($study_alias,-4);
-        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4, pcpt_p5, pcpt_p6, pcpt_p7, pcpt_p8, pcpt_p9, pcpt_p10, pcpt_p11, pcpt_p12, pcpt_p13, pcpt_p14, pcpt_p15, pcpt_p16, pcpt_p17, pcpt_p18, pcpt_p19, pcpt_p20, pcpt_p21, pcpt_p22) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "', '" . $pcpt_p5 . "', '" . $pcpt_p6 . "', '" . $pcpt_p7 . "', '" . $pcpt_p8 . "', '" . $pcpt_p9 . "', '" . $pcpt_p10 . "', '" . $pcpt_p11 . "', '" . $pcpt_p12 . "', '" . $pcpt_p13 . "', '" . $pcpt_p14 . "', '" . $pcpt_p15 . "', '" . $pcpt_p16 . "', '" . $pcpt_p17 . "', '" . $pcpt_p18 . "', '" . $pcpt_p19 . "', '" . $pcpt_p20 . "', '" . $pcpt_p21 . "', '" . $pcpt_p22 . "')";
+        $sql = "INSERT INTO placebo_study_data_table (prolific_pid, study_id, `session_id`, study_title, study_alias, study_scenario, study_start_time, study_end_time, pcpt_c1, pcpt_c2, pcpt_c3, pcpt_f1, pcpt_f2, pcpt_f3, pcpt_f4, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, pcpt_p1, pcpt_p2, pcpt_p3, pcpt_p4, pcpt_p5) VALUES ('" . $prolific_pid . "', '" . $study_id . "', '" . $session_id . "', '" . $study_title . "', '" . $study_alias . "', '" . $study_scenario . "', '" . $study_start_time . "', '" . $study_end_time . "', '" . $pcpt_c1 . "', '" . $pcpt_c2 . "', '" . $pcpt_c3 . "', '" . $pcpt_f1 . "', '" . $pcpt_f2 . "', '" . $pcpt_f3 . "', '" . $pcpt_f4 . "', '" . $j1 . "', '" . $j2 . "', '" . $j3 . "', '" . $j4 . "', '" . $j5 . "', '" . $j6 . "', '" . $j7 . "', '" . $j8 . "', '" . $j9 . "', '" . $j10 . "', '" . $j11 . "', '" . $j12 . "', '" . $j13 . "', '" . $j14 . "', '" . $j15 . "', '" . $pcpt_p1 . "', '" . $pcpt_p2 . "', '" . $pcpt_p3 . "', '" . $pcpt_p4 . "', '" . $pcpt_p5 . "')";
         if(mysqli_query($con1, $sql)){
             // echo "Records inserted successfully.";
         } else{
@@ -1349,26 +1050,18 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Did the behaviour of the swarm seem trustworthy? </p>
+                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Did the operations and behaviour of the swarm feel genuine? </p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Strongly disagree" id="radio_pcpt_p2_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_1">Strongly disagree</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Yes" id="radio_pcpt_p2_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_1">Yes</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Disagree" id="radio_pcpt_p2_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_2">Disagree</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="No" id="radio_pcpt_p2_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_2">No</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Neutral" id="radio_pcpt_p2_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Agree" id="radio_pcpt_p2_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Strongly agree" id="radio_pcpt_p2_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p2_5">Strongly agree</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Maybe" id="radio_pcpt_p2_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p2_3">Maybe</label>
                             </div>
                         </div>
                     </div>
@@ -1431,374 +1124,18 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p5_question" class="my-3 fw-bold">It is important for you to know if the human or an autonomous system is operating the swarm. </p>
+                            <p id="radio_pcpt_p5_question" class="my-3 fw-bold">Is it important for you to know who or what is operating the swarm?</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Strongly disagree" id="radio_pcpt_p5_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_1">Strongly disagree</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Yes" id="radio_pcpt_p5_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p5_1">Yes</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Disagree" id="radio_pcpt_p5_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_2">Disagree</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="No" id="radio_pcpt_p5_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p5_2">No</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Neutral" id="radio_pcpt_p5_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Agree" id="radio_pcpt_p5_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Strongly agree" id="radio_pcpt_p5_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p5_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p6_question" class="my-3 fw-bold">Will the swarm being autonomous or human-operated affect your decision?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p6" value="Yes" id="radio_pcpt_p6_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p6_1">Yes</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p6" value="No" id="radio_pcpt_p6_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p6_2">No</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p6" value="Maybe" id="radio_pcpt_p6_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p6_3">Maybe</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p7_question" class="my-3 fw-bold">If you are biased either towards the human-operated system or the autonomous system then, would the performance affect your decision?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p7" value="Yes" id="radio_pcpt_p7_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p7_1">Yes</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p7" value="No" id="radio_pcpt_p7_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p7_2">No</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p7" value="Maybe" id="radio_pcpt_p7_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p7_3">Maybe</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p8_question" class="my-3 fw-bold">Generally, do you trust autonomous systems more than human-operated systems?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p8" value="Strongly disagree" id="radio_pcpt_p8_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p8_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p8" value="Disagree" id="radio_pcpt_p8_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p8_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p8" value="Neutral" id="radio_pcpt_p8_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p8_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p8" value="Agree" id="radio_pcpt_p8_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p8_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p8" value="Strongly agree" id="radio_pcpt_p8_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p8_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p9_question" class="my-3 fw-bold">Generally, do you trust human-operated systems more than autonomous systems?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p9" value="Strongly disagree" id="radio_pcpt_p9_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p9_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p9" value="Disagree" id="radio_pcpt_p9_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p9_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p9" value="Neutral" id="radio_pcpt_p9_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p9_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p9" value="Agree" id="radio_pcpt_p9_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p9_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p9" value="Strongly agree" id="radio_pcpt_p9_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p9_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                   <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p10_question" class="my-3 fw-bold">List advantages of human-operated system in single words. List 5 advantages.</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p10" value="Yes" id="radio_pcpt_p10_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p10_1">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p11_question" class="my-3 fw-bold">List advantages of autonomous system in single words. List 5 advantages.</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_11" value="Yes" id="radio_pcpt_p11_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p11_1">Strongly agree</label>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p12_question" class="my-3 fw-bold">Do you trust an autonomous swarm to make ethical decisions on its own?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p12" value="Strongly disagree" id="radio_pcpt_p12_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p12_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p12" value="Disagree" id="radio_pcpt_p12_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p12_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p12" value="Neutral" id="radio_pcpt_p12_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p12_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p12" value="Agree" id="radio_pcpt_p12_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p12_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p12" value="Strongly agree" id="radio_pcpt_p12_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p12_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p13_question" class="my-3 fw-bold">Do you trust a human or autonomous system to make decisions in a critical situation? </p>
-                            <<div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p13" value="Strongly disagree" id="radio_pcpt_p13_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p13_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p13" value="Disagree" id="radio_pcpt_p13_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p13_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p13" value="Neutral" id="radio_pcpt_p13_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p13_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p13" value="Agree" id="radio_pcpt_p13_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p13_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p13" value="Strongly agree" id="radio_pcpt_p13_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p13_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p14_question" class="my-3 fw-bold">Should humans have the ability to override the swarm decisions in critical situations?  </p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p14" value="Strongly disagree" id="radio_pcpt_p14_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p14_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p14" value="Disagree" id="radio_pcpt_p14_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p14_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p14" value="Neutral" id="radio_pcpt_p14_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p14_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p14" value="Agree" id="radio_pcpt_p14_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p14_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p14" value="Strongly agree" id="radio_pcpt_p14_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p14_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p15_question" class="my-3 fw-bold">Would you trust an autonomous system that detects casualties faster but might be wrong in certain classifications or a human-operated system 
-                              that takes much longer than the autonomous system but gives accurate results?  </p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p15" value="Strongly disagree" id="radio_pcpt_p15_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p15_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p15" value="Disagree" id="radio_pcpt_p15_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p15_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p15" value="Neutral" id="radio_pcpt_p15_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p15_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p15" value="Agree" id="radio_pcpt_p15_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p15_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p15" value="Strongly agree" id="radio_pcpt_p15_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p15_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p16_question" class="my-3 fw-bold">Would you trust an autonomous system that has 85% performance, or would you prefer the human-operated system 
-                              that has 80% performance (slightly weaker than autonomous) just because it is operated by a human? </p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p16" value="Strongly disagree" id="radio_pcpt_p16_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p16_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p16" value="Disagree" id="radio_pcpt_p16_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p16_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p16" value="Neutral" id="radio_pcpt_p16_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p16_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p16" value="Agree" id="radio_pcpt_p16_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p16_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p16" value="Strongly agree" id="radio_pcpt_p16_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p16_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p17_question" class="my-3 fw-bold">How much performance are you willing to sacrifice just so that the human is accountable for the mission? Answer in percentage. </p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p17" value="Yes" id="radio_pcpt_p17_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p17_1">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p18_question" class="my-3 fw-bold">If the human slows down the mission, how much percentage of speed are you willing to sacrifice to make sure that the human is in the loop? Answer in percentage.  </p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p18" value="Yes" id="radio_pcpt_p18_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p18_1">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p19_question" class="my-3 fw-bold">If the autonomous swarm makes an error while detecting casualties, will you trust it again?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p19" value="Strongly disagree" id="radio_pcpt_p19_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p19_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p19" value="Disagree" id="radio_pcpt_p19_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p19_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p19" value="Neutral" id="radio_pcpt_p19_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p19_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p19" value="Agree" id="radio_pcpt_p19_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p19_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p19" value="Strongly agree" id="radio_pcpt_p19_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p19_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p20_question" class="my-3 fw-bold">What has to be done to gain you trust back if the autonomous swarm makes errors while detecting casualties? </p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p20" value="Yes" id="radio_pcpt_p20_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p20_1">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p21_question" class="my-3 fw-bold">How would your trust towards autonomous systems change if the swarm provided clear explanation of its intentions and actions in comparison to human-operated swarm?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p21" value="Strongly disagree" id="radio_pcpt_p21_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p21_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p21" value="Disagree" id="radio_pcpt_p21_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p21_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p21" value="Neutral" id="radio_pcpt_p21_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p21_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p21" value="Agree" id="radio_pcpt_p21_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p21_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p21" value="Strongly agree" id="radio_pcpt_p21_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p21_5">Strongly agree</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-4">
-                        <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p22_question" class="my-3 fw-bold">Would you trust an autonomous swarm more in low-risk missions as compared to high-risk missions where you would prefer human-operated missions more?</p>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Strongly disagree" id="radio_pcpt_p22_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_1">Strongly disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Disagree" id="radio_pcpt_p22_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_2">Disagree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Neutral" id="radio_pcpt_p22_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_3">Neutral</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Agree" id="radio_pcpt_p22_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_4">Agree</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Strongly agree" id="radio_pcpt_p22_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_5">Strongly agree</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Maybe" id="radio_pcpt_p5_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p5_3">Maybe</label>
                             </div>
                         </div>
                     </div>
@@ -1902,8 +1239,8 @@
             }
           }
 
-          // comment the following line for deployment
-          valid = true;
+          // // comment the following line for deployment
+          // valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
