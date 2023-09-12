@@ -12,7 +12,7 @@
             header('Content-Type: text/csv; charset=utf-8');  
             header('Content-Disposition: attachment; filename=placebo_study_data.csv');  
             $output = fopen("php://output", "w");  
-            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_scenario', 'study_start_time', 'study_end_time', 'pcpt_c1', 'pcpt_c2', 'pcpt_c3', 'pcpt_f1', 'pcpt_f2', 'pcpt_f3', 'pcpt_f4','j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'j7', 'j8', 'j9', 'j10', 'j11', 'j12', 'j13', 'j14', 'j15', 'pcpt_p1', 'pcpt_p2', 'pcpt_p3', 'pcpt_p4', 'pcpt_p5', 'date_added'));
+            fputcsv($output, array('id', 'prolific_pid', 'study_id', 'session_id', 'study_title', 'study_alias', 'study_scenario', 'study_start_time', 'study_end_time', 'pcpt_c1', 'pcpt_c2', 'pcpt_c3', 'pcpt_f1', 'pcpt_f2', 'pcpt_f3', 'pcpt_f4','j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'j7', 'j8', 'j9', 'j10', 'j11', 'j12', 'j13', 'j14', 'j15', 'pcpt_p1', 'pcpt_p2', 'pcpt_p3', 'pcpt_p4', 'pcpt_p5', 'pcpt_p6', 'pcpt_p7', 'pcpt_p8', 'pcpt_p8', 'pcpt_p10', 'pcpt_p11', 'pcpt_p12', 'pcpt_p13', 'pcpt_p14', 'pcpt_p15', 'pcpt_p16', 'pcpt_p17', 'pcpt_p18', 'pcpt_p18', 'pcpt_p20', 'pcpt_p21', 'pcpt_p22', 'date_added'));
             $sql = "SELECT * FROM placebo_study_data_table";
             $result = mysqli_query($con1, $sql);
             // while($row = mysqli_fetch_array($result)) {
@@ -86,6 +86,23 @@
                             <th scope="col" style="min-width: 350px;">pcpt_p3</th>
                             <th scope="col" style="min-width: 220px;">pcpt_p4</th>
                             <th scope="col" style="min-width: 220px;">pcpt_p5</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p6</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p7</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p8</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p9</th>
+                            <th scope="col" style="min-width: 220px;">pcpt_p10</th>
+                            <th scope="col" style="min-width: 220px;">pcpt_p11</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p12</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p13</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p14</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p15</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p16</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p17</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p18</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p19</th>
+                            <th scope="col" style="min-width: 220px;">pcpt_p20</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p21</th>
+                            <th scope="col" style="min-width: 120px;">pcpt_p22</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -133,6 +150,23 @@
                                             <td>".$row["pcpt_p3"]."</td>
                                             <td>".$row["pcpt_p4"]."</td>
                                             <td>".$row["pcpt_p5"]."</td>
+                                            <td>".$row["pcpt_p6"]."</td>
+                                            <td>".$row["pcpt_p7"]."</td>
+                                            <td>".$row["pcpt_p8"]."</td>
+                                            <td>".$row["pcpt_p9"]."</td>
+                                            <td>".$row["pcpt_p10"]."</td>
+                                            <td>".$row["pcpt_p11"]."</td>
+                                            <td>".$row["pcpt_p12"]."</td>
+                                            <td>".$row["pcpt_p13"]."</td>
+                                            <td>".$row["pcpt_p14"]."</td>
+                                            <td>".$row["pcpt_p15"]."</td>
+                                            <td>".$row["pcpt_p16"]."</td>
+                                            <td>".$row["pcpt_p17"]."</td>
+                                            <td>".$row["pcpt_p18"]."</td>
+                                            <td>".$row["pcpt_p19"]."</td>
+                                            <td>".$row["pcpt_p20"]."</td>
+                                            <td>".$row["pcpt_p21"]."</td>
+                                            <td>".$row["pcpt_p22"]."</td>
                                         </tr>";
                                 }
                             }

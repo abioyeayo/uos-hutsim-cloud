@@ -312,25 +312,6 @@
         $radio_pcpt_p3 = $_POST['radio_pcpt_p3'];
         $radio_pcpt_p4 = $_POST['radio_pcpt_p4'];
         $radio_pcpt_p5 = $_POST['radio_pcpt_p5'];
-        $radio_pcpt_p6 = $_POST['radio_pcpt_p6'];
-        $radio_pcpt_p7 = $_POST['radio_pcpt_p7'];
-        $radio_pcpt_p8 = $_POST['radio_pcpt_p8'];
-        $radio_pcpt_p9 = $_POST['radio_pcpt_p9'];
-        $txt_pcpt_p10 = $_POST['txt_pcpt_p10'];
-        $txt_pcpt_p11 = $_POST['txt_pcpt_p11'];
-        $radio_pcpt_p12 = $_POST['radio_pcpt_p12'];
-        $radio_pcpt_p13 = $_POST['radio_pcpt_p13'];
-        $radio_pcpt_p14 = $_POST['radio_pcpt_p14'];
-        $radio_pcpt_p15 = $_POST['radio_pcpt_p15'];
-        $radio_pcpt_p16 = $_POST['radio_pcpt_p16'];
-        $txt_pcpt_p17 = $_POST['txt_pcpt_p17'];
-        $txt_pcpt_p18 = $_POST['txt_pcpt_p18'];
-        $txt_pcpt_p17 = $_POST['txt_pcpt_p17'];
-        $txt_pcpt_p18 = $_POST['txt_pcpt_p18'];
-        $radio_pcpt_p19 = $_POST['radio_pcpt_p19'];
-        $txt_pcpt_p20 = $_POST['txt_pcpt_p20'];
-        $radio_pcpt_p21 = $_POST['radio_pcpt_p21'];
-        $radio_pcpt_p22 = $_POST['radio_pcpt_p22'];
 
         // study wsga questionnaires
         $j1 = $_POST['radio_wsga_j1'];
@@ -609,6 +590,21 @@
             // do nothing
         }
 
+        switch ($radio_pcpt_p10) {
+          case "1":
+            $radio_pcpt_p10 = "Strongly sagree";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p11) {
+          case "1":
+            $radio_pcpt_p11 = "Strongly agree";
+            break;
+          default:
+            // do nothing
+        }
 
         switch ($radio_pcpt_p12) {
           case "1":
@@ -710,6 +706,21 @@
             // do nothing
         }
 
+        switch ($radio_pcpt_p17) {
+          case "1":
+            $radio_pcpt_p17 = "Strongly agree";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p18) {
+          case "1":
+            $radio_pcpt_p18 = "Strongly agree";
+            break;
+          default:
+            // do nothing
+        }
 
         switch ($radio_pcpt_p19) {
           case "1":
@@ -726,6 +737,14 @@
             break;
           case "5":
             $radio_pcpt_p19 = "Strongly agree";
+            break;
+          default:
+            // do nothing
+        }
+
+        switch ($radio_pcpt_p20) {
+          case "1":
+            $radio_pcpt_p20 = "Strongly agree";
             break;
           default:
             // do nothing
@@ -780,17 +799,17 @@
         $pcpt_p7 = mysqli_real_escape_string($con1, $radio_pcpt_p7);
         $pcpt_p8 = mysqli_real_escape_string($con1, $radio_pcpt_p8);
         $pcpt_p9 = mysqli_real_escape_string($con1, $radio_pcpt_p9);
-        $pcpt_p10 = mysqli_real_escape_string($con1, $txt_pcpt_p10);
-        $pcpt_p11 = mysqli_real_escape_string($con1, $txt_pcpt_p11);
+        $pcpt_p10 = mysqli_real_escape_string($con1, $radio_pcpt_p10);
+        $pcpt_p11 = mysqli_real_escape_string($con1, $radio_pcpt_p11);
         $pcpt_p12 = mysqli_real_escape_string($con1, $radio_pcpt_p12);
         $pcpt_p13 = mysqli_real_escape_string($con1, $radio_pcpt_p13);
         $pcpt_p14 = mysqli_real_escape_string($con1, $radio_pcpt_p14);
         $pcpt_p15 = mysqli_real_escape_string($con1, $radio_pcpt_p15);
         $pcpt_p16 = mysqli_real_escape_string($con1, $radio_pcpt_p16);
-        $pcpt_p17 = mysqli_real_escape_string($con1, $txt_pcpt_p17);
-        $pcpt_p18 = mysqli_real_escape_string($con1, $txt_pcpt_p18);
+        $pcpt_p17 = mysqli_real_escape_string($con1, $radio_pcpt_p17);
+        $pcpt_p18 = mysqli_real_escape_string($con1, $radio_pcpt_p18);
         $pcpt_p19 = mysqli_real_escape_string($con1, $radio_pcpt_p19);
-        $pcpt_p20 = mysqli_real_escape_string($con1, $txt_pcpt_p20);
+        $pcpt_p20 = mysqli_real_escape_string($con1, $radio_pcpt_p20);
         $pcpt_p21 = mysqli_real_escape_string($con1, $radio_pcpt_p21);
         $pcpt_p22 = mysqli_real_escape_string($con1, $radio_pcpt_p22);
 
@@ -999,14 +1018,14 @@
           ?>
           <!-- start step indicators -->
           <div class="form-header d-flex mb-4">
-              <span class="stepIndicator">Briefing <br>(2 min)</span>
+              <span class="stepIndicator">Briefing <br>(3 min)</span>
               <span class="stepIndicator">Consent <br>(2 min)</span>
               <!-- <span class="stepIndicator">Tutorial <br>(5 min)</span> -->
-              <span class="stepIndicator">Scenario I <br>(2 min)</span>
+              <span class="stepIndicator">Scenario I <br>(3 min)</span>
               <span class="stepIndicator">Questionnaire <br>(2 min)</span>
               <span class="stepIndicator">Scenario II <br>(2 min)</span>
               <span class="stepIndicator">Questionnaire <br>(2 min)</span>
-              <span class="stepIndicator">Finish <br>(3 min)</span>
+              <span class="stepIndicator">Finish <br>(1 min)</span>
           </div>
           <!-- end step indicators -->
       
@@ -1330,7 +1349,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">The swarm's behaviour seemed trustworthy. </p>
+                            <p id="radio_pcpt_p2_question" class="my-3 fw-bold">Did the behaviour of the swarm seem trustworthy? </p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p2" value="Strongly disagree" id="radio_pcpt_p2_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p2_1">Strongly disagree</label>
@@ -1412,7 +1431,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p5_question" class="my-3 fw-bold">It is important to know if the human or an autonomous system is operating the swarm. </p>
+                            <p id="radio_pcpt_p5_question" class="my-3 fw-bold">It is important for you to know if the human or an autonomous system is operating the swarm. </p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p5" value="Strongly disagree" id="radio_pcpt_p5_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p5_1">Strongly disagree</label>
@@ -1474,7 +1493,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p8_question" class="my-3 fw-bold">Autonomous systems are more trustworthy than human-operated systems.</p>
+                            <p id="radio_pcpt_p8_question" class="my-3 fw-bold">Generally, do you trust autonomous systems more than human-operated systems?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p8" value="Strongly disagree" id="radio_pcpt_p8_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p8_1">Strongly disagree</label>
@@ -1500,7 +1519,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p9_question" class="my-3 fw-bold">Human-operated systems are more trustworthy than autonomous systems.</p>
+                            <p id="radio_pcpt_p9_question" class="my-3 fw-bold">Generally, do you trust human-operated systems more than autonomous systems?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p9" value="Strongly disagree" id="radio_pcpt_p9_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p9_1">Strongly disagree</label>
@@ -1526,25 +1545,27 @@
 
                    <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p10_question" class="my-3 fw-bold">List advantages of human-operated system in single words. List atleast one advantage.</p>
-                            <div class="mb-2">
-                                <textarea class="form-control" name="txt_pcpt_p10" id="txt_pcpt_p10" rows="3" onchange="validateForm();"></textarea>
+                            <p id="radio_pcpt_p10_question" class="my-3 fw-bold">List advantages of human-operated system in single words. List 5 advantages.</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p10" value="Yes" id="radio_pcpt_p10_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p10_1">Strongly agree</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p11_question" class="my-3 fw-bold">List advantages of autonomous system in single words. List atleast one advantage.</p>
-                            <div class="mb-2">
-                                <textarea class="form-control" name="txt_pcpt_p11" id="txt_pcpt_p11" rows="3" onchange="validateForm();"></textarea>
+                            <p id="radio_pcpt_p11_question" class="my-3 fw-bold">List advantages of autonomous system in single words. List 5 advantages.</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_11" value="Yes" id="radio_pcpt_p11_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p11_1">Strongly agree</label>
                             </div> 
                         </div>
                     </div>
                     
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p12_question" class="my-3 fw-bold">An autonomous swarm can be trusted to make ethical decisions on its own.</p>
+                            <p id="radio_pcpt_p12_question" class="my-3 fw-bold">Do you trust an autonomous swarm to make ethical decisions on its own?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p12" value="Strongly disagree" id="radio_pcpt_p12_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p12_1">Strongly disagree</label>
@@ -1570,8 +1591,8 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p13_question" class="my-3 fw-bold">A human can be trusted more than an autonomous system to make decisions in a critical situation.</p>
-                            <div class="form-check mb-2">
+                            <p id="radio_pcpt_p13_question" class="my-3 fw-bold">Do you trust a human or autonomous system to make decisions in a critical situation? </p>
+                            <<div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p13" value="Strongly disagree" id="radio_pcpt_p13_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p13_1">Strongly disagree</label>
                             </div>
@@ -1596,7 +1617,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p14_question" class="my-3 fw-bold">Humans should have the ability to override the swarm decisions in critical situations.</p>
+                            <p id="radio_pcpt_p14_question" class="my-3 fw-bold">Should humans have the ability to override the swarm decisions in critical situations?  </p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p14" value="Strongly disagree" id="radio_pcpt_p14_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p14_1">Strongly disagree</label>
@@ -1622,7 +1643,8 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p15_question" class="my-3 fw-bold">You would trust an autonomous system that detects casualties faster but might be wrong in certain classifications rather than a human-operated system that takes much longer than the autonomous system but gives accurate results.</p>
+                            <p id="radio_pcpt_p15_question" class="my-3 fw-bold">Would you trust an autonomous system that detects casualties faster but might be wrong in certain classifications or a human-operated system 
+                              that takes much longer than the autonomous system but gives accurate results?  </p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p15" value="Strongly disagree" id="radio_pcpt_p15_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p15_1">Strongly disagree</label>
@@ -1648,9 +1670,8 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p16_question" class="my-3 fw-bold">A human-operated system 
-                              that has 80% performance (slightly weaker than autonomous) just because it is operated by a human can be trusted and preferred more than
-                              an autonomous system that has 85% performance. </p>
+                            <p id="radio_pcpt_p16_question" class="my-3 fw-bold">Would you trust an autonomous system that has 85% performance, or would you prefer the human-operated system 
+                              that has 80% performance (slightly weaker than autonomous) just because it is operated by a human? </p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p16" value="Strongly disagree" id="radio_pcpt_p16_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p16_1">Strongly disagree</label>
@@ -1676,25 +1697,27 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p17_question" class="my-3 fw-bold">How much performance are you willing to sacrifice just so that the human is accountable for the mission? Answer in percentage (0 - 100). </p>
-                            <div class="mb-2">
-                                <input type="number" class="form-control" name="txt_pcpt_p17" id="txt_pcpt_p17" step="0.01" onchange="validateForm();">
+                            <p id="radio_pcpt_p17_question" class="my-3 fw-bold">How much performance are you willing to sacrifice just so that the human is accountable for the mission? Answer in percentage. </p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p17" value="Yes" id="radio_pcpt_p17_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p17_1">Strongly agree</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p18_question" class="my-3 fw-bold">If the human slows down the mission, how much percentage of speed are you willing to sacrifice to make sure that the human is in the loop? Answer in percentage (0 - 100).  </p>
-                            <div class="mb-2">
-                                <input type="number" class="form-control" name="txt_pcpt_p18" id="txt_pcpt_p18" step="0.01" onchange="validateForm();">
+                            <p id="radio_pcpt_p18_question" class="my-3 fw-bold">If the human slows down the mission, how much percentage of speed are you willing to sacrifice to make sure that the human is in the loop? Answer in percentage.  </p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p18" value="Yes" id="radio_pcpt_p18_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p18_1">Strongly agree</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p19_question" class="my-3 fw-bold">If the autonomous swarm makes an error while detecting casualties, it can be trusted again.</p>
+                            <p id="radio_pcpt_p19_question" class="my-3 fw-bold">If the autonomous swarm makes an error while detecting casualties, will you trust it again?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p19" value="Strongly disagree" id="radio_pcpt_p19_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p19_1">Strongly disagree</label>
@@ -1721,15 +1744,16 @@
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
                             <p id="radio_pcpt_p20_question" class="my-3 fw-bold">What has to be done to gain you trust back if the autonomous swarm makes errors while detecting casualties? </p>
-                            <div class="mb-2">
-                                <textarea class="form-control" name="txt_pcpt_p20" id="txt_pcpt_p20" rows="3" onchange="validateForm();"></textarea>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p20" value="Yes" id="radio_pcpt_p20_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p20_1">Strongly agree</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p21_question" class="my-3 fw-bold">An autonomous system can be trusted if the swarm provided clear explanation of its intentions and actions in comparison to human-operated swarm.</p>
+                            <p id="radio_pcpt_p21_question" class="my-3 fw-bold">How would your trust towards autonomous systems change if the swarm provided clear explanation of its intentions and actions in comparison to human-operated swarm?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p21" value="Strongly disagree" id="radio_pcpt_p21_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p21_1">Strongly disagree</label>
@@ -1755,7 +1779,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p22_question" class="my-3 fw-bold">An autonomous swarm can be trusted more in low-risk missions as compared to high-risk missions where a human-operator would be preferred.</p>
+                            <p id="radio_pcpt_p22_question" class="my-3 fw-bold">Would you trust an autonomous swarm more in low-risk missions as compared to high-risk missions where you would prefer human-operated missions more?</p>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Strongly disagree" id="radio_pcpt_p22_1" onchange="validateForm();" />
                                 <label class="form-check-label" for="radio_pcpt_p22_1">Strongly disagree</label>
@@ -1850,7 +1874,7 @@
           }
 
           // check if a demographic information radio row question element has been selected
-          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22"];
+          var radio_pcpt_form = ["f1", "f2", "f3", "f4", "p1", "p2", "p3", "p4", "p5"];
           checkFormElement("pcpt",radio_pcpt_form);
 
 
@@ -1878,8 +1902,8 @@
             }
           }
 
-          // // comment the following line for deployment
-          // valid = true;
+          // comment the following line for deployment
+          valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
@@ -1891,7 +1915,7 @@
         function checkFormElement(element_id_abbr,radio_wsga_lkxr_form){
           // var radio_wsga_lkxr_form = ["md", "pd", "td", "pf", "ef", "fr", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"];
           for(j=0;j<radio_wsga_lkxr_form.length;j++){
-            if (radio_wsga_lkxr_form[j] == "p10" || radio_wsga_lkxr_form[j] == "p11" || radio_wsga_lkxr_form[j] == "p17" || radio_wsga_lkxr_form[j] == "p18" || radio_wsga_lkxr_form[j] == "p20") {
+            if (radio_wsga_lkxr_form[j] == "p9") {
                 if (document.getElementById("txt_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]).value == ""){
                     document.getElementById("radio_"+element_id_abbr+"_"+radio_wsga_lkxr_form[j]+"_question").classList.add("text-danger");
                 } else {
