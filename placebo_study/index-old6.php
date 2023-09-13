@@ -331,7 +331,6 @@
         $txt_pcpt_p20 = $_POST['txt_pcpt_p20'];
         $radio_pcpt_p21 = $_POST['radio_pcpt_p21'];
         $radio_pcpt_p22 = $_POST['radio_pcpt_p22'];
-        $txt_pcpt_p22 = $_POST['txt_pcpt_p22'];
 
         // study wsga questionnaires
         $j1 = $_POST['radio_wsga_j1'];
@@ -754,25 +753,19 @@
 
         switch ($radio_pcpt_p22) {
           case "1":
-            $radio_pcpt_p22 = "Low risk";
+            $radio_pcpt_p22 = "Strongly disagree";
             break;
           case "2":
-            $radio_pcpt_p22 = "High precision";
+            $radio_pcpt_p22 = "Disagree";
             break;
           case "3":
-            $radio_pcpt_p22 = "Time critical";
+            $radio_pcpt_p22 = "Neutral";
             break;
           case "4":
-            $radio_pcpt_p22 = "Low cost";
+            $radio_pcpt_p22 = "Agree";
             break;
           case "5":
-            $radio_pcpt_p22 = "When any decisions may have moral pressure for humans";
-            break;
-          case "6":
-            $radio_pcpt_p22 = "None";
-            break;
-          case "7":
-            $radio_pcpt_p22 = "Others";
+            $radio_pcpt_p22 = "Strongly agree";
             break;
           default:
             // do nothing
@@ -799,14 +792,7 @@
         $pcpt_p19 = mysqli_real_escape_string($con1, $radio_pcpt_p19);
         $pcpt_p20 = mysqli_real_escape_string($con1, $txt_pcpt_p20);
         $pcpt_p21 = mysqli_real_escape_string($con1, $radio_pcpt_p21);
-
-        if ($radio_pcpt_p22 == "Others"){
-          $pcpt_p22 = mysqli_real_escape_string($con1, $txt_pcpt_p22);
-        } else {
-          $pcpt_p22 = mysqli_real_escape_string($con1, $radio_pcpt_p22);
-        }
-        
-        
+        $pcpt_p22 = mysqli_real_escape_string($con1, $radio_pcpt_p22);
 
 
         // update data table for scenario 1
@@ -1540,7 +1526,7 @@
 
                    <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p10_question" class="my-3 fw-bold">List the advantages of human-operated system in a single word. List atleast three advantages (if possible).</p>
+                            <p id="radio_pcpt_p10_question" class="my-3 fw-bold">List advantages of human-operated system in single words. List atleast one advantage.</p>
                             <div class="mb-2">
                                 <textarea class="form-control" name="txt_pcpt_p10" id="txt_pcpt_p10" rows="3" onchange="validateForm();"></textarea>
                             </div>
@@ -1549,7 +1535,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p11_question" class="my-3 fw-bold">List the advantages of autonomous system in a single word. List atleast three advantages (if possible).</p>
+                            <p id="radio_pcpt_p11_question" class="my-3 fw-bold">List advantages of autonomous system in single words. List atleast one advantage.</p>
                             <div class="mb-2">
                                 <textarea class="form-control" name="txt_pcpt_p11" id="txt_pcpt_p11" rows="3" onchange="validateForm();"></textarea>
                             </div> 
@@ -1734,7 +1720,7 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p20_question" class="my-3 fw-bold">What has to be done to gain your trust back if the autonomous swarm makes errors while detecting casualties? </p>
+                            <p id="radio_pcpt_p20_question" class="my-3 fw-bold">What has to be done to gain you trust back if the autonomous swarm makes errors while detecting casualties? </p>
                             <div class="mb-2">
                                 <textarea class="form-control" name="txt_pcpt_p20" id="txt_pcpt_p20" rows="3" onchange="validateForm();"></textarea>
                             </div>
@@ -1769,35 +1755,26 @@
 
                     <div class="px-4">
                         <div style="font-size: 0.95rem;">
-                            <p id="radio_pcpt_p22_question" class="my-3 fw-bold">In which situation(s) or application(s) do you trust the autonomous swarms more than human operated:</p>
+                            <p id="radio_pcpt_p22_question" class="my-3 fw-bold">An autonomous swarm can be trusted more in low-risk missions as compared to high-risk missions where a human-operator would be preferred.</p>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Low risk" id="radio_pcpt_p22_1" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_1">Low risk</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Strongly disagree" id="radio_pcpt_p22_1" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p22_1">Strongly disagree</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="High precision" id="radio_pcpt_p22_2" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_2">High precision</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Disagree" id="radio_pcpt_p22_2" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p22_2">Disagree</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Time critical" id="radio_pcpt_p22_3" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_3">Time critical </label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Neutral" id="radio_pcpt_p22_3" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p22_3">Neutral</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Low cost" id="radio_pcpt_p22_4" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_4">Low cost</label>
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Agree" id="radio_pcpt_p22_4" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p22_4">Agree</label>
                             </div>
                             <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="When any decisions may have moral pressure for humans" id="radio_pcpt_p22_5" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_5">When any decisions may have moral pressure for humans</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="None" id="radio_pcpt_p22_6" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_6">None</label>
-                            </div>
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Others" id="radio_pcpt_p22_7" onchange="validateForm();" />
-                                <label class="form-check-label" for="radio_pcpt_p22_7">Others</label>
-                                <input type="text" class="form-control ms-3" name="txt_pcpt_p22" id="txt_pcpt_p22" maxlength="128" style="width: 250px; display: inline; margin-top: -10px;">
+                                <input class="form-check-input" type="radio" name="radio_pcpt_p22" value="Strongly agree" id="radio_pcpt_p22_5" onchange="validateForm();" />
+                                <label class="form-check-label" for="radio_pcpt_p22_5">Strongly agree</label>
                             </div>
                         </div>
                     </div>
@@ -1901,11 +1878,8 @@
             }
           }
 
-          // removes validation check for custom question pcpt_p22 textbox
-          document.getElementById("txt_pcpt_p22").classList.remove("is-invalid");
-
-          // comment the following line for deployment
-          valid = true;
+          // // comment the following line for deployment
+          // valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
