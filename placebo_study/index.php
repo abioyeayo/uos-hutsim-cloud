@@ -1904,8 +1904,8 @@
           // removes validation check for custom question pcpt_p22 textbox
           document.getElementById("txt_pcpt_p22").classList.remove("is-invalid");
 
-          // comment the following line for deployment
-          valid = true;
+          // // comment the following line for deployment
+          // valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
