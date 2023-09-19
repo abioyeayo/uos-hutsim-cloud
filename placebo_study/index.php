@@ -801,7 +801,7 @@
         $pcpt_p21 = mysqli_real_escape_string($con1, $radio_pcpt_p21);
 
         if ($radio_pcpt_p22 == "Others"){
-          $pcpt_p22 = mysqli_real_escape_string($con1, $txt_pcpt_p22);
+          $pcpt_p22 = "Others - " . mysqli_real_escape_string($con1, $txt_pcpt_p22);
         } else {
           $pcpt_p22 = mysqli_real_escape_string($con1, $radio_pcpt_p22);
         }
