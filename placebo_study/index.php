@@ -1883,6 +1883,12 @@
 
           // check if a lkxr radio row element has been selected
           checkFormElement("lkxr",radio_wsga_lkxr_form);
+
+
+          // removes validation check for custom question pcpt_p22 textbox
+          if (document.getElementById("txt_pcpt_p22").value == "") {
+            document.getElementById("txt_pcpt_p22").value = " ";
+          }
           
 
           // This function deals with validation of the form fields
@@ -1900,9 +1906,6 @@
               valid = false;
             }
           }
-
-          // removes validation check for custom question pcpt_p22 textbox
-          document.getElementById("txt_pcpt_p22").classList.remove("is-invalid");
 
           // // comment the following line for deployment
           // valid = true;
