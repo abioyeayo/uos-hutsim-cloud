@@ -1160,8 +1160,8 @@
               valid = false;
           }
 
-          // // comment the following line for deployment
-          // valid = true;
+          // comment the following line for deployment
+          valid = true;
 
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
