@@ -105,7 +105,7 @@
 
   <main>
     <div style="text-align: center;">
-        <img src="/demo/sotsef2023/img/sotsef2023_demo_screenshot_resized.jpg" class="shadow-lg p-1 mb-5 bg-body rounded" alt="Human Swarm Teaming simulation screenshot" width="640" style="border:solid 1px black;">
+        <img src="/demo/sotsef2023/img/sotsef2023_demo_screenshot_resized.jpg" class="shadow-lg p-1 mb-5 bg-body rounded img-fluid" alt="Human Swarm Teaming simulation screenshot" width="640" style="border:solid 1px black;">
     </div>
     <h1 class="text-body-emphasis">Getting started with HARIS</h1>
     <p class="fs-5">The Human And Robot Interactive Swarm (HARIS) Simulator is a multi-agent and swarm robotics simulation tool used to study human-swarm interaction. HARIS is a successor of our Human Teaming Simulator (HutSim).</p>
