@@ -122,19 +122,19 @@
         <p>Here is a list of some of our research projects conducted using the HARIS simulator.</p>
         <ul class="list-unstyled ps-0">
           <li>
-            <a class="icon-link mb-1" href="/verification_study/?PROLIFIC_PID=639c81275bd768dce603c9c5aoa&STUDY_ID=63b4a06fa62e8101c635f299demo&SESSION_ID=study_demo&GROUP_ID=vg5est5j" rel="noopener" target="_blank">
+            <a class="icon-link mb-1" href="/verification_study/?PROLIFIC_PID=639c8127verification&STUDY_ID=63b4a06fdemo&SESSION_ID=study_demo&GROUP_ID=vg5est5j" rel="noopener" target="_blank">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
               Predictive formal modelling at runtime in a drone delivery mission
             </a>
           </li>
           <li>
-            <a class="icon-link mb-1" href="/res_study/?PROLIFIC_PID=639c81275bd768dce603c9c5aoa&STUDY_ID=63b4a06fa62e8101c635f299demo&SESSION_ID=study_demo&GROUP_ID=vg5est5j" rel="noopener" target="_blank">
+            <a class="icon-link mb-1" href="/res_study/?PROLIFIC_PID=5bd768dcresolution&STUDY_ID=a62e8101demo&SESSION_ID=study_demo&GROUP_ID=vg5est5j" rel="noopener" target="_blank">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
               Speed vs accuracy trade-off in a UAV search and rescue mission
             </a>
           </li>
           <li>
-            <a class="icon-link mb-1" href="/placebo_study/?PROLIFIC_PID=639c81275bd768dce603c9c5&STUDY_ID=63b4a06fa62e8101c635f299demo&SESSION_ID=study_demo&GROUP_ID=CLALM" rel="noopener" target="_blank">
+            <a class="icon-link mb-1" href="/placebo_study/?PROLIFIC_PID=e603c9c5placeboeffect&STUDY_ID=c635f299demo&SESSION_ID=study_demo&GROUP_ID=CLALM" rel="noopener" target="_blank">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
               The placebo effect of autonomy on trust in human-swarm interaction
             </a>
