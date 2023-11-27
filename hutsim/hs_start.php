@@ -6,6 +6,8 @@
    $con = new DB_Connect();
    $con1=$con->connect();
 
+   $base_url = "http://" . $_SERVER['HTTP_HOST'] . ":";
+
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +45,7 @@
          <h2>HutSim simulator started</h2>
          <br>
          <br>
-         <a href='http://uos-hutsim.cloud:<?php echo $port; ?>/' target='_blank'>
+         <a href='<?php echo $base_url . $port; ?>/' target='_blank'>
              <button>View Simulator</button>
          </a>
          <form action="index.php" method="post" style="float: right;">

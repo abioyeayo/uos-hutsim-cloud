@@ -10,8 +10,9 @@
    $con1=$con->connect();
 
    // comment or select based on published online hosting or developer localhosting
-   $base_url = "http://uos-hutsim.cloud:";
+  //  $base_url = "http://uos-hutsim.cloud:";
   //  $base_url = "http://localhost:"; 
+  $base_url = "http://" . $_SERVER['HTTP_HOST'] . ":";
 
 
   $group_id = $_GET['GROUP_ID']; 

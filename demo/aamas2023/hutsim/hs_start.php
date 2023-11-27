@@ -6,6 +6,8 @@
    $con = new DB_Connect();
    $con1=$con->connect();
 
+   $base_url = "http://" . $_SERVER['HTTP_HOST'] . ":";
+
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +62,7 @@
             <input type="hidden" name="stopped_pid" value="<?php echo $output[0]; ?>">
             <div class="buttons">
                <div class="action_btn">
-                  <button class="action_btn" type="button"><a href='http://uos-hutsim.cloud:<?php echo $port; ?>/preset/scenario?file-name=Demo.json' target='_blank' style='text-decoration:none; color: inherit;'>Go to Simulator</a></button>
+                  <button class="action_btn" type="button"><a href='<?php echo $base_url . $port; ?>/preset/scenario?file-name=Demo.json' target='_blank' style='text-decoration:none; color: inherit;'>Go to Simulator</a></button>
                   <button class="action_btn" type="submit" value="Stop HutSim">Stop HutSim</button>
                </div>
             </div>
