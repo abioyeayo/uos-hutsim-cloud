@@ -89,7 +89,7 @@
                         <p>
                             Our showcase demo will allow participants to interact with our simulator to perform a human swarm teaming task and experience the interface dynamically adapting to their change in workload due to task density increasing or decreasing while maintaining a high task completion efficiency. Participants will be able to operate the swarm and see the simulator abstracting individual drones into heatmaps and eliminating unnecessary data when they become too overloaded.
                         </p>
-                        <p>LOGOS - UoS, Nortingham, Bournemouth, DSTL, TAS</p>
+                        <p>LOGOS - UoS, Nottingham, Bournemouth, DSTL, TAS</p>
                         <!-- <p>
                             <b>Keywords</b>: Human-Swarm Teaming; Swarm Robotics; Human-robot Interaction; Simulation Environments; HARIS. <br><br>
                             <b>ACM Reference Format:</b> William Hunt , Jack Ryan , Ayodeji O. Abioye , Sarvapali D. Ramchurn, and Mohammad D. Soorati . 
@@ -100,7 +100,7 @@
                 </div>
                 <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 border-top">
                     <div class="col-md-4 d-flex align-items-center">
-                        <span class="mb-3 mb-md-0 text-muted">© 2023 uos-hutsim</span>
+                        <span class="mb-3 mb-md-0 text-muted">© 2023 uos-haris</span>
                     </div>
                 </footer>
 
