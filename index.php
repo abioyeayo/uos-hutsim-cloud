@@ -99,7 +99,7 @@
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
     <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none" style="margin-left: auto; margin-right: auto;">
       <svg class="bi me-2" width="32" height="32"><use xlink:href="#haris_logo"/></svg>
-      <span class="fs-4">HARIS</span>
+      <span class="fs-4 fw-bold">HARIS</span>
     </a>
   </header>
 

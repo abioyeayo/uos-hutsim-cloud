@@ -24,7 +24,7 @@
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <title>AAMAS 2023 Demo | UoS HutSim</title>
+        <title>TAS 2024 Showcase Demo | UoS HutSim</title>
         <style>
             table, th, td {
                 border: 1px solid black;
@@ -34,14 +34,21 @@
         </style>
     </head>
     <body style="background-color: #efefef;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="haris_logo" viewBox="0 0 24 24">
+                <title>Haris Logo</title>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0 L0 24 L24 24 L24 0 Z M4.5 4.5 L9.5 4.5 L9.5 9.5 L14 9.5 L14 4.5 L19 4.5 L19 19.5 L14 19.5 L14 15 L9.5 15 L9.5 19.5 L4.5 19.5 Z"></path>
+            </symbol>
+        </svg>
         <div class="shadow" style="background-color: #ffffff;">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom container">
-                <a href="/demo/aamas2023/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <h4>UoS HutSim</h4>
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <svg class="bi me-2" width="32" height="32"><use xlink:href="#haris_logo"/></svg>
+                    <span class="fs-4 fw-bold">HARIS</span>
                 </a>
 
                 <div class="col-12 col-md-auto mb-2 justify-content-center mb-md-0 text-center">
-                    <h4>AAMAS 2023 Demo</h4>
+                    <h4>TAS 2024 Showcase Demo</h4>
                 </div>
 
                 <div class="col-md-3 text-end">
@@ -116,14 +123,14 @@
             refreshGraph();
             });
 
-            var slide = 1;
+            var slide = 0;
             var refreshDelay = 1000;
             function refreshGraph(){
                 slide = slide + 1;
-                if (slide > 15) {   // after first 15 seconds change update to once per minute
-                    refreshDelay = 60000;                    
-                } else if (slide > 20) {    // after 5 minutes change update to once per hour
+                if (slide > 20) {   // after first 15 seconds change update to once per minute
                     refreshDelay = 3600000;                    
+                } else if (slide > 15) {    // after 5 minutes change update to once per hour
+                    refreshDelay = 60000;                    
                 } else {}
                 $('#fnirs_table').load('fnirs_latest.php?slide='+slide, function(){
                 setTimeout(refreshGraph, refreshDelay);
