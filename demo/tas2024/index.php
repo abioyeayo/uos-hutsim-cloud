@@ -52,8 +52,7 @@
                 </div>
 
                 <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-sm btn-link me-2"><a href="/demo/tas2024/hutsim/">Simulator</a></button>
-                    <button type="button" class="btn btn-sm btn-link"><a href="/demo/tas2024/leaderboard.php">Leaderboard</a></button>
+                    <button type="button" class="btn btn-sm btn-link me-2"><a href="/demo/tas2024/haris/">Simulator</a></button>
                 </div>
             </header>
         </div>
@@ -69,17 +68,17 @@
                         </p>
                     </div>
                     <div class="col-xxl-6 text-center mt-xxl-5 pt-xxl-3 pb-5">
-                        <div>
+                        <!-- <div>
                             <canvas id="myChart"></canvas>
                         </div>
-                        <div id="fnirs_table"></div>
+                        <div id="fnirs_table"></div> -->
                         <!-- <div style="border: solid 1px black;">
                             <canvas class="my-4 w-100" id="myChart3" width="900" height="380"></canvas>
                         </div> -->
-                        <!-- <video class="shadow bg-body rounded" width="640" height="360" controls>
+                        <video class="shadow bg-body rounded" width="640" height="360" controls>
                             <source src="uos-hutsim-aamas-2023-demo-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
-                        </video> -->
+                        </video>
                     </div>
 
                     <div class="col-12 ps-4 pe-4">

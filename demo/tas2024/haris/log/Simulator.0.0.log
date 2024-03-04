@@ -1,0 +1,13 @@
+2024-03-04 17:53:18; 0.0; SVPRT; Server port; 44101;
+2024-03-04 17:53:18; 0.0; SVHM; Server home; web;
+2024-03-04 17:53:18; 0.0; SVRDY; Server ready 
+2024-03-04 17:53:30; 0.0; SVRST; Server reset 
+2024-03-04 17:53:37; 0.0; SCLD; Scenario loaded (filename); DynamicTaskingShift.json 
+2024-03-04 17:53:41; 0.0; SIMST; Simulation started
+2024-03-04 17:53:42; 1.0; CRWP; Created new task (id, lat, lng); Task-1; 50.92835921871477; -1.4298663194324848
+2024-03-04 17:53:42; 1.0; CRWP; Created new task (id, lat, lng); Task-2; 50.92799800437855; -1.4286289478799674
+2024-03-04 17:53:42; 1.0; CRWP; Created new task (id, lat, lng); Task-3; 50.9274192895683; -1.4315230426519294
+2024-03-04 17:53:55; 13.999999999999982; CRWP; Created new task (id, lat, lng); Task-4; 50.92264108984414; -1.4148678035856785
+2024-03-04 17:53:55; 13.999999999999982; CRWP; Created new task (id, lat, lng); Task-5; 50.922045692141694; -1.4158290452560613
+2024-03-04 17:53:55; 13.999999999999982; CRWP; Created new task (id, lat, lng); Task-6; 50.92197719922228; -1.4174207183856766
+2024-03-04 17:53:55; 13.999999999999982; CRWP; Created new task (id, lat, lng); Task-7; 50.92189175207713; -1.4187674420478429

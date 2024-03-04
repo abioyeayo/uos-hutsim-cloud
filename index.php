@@ -164,6 +164,12 @@
               SOTSEF 2023
             </a>
           </li>
+          <li>
+            <a class="icon-link mb-1" href="/demo/tas2024/">
+              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+              TAS 2024
+            </a>
+          </li>
         </ul>
       </div>
     </div>
