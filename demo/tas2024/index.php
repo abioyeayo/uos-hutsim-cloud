@@ -53,6 +53,7 @@
 
                 <div class="col-md-3 text-end">
                     <button type="button" class="btn btn-sm btn-link me-2"><a href="/demo/tas2024/haris/">Simulator</a></button>
+                    <button type="button" class="btn btn-sm btn-link"><a href="/demo/tas2024/feedback/">Feedback</a></button>
                 </div>
             </header>
         </div>
@@ -75,10 +76,11 @@
                         <!-- <div style="border: solid 1px black;">
                             <canvas class="my-4 w-100" id="myChart3" width="900" height="380"></canvas>
                         </div> -->
-                        <video class="shadow bg-body rounded" width="640" height="360" controls>
+                        <!-- <video class="shadow bg-body rounded" width="640" height="360" controls>
                             <source src="uos-hutsim-aamas-2023-demo-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
-                        </video>
+                        </video> -->
+                        <img src="logos/B09-adaptive_haris.png" class="shadow-lg p-1 mb-5 bg-body rounded" alt="Adaptive Haris simulation screenshot" width="640" style="border:solid 1px black;">
                     </div>
 
                     <div class="col-12 ps-4 pe-4">
@@ -88,7 +90,15 @@
                         <p>
                             Our showcase demo will allow participants to interact with our simulator to perform a human swarm teaming task and experience the interface dynamically adapting to their change in workload due to task density increasing or decreasing while maintaining a high task completion efficiency. Participants will be able to operate the swarm and see the simulator abstracting individual drones into heatmaps and eliminating unnecessary data when they become too overloaded.
                         </p>
-                        <p>LOGOS - UoS, Nottingham, Bournemouth, DSTL, TAS</p>
+                        <!-- <p>LOGOS - UoS, Nottingham, Bournemouth, DSTL, TAS</p> -->
+                        <div>
+                            <img src="logos/B09-university-of-southampton-logo.png" class="rounded float-left me-5" width="150" alt="University of Southampton Logo">
+                            <img src="logos/university-of-nottingham-logo.svg" class="rounded float-left me-5" width="150" alt="University of Nottingham Logo">
+                            <img src="logos/B09-bournemouth-university-logo.png" class="rounded float-left me-5" width="150" alt="Bournemouth University Logo">
+                            <img src="logos/B09-dstl-logo.png" class="rounded float-left me-5" width="150" alt="DSTL Logo">
+                            <img src="logos/tas-hub-logo.png" class="rounded float-left me-5" width="150" alt="TAS Hub Logo">
+                            <img src="logos/qr-code.png" class="rounded float-left me-5" width="150" alt="Website QR Code">
+                        </div>
                         <!-- <p>
                             <b>Keywords</b>: Human-Swarm Teaming; Swarm Robotics; Human-robot Interaction; Simulation Environments; HARIS. <br><br>
                             <b>ACM Reference Format:</b> William Hunt , Jack Ryan , Ayodeji O. Abioye , Sarvapali D. Ramchurn, and Mohammad D. Soorati . 
