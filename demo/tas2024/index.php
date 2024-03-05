@@ -93,7 +93,7 @@
                         <!-- <p>LOGOS - UoS, Nottingham, Bournemouth, DSTL, TAS</p> -->
                         <div>
                             <img src="logos/B09-university-of-southampton-logo.png" class="rounded float-left me-5" width="150" alt="University of Southampton Logo">
-                            <img src="logos/university-of-nottingham-logo.svg" class="rounded float-left me-5" width="150" alt="University of Nottingham Logo">
+                            <img src="logos/nottingham-logo.png" class="rounded float-left me-5" width="150" alt="University of Nottingham Logo">
                             <img src="logos/B09-bournemouth-university-logo.png" class="rounded float-left me-5" width="150" alt="Bournemouth University Logo">
                             <img src="logos/B09-dstl-logo.png" class="rounded float-left me-5" width="150" alt="DSTL Logo">
                             <img src="logos/tas-hub-logo.png" class="rounded float-left me-5" width="150" alt="TAS Hub Logo">
