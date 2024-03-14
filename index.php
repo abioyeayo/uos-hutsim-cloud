@@ -147,6 +147,12 @@
         <p>Here are some of our live demo events.</p>
         <ul class="list-unstyled ps-0">
           <li>
+            <a class="icon-link mb-1" href="/demo/tas2024/">
+              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+              TAS Showcase 2024
+            </a>
+          </li>
+          <li>
             <a class="icon-link mb-1" href="/demo/aamas2023/">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
               Human-Swarm Teaming (AAMAS 2023)
@@ -164,14 +170,34 @@
               SOTSEF 2023
             </a>
           </li>
+        </ul>
+      </div>
+
+      <div class="col-12">
+        <h2 class="text-body-emphasis">Publications</h2>
+        <p>Here is a list of some of our research publications based on the HARIS simulator.</p>
+        <ul class="list-unstyled ps-0">
           <li>
-            <a class="icon-link mb-1" href="/demo/tas2024/">
+            <a class="icon-link mb-1" href="https://doi.org/10.1145/3610978.3640725" rel="noopener" target="_blank">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              TAS 2024
+              The Effect of Predictive Formal Modelling at Runtime on Performance in Human-Swarm Interaction (ACM/IEEE HRI 2024 Late Breaking Reports)
+            </a>
+          </li>
+          <li>
+            <a class="icon-link mb-1" href="https://doi.org/10.1109/RO-MAN57019.2023.10309454" rel="noopener" target="_blank">
+              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+              The Effect of Data Visualisation Quality and Task Density on Human-Swarm Interaction (IEEE RO-MAN 2023 Paper)
+            </a>
+          </li>
+          <li>
+            <a class="icon-link mb-1" href="https://dl.acm.org/doi/abs/10.5555/3545946.3599173" rel="noopener" target="_blank">
+              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+              Demonstrating Performance Benefits of Human-Swarm Teaming (AAMAS 2023 Demo Paper)
             </a>
           </li>
         </ul>
       </div>
+
     </div>
   </main>
   <footer class="pt-5 my-5 text-body-secondary border-top">
