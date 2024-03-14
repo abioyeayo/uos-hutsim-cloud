@@ -180,7 +180,7 @@
           <li>
             <a class="icon-link mb-1" href="https://doi.org/10.1145/3610978.3640725" rel="noopener" target="_blank">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              The Effect of Predictive Formal Modelling at Runtime on Performance in Human-Swarm Interaction (ACM/IEEE HRI 2024 Late Breaking Reports)
+              The Effect of Predictive Formal Modelling at Runtime on Performance in Human-Swarm Interaction (ACM/IEEE HRI 2024 Late Breaking Report)
             </a>
           </li>
           <li>
@@ -192,7 +192,7 @@
           <li>
             <a class="icon-link mb-1" href="https://dl.acm.org/doi/abs/10.5555/3545946.3599173" rel="noopener" target="_blank">
               <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Demonstrating Performance Benefits of Human-Swarm Teaming (AAMAS 2023 Demo Paper)
+              Demonstrating Performance Benefits of Human-Swarm Teaming (AAMAS 2023 Demonstration Track Paper)
             </a>
           </li>
         </ul>
