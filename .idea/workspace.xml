@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "PHP Script.index.php.executor": "Run",
+    "last_opened_file_path": "E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud/workshop/iros2024",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024\Portraits" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
