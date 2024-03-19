@@ -95,7 +95,7 @@
 </svg>
 
 <div class="col-lg-8 mx-auto p-4 py-md-5">
-  <header class="d-flex align-items-center pb-3">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
     <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none" style="margin-left: auto; margin-right: auto;">
       <svg class="bi me-2" width="32" height="32"><use xlink:href="#haris_logo"/></svg>
       <span class="fs-4 fw-bold">Trustworthy Human-swarm Interaction</span>
@@ -104,57 +104,23 @@
 
   <main>
     <div style="text-align: center;">
-        <img src="iros2024workshop.png" class="shadow-lg p-1 bg-body rounded img-fluid my-2" alt="Human Swarm Teaming" width="320" style="border:solid 1px black;">
+        <img src="iros2024workshop.png" class="shadow-lg p-1 mb-5 bg-body rounded img-fluid" alt="Human Swarm Teaming simulation screenshot" width="640" style="border:solid 1px black;">
+    </div>
+    <h1 class="text-body-emphasis">Getting started with HARIS</h1>
+    <p class="fs-5">The Human And Robot Interactive Swarm (HARIS) Simulator is a multi-agent and swarm robotics simulation tool used to study human-swarm interaction. HARIS is a successor of our Human Teaming Simulator (HutSim).</p>
+
+    <div class="mb-5">
+      <a href="https://github.com/mdivband/hut" class="btn btn-primary btn-lg px-4">Project GitHub</a>
     </div>
 
-    <div class="row g-5 mt-4 border-top">
-      
-      <div class="col-12">
-        <h2 class="text-body-emphasis">Organisers</h2>
-        <p>For each organiser, please provide the complete address/affiliation, URL, and emails.  
-            List conferences at which organisers have previously organised a workshop. 
-            Indicate the organiser(s) to which all correspondence should be addressed.</p>
-
-        <table class="table-bordered table-sm">
-          <tr>
-            <th>Name/Affliation</th>
-            <th>Details</th>
-          </tr>
-          <tr>
-            <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>
-            <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK 
-                Email:m.soorati@soton.ac.uk
-                URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati
-                Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms 
-            </td>
-          </tr>
-          <tr>
-            <td>Horia Maior Uni. of Nottingham</td>
-            <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB
-                Email: horia.maior@nottingham.ac.uk
-                URL: http://horiamaior.com/
-
-                Organised Events:
-                ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.
-            </td>
-          </tr>
-        </table>
-        
-      </div>
-
-    </div>
-
-    <div class="col-3 col-md-2 my-5"></div>
+    <hr class="col-3 col-md-2 mb-5">
 
     <div class="row g-5">
       
       <div class="col-12">
-        <h2 class="text-body-emphasis">Abstract</h2>
-        <p>Swarm Robotics brings robustness, scalability and adaptability to self-organising systems but its applications are mainly limited to research platforms. Human-swarm interaction facilitates the integration of human supervision into swarm systems, opening up opportunities for real-world applications. However, interfacing, transparency, and trust present significant challenges that need to be addressed. The complexity of this issue requires a joint effort from researchers across different disciplines including human factors, ethics, software engineering, machine learning, regulation and policy. This one-day workshop aims to bring together researchers to discuss the potential of relying on human-swarm interaction for real-world applications and present the challenges that could inform future research in this area. Besides the keynote talks from world-leading researchers, the event will foster interaction through focus groups including senior and junior researchers, two-panel discussions and poster sessions. Through these discussions and interactive presentations, we hope to encourage discussion among a diverse set of experts and facilitate future interdisciplinary collaborations that could present research directions with viable industry applications. 
-
-        All submissions in this track are Non-Archival, thus authors may re-use and re-submit the content to other peer-reviewed venues. Papers will be peer-reviewed, receiving a combined review, and the selection process will follow a single decision meeting process. A special issue will proceed this workshop and selected papers will be invited to contribute with a fully archived paper.
-</p>
-
+        <h2 class="text-body-emphasis">Publications</h2>
+        <p>Here is a list of some of our research publications based on the HARIS simulator.</p>
+        
       </div>
 
     </div>
