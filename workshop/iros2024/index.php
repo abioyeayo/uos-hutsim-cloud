@@ -114,49 +114,50 @@
 
 
   <main>
-      <div class="row g-5">
-          <!--IMAGE AND TITLE-->
-          <!-- Not sure if this is a sensible way of padding the edges -WH -->
-          <div class="col-md-1"></div>
-          <div class="col-md-5">
-              <br><br><br><br>
-              <h2 class="text-body-emphasis" style="text-align: center;">IROS 2024 Full Day Workshop</h2>
-              <br>
-              <h3 class="text-body-emphasis" style="text-align: center;">October 15th 2024</h3>
-              <br>
-          </div>
-
-          <div class="col-md-5">
-              <div style="text-align: center;">
-                  <img src="iros2024workshop.jpg" class="shadow-lg p-1 bg-body rounded img-fluid my-2" alt="Human Swarm Teaming" width="320" style="border:solid 1px black;">
-              </div>
-          </div>
-          <div class="col-md-1"></div>
-
+    <div class="row g-3">
+      <!--IMAGE AND TITLE-->
+      <!-- Not sure if this is a sensible way of padding the edges -WH -->
+      <div class="col-md-1"></div>
+      <div class="col-md-5 pt-5">
+        <p class="fs-2 fw-bold" style="text-align: center;">IROS 2024 Full Day Workshop</p>
+        <br>
+        <p class="fs-5" style="text-align: center;">October 15th 2024</p>
+        <br>
       </div>
+
+      <div class="col-md-1"></div>
+
+      <div class="col-md-4">
+          <div style="text-align: center;">
+              <img src="iros2024workshop.jpg" class="shadow-lg p-1 bg-body rounded img-fluid my-2" alt="Human Swarm Teaming" width="320" style="border:solid 1px black;">
+          </div>
+      </div>
+      <div class="col-md-1"></div>
 
 
       <div class="col-12">
         <!--ABSTRACT-->
-        <h2 class="text-body-emphasis">Abstract</h2>
-        <p>Swarm Robotics brings robustness, scalability and adaptability to self-organising systems but its
-            applications are mainly limited to research platforms. Human-swarm interaction facilitates the
-            integration of human supervision into swarm systems, opening up opportunities for real-world
-            applications. However, interfacing, transparency, and trust present significant challenges that
-            need to be addressed. The complexity of this issue requires a joint effort from researchers
-            across different disciplines including human factors, ethics, software engineering, machine
-            learning, hardware design, regulation and policy. This one-day workshop aims to bring together
-            researchers to discuss the potential of relying on human-swarm interaction for real-world
-            applications and present the challenges that could inform future research in this area. Besides
-            the keynote talks from world-leading researchers, the event will foster interaction through focus
-            groups including senior and junior researchers, two-panel discussions and poster sessions.
-            Through these discussions and interactive presentations, we hope to encourage discussion
-            among a diverse set of experts and facilitate future interdisciplinary collaborations that could
-            present research directions with viable industry applications.</p>
+        <h2>Abstract</h2>
+        <div class="my-4 border-top"></div>
+          <p>Swarm Robotics brings robustness, scalability and adaptability to self-organising systems but its
+              applications are mainly limited to research platforms. Human-swarm interaction facilitates the
+              integration of human supervision into swarm systems, opening up opportunities for real-world
+              applications. However, interfacing, transparency, and trust present significant challenges that
+              need to be addressed. The complexity of this issue requires a joint effort from researchers
+              across different disciplines including human factors, ethics, software engineering, machine
+              learning, hardware design, regulation and policy. This one-day workshop aims to bring together
+              researchers to discuss the potential of relying on human-swarm interaction for real-world
+              applications and present the challenges that could inform future research in this area. Besides
+              the keynote talks from world-leading researchers, the event will foster interaction through focus
+              groups including senior and junior researchers, two-panel discussions and poster sessions.
+              Through these discussions and interactive presentations, we hope to encourage discussion
+              among a diverse set of experts and facilitate future interdisciplinary collaborations that could
+              present research directions with viable industry applications.</p>
+      </div>
 
+      <div class="col-12">
         <!--TOPICS-->
-        <h2 class="text-body-emphasis">Content</h2>
-        <h5 class="text-body-emphasis">We Welcome Submissions in the Following Areas:</h5>
+        <p class="fs-5 fw-bold">We Welcome Submissions in the Following Areas:</p>
           <ul>
               <li><strong>Real World Use Cases of Human Swarm Systems:</strong> Contributions describing case studies of swarm systems in specific application areas (e.g. agri-food, disaster response, maintenance), describing specific challenges and opportunities.</li>
               <li><strong>Responsible Research and Innovation (Ethics) in Human-Swarm Systems:</strong> Papers focusing on the ethical implications, responsibilities, and societal impact of deploying swarm-based systems in various environments.</li>
@@ -168,315 +169,184 @@
               <li><strong>Machine Learning Applications to Human-Swarm Interaction:</strong> Novel applications of machine learning for controlling, understanding, and interacting with robots swarms.</li>
               <li><strong>Specialised Brain-Swarm Interaction and Control Interfaces:</strong> Using neurotechnology (such as EEG or fNIRS) to understand neural activity of cognitive functions during human-swarm interaction. Employing BCI (brain-computer-interfaces) technology for evaluating HSIs, control, and neurofeedback.</li>
           </ul>
+      </div>
+    
 
-          <div class="row g-5 mt-4 border-top"></div>
-
-          <!--SCHEDULE-->
-          <div class="col-12">
-              <h2 class="text-body-emphasis">Invited Speakers</h2>
-              <table class="table-bordered table-sm">
-                  <tr class="dark-colored-row">
-                      <th>Time</th>
-                      <th>Speaker</th>
-                      <th>Details</th>
-                  </tr>
-                  <tr>
-                      <td>9:00</td>
-                      <td>Organisers</td>
-                      <td>Welcome note & Projects Overview</td>
-                  </tr>
-                  <tr>
-                      <td>9:20</td>
-                      <td><b>Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
-                      <td>Title: Explainability in Swarm Robotics<br><i>Keynote speaker</i></td>
-                  </tr>
-                  <tr>
-                      <td>10:00</td>
-                      <td>Spotlight presentations</td>
-                      <td>Contributed papers - 5 minutes flash presentation for each poster</td>
-                  </tr>
-                  <tr class="light-colored-row">
-                      <td>10:30</td>
-                      <td style="text-align: center;"><i>Coffee break</i></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>11:00</td>
-                      <td>Giovanni Beltrame<br>Polytechnique Montreal (confirmed)</td>
-                      <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br>[Key-note speaker]</td>
-                  </tr>
-                  <tr>
-                      <td>11:40</td>
-                      <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue )</td>
-                      <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership</td>
-                  </tr>
-                  <tr class="light-colored-row">
-                      <td>13:00</td>
-                      <td style="text-align: center;"><i>Lunch break</i></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>14:00</td>
-                      <td>Luis Sentis<br>Univ. of Texas, Austin (confirmed)</td>
-                      <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br>[Keynote speaker]</td>
-                  </tr>
-                  <tr>
-                      <td>14:40</td>
-                      <td>Poster Session</td>
-                      <td></td>
-                  </tr>
-                  <tr class="light-colored-row">
-                      <td>15:30</td>
-                      <td style="text-align: center;"><i>Coffee break</i></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>16:00</td>
-                      <td>Panel discussion</td>
-                      <td>Theme: Swarms in our Society - Testing, Operation & Trust<br>Panel: Keynote Speakers</td>
-                  </tr>
-                  <tr>
-                      <td>16:50</td>
-                      <td>Organisers</td>
-                      <td>Best Poster Award & Concluding remarks</td>
-                  </tr>
-                  <tr class="light-colored-row">
-                      <td>17:00</td>
-                      <td>End of workshop</td>
-                      <td></td>
-                  </tr>
-              </table>
-
-          </div>
-
-
-
-
-      <div class="row g-5 mt-4 border-top"></div>
-
-      <!--CALL-->
-      <h2 class="text-body-emphasis">Call for Contributions</h2>
-      <h5 class="text-body-emphasis">Submission Guidelines</h5>
-          <p>We invite submissions of extended abstracts (up to 2 pages) or full papers (up to 6 pages) in
-              IEEE conference format. All submissions will undergo a rigorous peer-review process by the
-              workshop's program committee. Accepted papers will be presented at the workshop and
-              included to a Special Issue.</p>
-          <ul>
-              <li><strong>Work-in-Progress submissions</strong> – Up to 6 pages describing novel previously-unpublished research, that will be reviewed based upon merits of rigour, originality, and significance.</li>
-              <li><strong>Extended Abstract submissions</strong> – Up to 2 pages shorter brief abstract submission.</li>
-          </ul>
-
-      <h5 class="text-body-emphasis">Important Dates</h5>
-          <ul>
-              <li><strong>Paper Submission Deadline: </strong> – [Date], [Year]</li>
-              <li><strong>Notification of Acceptance: </strong> – [Date], [Year]</li>
-              <li><strong>Camera-Ready Paper Deadline: </strong> – [Date], [Year]</li>
-              <li><strong>Workshop Date: </strong> – [Date], [Year]</li>
-              <li><strong>Paper Submission Deadline: </strong> – [Date], [Year]</li>
-          </ul>
-
-      <h5 class="text-body-emphasis">Submission Instructions</h5>
-        <p>Please submit your paper electronically via the workshop's EasyChair submission system:
-            [EasyChair Submission Link].</p>
-
-      <div class="row g-5 mt-4 border-top"></div>
-
-      <h2 class="text-body-emphasis">Organisers</h2>
-          <br>
-        <div class="row g-5">
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/MS.jpg" role="img" aria-label="Placeholder: Thumbnail" />
-
-                    <div class="card-body">
-                        <p class="card-text">akns dkaljs las laksajdaslk jasll asfs fsd sdf s asd </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-3">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row g-5 mt-4 border-top"><div>
-
-            <!--INVITED SPEAKERS-->
-            <div class="col-12">
-                <h2 class="text-body-emphasis">Invited Speakers</h2>
-                <table class="table-bordered table-sm">
-                    <tr>
-                        <th>Name/Affliation</th>
-                        <th>Details</th>
-                    </tr>
-                    <tr>
-                        <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>
-                        <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK
-                            Email:m.soorati@soton.ac.uk
-                            URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati
-                            Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Horia Maior Uni. of Nottingham</td>
-                        <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB
-                            Email: horia.maior@nottingham.ac.uk
-                            URL: http://horiamaior.com/
-
-                            Organised Events:
-                            ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-
-        </div>
+      <div class="col-12">
+        <!--SCHEDULE-->
+        <h2 class="mt-3">Invited Speakers</h2>
+        <div class="my-4 border-top"></div>
+          <table class="table-bordered table-sm">
+              <tr class="dark-colored-row">
+                  <th>Time</th>
+                  <th>Speaker</th>
+                  <th>Details</th>
+              </tr>
+              <tr>
+                  <td>9:00</td>
+                  <td>Organisers</td>
+                  <td>Welcome note & Projects Overview</td>
+              </tr>
+              <tr>
+                  <td>9:20</td>
+                  <td><b>Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
+                  <td>Title: Explainability in Swarm Robotics<br><i>Keynote speaker</i></td>
+              </tr>
+              <tr>
+                  <td>10:00</td>
+                  <td>Spotlight presentations</td>
+                  <td>Contributed papers - 5 minutes flash presentation for each poster</td>
+              </tr>
+              <tr class="light-colored-row">
+                  <td>10:30</td>
+                  <td style="text-align: center;"><i>Coffee break</i></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>11:00</td>
+                  <td>Giovanni Beltrame<br>Polytechnique Montreal (confirmed)</td>
+                  <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br>[Key-note speaker]</td>
+              </tr>
+              <tr>
+                  <td>11:40</td>
+                  <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue )</td>
+                  <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership</td>
+              </tr>
+              <tr class="light-colored-row">
+                  <td>13:00</td>
+                  <td style="text-align: center;"><i>Lunch break</i></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>14:00</td>
+                  <td>Luis Sentis<br>Univ. of Texas, Austin (confirmed)</td>
+                  <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br>[Keynote speaker]</td>
+              </tr>
+              <tr>
+                  <td>14:40</td>
+                  <td>Poster Session</td>
+                  <td></td>
+              </tr>
+              <tr class="light-colored-row">
+                  <td>15:30</td>
+                  <td style="text-align: center;"><i>Coffee break</i></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>16:00</td>
+                  <td>Panel discussion</td>
+                  <td>Theme: Swarms in our Society - Testing, Operation & Trust<br>Panel: Keynote Speakers</td>
+              </tr>
+              <tr>
+                  <td>16:50</td>
+                  <td>Organisers</td>
+                  <td>Best Poster Award & Concluding remarks</td>
+              </tr>
+              <tr class="light-colored-row">
+                  <td>17:00</td>
+                  <td>End of workshop</td>
+                  <td></td>
+              </tr>
+          </table>
 
       </div>
 
 
+      <div class="col-12">
+        <!--CALL-->
+        <h2 class="mt-3">Call for Contributions</h2>
+        <div class="my-4 border-top"></div>
+        <h5>Submission Guidelines</h5>
+            <p>We invite submissions of extended abstracts (up to 2 pages) or full papers (up to 6 pages) in
+                IEEE conference format. All submissions will undergo a rigorous peer-review process by the
+                workshop's program committee. Accepted papers will be presented at the workshop and
+                included to a Special Issue.</p>
+            <ul>
+                <li><strong>Work-in-Progress submissions</strong> Up to 6 pages describing novel previously-unpublished research, that will be reviewed based upon merits of rigour, originality, and significance.</li>
+                <li><strong>Extended Abstract submissions</strong> Up to 2 pages shorter brief abstract submission.</li>
+            </ul>
+
+        <h5>Important Dates</h5>
+            <ul>
+                <li><strong>Paper Submission Deadline: </strong> [Date], [Year]</li>
+                <li><strong>Notification of Acceptance: </strong> [Date], [Year]</li>
+                <li><strong>Camera-Ready Paper Deadline: </strong> [Date], [Year]</li>
+                <li><strong>Workshop Date: </strong> [Date], [Year]</li>
+                <li><strong>Paper Submission Deadline: </strong> [Date], [Year]</li>
+            </ul>
+
+        <h5>Submission Instructions</h5>
+          <p>Please submit your paper electronically via the workshop's EasyChair submission system:
+              [EasyChair Submission Link].</p>
+
+      </div>
+
+      <div class="col-12">
+        <h2 class="mt-3">Organisers</h2>
+        <div class="my-4 border-top"></div>
+        <div class="row g-3">
+          <div class="col-md-4">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/MS.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+
+                  <div class="card-body">
+                      <p class="card-text"><strong>Mohammad Soorati</strong><br>Univ. of Southampton</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/HM.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+
+                  <div class="card-body">
+                      <p class="card-text"><strong>Horia Maior</strong><br>Univ. of Nottingham</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/MN.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+
+                  <div class="card-body">
+                      <p class="card-text"><strong>Mohammad Soorati</strong><br>Bournemouth Uni.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="col-12 mt-5">
+          <table class="table-bordered table-sm">
+              <tr>
+                  <th>Name/Affliation</th>
+                  <th>Details</th>
+              </tr>
+              <tr>
+                  <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>
+                  <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK
+                      Email:m.soorati@soton.ac.uk
+                      URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati
+                      Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms
+                  </td>
+              </tr>
+              <tr>
+                  <td>Horia Maior Uni. of Nottingham</td>
+                  <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB
+                      Email: horia.maior@nottingham.ac.uk
+                      URL: http://horiamaior.com/
+
+                      Organised Events:
+                      ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.
+                  </td>
+              </tr>
+          </table>
+      </div>
     </div>
+
   </main>
   <footer class="pt-5 my-5 text-body-secondary border-top">
-      IROS 2024 Workshop on Trustworthy Human-swarm Interaction
+      IROS 2024 Workshop on Trustworthy Human-swarm Interaction &copy; 2024
   </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
