@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="HARIS simulator, research, University of Southampton, ECS, AIC">
-    <title>IROS 2024 Workshop | Trustworthy Human-swarm Interaction</title>
+    <title>IROS 2024 Workshop | Trustworthy Human-Swarm Interaction</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
@@ -104,35 +104,36 @@
   </symbol>
 </svg>
 
-<div class="col-lg-6 mx-auto p-4 py-md-5">
-  <header class="d-flex align-items-center pb-3">
-    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none" style="margin-left: auto; margin-right: auto;">
-      <svg class="bi me-2" width="32" height="32"><use xlink:href="#haris_logo"/></svg>
-      <span class="fs-4 fw-bold">Trustworthy Human-swarm Interaction</span>
+<div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto p-4 py-md-5">
+  <header class="d-flex align-items-center pb-md-3">
+    <a href="/" class="d-flex align-items-center text-body text-decoration-none" style="margin-left: auto; margin-right: auto;">
+      <svg class="bi me-2 d-none d-md-block" width="32" height="32"><use xlink:href="#haris_logo"/></svg>
+      <span class="fs-1 fw-bold text-center">Trustworthy Human-Swarm Interaction</span>
     </a>
   </header>
 
 
   <main>
-    <div class="row g-3">
+    <div class="row g-md-3">
       <!--IMAGE AND TITLE-->
       <!-- Not sure if this is a sensible way of padding the edges -WH -->
       <div class="col-md-1"></div>
-      <div class="col-md-5 pt-5">
+      <div class="col-md-5 pt-md-5">
         <p class="fs-2 fw-bold" style="text-align: center;">IROS 2024 Full Day Workshop</p>
         <br>
         <p class="fs-5" style="text-align: center;">October 15th 2024</p>
-        <br>
       </div>
 
       <div class="col-md-1"></div>
 
       <div class="col-md-4">
           <div style="text-align: center;">
-              <img src="iros2024workshop.jpg" class="shadow-lg p-1 bg-body rounded img-fluid my-2" alt="Human Swarm Teaming" width="320" style="border:solid 1px black;">
+              <img src="iros2024workshop.jpg" class="shadow-lg p-1 bg-body rounded img-fluid my-md-2" alt="Human Swarm Teaming" width="320" style="border:solid 1px black;">
           </div>
       </div>
       <div class="col-md-1"></div>
+      
+      <div class="col-12 mt-4 mt-md-2"></div>
 
 
       <div class="col-12">
@@ -176,79 +177,78 @@
         <!--SCHEDULE-->
         <h2 class="mt-3">Invited Speakers</h2>
         <div class="my-4 border-top"></div>
-          <table class="table-bordered table-sm">
-              <tr class="dark-colored-row">
-                  <th>Time</th>
-                  <th>Speaker</th>
-                  <th>Details</th>
-              </tr>
-              <tr>
-                  <td>9:00</td>
-                  <td>Organisers</td>
-                  <td>Welcome note & Projects Overview</td>
-              </tr>
-              <tr>
-                  <td>9:20</td>
-                  <td><b>Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
-                  <td>Title: Explainability in Swarm Robotics<br><i>Keynote speaker</i></td>
-              </tr>
-              <tr>
-                  <td>10:00</td>
-                  <td>Spotlight presentations</td>
-                  <td>Contributed papers - 5 minutes flash presentation for each poster</td>
-              </tr>
-              <tr class="light-colored-row">
-                  <td>10:30</td>
-                  <td style="text-align: center;"><i>Coffee break</i></td>
-                  <td></td>
-              </tr>
-              <tr>
-                  <td>11:00</td>
-                  <td>Giovanni Beltrame<br>Polytechnique Montreal (confirmed)</td>
-                  <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br>[Key-note speaker]</td>
-              </tr>
-              <tr>
-                  <td>11:40</td>
-                  <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue )</td>
-                  <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership</td>
-              </tr>
-              <tr class="light-colored-row">
-                  <td>13:00</td>
-                  <td style="text-align: center;"><i>Lunch break</i></td>
-                  <td></td>
-              </tr>
-              <tr>
-                  <td>14:00</td>
-                  <td>Luis Sentis<br>Univ. of Texas, Austin (confirmed)</td>
-                  <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br>[Keynote speaker]</td>
-              </tr>
-              <tr>
-                  <td>14:40</td>
-                  <td>Poster Session</td>
-                  <td></td>
-              </tr>
-              <tr class="light-colored-row">
-                  <td>15:30</td>
-                  <td style="text-align: center;"><i>Coffee break</i></td>
-                  <td></td>
-              </tr>
-              <tr>
-                  <td>16:00</td>
-                  <td>Panel discussion</td>
-                  <td>Theme: Swarms in our Society - Testing, Operation & Trust<br>Panel: Keynote Speakers</td>
-              </tr>
-              <tr>
-                  <td>16:50</td>
-                  <td>Organisers</td>
-                  <td>Best Poster Award & Concluding remarks</td>
-              </tr>
-              <tr class="light-colored-row">
-                  <td>17:00</td>
-                  <td>End of workshop</td>
-                  <td></td>
-              </tr>
-          </table>
-
+        <table class="table-bordered table-sm">
+            <tr class="dark-colored-row">
+                <th>Time</th>
+                <th>Speaker</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Organisers</td>
+                <td>Welcome note & Projects Overview</td>
+            </tr>
+            <tr>
+                <td>9:20</td>
+                <td><b>Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
+                <td>Title: Explainability in Swarm Robotics<br><i>Keynote speaker</i></td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>Spotlight presentations</td>
+                <td>Contributed papers - 5 minutes flash presentation for each poster</td>
+            </tr>
+            <tr class="light-colored-row">
+                <td>10:30</td>
+                <td style="text-align: center;"><i>Coffee break</i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>Giovanni Beltrame<br>Polytechnique Montreal (confirmed)</td>
+                <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br>[Key-note speaker]</td>
+            </tr>
+            <tr>
+                <td>11:40</td>
+                <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue )</td>
+                <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership</td>
+            </tr>
+            <tr class="light-colored-row">
+                <td>13:00</td>
+                <td style="text-align: center;"><i>Lunch break</i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Luis Sentis<br>Univ. of Texas, Austin (confirmed)</td>
+                <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br>[Keynote speaker]</td>
+            </tr>
+            <tr>
+                <td>14:40</td>
+                <td>Poster Session</td>
+                <td></td>
+            </tr>
+            <tr class="light-colored-row">
+                <td>15:30</td>
+                <td style="text-align: center;"><i>Coffee break</i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Panel discussion</td>
+                <td>Theme: Swarms in our Society - Testing, Operation & Trust<br>Panel: Keynote Speakers</td>
+            </tr>
+            <tr>
+                <td>16:50</td>
+                <td>Organisers</td>
+                <td>Best Poster Award & Concluding remarks</td>
+            </tr>
+            <tr class="light-colored-row">
+                <td>17:00</td>
+                <td>End of workshop</td>
+                <td></td>
+            </tr>
+        </table>
       </div>
 
 
