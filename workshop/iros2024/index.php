@@ -115,6 +115,7 @@
 
   <main>
     <div class="row g-md-3">
+      <div class="col-12 mt-4 mt-md-1"></div>
       <!--IMAGE AND TITLE-->
       <!-- Not sure if this is a sensible way of padding the edges -WH -->
       <div class="col-md-1"></div>
