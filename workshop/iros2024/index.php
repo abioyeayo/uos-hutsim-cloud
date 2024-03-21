@@ -213,11 +213,11 @@
             <tr class="light-colored-row">
                 <td>10:30</td>
                 <td colspan="2"><i>Coffee break</i></td>
-                <td></td>
             </tr>
             <tr>
                 <td>11:00</td>
                 <td>Poster session</td>
+                <td></td>
             </tr>
             <tr>
                 <td>11:30</td>
@@ -238,7 +238,6 @@
             <tr class="light-colored-row">
                 <td>13:00</td>
                 <td colspan="2"><i>End</i></td>
-                <td></td>
             </tr>
         </table>
       </div>
