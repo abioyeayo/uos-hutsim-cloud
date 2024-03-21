@@ -134,3 +134,31 @@
     </body>
 </html>
 
+
+<!--      <div class="col-12 mt-5">-->
+<!--          <table class="table-bordered table-sm">-->
+<!--              <tr>-->
+<!--                  <th>Name/Affliation</th>-->
+<!--                  <th>Details</th>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>-->
+<!--                  <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK-->
+<!--                      Email:m.soorati@soton.ac.uk-->
+<!--                      URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati-->
+<!--                      Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms-->
+<!--                  </td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td>Horia Maior Uni. of Nottingham</td>-->
+<!--                  <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB-->
+<!--                      Email: horia.maior@nottingham.ac.uk-->
+<!--                      URL: http://horiamaior.com/-->
+<!---->
+<!--                      Organised Events:-->
+<!--                      ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.-->
+<!--                  </td>-->
+<!--              </tr>-->
+<!--          </table>-->
+<!--      </div>-->
+<!--    </div>-->

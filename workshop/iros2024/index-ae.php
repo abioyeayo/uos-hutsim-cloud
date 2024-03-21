@@ -190,54 +190,63 @@
                 <td>Welcome note & Projects Overview</td>
             </tr>
             <tr>
-                <td>9:10</td>
-                <td><b>Giovanni Beltrame</b><br>Polytechnique Montreal (confirmed)</td>
-                <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br><i>Keynote speaker</i></td>
-
-            </tr>
-            <tr>
-                <td>9:30</td>
-                <td><b>Luis Sentis</b><br>Univ. of Texas, Austin (confirmed)</td>
-                <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br><i>Keynote speaker</i></td>
-            </tr>
-            <tr>
-                <td>9:50</td>
+                <td>9:20</td>
                 <td><b>Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
                 <td>Title: Explainability in Swarm Robotics<br><i>Keynote speaker</i></td>
             </tr>
             <tr>
-                <td>10:10</td>
-                <td><b>[NEW SPEAKER TBC]</b><br>[TODO]</td>
-                <td>[TODO]<br><i>Keynote speaker</i></td>
+                <td>10:00</td>
+                <td>Spotlight presentations</td>
+                <td>Contributed papers - 5 minutes flash presentation for each poster</td>
             </tr>
             <tr class="light-colored-row">
                 <td>10:30</td>
-                <td colspan="2"><i>Coffee break</i></td>
+                <td style="text-align: center;"><i>Coffee break</i></td>
                 <td></td>
             </tr>
             <tr>
                 <td>11:00</td>
-                <td>Poster session</td>
+                <td><b>Giovanni Beltrame</b><br>Polytechnique Montreal (confirmed)</td>
+                <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br><i>Keynote speaker</i></td>
             </tr>
             <tr>
-                <td>11:30</td>
+                <td>11:40</td>
                 <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue)</td>
-                <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership (based on <a href="https://tas.ac.uk/responsible-research-innovation/rri-prompts-and-practice-cards/">https://tas.ac.uk/responsible-research-innovation/rri-prompts-and-practice-cards/</a>>)
-                </td>
+                <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership</td>
+            </tr>
+            <tr class="light-colored-row">
+                <td>13:00</td>
+                <td style="text-align: center;"><i>Lunch break</i></td>
+                <td></td>
             </tr>
             <tr>
-                <td>12:20</td>
+                <td>14:00</td>
+                <td><b>Luis Sentis</b><br>Univ. of Texas, Austin (confirmed)</td>
+                <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br><i>Keynote speaker</i></td>
+            </tr>
+            <tr>
+                <td>14:40</td>
+                <td>Poster Session</td>
+                <td></td>
+            </tr>
+            <tr class="light-colored-row">
+                <td>15:30</td>
+                <td style="text-align: center;"><i>Coffee break</i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:00</td>
                 <td>Panel discussion</td>
                 <td>Theme: Swarms in our Society - Testing, Operation & Trust<br>Panel: Keynote Speakers</td>
             </tr>
             <tr>
-                <td>12:50</td>
+                <td>16:50</td>
                 <td>Organisers</td>
                 <td>Best Poster Award & Concluding remarks</td>
             </tr>
             <tr class="light-colored-row">
-                <td>13:00</td>
-                <td colspan="2"><i>End</i></td>
+                <td>17:00</td>
+                <td>End of workshop</td>
                 <td></td>
             </tr>
         </table>
@@ -304,137 +313,46 @@
                   </div>
               </div>
           </div>
-            <div class="col-12 col-sm-4 col-md-3">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AL.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+          <div class="col-12 col-sm-4 col-md-3">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AL.jpg" role="img" aria-label="Placeholder: Thumbnail" />
 
-                    <div class="card-body">
-                        <p class="card-text"><strong>Aleksandra Landowska</strong><br>University of Nottingham</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 col-md-3">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AA.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+                  <div class="card-body">
+                      <p class="card-text"><strong>Aleksandra Landowska</strong><br>University of Nottingham</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AA.jpg" role="img" aria-label="Placeholder: Thumbnail" />
 
-                    <div class="card-body">
-                        <p class="card-text"><strong>Ayodeji Abioye</strong><br>University of Southampton</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 col-md-3">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/WH.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+                  <div class="card-body">
+                      <p class="card-text"><strong>Ayodeji Abioye</strong><br>University of Southampton</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/PH.png" role="img" aria-label="Placeholder: Thumbnail" />
 
-                    <div class="card-body">
-                        <p class="card-text"><strong>William Hunt</strong><br>University of Southampton</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 col-md-3">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/Aymoide.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+                  <div class="card-body">
+                      <p class="card-text"><strong>William Hunt</strong><br>University of Southampton</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/PH.png" role="img" aria-label="Placeholder: Thumbnail" />
 
-                    <div class="card-body">
-                        <p class="card-text"><strong>Ayomide Agunloye</strong><br>University of Southampton</p>
-                    </div>
-                </div>
-            </div>
+                  <div class="card-body">
+                      <p class="card-text"><strong>Ayomide Agunloye</strong><br>University of Southampton</p>
+                  </div>
+              </div>
           </div>
         </div>
-        
-            <!-- <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AA.jpg" role="img" aria-label="Placeholder: Thumbnail" />
-
-                    <div class="card-body">
-                        <p class="card-text"><strong>Ayodeji Abioye</strong><br>University of Southampton</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/WH.jpg" role="img" aria-label="Placeholder: Thumbnail" />
-
-                    <div class="card-body">
-                        <p class="card-text"><strong>William Hunt</strong><br>University of Southampton</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/Aymoide.jpg" role="img" aria-label="Placeholder: Thumbnail" />
-
-                    <div class="card-body">
-                        <p class="card-text"><strong>Aymoide Agunloye</strong><br>University of Southampton</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div> -->
-
-<!--          OMITTED SPEAKERS AS WE DO NOT HAVE GOOD PHOTOS FOR ALL OF THEM -->
-<!--          <h2 class="mt-3">Speakers</h2>-->
-<!--          <div class="my-4 border-top"></div>-->
-<!--          <div class="row g-3">-->
-<!--              <div class="col-md-4">-->
-<!--                  <div class="card shadow-sm">-->
-<!--                      <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/" role="img" aria-label="Placeholder: Thumbnail" />-->
-<!---->
-<!--                      <div class="card-body">-->
-<!--                          <p class="card-text"><strong>Mohammad Soorati</strong><br>University of Southampton</p>-->
-<!--                      </div>-->
-<!--                  </div>-->
-<!--              </div>-->
-<!--              <div class="col-md-4">-->
-<!--                  <div class="card shadow-sm">-->
-<!--                      <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/" role="img" aria-label="Placeholder: Thumbnail" />-->
-<!---->
-<!--                      <div class="card-body">-->
-<!--                          <p class="card-text"><strong>Horia Maior</strong><br>University of Nottingham</p>-->
-<!--                      </div>-->
-<!--                  </div>-->
-<!--              </div>-->
-<!--              <div class="col-md-4">-->
-<!--                  <div class="card shadow-sm">-->
-<!--                      <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/" role="img" aria-label="Placeholder: Thumbnail" />-->
-<!---->
-<!--                      <div class="card-body">-->
-<!--                          <p class="card-text"><strong>Mohammad Naiseh</strong><br>Bournemouth University</p>-->
-<!--                      </div>-->
-<!--                  </div>-->
-<!--              </div>-->
-<!--          </div>-->
-<!--      </div>-->
+      </div>
 
 
-<!--      <div class="col-12 mt-5">-->
-<!--          <table class="table-bordered table-sm">-->
-<!--              <tr>-->
-<!--                  <th>Name/Affliation</th>-->
-<!--                  <th>Details</th>-->
-<!--              </tr>-->
-<!--              <tr>-->
-<!--                  <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>-->
-<!--                  <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK-->
-<!--                      Email:m.soorati@soton.ac.uk-->
-<!--                      URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati-->
-<!--                      Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms-->
-<!--                  </td>-->
-<!--              </tr>-->
-<!--              <tr>-->
-<!--                  <td>Horia Maior Uni. of Nottingham</td>-->
-<!--                  <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB-->
-<!--                      Email: horia.maior@nottingham.ac.uk-->
-<!--                      URL: http://horiamaior.com/-->
-<!---->
-<!--                      Organised Events:-->
-<!--                      ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.-->
-<!--                  </td>-->
-<!--              </tr>-->
-<!--          </table>-->
-<!--      </div>-->
-<!--    </div>-->
 
       <div class="col-12">
           <h4 class="mt-5">Affiliations</h4>
