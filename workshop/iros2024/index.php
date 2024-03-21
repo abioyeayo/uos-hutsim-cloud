@@ -206,12 +206,12 @@
             </tr>
             <tr>
                 <td>11:00</td>
-                <td>Giovanni Beltrame<br>Polytechnique Montreal (confirmed)</td>
-                <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br>[Key-note speaker]</td>
+                <td><b>Giovanni Beltrame</b><br>Polytechnique Montreal (confirmed)</td>
+                <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br><i>Keynote speaker</i></td>
             </tr>
             <tr>
                 <td>11:40</td>
-                <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue )</td>
+                <td>Focus groups<br>(Outcomes will feed into joint workshop report and/or paper in Special Issue)</td>
                 <td>Small working groups focusing on Responsible, Research Innovation (RRI) on different aspects of Human-Swarm partnership</td>
             </tr>
             <tr class="light-colored-row">
@@ -221,8 +221,8 @@
             </tr>
             <tr>
                 <td>14:00</td>
-                <td>Luis Sentis<br>Univ. of Texas, Austin (confirmed)</td>
-                <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br>[Keynote speaker]</td>
+                <td><b>Luis Sentis</b><br>Univ. of Texas, Austin (confirmed)</td>
+                <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br><i>Keynote speaker</i></td>
             </tr>
             <tr>
                 <td>14:40</td>
@@ -291,7 +291,7 @@
                   <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/MS.jpg" role="img" aria-label="Placeholder: Thumbnail" />
 
                   <div class="card-body">
-                      <p class="card-text"><strong>Mohammad Soorati</strong><br>Univ. of Southampton</p>
+                      <p class="card-text"><strong>Mohammad Soorati</strong><br>University of Southampton</p>
                   </div>
               </div>
           </div>
@@ -300,7 +300,7 @@
                   <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/HM.jpg" role="img" aria-label="Placeholder: Thumbnail" />
 
                   <div class="card-body">
-                      <p class="card-text"><strong>Horia Maior</strong><br>Univ. of Nottingham</p>
+                      <p class="card-text"><strong>Horia Maior</strong><br>University of Nottingham</p>
                   </div>
               </div>
           </div>
@@ -309,41 +309,71 @@
                   <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/MN.jpg" role="img" aria-label="Placeholder: Thumbnail" />
 
                   <div class="card-body">
-                      <p class="card-text"><strong>Mohammad Naiseh</strong><br>Bournemouth Uni.</p>
+                      <p class="card-text"><strong>Mohammad Naiseh</strong><br>Bournemouth University</p>
                   </div>
               </div>
           </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AL.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+
+                    <div class="card-body">
+                        <p class="card-text"><strong>Aleksandra Landowska</strong><br>University of Nottingham</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/AA.jpg" role="img" aria-label="Placeholder: Thumbnail" />
+
+                    <div class="card-body">
+                        <p class="card-text"><strong>Ayodeji Abioye</strong><br>University of Southampton</p>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
 
 
-      <div class="col-12 mt-5">
-          <table class="table-bordered table-sm">
-              <tr>
-                  <th>Name/Affliation</th>
-                  <th>Details</th>
-              </tr>
-              <tr>
-                  <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>
-                  <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK
-                      Email:m.soorati@soton.ac.uk
-                      URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati
-                      Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms
-                  </td>
-              </tr>
-              <tr>
-                  <td>Horia Maior Uni. of Nottingham</td>
-                  <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB
-                      Email: horia.maior@nottingham.ac.uk
-                      URL: http://horiamaior.com/
+<!--      <div class="col-12 mt-5">-->
+<!--          <table class="table-bordered table-sm">-->
+<!--              <tr>-->
+<!--                  <th>Name/Affliation</th>-->
+<!--                  <th>Details</th>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td>Mohammad Soorati (Primary Contact) Univ. of Southampton</td>-->
+<!--                  <td>Address: Room 4013, Building 32, University Road, Southampton SO17 1TR, UK-->
+<!--                      Email:m.soorati@soton.ac.uk-->
+<!--                      URL: https://www.southampton.ac.uk/people/5xvn8k/doctor-mohammad-soorati-->
+<!--                      Organised Events: Local co-chair of AAMAS 2023, Co-organiser of Trustworthy Autonomous Systems Symposium, UK Workshop on Trustworthy Swarms-->
+<!--                  </td>-->
+<!--              </tr>-->
+<!--              <tr>-->
+<!--                  <td>Horia Maior Uni. of Nottingham</td>-->
+<!--                  <td>Address: School of Computer Science, Wollaton Rd, Lenton, Nottingham NG8 1BB-->
+<!--                      Email: horia.maior@nottingham.ac.uk-->
+<!--                      URL: http://horiamaior.com/-->
+<!---->
+<!--                      Organised Events:-->
+<!--                      ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.-->
+<!--                  </td>-->
+<!--              </tr>-->
+<!--          </table>-->
+<!--      </div>-->
+<!--    </div>-->
 
-                      Organised Events:
-                      ACM CHI, CHIWORK, MobileHCI, Trustworthy Autonomous systems TAS.
-                  </td>
-              </tr>
-          </table>
-      </div>
-    </div>
+        <div class="col-12 ps-4 pe-4">
+            <h2 class="mt-3">Affiliations</h2>
+            <div class="my-4 border-top"></div>
+            <div>
+                <img src="logos/B09-university-of-southampton-logo.png" class="rounded float-left me-5" width="300" alt="University of Southampton Logo">
+                <img src="logos/nottingham-logo.png" class="rounded float-left me-5" width="300" alt="University of Nottingham Logo">
+                <img src="logos/B09-bournemouth-university-logo.png" class="rounded float-left me-5" width="300" alt="Bournemouth University Logo">
+<!--                <img src="logos/B09-dstl-logo.png" class="rounded float-left me-5" width="150" alt="DSTL Logo">-->
+<!--                <img src="logos/tas-hub-logo.png" class="rounded float-left me-5" width="150" alt="TAS Hub Logo">-->
+            </div>
+        </div>
 
   </main>
   <footer class="pt-5 my-5 text-body-secondary border-top">
