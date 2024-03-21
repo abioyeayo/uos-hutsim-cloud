@@ -309,7 +309,7 @@
                   <img class="bd-placeholder-img card-img-top" width="100%" src="Portraits/MN.jpg" role="img" aria-label="Placeholder: Thumbnail" />
 
                   <div class="card-body">
-                      <p class="card-text"><strong>Mohammad Soorati</strong><br>Bournemouth Uni.</p>
+                      <p class="card-text"><strong>Mohammad Naiseh</strong><br>Bournemouth Uni.</p>
                   </div>
               </div>
           </div>
