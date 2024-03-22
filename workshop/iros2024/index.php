@@ -164,12 +164,12 @@
               <li><strong>Real World Use Cases of Human Swarm Systems:</strong> Contributions describing case studies of swarm systems in specific application areas (e.g. agri-food, disaster response, maintenance), describing specific challenges and opportunities.</li>
               <li><strong>Responsible Research and Innovation (Ethics) in Human-Swarm Systems:</strong> Papers focusing on the ethical implications, responsibilities, and societal impact of deploying swarm-based systems in various environments.</li>
               <li><strong>Measuring Human and Performance in Human Swarm Systems:</strong> Innovative approaches to incorporating human feedback and control into swarm robotics operations to enhance performance and safety.</li>
-              <li><strong>Novel Interaction Design Capabilities in Human Swarm Interaction:</strong> Developing user-friendly interfaces and visualisation tools to support human operators during tasks. New and exciting ways to interact with drone systems (e.g. VR/Gesture-based human-swarm interaction).</li>
-              <li><strong>Verification and Formal Methods in Human Swarm Systems.</strong></li>
-              <li><strong>Technological Advancements in Swarm Robot.</strong></li>
+              <li><strong>Novel Interaction Design Capabilities in Human Swarm Interaction:</strong> Developing user-friendly interfaces and visualisation tools to support human operators during tasks. New and exciting ways to interact with drone systems (e.g. VR/Gesture-based human-swarm interaction)</li>
+              <li><strong>Verification and Formal Methods in Human Swarm Systems.</strong> Using model checking and probabilistic models for verifying the swarm performance.</li>
+              <li><strong>Collective Behaviour in Robot Swarms.</strong> Algorithms and novel methods of collective decision making and swarm intelligence approaches to improve performance or robustness in robot swarms.</li>
               <li><strong>Trust and Transparency in Swarm Behaviour:</strong> Methods and techniques to enhance the trustworthiness and transparency of swarm systems. Robustness and Reliability in Extreme Environments.</li>
-              <li><strong>Machine Learning Applications to Human-Swarm Interaction:</strong> Novel applications of machine learning for controlling, understanding, and interacting with robots swarms.</li>
-              <li><strong>Specialised Brain-Swarm Interaction and Control Interfaces:</strong> Using neurotechnology (such as EEG or fNIRS) to understand neural activity of cognitive functions during human-swarm interaction. Employing BCI (brain-computer-interfaces) technology for evaluating HSIs, control, and neurofeedback.</li>
+              <li><strong>Machine Learning Applications to Human-Swarm Interaction:</strong> Novel applications of machine learning for controlling, understanding and interacting with robots swarms.</li>
+              <li><strong>Specialised Brain-Swarm Interaction and Control Interfaces:</strong> Using neurotechnology (such as EEG or fNIRS) to understand the neural activity of cognitive functions during human-swarm interaction. Employing BCI (brain-computer-interfaces) technology for evaluating human-swarm interaction, control and neurofeedback.</li>
           </ul>
       </div>
     

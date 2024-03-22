@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workshop/iros2024/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/workshop/iros2024/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711126930476</updated>
-      <workItem from="1711126932166" duration="683000" />
+      <workItem from="1711126932166" duration="1469000" />
     </task>
     <servers />
   </component>
