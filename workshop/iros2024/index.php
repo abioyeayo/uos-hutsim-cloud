@@ -120,7 +120,7 @@
       <!-- Not sure if this is a sensible way of padding the edges -WH -->
       <div class="col-md-1"></div>
       <div class="col-md-5 pt-md-5">
-        <p class="fs-2 fw-bold" style="text-align: center;">IROS 2024 Full Day Workshop</p>
+        <p class="fs-2 fw-bold" style="text-align: center;">IROS 2024 Half Day Workshop</p>
         <br>
         <p class="fs-5" style="text-align: center;">October 15th 2024</p>
       </div>
@@ -191,24 +191,23 @@
             </tr>
             <tr>
                 <td>9:10</td>
-                <td><b>Giovanni Beltrame</b><br>Polytechnique Montreal (confirmed)</td>
+                <td><b>Prof Giovanni Beltrame</b><br>Polytechnique Montreal (confirmed)</td>
                 <td>Swarm-slam: Sparse decentralized collaborative simultaneous localization and mapping framework for multi-robot systems<br><i>Keynote speaker</i></td>
-
             </tr>
             <tr>
                 <td>9:30</td>
-                <td><b>Luis Sentis</b><br>Univ. of Texas, Austin (confirmed)</td>
+                <td><b>Prof Luis Sentis</b><br>Univ. of Texas, Austin (confirmed)</td>
                 <td>Mental Workload Estimation During Human Multi-Robot Search Teaming using Wearable Thin Film EEG Sensors<br><i>Keynote speaker</i></td>
             </tr>
             <tr>
                 <td>9:50</td>
-                <td><b>Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
+                <td><b>Dr Amro Najjar</b><br>Luxembourg Institute of Science and Technology</td>
                 <td>Title: Explainability in Swarm Robotics<br><i>Keynote speaker</i></td>
             </tr>
             <tr>
                 <td>10:10</td>
-                <td><b>[NEW SPEAKER TBC]</b><br>[TODO]</td>
-                <td>[TODO]<br><i>Keynote speaker</i></td>
+                <td><b>Dr Eliseo Ferrante</b><br>Vrije University Amsterdam</td>
+                <td>Scaling swarm to real-world applications<br><i>Keynote speaker</i></td>
             </tr>
             <tr class="light-colored-row">
                 <td>10:30</td>
@@ -231,13 +230,14 @@
                 <td>Theme: Swarms in our Society - Testing, Operation & Trust<br>Panel: Keynote Speakers</td>
             </tr>
             <tr>
-                <td>12:50</td>
+                <td>12:55</td>
                 <td>Organisers</td>
                 <td>Best Poster Award & Concluding remarks</td>
             </tr>
             <tr class="light-colored-row">
                 <td>13:00</td>
-                <td colspan="2"><i>End</i></td>
+                <td colspan="2"><i>End of Workshop</i></td>
+                <td></td>
             </tr>
         </table>
       </div>
@@ -259,16 +259,16 @@
 
         <h5>Important Dates</h5>
             <ul>
-                <li><strong>Paper Submission Deadline: </strong> [Date], [Year]</li>
-                <li><strong>Notification of Acceptance: </strong> [Date], [Year]</li>
-                <li><strong>Camera-Ready Paper Deadline: </strong> [Date], [Year]</li>
-                <li><strong>Workshop Date: </strong> [Date], [Year]</li>
-                <li><strong>Paper Submission Deadline: </strong> [Date], [Year]</li>
+                <li><strong>Paper Submission Deadline: </strong> August 31st (23:59 AoE)  </li>
+                <li><strong>Notification of Acceptance: </strong> September 20th</li>
+                <li><strong>Camera-Ready Paper Deadline: </strong> October 1st</li>
+                <li><strong>Workshop Date: </strong> October 14th</li>
             </ul>
 
         <h5>Submission Instructions</h5>
           <p>Please submit your paper electronically via the workshop's EasyChair submission system:
-              [EasyChair Submission Link].</p>
+              <a href="https://easychair.org/my/conference?conf=thus24" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">https://easychair.org/my/conference?conf=thus24</a>
+          </p>
 
       </div>
 
