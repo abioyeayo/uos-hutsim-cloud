@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Starter Template · Bootstrap v5.3</title>
+    <title>SooratiLab</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/starter-template/">
 
@@ -29,6 +29,27 @@
 
 
     <style>
+         header {
+             font-size: 2em;
+             color: blue;
+         }
+
+        body {
+            background-color: #EEEEEE;
+        }
+
+
+        .topButtons {
+            margin-right: 10px; /* Adjust this value as needed */
+            color: #00ADB5; /* Change the text color */
+            background-color: #393E46; /* Change the background color */
+            border-radius: 25px; /* Add border radius to make the button round-cornered */
+            padding: 10px 20px; /* Add some padding */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make the text bold *
+        }
+
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -176,97 +197,101 @@
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Simple header</span>
+        <span class="fs-4">SooratiLab</span>
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="topButtons" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="topButtons">Team</a></li>
+        <li class="nav-item"><a href="#" class="topButtons">Publications</a></li>
+        <li class="nav-item"><a href="#" class="topButtons">Contact</a></li>
+        <li class="nav-item"><a href="#" class="topButtons">Media</a></li>
       </ul>
     </header>
 
   <main>
-    <h1 class="text-body-emphasis">Get started with Bootstrap</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
-
-    <div class="mb-5">
-      <a href="/docs/5.3/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
-    </div>
+    <h1 class="text-body-emphasis">Swarm Robotics Research</h1>
+    <p class="fs-5 col-md-8">At SooratiLab, we specialize in swarm robotics research. Swarm robotics is a field of robotics that deals with the coordinated behavior of large numbers of relatively simple robots, a distributed system which is inspired by nature, specifically biological systems. The robots in a swarm can interact with one another, with the environment, and they can perform tasks that a single robot could not accomplish. Our research aims to understand and harness the potential of swarm robotics to solve complex real-world problems.</p>
 
     <hr class="col-3 col-md-2 mb-5">
 
     <div class="row g-5">
       <div class="col-md-6">
-        <h2 class="text-body-emphasis">Starter projects</h2>
-        <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
-        <ul class="list-unstyled ps-0">
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap npm starter
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Parcel starter
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Vite starter
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack" rel="noopener" target="_blank">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Webpack starter
-            </a>
-          </li>
-        </ul>
+        <h2 class="text-body-emphasis">News</h2>
+        <div class="d-flex flex-wrap justify-content-between">
+          <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
+            <div class="card-body">
+              <a class="icon-link mb-1" href="https://www.example.com/news/robotics-achievement-1" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                New swarm path planning algorithm
+              </a>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
+            <div class="card-body">
+              <a class="icon-link mb-1" href="https://www.example.com/news/machine-learning-achievement-1" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                Deep learning in maintenance
+              </a>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
+            <div class="card-body">
+              <a class="icon-link mb-1" href="https://www.example.com/news/robotics-achievement-2" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                Won international robotics challenge
+              </a>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
+            <div class="card-body">
+              <a class="icon-link mb-1" href="https://www.example.com/news/machine-learning-achievement-2" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                Real-time object detection model
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
+
       <div class="col-md-6">
-        <h2 class="text-body-emphasis">Guides</h2>
-        <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-        <ul class="list-unstyled ps-0">
-          <li>
-            <a class="icon-link mb-1" href="/docs/5.3/getting-started/introduction/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap quick start guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="/docs/5.3/getting-started/webpack/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Webpack guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="/docs/5.3/getting-started/parcel/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Parcel guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="/docs/5.3/getting-started/vite/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Bootstrap Vite guide
-            </a>
-          </li>
-          <li>
-            <a class="icon-link mb-1" href="/docs/5.3/getting-started/contribute/">
-              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-              Contributing to Bootstrap
-            </a>
-          </li>
-        </ul>
+    <h2 class="text-body-emphasis">Recent Publications</h2>
+    <div class="d-flex flex-wrap justify-content-between">
+      <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
+        <div class="card-body">
+          <a class="icon-link mb-1" href="https://www.example.com/papers/paper1.pdf" rel="noopener" target="_blank">
+            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+            Swarm Robotics: A Review
+          </a>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
+        <div class="card-body">
+          <a class="icon-link mb-1" href="https://www.example.com/papers/paper2.pdf" rel="noopener" target="_blank">
+            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+            Machine Learning in Robotics: Challenges and Opportunities
+          </a>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
+        <div class="card-body">
+          <a class="icon-link mb-1" href="https://www.example.com/papers/paper3.pdf" rel="noopener" target="_blank">
+            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+            Path Planning in Swarm Robotics
+          </a>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
+        <div class="card-body">
+          <a class="icon-link mb-1" href="https://www.example.com/papers/paper4.pdf" rel="noopener" target="_blank">
+            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+            Deep Learning for Predictive Maintenance: A Case Study
+          </a>
+        </div>
       </div>
     </div>
+</div>
   </main>
   <footer class="pt-5 my-5 text-body-secondary border-top">
     Created by the Bootstrap team &middot; &copy; 2024
