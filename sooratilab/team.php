@@ -231,7 +231,7 @@
                                             <li>Aerial swarms</li>
                                             <li>Evolutionary/bio-robotics</li>
                                         </ul>
-                                        <a class="icon-link mb-1" href="https://www.example.com/team/mohammad" rel="noopener" target="_blank">
+                                        <a class="icon-link mb-1" href="team/mohammad.php" rel="noopener" target="_blank">
                                             <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
                                             Read More
                                         </a>

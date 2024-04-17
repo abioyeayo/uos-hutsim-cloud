@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/AA.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/AL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/Aymoide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/HM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/MN.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/MS.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/PH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/SF.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/WH.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/media.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/publications.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/team/mohammad.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/team/mohammad_images/ms_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sooratilab/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sooratilab/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +77,7 @@
       <workItem from="1712764733998" duration="2678000" />
       <workItem from="1712824564362" duration="116000" />
       <workItem from="1712829976970" duration="3683000" />
-      <workItem from="1713343992051" duration="4920000" />
+      <workItem from="1713343992051" duration="5526000" />
     </task>
     <servers />
   </component>
