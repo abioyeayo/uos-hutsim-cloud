@@ -201,8 +201,8 @@
       </a>
 
       <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="team.php" class="nav-link">Team</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="team.php" class="nav-link active" aria-current="page">Team</a></li>
           <li class="nav-item"><a href="publications.php" class="nav-link">Publications</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
           <li class="nav-item"><a href="media.php" class="nav-link">Media</a></li>
@@ -210,88 +210,97 @@
     </header>
 
   <main>
-    <h1 class="text-body-emphasis">Swarm Robotics Research</h1>
-    <p class="fs-5 col-md-8">At SooratiLab, we specialize in swarm robotics research. Swarm robotics is a field of robotics that deals with the coordinated behavior of large numbers of relatively simple robots, a distributed system which is inspired by nature, specifically biological systems. The robots in a swarm can interact with one another, with the environment, and they can perform tasks that a single robot could not accomplish. Our research aims to understand and harness the potential of swarm robotics to solve complex real-world problems.</p>
+    <h1 class="text-body-emphasis">Mohammad Soorati</h1>
+      <div class="row g-3">
+          <div class="col-md-8" >
+            <p> Dr Soorati is an Assistant Professor of AI at the University of Southampton. He is interested in human-swarm interaction, swarm robotics, trust in human-swarm teaming, aerial swarms, and evolutionary/bio-robotics. He is sitting on the board of Center for Machine Intelligence and Center for Robotics at the University of Southampton. His research has been covered by several international news outlets (including EuroNews, France24 and Deutsche Welle) and magazines (such as IEEE Spectrum, Robohub and Future Maisons). He is a co-investigator of an EPSRC project on 5G-connnected UAVs and project lead on eXplainable Human-swarm Systems.
+                <br>
+                He is an associate editor of ICRA, an academic editor of the PLOS ONE Journal, sponsor chair of ANTS, a member of the program committee of many high-impact conferences/journals in AI & robotics such as IJCAI, AAAI, IROS, AAMAS, Swarm Intelligence Journal, etc</p>
+          </div>
+          <div class="col-md-4" >
+              <img src="../Portraits/MS.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+      </div>
 
     <hr class="col-3 col-md-2 mb-5">
 
-    <div class="row g-5">
-      <div class="col-md-6">
-        <h2 class="text-body-emphasis">News</h2>
-        <div class="d-flex flex-wrap justify-content-between">
-          <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
-            <div class="card-body">
-              <a class="icon-link mb-1" href="https://www.example.com/news/robotics-achievement-1" rel="noopener" target="_blank">
-                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                New swarm path planning algorithm
-              </a>
-            </div>
-          </div>
-          <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
-            <div class="card-body">
-              <a class="icon-link mb-1" href="https://www.example.com/news/machine-learning-achievement-1" rel="noopener" target="_blank">
-                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                Deep learning in maintenance
-              </a>
-            </div>
-          </div>
-          <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
-            <div class="card-body">
-              <a class="icon-link mb-1" href="https://www.example.com/news/robotics-achievement-2" rel="noopener" target="_blank">
-                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                Won international robotics challenge
-              </a>
-            </div>
-          </div>
-          <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
-            <div class="card-body">
-              <a class="icon-link mb-1" href="https://www.example.com/news/machine-learning-achievement-2" rel="noopener" target="_blank">
-                <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                Real-time object detection model
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-12">
+        <div class="row g-3">
+            <!-- Example paper -->
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="card shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-12">
+                            <img src="mohammad_images/ms_1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <p class="card-text"> Self-assembly in biology is an inspiration for engineered large-scale multi-modular systems with
+                                    desirable characteristics, such as robustness, scalability, and adaptivity. Previous works have shown
+                                    that simple mobile robots can be used to emulate and study self-assembly behaviors. However, many
+                                    of these studies were restricted to rather static and inflexible aggregations in predefined shapes, and
+                                    were limited in adaptivity compared to that observed in nature. We propose a photomorphogenesis
+                                    approach for robots using our vascular morphogenesis model—a light-stimuli directed method for
+                                    multi-robot self-assembly inspired by the tissue growth of trees. Robots in the role of ‘leaves’ collect
+                                    a virtual resource that is proportional to a real, sensed environmental feature. This is then used to
+                                    build a virtual underlying network that shares a common resource throughout the whole robot
+                                    aggregate and determines where it grows or shrinks as a reaction to the dynamic environment. In our
+                                    approach the robots use supplemental bioinspired models to collectively select a leading robot to
+                                    decide who starts to self-assemble (and where), or to assemble static aggregations. The robots then
+                                    use our vascular morphogenesis model to aggregate in a directed way preferring bright areas, hence
+                                    resembling natural phototropism (growth towards light). Our main result is that the assembled
+                                    robots are adaptive and able to react to dynamic environments by collectively and autonomously
+                                    rearranging the aggregate, discarding outdated parts, and growing new ones. In representative
+                                    experiments, the self-assembling robots collectively make rational decisions on where to grow.
+                                    Cutting off parts of the aggregate triggers a self-organizing repair process in the robots, and the parts
+                                    regrow. All these capabilities of adaptivity, collective decision-making, and self-repair in our robot
+                                    self-assembly originate directly from self-organized behavior of the vascular morphogenesis model.
+                                    Our approach opens up opportunities for self-assembly with reconfiguration on short time-scales
 
+                                <a class="icon-link mb-1" href="https://iopscience.iop.org/article/10.1088/1748-3190/ab2958/pdf" rel="noopener" target="_blank">
+                                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                    Read the paper here
+                                </a>
 
-      <div class="col-md-6">
-    <h2 class="text-body-emphasis">Recent Publications</h2>
-    <div class="d-flex flex-wrap justify-content-between">
-      <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
-        <div class="card-body">
-          <a class="icon-link mb-1" href="https://www.example.com/papers/paper1.pdf" rel="noopener" target="_blank">
-            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-            Swarm Robotics: A Review
-          </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 card-body text-center" style="font-size: 1.5em;>
+                        <p class="card-text">Photomorphogenesis for robot self-assembly: adaptivity, collective decision-making, and self-repair</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example with video -->
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="card shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-12">
+                            <iframe class="img-fluid rounded-start" src="https://www.youtube.com/embed/cVCwG8aLIvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <p class="card-text"> Here is an example of a work that we have a video for. We can embed it as a youtube link.
+                                    <br>
+                                    <a class="icon-link mb-1" href="https://arxiv.org/pdf/2402.19166.pdf" rel="noopener" target="_blank">
+                                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
+                                        Read the paper here
+                                    </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 card-body text-center" style="font-size: 1.5em;>
+                            <p class="card-text">Example with a video embedded</p>
+                    </div>
+                </div>
         </div>
-      </div>
-      <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
-        <div class="card-body">
-          <a class="icon-link mb-1" href="https://www.example.com/papers/paper2.pdf" rel="noopener" target="_blank">
-            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-            Machine Learning in Robotics: Challenges and Opportunities
-          </a>
-        </div>
-      </div>
-      <div class="card mb-3" style="width: 100%; background-color: #f8f9fa;">
-        <div class="card-body">
-          <a class="icon-link mb-1" href="https://www.example.com/papers/paper3.pdf" rel="noopener" target="_blank">
-            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-            Path Planning in Swarm Robotics
-          </a>
-        </div>
-      </div>
-      <div class="card mb-3" style="width: 100%; background-color: #e9ecef;">
-        <div class="card-body">
-          <a class="icon-link mb-1" href="https://www.example.com/papers/paper4.pdf" rel="noopener" target="_blank">
-            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-            Deep Learning for Predictive Maintenance: A Case Study
-          </a>
-        </div>
-      </div>
     </div>
-</div>
+
+    </div>
+
+
+
   </main>
   <footer class="pt-5 my-5 text-body-secondary border-top">
     Created by the Bootstrap team &middot; &copy; 2024

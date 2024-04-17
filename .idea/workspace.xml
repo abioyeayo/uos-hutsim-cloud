@@ -5,6 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/AA.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/AL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/Aymoide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/HM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/MN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/MS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/PH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/SF.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/Portraits/WH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/publications.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/team/mohammad.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/team/mohammad_images/ms_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sooratilab/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sooratilab/index.php" afterDir="false" />
     </list>
@@ -37,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud",
+    "last_opened_file_path": "E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud/sooratilab/team",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -48,9 +62,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\team" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\team\mohammad_images" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\Portraits" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024\Portraits" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
     </key>
@@ -73,6 +92,9 @@
       <workItem from="1711126932166" duration="1469000" />
       <workItem from="1712764636911" duration="96000" />
       <workItem from="1712764733998" duration="2678000" />
+      <workItem from="1712824564362" duration="116000" />
+      <workItem from="1712829976970" duration="3683000" />
+      <workItem from="1713343992051" duration="4920000" />
     </task>
     <servers />
   </component>
