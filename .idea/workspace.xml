@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="" />
+    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sooratilab/papers/examplePaperPage/examplePaperPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/papers/examplePaperPage/images/example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sooratilab/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sooratilab/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud/sooratilab/team",
+    "last_opened_file_path": "E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud/sooratilab/papers",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -45,16 +50,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\team" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\examplePaperPage\images" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey\static\css" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\team\mohammad_images" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\Portraits" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024\Portraits" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -78,6 +84,7 @@
       <workItem from="1712824564362" duration="116000" />
       <workItem from="1712829976970" duration="3683000" />
       <workItem from="1713343992051" duration="5526000" />
+      <workItem from="1716626861455" duration="8826000" />
     </task>
     <servers />
   </component>
