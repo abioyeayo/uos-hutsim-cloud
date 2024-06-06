@@ -215,11 +215,6 @@
                         <iframe src="https://www.youtube.com/embed/cVCwG8aLIvI?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <span style="font-size: 110%">
-                        This is a no-cut video result of prompting robot manipulation with human motion (The robot is running the
-                        same trained
-                        model). MimicPlay integrates human motion and robot skills into a joint latent plan space, which enables an
-                        intuitive
-                        interface for directly specifying robot manipulation goals with human videos.
                     </span>
                     <br>
                 </div>

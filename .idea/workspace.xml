@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sooratilab/papers/examplePaperPage/examplePaperPage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sooratilab/papers/examplePaperPage/images/example.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sooratilab/papers/WillSurvey/images/Picture1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sooratilab/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sooratilab/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sooratilab/papers/examplePaperPage/examplePaperPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/sooratilab/papers/examplePaperPage/examplePaperPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHP Script.index.php.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud/sooratilab/papers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Files/LabWebsite/GIT_LOCAL_ROOT/uos-hutsim-cloud/sooratilab/papers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers" />
@@ -56,11 +55,11 @@
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey\images" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\examplePaperPage\images" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey\static\css" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\team\mohammad_images" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -84,7 +83,12 @@
       <workItem from="1712824564362" duration="116000" />
       <workItem from="1712829976970" duration="3683000" />
       <workItem from="1713343992051" duration="5526000" />
-      <workItem from="1716626861455" duration="8826000" />
+      <workItem from="1716626861455" duration="9119000" />
+      <workItem from="1716808833462" duration="5194000" />
+      <workItem from="1716830843382" duration="923000" />
+      <workItem from="1716886937209" duration="12731000" />
+      <workItem from="1716995026099" duration="698000" />
+      <workItem from="1717597584378" duration="950000" />
     </task>
     <servers />
   </component>
