@@ -106,7 +106,7 @@
                         <div class="publication-links">
 
                             <span class="link-block">
-                            <a target="_blank" href="https://arxiv.org/abs/[YOUR PAPER LINK]"
+                            <a target="_blank" href="https://arxiv.org/abs/2406.04086"
                                class="button is-rounded is-dark circular-button">
                               <span class="icon">
                                   <i class="ai ai-arxiv"></i>
@@ -114,14 +114,6 @@
                             </a>
                           </span>
 
-                            <span class="link-block">
-                            <a target="_blank" href="youtube link"
-                               class="button is-rounded is-dark circular-button">
-                              <span class="icon">
-                                  <i class="fab fa-youtube"></i>
-                              </span>
-                            </a>
-                          </span>
                         </div>
 
                     </div>
@@ -1047,8 +1039,13 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-widescreen content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@article{
-        [Bibtex ref]
+        <pre><code>@misc{hunt2024survey,
+      title={A Survey of Language-Based Communication in Robotics},
+      author={William Hunt and Sarvapali D. Ramchurn and Mohammad D. Soorati},
+      year={2024},
+      eprint={2406.04086},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 } </code></pre>
     </div>
 </section>
