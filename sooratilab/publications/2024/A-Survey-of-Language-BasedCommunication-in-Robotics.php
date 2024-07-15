@@ -91,9 +91,12 @@
                         </h3>
                     <div class="is-size-5 publication-authors">
             <span class="author-block">
-                <a target="_blank" href="path/to/personal/page">William&#160;Hunt</a><sup>1</sup>,
+                <!--<a target="_blank" href="path/to/personal/page">William&#160;Hunt</a><sup>1</sup>,
                 <a target="_blank" href="path/to/personal/page">Sarvapali&#160;D. &#160;Ramchurn</a><sup>1</sup>
-                <a target="_blank" href="path/to/personal/page">Mohammad&#160;D. &#160;Soorati</a><sup>1</sup>
+                <a target="_blank" href="path/to/personal/page">Mohammad&#160;D. &#160;Soorati</a><sup>1</sup>-->
+                William&#160;Hunt<sup>1</sup>,
+                Sarvapali&#160;D. &#160;Ramchurn<sup>1</sup>
+                Mohammad&#160;D. &#160;Soorati<sup>1</sup>
                   </span>
                     </div>
 
@@ -149,7 +152,7 @@
                     </p>
                 </div>
                 <div class="text-center">
-                    <img src="images/Picture1.png" alt="Graphical Abstract" style="max-width: 100%; height: auto;">
+                    <img src="../images/A-Survey-of-Language-BasedCommunication-in-Robotics_img1.png" alt="Graphical Abstract" style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
@@ -1056,7 +1059,7 @@
             <div class="column">
                 <div class="content has-text-centered">
                     <p>
-                        Something goes here
+                        University of Southampton, UK
                     </p>
                 </div>
             </div>

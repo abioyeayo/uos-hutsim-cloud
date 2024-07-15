@@ -194,7 +194,7 @@
                             </span>
                         </div>
                         <div class="column">
-                            <img src="./images/example.png" class="interpolation-image" alt="">
+                            <img src="images/example.png" class="interpolation-image" alt="">
                         </div>
                     </div>
                     <br>
