@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="" />
+    <list default="true" id="341e0fb3-33ba-4248-8460-900efd1a89d9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sooratilab/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/sooratilab/media.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,11 +54,11 @@
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\workshop\iros2024" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\publications" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\publications\2024" />
+      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\publications\0000" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey\images" />
       <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\examplePaperPage\images" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey\static\css" />
-      <recent name="E:\Files\LabWebsite\GIT_LOCAL_ROOT\uos-hutsim-cloud\sooratilab\papers\WillSurvey" />
     </key>
   </component>
   <component name="SharedIndexes">
